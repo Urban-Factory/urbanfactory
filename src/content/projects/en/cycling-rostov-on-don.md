@@ -6,7 +6,7 @@ category: [strategy, engagement]
 year: "2014–2020"
 city: Rostov-on-Don
 country: Russia
-role: "Created and initiated the project; organised and carried out the research; consulted the city until implementation"
+role: "Research (GPS tracks, surveys, interviews, stakeholder round table), cycling concept, consulting until implementation"
 summary: "How cycling became part of the transport system of Rostov-on-Don — from a city request and our research with cyclists to a design competition and two phases of cycle lanes."
 results:
   - "Research with cyclists and stakeholders: GPS tracks, surveys, interviews, a round table"

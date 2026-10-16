@@ -7,7 +7,7 @@ year: "2013–2015"
 city: Rostov-on-Don
 country: Russia
 client: Own initiative
-role: "Concept author; co-design with residents; negotiating a route to installation"
+role: "Concept, co-design with residents, route to installation"
 summary: "“Islands of the Future”: a network of small parks for vacant city-centre plots, tested as a 3×6 m modular micro-park installed in Revolution Park in 2015."
 results:
   - "Concept for a network of micro-parks on vacant plots"

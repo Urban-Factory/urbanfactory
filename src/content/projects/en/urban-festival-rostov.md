@@ -6,7 +6,7 @@ category: [engagement]
 year: "2013–2014"
 city: Rostov-on-Don
 country: Russia
-role: Concept, programme and organisation
+role: "Concept, programme and organisation"
 summary: "A city festival about public space where Urban Factory was born — and which left behind a new public square and a network of local initiatives."
 results:
   - "2013: 16 days, 2,000 visitors and 8,000 people reached online"

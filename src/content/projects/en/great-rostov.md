@@ -7,7 +7,7 @@ year: "2016–2019"
 city: Rostov agglomeration
 country: Russia
 client: Own initiative
-role: "Author, project lead and coordinator — agglomeration rail concept and high-speed rail proposal"
+role: "Agglomeration rail concept and high-speed rail proposal"
 summary: "A concept for one rail system across the Rostov conurbation — tram, city trains and a new high-speed rail station — presented in public in 2018."
 results:
   - "Concept for a single rail-based transport system for six cities and four districts"

@@ -7,7 +7,7 @@ year: "2018"
 city: Zverevo
 country: Russia
 client: Zverevo city administration
-role: Strategy development and public engagement
+role: "Development strategy, public engagement"
 summary: "A development strategy for a small mining town, written together with residents and adopted by the city council in December 2018."
 results:
   - "Strategy adopted by the city council (December 2018)"

@@ -7,7 +7,7 @@ year: "2013–2023"
 city: Rostov-on-Don
 country: Russia
 client: Own initiative, later city transport department
-role: "Author, project lead and coordinator — tram network concept, fleet renewal programme, public advocacy for light rail. Partner: Alexander Semenov (MOO “City and Transport”)"
+role: "Tram network concept, fleet renewal programme, public advocacy for light rail"
 summary: "A tram network concept and a redesign of the existing fleet that informed the city’s competition documents and, in 2023, a 119 km tram programme."
 results:
   - "Network concept and supporting work handed over to the city transport department"

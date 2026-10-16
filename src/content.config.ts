@@ -21,7 +21,7 @@ const projects = defineCollection({
       city: z.string(),
       country: z.string(),
       client: z.string().optional(),
-      role: z.string(),
+      role: z.string(), // «Scope» — объём работ агентства, без должностей (должности — в team.past)
       summary: z.string(),
       cover: image().optional(),
       coverAlt: z.string().optional(),

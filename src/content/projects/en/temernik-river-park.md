@@ -6,7 +6,7 @@ category: [design, strategy, engagement]
 year: "2017–2019"
 city: Rostov-on-Don
 country: Russia
-role: "Co-founder of the ANO Park Temernik; urban planner and economist — river strategy and economics, international partnerships, forums"
+role: "River strategy and economics, international partnerships, forums, launch of the First Mile"
 summary: "Bringing a neglected city river back into public life — a non-profit, an international partnership with Recife and the First Mile of a linear park, opened in 2023."
 results:
   - "ANO Park Temernik founded"

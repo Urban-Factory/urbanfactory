@@ -9,7 +9,7 @@ year: "2024"                  # или диапазон "2018–2019"
 city: Zagreb
 country: Croatia
 client: Client name           # необязательно
-role: What Urban Factory did
+role: What Urban Factory did (scope of work, no job titles)
 summary: "One or two sentences about the project and its result."
 cover: ../../../assets/projects/project-slug/cover.jpg   # необязательно
 coverAlt: "What is in the photo"

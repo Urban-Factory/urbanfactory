@@ -6,7 +6,7 @@ category: [engagement, strategy]
 year: "2020"
 city: Rostov-on-Don
 country: Russia
-role: Co-curator, author of the concept and programme, project lead and interviewer
+role: "Concept and programme of the expert platform, discussions, video interviews"
 summary: "An expert platform for the city's long-term future, timed to Rostov-on-Don's 300th anniversary in 2049 — eight themed discussions and a public series of video interviews."
 results:
   - "Expert platform launched at the Don State Public Library"

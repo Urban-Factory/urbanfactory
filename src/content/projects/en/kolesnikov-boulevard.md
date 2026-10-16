@@ -7,7 +7,7 @@ year: "2018–2019"
 city: Zverevo
 country: Russia
 client: Zverevo city administration
-role: Participatory design and concept
+role: "Participatory design, concept, feasibility study"
 summary: "A 3.1 ha boulevard designed together with residents, from first workshops to a complete design package handed over to the city."
 results:
   - "3.1 ha of public space designed with residents"

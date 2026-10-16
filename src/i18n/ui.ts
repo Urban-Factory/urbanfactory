@@ -107,7 +107,7 @@ const en = {
   'project.years': 'Years',
   'project.place': 'Place',
   'project.client': 'Client',
-  'project.role': 'Our role',
+  'project.role': 'Scope',
   'project.directions': 'Directions',
   'project.results': 'Results',
   'project.gallery': 'Gallery',

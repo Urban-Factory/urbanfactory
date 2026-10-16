@@ -28,6 +28,7 @@
 - Публикации СМИ (Press) не переводим — даём ссылку на оригинал.
 
 ## Ключевые решения
+- 16.10.2026: поле role проекта выводится как «Scope» — объём работ агентства, без должностей; должности — только в «Project team».
 - 16.10.2026 (роли подтверждены Михаилом): в КАЖДОМ проекте в списке людей (Team → «Project teams» и блок «Project team» на странице проекта) первой строкой «Mihail Veklenko — роль» (данные: src/i18n/copy.ts → team.past). Роли: Rostov Tram, Cycling, Great Rostov — initiator and project lead; urban and transport planner; Zverevo, Kolesnikov — urban planner, project lead; Temernik — co-founder of the ANO, urban planner and economist; Urban Festival — co-founder and organiser; UTC Recife — organiser and moderator of the session; Rostov 300 — co-curator and author of the concept; Gagarin bridge — author of the concept idea. E. Kotlyarova — «Architect — illustrations of the concept».
 - 16.10.2026: Rivers & cities влит в Temernik River Park (раздел «International part: Recife ↔ Rostov-on-Don», фото перенесены). Проектов 11. Старый URL /<lang>/projects/rivers-and-cities/ — страница-редирект (noindex) на Temernik; на этапе 5 исключить из sitemap.
 - 16.10.2026: у основателя раздел Education (FPZ Zagreb 2024–; Manchester/MSSES 2013–2015; DSTU 2002–2007); в Experience — «Session producer, Moscow Urban Forum (2013)», FPZ убран в Education.
