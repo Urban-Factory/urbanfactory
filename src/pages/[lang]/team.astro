@@ -5,6 +5,8 @@ import CtaBand from '../../components/CtaBand.astro';
 import Logo from '../../components/Logo.astro';
 import { published, useTranslations, type Lang } from '../../i18n/ui';
 import { getCopy } from '../../i18n/copy';
+import { getProjects } from '../../lib/projects';
+import { localePath } from '../../lib/site';
 
 export function getStaticPaths() {
   return published.map((lang) => ({ params: { lang } }));
@@ -13,7 +15,11 @@ export function getStaticPaths() {
 const lang = Astro.params.lang as Lang;
 const t = useTranslations(lang);
 const c = getCopy(lang).team;
-const initials = c.founder.name
+const f = c.founder;
+const projects = await getProjects(lang);
+const bySlug = new Map(projects.map((p) => [p.data.slug, p]));
+const led = f.projects.map((s) => bySlug.get(s)).filter((p) => p !== undefined);
+const initials = f.name
   .split(' ')
   .map((w) => w[0])
   .join('');
@@ -22,27 +28,82 @@ const initials = c.founder.name
 <Base lang={lang} title={`${c.title} — Urban Factory`} description={t('team.meta.description')}>
   <PageHeader title={c.title} lead={c.lead} />
 
+  <!-- Основатель -->
   <section class="wrap pb-section">
     <article class="grid gap-10 md:grid-cols-12 md:gap-12">
       <!-- Фото основателя пока нет — карточка с инициалами -->
-      <div class="relative aspect-[4/5] bg-ink text-paper md:col-span-5 lg:col-span-4" role="img" aria-label={`${t('team.photo')} ${c.founder.name}`}>
-        <span class="absolute bottom-6 left-6 font-display text-[clamp(4rem,10vw,8rem)] leading-none font-bold" aria-hidden="true">{initials}</span>
-        <Logo variant="mark" class="absolute top-6 right-6 h-14 text-red" />
+      <div class="md:col-span-5 lg:col-span-4">
+        <div class="relative aspect-[4/5] bg-ink text-paper md:sticky md:top-28" role="img" aria-label={`${t('team.photo')} ${f.name}`}>
+          <span class="absolute bottom-6 left-6 font-display text-[clamp(4rem,10vw,8rem)] leading-none font-bold" aria-hidden="true">{initials}</span>
+          <Logo variant="mark" class="absolute top-6 right-6 h-14 text-red" />
+        </div>
       </div>
-      <div class="md:col-span-7 lg:col-span-6 lg:col-start-6">
-        <p class="eyebrow text-red">{c.founder.role}</p>
-        <h2 class="mt-3 text-h2">{c.founder.name}</h2>
-        <div class="mt-6 space-y-4 text-lead text-ink/85">
-          {c.founder.bio.map((p) => <p>{p}</p>)}
+      <div class="md:col-span-7 lg:col-span-7 lg:col-start-6">
+        <p class="eyebrow text-red">{f.role}</p>
+        <h2 class="mt-3 text-h1">{f.name}</h2>
+        <div class="mt-8 space-y-4 text-lead text-ink/85">
+          {f.bio.map((p) => <p>{p}</p>)}
+        </div>
+
+        <div class="mt-12 grid gap-10 sm:grid-cols-2">
+          <div>
+            <h3 class="eyebrow text-muted">{t('team.expertise')}</h3>
+            <ul class="mt-5 space-y-3">
+              {
+                f.expertise.map((e) => (
+                  <li class="flex gap-3">
+                    <span class="mt-2.5 h-2 w-2 shrink-0 bg-red" aria-hidden="true" />
+                    <span>{e}</span>
+                  </li>
+                ))
+              }
+            </ul>
+          </div>
+          <div>
+            <h3 class="eyebrow text-muted">{t('team.projectsLed')}</h3>
+            <ul class="mt-5 divide-y divide-line border-y border-line">
+              {
+                led.map((p) => (
+                  <li>
+                    <a href={localePath(lang, `/projects/${p.data.slug}/`)} class="group flex items-baseline justify-between gap-4 py-3">
+                      <span class="font-display font-semibold uppercase group-hover:text-red">{p.data.title.split(':')[0]}</span>
+                      <span class="shrink-0 text-sm text-muted">{p.data.year}</span>
+                    </a>
+                  </li>
+                ))
+              }
+            </ul>
+          </div>
         </div>
       </div>
     </article>
   </section>
 
-  <section class="bg-surface py-section" aria-labelledby="network-title">
-    <div class="wrap grid gap-8 lg:grid-cols-12">
-      <h2 id="network-title" class="text-h2 lg:col-span-5">{c.networkTitle}</h2>
-      <p class="text-lead text-ink/85 lg:col-span-6 lg:col-start-7">{c.networkText}</p>
+  <!-- Участники прошлых проектов -->
+  <section class="bg-surface py-section" aria-labelledby="past-title">
+    <div class="wrap">
+      <h2 id="past-title" class="text-h2">{c.pastTitle}</h2>
+      <p class="mt-4 max-w-2xl text-lead text-ink/85">{c.pastText}</p>
+      <ul class="mt-12 grid gap-px bg-line sm:grid-cols-2 lg:grid-cols-4">
+        {
+          c.past.map((person) => (
+            <li class="flex flex-col bg-surface p-6">
+              <span class="font-display text-xl font-bold uppercase">{person.name}</span>
+              <span class="mt-2 flex-1 text-sm text-ink/80">{person.role}</span>
+              <ul class="mt-4 space-y-1 text-sm">
+                {person.projects.map((s) => {
+                  const p = bySlug.get(s);
+                  return p ? (
+                    <li>
+                      <a href={localePath(lang, `/projects/${s}/`)} class="underline underline-offset-4 hover:text-red">{p.data.title.split(':')[0]}</a>
+                    </li>
+                  ) : null;
+                })}
+              </ul>
+            </li>
+          ))
+        }
+      </ul>
     </div>
   </section>
 

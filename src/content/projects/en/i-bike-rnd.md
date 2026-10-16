@@ -6,11 +6,11 @@ category: [strategy, engagement]
 year: "2014–2021"
 city: Rostov-on-Don
 country: Russia
-role: Research and cycling concept
-summary: "Research with cyclists and experts led to a city-wide cycling concept. The city then tendered the design, and cycle lanes were built."
+role: "Project initiator, lead organiser and project manager: research, concept, design tender and delivery"
+summary: "The project that made cycling part of Rostov-on-Don’s transport system — from research with cyclists to a city-wide concept, a design tender and cycle lanes on the ground."
 results:
   - "Cycling concept: a network of lanes treated as transport, not recreation"
-  - "Design tender prepared by the city transport department"
+  - "Design tender held by the city transport department on the basis of the concept — won by our team in 2017"
   - "Cycle lanes built"
 cover: ../../../assets/projects/i-bike-rnd/cover.jpg
 coverAlt: "A group bike ride on a cobbled street past an old red-brick building in Rostov-on-Don"
@@ -31,7 +31,9 @@ The question was different: could cycling become part of the city's transport sy
 
 ## What we did
 
-Urban Factory worked on the research and the concept. The research ran before and during Urban Festival 2014:
+Mihail Veklenko initiated and led I Bike RnD from start to finish: he brought the project together, organised every phase and turned it into a city programme. Other specialists joined individual phases and parts of the work along the way.
+
+The research ran before and during Urban Festival 2014:
 
 - surveys of cyclists;
 - analysis of the city map and of real routes, based on GPS tracks shared by riders;
@@ -47,7 +49,7 @@ The concept moved through the full chain from research to construction:
 1. research;
 2. a city-wide cycling concept;
 3. tender documentation for design, prepared by the city transport department on the basis of the concept;
-4. design, carried out by a team that had taken part in the research;
+4. design — our team won the design tender in 2017;
 5. construction of cycle lanes a few years later.
 
-For Urban Factory, I Bike RnD showed that research done with the people who use the street can shape a city decision. Here it led to a design brief and, in the end, to lanes on the ground.
+I Bike RnD is where the cycling network of Rostov-on-Don began. It showed that research done with the people who use the street can shape a city decision — and, in the end, put lanes on the ground.

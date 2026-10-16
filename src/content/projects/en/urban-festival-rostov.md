@@ -9,6 +9,7 @@ country: Russia
 role: Concept, programme and organisation
 summary: "A city festival about public space where Urban Factory was born — and which left behind a new public square and a network of local initiatives."
 results:
+  - "2013: 16 days, 2,000 visitors and 8,000 people reached online"
   - "100+ volunteers"
   - "7 local NGOs and 50 graduates grew out of the festival and the 2014 school"
   - "About 1,500 people at the educational picnic in the park"
@@ -34,7 +35,7 @@ In 2013 residents of Rostov-on-Don had few chances to discuss their city in publ
 
 ## What we did
 
-A small team of organisers — Mihail Veklenko, Diana Karnaukhova and Alexey Karachinsky — launched the first Urban Festival Rostov in 2013. The programme mixed lectures, a participatory design workshop, a conference, city walks, a free market, open-air cinema and a neighbours' table. An educational picnic in a city park brought together about 1,500 people. Mihail presented a concept for a light-rail network for the city.
+A small team of organisers — Mihail Veklenko, Diana Karnaukhova and Alexey Karachinsky — launched the first Urban Festival Rostov in 2013. Over 16 days it welcomed 2,000 visitors and reached another 8,000 people online. The programme mixed lectures, a participatory design workshop, a conference, city walks, a free market, open-air cinema and a neighbours' table. An educational picnic in a city park brought together about 1,500 people. Mihail presented a concept for a light-rail network for the city.
 
 The Urban Factory brand was invented by Mihail at this festival. It was announced at the end as a platform for design, education and city projects.
 
@@ -46,6 +47,7 @@ More than 100 volunteers helped to run the first festival.
 
 ## Result
 
+- 2,000 visitors and 8,000 people online over 16 days of the first festival.
 - A new public square — Square #1 — on a plot that had stood empty.
 - 7 local NGOs and 50 graduates grew out of the festival and the 2014 school.
 - Urban Factory itself — the festival became the starting point for our later work on parks, transport and public space.

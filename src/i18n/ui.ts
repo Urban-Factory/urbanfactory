@@ -76,6 +76,10 @@ const en = {
   'home.num.founded': 'founded in Rostov-on-Don',
   'home.num.projects': 'projects on this site',
   'home.num.area': 'hectares of public space designed with residents',
+  'home.num.forums': 'forums and conferences organised',
+  'home.num.festivals': 'city festivals',
+  'home.num.schools': 'summer schools',
+  'home.num.students': 'summer-school students',
   'home.num.tram': 'km city tram programme our network concept fed into',
 
   'home.geo.eyebrow': 'Where we work',
@@ -125,8 +129,10 @@ const en = {
   'agency.approach': 'Approach',
   'agency.principles': 'Principles',
 
-  'team.meta.description': 'The Urban Factory team: founder and CEO Mihail Veklenko and a network of experts and partners.',
+  'team.meta.description': 'Mihail Veklenko, founder and CEO of Urban Factory, and the people who worked with us on past projects.',
   'team.photo': 'Photo of',
+  'team.expertise': 'Expertise',
+  'team.projectsLed': 'Projects led',
 
   'contact.meta.description': 'Contact Urban Factory in Zagreb: email, WhatsApp, Telegram, Instagram.',
   'contact.email': 'Email',

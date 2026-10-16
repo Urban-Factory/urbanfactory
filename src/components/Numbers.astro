@@ -7,12 +7,16 @@ interface Props {
 const { lang } = Astro.props;
 const t = useTranslations(lang);
 
-// Только подтверждённые цифры (спорные — см. PROGRESS.md, ждут решения)
+// Цифры утверждены Михаилом 16.10.2026
 const numbers = [
   { value: '2013', key: 'home.num.founded' },
   { value: '13', key: 'home.num.projects' },
   { value: '3.1', key: 'home.num.area' },
   { value: '119', key: 'home.num.tram' },
+  { value: '8', key: 'home.num.forums' },
+  { value: '6', key: 'home.num.festivals' },
+  { value: '2', key: 'home.num.schools' },
+  { value: '120', key: 'home.num.students' },
 ] as const;
 ---
 

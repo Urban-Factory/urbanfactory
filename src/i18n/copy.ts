@@ -22,9 +22,10 @@ export interface PageCopy {
   team: {
     title: string;
     lead: string;
-    founder: { name: string; role: string; bio: string[] };
-    networkTitle: string;
-    networkText: string;
+    founder: { name: string; role: string; bio: string[]; expertise: string[]; projects: string[] };
+    pastTitle: string;
+    pastText: string;
+    past: { name: string; role: string; projects: string[] }[];
   };
   contact: { title: string; lead: string };
 }
@@ -127,19 +128,37 @@ const en: PageCopy = {
   },
   team: {
     title: 'Team',
-    lead: 'A small core team and a network of experts we bring together for each project.',
+    lead: 'Urban Factory is led by its founder, Mihail Veklenko. For each project we bring together the specialists it needs.',
     founder: {
       name: 'Mihail Veklenko',
       role: 'Founder & CEO',
       bio: [
         'Mihail founded Urban Factory in Rostov-on-Don in 2013, after more than a decade in real estate and development.',
+        'He initiated and led the agency’s key projects: the tram network concept for Rostov-on-Don, the I Bike RnD cycling programme, the Zverevo Development Strategy 2030, the Temernik River Park and the Urban Festival where Urban Factory was born.',
         'He holds a Postgraduate Diploma in Urban Studies from The University of Manchester (joint programme with MSSES) and is a postgraduate student in urban transport at the Faculty of Transport and Traffic Sciences in Zagreb.',
-        'He leads the agency’s work on strategy, mobility and international partnerships.',
+        'Since 2020 he has led the agency from Zagreb, Croatia.',
       ],
+      expertise: [
+        'City and territorial strategy',
+        'Public transport and cycling',
+        'Public engagement and events',
+        'Project economics and partnerships',
+        'International cooperation',
+      ],
+      projects: ['rostov-tram', 'i-bike-rnd', 'zverevo-strategy-2030', 'temernik-river-park', 'urban-festival-rostov', 'great-rostov', 'urban-thinkers-campus-recife', 'rostov-300'],
     },
-    networkTitle: 'Experts and partners',
-    networkText:
-      'For each project we assemble a team of architects, transport planners, sociologists, economists and journalists from our network — in Croatia, Brazil, Serbia and beyond.',
+    pastTitle: 'People who worked with us',
+    pastText: 'Experts and colleagues who took part in our past projects.',
+    past: [
+      { name: 'Prof. Circe Monteiro', role: 'INCITI, Federal University of Pernambuco (Recife) — international partner', projects: ['temernik-river-park', 'rivers-and-cities', 'urban-thinkers-campus-recife'] },
+      { name: 'Milton Botler', role: 'Recife — co-author of the high-speed rail proposal', projects: ['great-rostov'] },
+      { name: 'Pedro Guedes', role: 'Recife — co-author of the high-speed rail proposal', projects: ['great-rostov'] },
+      { name: 'Diana Karnaukhova', role: 'Co-organiser of the first Urban Festival', projects: ['urban-festival-rostov'] },
+      { name: 'Alexey Karachinsky', role: 'Architect, co-organiser of the first Urban Festival', projects: ['urban-festival-rostov'] },
+      { name: 'E. Kotlyarova', role: 'Architect of the cycle and pedestrian bridge', projects: ['gagarin-bridge'] },
+      { name: 'Daria Rud', role: 'Sociologist — socio-cultural study of the city', projects: ['rostov-300'] },
+      { name: 'Nikolay Protsenko', role: 'Journalist — texts and interviews', projects: ['rostov-300'] },
+    ],
   },
   contact: {
     title: 'Contact',
