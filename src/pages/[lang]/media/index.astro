@@ -1,9 +1,10 @@
 ---
 import { Image } from 'astro:assets';
-import { getCollection } from 'astro:content';
+import { getCollection, type CollectionEntry } from 'astro:content';
 import Base from '../../../layouts/Base.astro';
 import PageHeader from '../../../components/PageHeader.astro';
 import CtaBand from '../../../components/CtaBand.astro';
+import Logo from '../../../components/Logo.astro';
 import { languages, published, useTranslations, type Lang } from '../../../i18n/ui';
 import { localePath } from '../../../lib/site';
 
@@ -15,7 +16,15 @@ const lang = Astro.params.lang as Lang;
 const t = useTranslations(lang);
 
 const sections = ['interviews', 'articles', 'talks', 'press'] as const;
-const entries = (await getCollection('media', (m) => m.data.lang === lang)).sort((a, b) => b.data.date.localeCompare(a.data.date));
+
+/**
+ * Ключ сортировки: новые сверху. Неточная дата (только год или год-месяц)
+ * дополняется нулями — такая запись встаёт в конец своего года/месяца.
+ */
+const sortKey = (d: string) => (d + '-00-00').slice(0, 10);
+const entries = (await getCollection('media', (m) => m.data.lang === lang)).sort((a, b) =>
+  sortKey(b.data.date).localeCompare(sortKey(a.data.date)),
+);
 const interviews = new Map(
   (await getCollection('interviews', (m) => m.data.lang === lang)).map((i) => [i.data.slug, i]),
 );
@@ -24,8 +33,22 @@ const interviews = new Map(
 function formatDate(d: string) {
   const [y, m, day] = d.split('-').map(Number);
   if (!m) return String(y);
-  const opts: Intl.DateTimeFormatOptions = day ? { day: 'numeric', month: 'short', year: 'numeric' } : { month: 'short', year: 'numeric' };
+  const opts: Intl.DateTimeFormatOptions = day ? { day: 'numeric', month: 'long', year: 'numeric' } : { month: 'long', year: 'numeric' };
   return new Intl.DateTimeFormat(lang === 'en' ? 'en-GB' : languages[lang].htmlLang, opts).format(new Date(Date.UTC(y, m - 1, day || 1)));
+}
+
+/** Данные для крупной карточки интервью: из страницы интервью, если она есть, иначе из записи. */
+function card(e: CollectionEntry<'media'>) {
+  const iv = e.data.interview ? interviews.get(e.data.interview) : undefined;
+  return {
+    title: iv?.data.title ?? e.data.title,
+    summary: iv?.data.summary,
+    meta: iv ? `${iv.data.date} · ${iv.data.place}` : formatDate(e.data.date),
+    cover: iv?.data.cover,
+    coverAlt: iv?.data.coverAlt ?? '',
+    href: iv ? localePath(lang, `/media/${iv.data.slug}/`) : e.data.url,
+    internal: Boolean(iv),
+  };
 }
 ---
 
@@ -42,47 +65,62 @@ function formatDate(d: string) {
     </ul>
   </PageHeader>
 
-  {
-    sections.map((s, si) => {
-      const list = entries.filter((e) => e.data.section === s);
-      const featured = list.filter((e) => e.data.interview && interviews.has(e.data.interview));
-      const rows = list.filter((e) => !featured.includes(e));
-      return list.length === 0 ? null : (
-        <section id={s} class:list={['scroll-mt-24 py-section', si % 2 === 0 ? 'bg-paper' : 'bg-surface']} aria-labelledby={`${s}-title`}>
-          <div class="wrap">
-            <h2 id={`${s}-title`} class="text-h2">{t(`media.section.${s}`)}</h2>
+  <div class="wrap space-y-20 pb-section md:space-y-28">
+    {
+      sections.map((s) => {
+        const list = entries.filter((e) => e.data.section === s);
+        if (list.length === 0) return null;
+        return (
+          <section id={s} class="scroll-mt-24" aria-labelledby={`${s}-title`}>
+            <h2 id={`${s}-title`} class="border-t-4 border-ink pt-6 text-h2">{t(`media.section.${s}`)}</h2>
 
-            {featured.length > 0 && (
-              <ul class="mt-12 grid gap-16 md:grid-cols-2 md:gap-x-8">
-                {featured.map((e, i) => {
-                  const iv = interviews.get(e.data.interview!)!;
+            {s === 'interviews' ? (
+              <ul class="mt-10 grid gap-14 md:grid-cols-2 md:gap-x-8 lg:grid-cols-3">
+                {list.map((e, i) => {
+                  const c = card(e);
                   return (
                     <li>
-                      <article class="group relative flex flex-col">
+                      <article class="group relative flex h-full flex-col">
                         <div class="aspect-[4/3] overflow-hidden bg-surface">
-                          {iv.data.cover && (
+                          {c.cover ? (
                             <Image
-                              src={iv.data.cover}
-                              alt={iv.data.coverAlt ?? ''}
+                              src={c.cover}
+                              alt={c.coverAlt}
                               widths={[480, 800, 1200]}
-                              sizes="(min-width: 768px) 50vw, 100vw"
-                              loading={i < 2 ? 'eager' : 'lazy'}
+                              sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                              loading={i < 3 ? 'eager' : 'lazy'}
                               class="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03] motion-reduce:transition-none"
                             />
+                          ) : (
+                            <div class="flex h-full items-center justify-center text-ink/10">
+                              <Logo variant="mark" class="h-1/2" />
+                            </div>
                           )}
                         </div>
-                        <p class="mt-5 eyebrow text-red">{iv.data.date} · {iv.data.place}</p>
-                        <h3 class="mt-3 text-3xl leading-[1.05] md:text-4xl">
-                          <a href={localePath(lang, `/media/${iv.data.slug}/`)} class="after:absolute after:inset-0 after:content-['']">
-                            {iv.data.title}
-                          </a>
+                        <p class="mt-5 eyebrow text-red">{c.meta}</p>
+                        <h3 class="mt-3 text-2xl leading-[1.05] md:text-3xl">
+                          {c.href ? (
+                            <a
+                              href={c.href}
+                              target={c.internal ? undefined : '_blank'}
+                              rel={c.internal ? undefined : 'noopener'}
+                              class="after:absolute after:inset-0 after:content-['']"
+                            >
+                              {c.title}
+                              {!c.internal && <span class="sr-only"> ({t('media.newWindow')})</span>}
+                            </a>
+                          ) : (
+                            c.title
+                          )}
                         </h3>
-                        <p class="mt-3 max-w-prose text-ink/85">{iv.data.summary}</p>
-                        <p class="mt-4 text-sm text-muted">
-                          {e.data.outlet} · {t(`media.lang.${e.data.originalLang}`)} · {e.data.role}
+                        {c.summary && <p class="mt-3 max-w-prose text-ink/85">{c.summary}</p>}
+                        <p class="mt-4 text-sm text-ink/80">
+                          {e.data.outlet}
+                          <span class="mx-2 inline-block border border-ink/30 px-1.5 text-xs leading-5 font-semibold">{t(`media.lang.${e.data.originalLang}`)}</span>
+                          {e.data.role}
                         </p>
-                        <div class="relative z-10 mt-5 flex flex-wrap gap-x-6 gap-y-2 text-sm">
-                          <span class="link-arrow" aria-hidden="true">{t('media.read')}</span>
+                        <div class="relative z-10 mt-auto flex flex-wrap gap-x-6 gap-y-2 pt-5 text-sm">
+                          {c.internal && <span class="link-arrow" aria-hidden="true">{t('media.read')}</span>}
                           {e.data.url && (
                             <a href={e.data.url} target="_blank" rel="noopener" class="underline underline-offset-4 hover:text-red">
                               {t('media.original')} ↗<span class="sr-only"> ({t('media.newWindow')})</span>
@@ -94,46 +132,40 @@ function formatDate(d: string) {
                   );
                 })}
               </ul>
-            )}
-
-            {rows.length > 0 && (
-              <ul class:list={['divide-y divide-line border-y border-line', featured.length > 0 ? 'mt-16' : 'mt-12']}>
-                {rows.map((e) => {
-                  const href = e.data.interview ? localePath(lang, `/media/${e.data.interview}/`) : e.data.url;
-                  const external = !e.data.interview;
-                  return (
-                    <li class="grid gap-2 py-6 md:grid-cols-12 md:gap-8">
-                      <span class="text-sm text-muted md:col-span-2 md:pt-1">{formatDate(e.data.date)}</span>
-                      <div class="md:col-span-8">
-                        <h3 class="font-display text-xl leading-tight font-bold normal-case md:text-2xl">
-                          {href ? (
-                            <a href={href} target={external ? '_blank' : undefined} rel={external ? 'noopener' : undefined} class="hover:text-red">
-                              {e.data.title}
-                              {external && <span class="sr-only"> ({t('media.newWindow')})</span>}
-                            </a>
-                          ) : (
-                            e.data.title
-                          )}
-                        </h3>
-                        <p class="mt-2 text-sm text-ink/80">
-                          {e.data.outlet}
-                          <span class="mx-2 inline-block border border-ink/30 px-1.5 text-xs leading-5 font-semibold">{t(`media.lang.${e.data.originalLang}`)}</span>
-                          {e.data.role}
-                        </p>
-                      </div>
-                      {href && (
-                        <span class="text-sm md:col-span-2 md:pt-1 md:text-right" aria-hidden="true">{external ? `${t('media.original')} ↗` : t('media.read')}</span>
-                      )}
-                    </li>
-                  );
-                })}
+            ) : (
+              <ul class="mt-6 divide-y divide-line border-b border-line">
+                {list.map((e) => (
+                  <li class="grid gap-2 py-6 md:grid-cols-12 md:gap-8">
+                    <span class="text-sm text-muted md:col-span-2 md:pt-1">{formatDate(e.data.date)}</span>
+                    <div class="md:col-span-8">
+                      <h3 class="font-display text-xl leading-tight font-bold normal-case md:text-2xl">
+                        {e.data.url ? (
+                          <a href={e.data.url} target="_blank" rel="noopener" class="hover:text-red">
+                            {e.data.title}
+                            <span class="sr-only"> ({t('media.newWindow')})</span>
+                          </a>
+                        ) : (
+                          e.data.title
+                        )}
+                      </h3>
+                      <p class="mt-2 text-sm text-ink/80">
+                        {e.data.outlet}
+                        <span class="mx-2 inline-block border border-ink/30 px-1.5 text-xs leading-5 font-semibold">{t(`media.lang.${e.data.originalLang}`)}</span>
+                        {e.data.role}
+                      </p>
+                    </div>
+                    {e.data.url && (
+                      <span class="text-sm md:col-span-2 md:pt-1 md:text-right" aria-hidden="true">{t('media.original')} ↗</span>
+                    )}
+                  </li>
+                ))}
               </ul>
             )}
-          </div>
-        </section>
-      );
-    })
-  }
+          </section>
+        );
+      })
+    }
+  </div>
 
   <CtaBand lang={lang} />
 </Base>
