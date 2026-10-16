@@ -165,21 +165,21 @@ const en: PageCopy = {
       {
         project: 'rostov-tram',
         people: [
-          { name: 'Mihail Veklenko', role: 'Initiator and project lead' },
+          { name: 'Mihail Veklenko', role: 'Initiator and project lead; urban and transport planner' },
           { name: 'Alexander Semenov', role: 'MOO “City and Transport” — partner' },
         ],
       },
       {
         project: 'cycling-rostov-on-don',
         people: [
-          { name: 'Mihail Veklenko', role: 'Initiator and project lead' },
+          { name: 'Mihail Veklenko', role: 'Initiator and project lead; urban and transport planner' },
           { name: 'Dmitry Gusev', role: 'Head of the I Bike RnD media project; won the design tender' },
         ],
       },
       {
         project: 'zverevo-strategy-2030',
         people: [
-          { name: 'Mihail Veklenko', role: 'Project lead' },
+          { name: 'Mihail Veklenko', role: 'Urban planner, project lead' },
           { name: 'Elena Ishchenko', role: 'Territorial marketing expert' },
           { name: 'Nikolay Pryanishnikov', role: 'MSSES' },
           { name: 'Grisha Krasnov', role: 'Video' },
@@ -189,7 +189,7 @@ const en: PageCopy = {
       {
         project: 'kolesnikov-boulevard',
         people: [
-          { name: 'Mihail Veklenko', role: 'Urban planner' },
+          { name: 'Mihail Veklenko', role: 'Urban planner, project lead' },
           { name: 'Julia Litvinova', role: 'Architect' },
           { name: 'Mikael Sarkisyants', role: 'Consulting architect' },
           { name: 'Alexey Matveenko', role: '“Gorod-Park” — workshop format' },
@@ -228,7 +228,7 @@ const en: PageCopy = {
       {
         project: 'great-rostov',
         people: [
-          { name: 'Mihail Veklenko', role: 'Initiator and project lead; urban planner — transport and territorial planning' },
+          { name: 'Mihail Veklenko', role: 'Initiator and project lead; urban and transport planner' },
           { name: 'Milton Botler', role: 'Recife — co-author of the high-speed rail proposal' },
           { name: 'Pedro Guedes', role: 'Recife — co-author of the high-speed rail proposal' },
           { name: 'Nikolay Protsenko', role: 'Journalist' },
