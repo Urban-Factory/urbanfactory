@@ -15,7 +15,7 @@ related: [rostov-tram, great-rostov]
 order: 1
 ---
 
-For several years, the Rostov public has been discussing the city's traffic congestion. Rostov urbanist Mikhail Veklenko met Enrique Peñalosa, one of the most advanced experts on the transformation of urban environment and transport systems, at the Moscow Urban Forum held in December 2013 and found out how this problem is solved by the world's urban centres.
+For several years, the Rostov public has been discussing the city's traffic congestion. Rostov urbanist Mihail Veklenko met Enrique Peñalosa, one of the most advanced experts on the transformation of urban environment and transport systems, at the Moscow Urban Forum held in December 2013 and found out how this problem is solved by the world's urban centres.
 
 Enrique Peñalosa, in his three years as mayor of Bogotá, has completely transformed the city and made it convenient for most residents. Instead of building an expensive metro project, investing in motorways and expanding car parks, Peñalosa created pedestrian zones, cycle paths, schools and libraries, and improved parks, squares and embankments. Enrique has managed to reduce traffic in the Colombian capital by 40% - with the help of the TransMilenio public transport system, which is widely regarded as one of the best in the world.
 
