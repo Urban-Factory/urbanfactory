@@ -3,7 +3,7 @@ title: "Enrique Peñalosa: buses are a symbol of democracy"
 slug: enrique-penalosa
 lang: en
 person: "Enrique Peñalosa"
-date: "December 2013"
+date: "6 December 2013"
 place: "Moscow Urban Forum, Moscow"
 summary: "The former mayor of Bogotá talks to Mihail Veklenko about why surface transport can beat the metro, why parking is not a constitutional right, and how a city should share its most valuable resource — urban space — and what this means for Rostov-on-Don."
 cover: ../../../assets/media/enrique-penalosa/01.jpg
