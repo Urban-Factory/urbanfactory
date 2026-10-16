@@ -13,6 +13,8 @@ results:
   - "TUN Foundation registered in Yerevan (2024)"
   - "Housing programme model: land first, the family builds with its certificate (2025)"
   - "First new settlement in preparation near Yerevan: 10 families, plots of about 500 m² (2026)"
+cover: ../../../assets/projects/tun-foundation/cover.jpg
+coverAlt: "Open grassland with shrubs and trees at the foot of the mountains in Kotayk Province, Armenia"
 featured: false
 order: 13
 ---
