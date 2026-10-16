@@ -32,8 +32,17 @@ const projects = defineCollection({
       videoEn: z.url().optional(),
       // Серия роликов YouTube (lite-embed): id ролика, заголовок, язык видео
       youtube: z
-        .array(z.object({ id: z.string(), title: z.string(), lang: z.enum(['ru', 'en', 'hr']).default('ru') }))
+        .array(
+          z.object({
+            id: z.string(),
+            title: z.string(),
+            lang: z.enum(['ru', 'en', 'hr']).default('ru'),
+            recorded: z.string().optional(), // «2020» или «Opening, 5 March 2020»
+            published: z.string().optional(), // YYYY-MM-DD — uploadDate на YouTube
+          }),
+        )
         .default([]),
+      youtubeAllLangs: z.boolean().default(false), // true — ролики на всех языковых версиях (с пометкой языка)
       featured: z.boolean().default(false),
       order: z.number().default(100),
     }),
@@ -76,6 +85,8 @@ const media = defineCollection({
     urlLabel: z.string().optional(), // подпись ссылки вместо «Original»
     interview: z.string().optional(), // slug интервью с полным текстом на сайте
     video: z.string().optional(), // id ролика YouTube — становится основной ссылкой карточки
+    allLangs: z.boolean().default(false), // видео показывать на всех языковых версиях
+    description: z.string().optional(), // короткое нейтральное описание: факт, цель, результат
     seeAlso: z.object({ project: z.string(), label: z.string() }).optional(), // строка-ссылка на кейс
     series: z.string().optional(), // slug проекта: вывести его серию роликов (поле youtube) сеткой
     verify: z.boolean().default(false), // ссылку нужно проверить перед публикацией

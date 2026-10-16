@@ -28,8 +28,10 @@ const entries = (await getCollection('media', (m) => m.data.lang === lang)).sort
   sortKey(b.data.date).localeCompare(sortKey(a.data.date)),
 );
 // Видео не переводим: ролики показываем только в версии сайта на языке ролика
-const seriesBySlug = new Map((await getProjects(lang)).map((p) => [p.data.slug, p.data.youtube.filter((v) => v.lang === lang)]));
-const showVideo = (e: CollectionEntry<'media'>) => Boolean(e.data.video) && e.data.originalLang === lang;
+const seriesBySlug = new Map(
+  (await getProjects(lang)).map((p) => [p.data.slug, p.data.youtubeAllLangs ? p.data.youtube : p.data.youtube.filter((v) => v.lang === lang)]),
+);
+const showVideo = (e: CollectionEntry<'media'>) => Boolean(e.data.video) && (e.data.allLangs || e.data.originalLang === lang);
 const interviews = new Map(
   (await getCollection('interviews', (m) => m.data.lang === lang)).map((i) => [i.data.slug, i]),
 );
@@ -53,7 +55,7 @@ function card(e: CollectionEntry<'media'>) {
     coverAlt: iv?.data.coverAlt ?? '',
     href: iv ? localePath(lang, `/media/${iv.data.slug}/`) : e.data.video ? `https://www.youtube.com/watch?v=${e.data.video}` : e.data.url,
     internal: Boolean(iv),
-    video: iv || e.data.originalLang !== lang ? undefined : e.data.video,
+    video: iv || !showVideo(e) ? undefined : e.data.video,
   };
 }
 ---
@@ -103,7 +105,7 @@ function card(e: CollectionEntry<'media'>) {
                         <ol class="mt-6 grid gap-x-6 gap-y-8 sm:grid-cols-2 lg:grid-cols-4">
                           {series.map((v, n) => (
                             <li>
-                              <LiteYouTube id={v.id} title={`${n + 1}. ${v.title}`} lang={lang} videoLang={v.lang} />
+                              <LiteYouTube id={v.id} title={`${n + 1}. ${v.title}`} lang={lang} videoLang={v.lang} recorded={v.recorded} published={v.published} />
                             </li>
                           ))}
                         </ol>
@@ -159,6 +161,9 @@ function card(e: CollectionEntry<'media'>) {
                           {e.data.outlet}
                           <span class="mx-2 inline-block border border-ink/30 px-1.5 text-xs leading-5 font-semibold">{t(`media.lang.${e.data.originalLang}`)}</span>
                           {e.data.role}
+                          {c.video && e.data.originalLang !== lang && e.data.originalLang !== 'pt' && (
+                            <span class="font-semibold"> · {t(`video.in.${e.data.originalLang}`)}</span>
+                          )}
                         </p>
                         <div class="relative z-10 mt-auto flex flex-wrap gap-x-6 gap-y-2 pt-5 text-sm">
                           {c.internal && <span class="link-arrow" aria-hidden="true">{t('media.read')}</span>}
@@ -195,6 +200,7 @@ function card(e: CollectionEntry<'media'>) {
                           e.data.title
                         )}
                       </h3>
+                      {e.data.description && <p class="mt-2 max-w-prose text-ink/85">{e.data.description}</p>}
                       <p class="mt-2 text-sm text-ink/80">
                         {e.data.outlet}
                         <span class="mx-2 inline-block border border-ink/30 px-1.5 text-xs leading-5 font-semibold">{t(`media.lang.${e.data.originalLang}`)}</span>

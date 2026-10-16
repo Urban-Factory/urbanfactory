@@ -30,7 +30,7 @@ order: 11
 
 ## Challenge
 
-The centre of Rostov-on-Don has many small vacant plots — often 200–800 m² — left after old houses were demolished. They sit empty and fenced off. At the same time, the quality of public space was one of the first issues that brought our team and the Urban Festival together.
+The centre of Rostov-on-Don has many small vacant plots left after old houses were demolished. They sit empty and fenced off. At the same time, the quality of public space was one of the first issues that brought our team and the Urban Festival together.
 
 The question was simple: can these gaps become small, useful parks, made with the people who live around them?
 

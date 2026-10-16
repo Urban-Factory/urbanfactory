@@ -11,7 +11,7 @@ role: "Participatory design, concept, feasibility study"
 summary: "A 3.1 ha boulevard designed together with residents, from first workshops to a complete design package handed over to the city."
 results:
   - "3.1 ha of public space designed with residents"
-  - "All four project stages delivered"
+  - "All four contracts delivered in full"
   - "Maps of how different local communities use the area"
   - "Complete design package handed over to the city"
 cover: ../../../assets/projects/kolesnikov-boulevard/cover.jpg
@@ -37,7 +37,7 @@ The boulevard covers 3.1 ha. The task was to turn it into a place that different
 
 ## What we did
 
-The work ran from November 2018 to March 2019 in four stages:
+The work ran from November 2018 to March 2019 under four contracts:
 
 1. **Data and analysis.** We collected source data and studied the site.
 2. **Participatory design.** A public workshop in February 2019 and a walk around the site with residents. We mapped how different communities use the area: garage owners, young mothers, anglers, children, young people, older residents and sports groups.
@@ -48,11 +48,11 @@ We also wrote an open letter to local entrepreneurs and collected letters of sup
 
 ## Result
 
-All four stages were delivered in full. The city received a complete design package: analysis, community maps, concept, visualisations and a feasibility study.
+All four contracts were delivered in full. The city received a complete design package: analysis, community maps, concept, visualisations and a feasibility study.
 
 The design package stays with the city as a ready basis for future work on the boulevard.
 
 ## Numbers
 
 - 3.1 ha of public space
-- 4 project stages, all delivered
+- 4 contracts, all delivered

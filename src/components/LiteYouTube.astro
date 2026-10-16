@@ -3,17 +3,26 @@
  * Лёгкое видео YouTube: превью-картинка и кнопка; iframe (youtube-nocookie.com)
  * создаётся только по клику. Без JS — обычная ссылка на YouTube.
  */
-import { useTranslations, type Lang } from '../i18n/ui';
+import { languages, useTranslations, type Lang } from '../i18n/ui';
 
 interface Props {
   id: string;
   title: string;
   lang: Lang;
   videoLang?: 'ru' | 'en' | 'hr';
+  recorded?: string; // «2020» или «Opening, 5 March 2020»
+  published?: string; // YYYY-MM-DD
   class?: string;
 }
-const { id, title, lang, videoLang, class: cls } = Astro.props;
+const { id, title, lang, videoLang, recorded, published, class: cls } = Astro.props;
 const t = useTranslations(lang);
+// Пометка языка — только если язык ролика отличается от языка страницы
+const langNote = videoLang && videoLang !== lang ? t(`video.in.${videoLang}`) : undefined;
+const pub = published
+  ? new Intl.DateTimeFormat(lang === 'en' ? 'en-GB' : languages[lang].htmlLang, { day: 'numeric', month: 'short', year: 'numeric' }).format(new Date(published))
+  : undefined;
+const rec = recorded && (/^\d{4}$/.test(recorded) ? `${t('video.recorded')} ${recorded}` : recorded);
+const meta = [rec, pub && `${t('video.published')} ${pub}`].filter(Boolean).join(' · ');
 const watch = `https://www.youtube.com/watch?v=${id}`;
 ---
 
@@ -42,9 +51,15 @@ const watch = `https://www.youtube.com/watch?v=${id}`;
     </span>
     <span class="sr-only">{t('video.play')}: {title}</span>
   </a>
-  <figcaption class="mt-3 flex items-start gap-2 text-sm">
-    {videoLang && <span class="inline-block shrink-0 border border-ink/30 px-1.5 text-xs leading-5 font-semibold">{t(`media.lang.${videoLang}`)}</span>}
-    <span>{title}</span>
+  <figcaption class="mt-3 text-sm">
+    <span class="block">{title}</span>
+    {(meta || langNote) && (
+      <span class="mt-1 block text-xs text-muted">
+        {meta}
+        {meta && langNote && ' · '}
+        {langNote && <span class="font-semibold text-ink/80">{langNote}</span>}
+      </span>
+    )}
   </figcaption>
 </figure>
 

@@ -143,6 +143,11 @@ const en = {
   'project.video': 'Video',
   'project.videoSeries': 'Video interviews',
   'video.play': 'Play video',
+  'video.in.ru': 'Video in Russian',
+  'video.in.en': 'Video in English',
+  'video.in.hr': 'Video in Croatian',
+  'video.recorded': 'Recorded',
+  'video.published': 'Published',
   'media.watch': 'Watch the video',
 
   'media.title': 'Media',
@@ -174,7 +179,9 @@ export type UIKey = keyof typeof en;
 
 export const ui: Record<Lang, Partial<Record<UIKey, string>>> = {
   en,
-  hr: {},
+  hr: {
+    'video.in.ru': 'Video na ruskom',
+  },
   ru: {},
 };
 
