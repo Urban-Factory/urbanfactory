@@ -25,7 +25,8 @@ export interface PageCopy {
     founder: { name: string; role: string; bio: string[]; expertise: string[]; experience: string[]; education: string[]; projects: string[] };
     pastTitle: string;
     pastText: string;
-    past: { project: string; people: { name: string; role: string }[] }[];
+    // teamPage: false — показывать только на странице проекта, не в «Project teams» на странице Team
+    past: { project: string; teamPage?: boolean; people: { name: string; role: string }[] }[];
   };
   contact: { title: string; lead: string };
 }
@@ -156,7 +157,7 @@ const en: PageCopy = {
         'The University of Manchester (programme delivered with the Moscow School of Social and Economic Sciences) — Postgraduate Diploma in Urban Studies, 2013–2015 (awarded Oct 2015)',
         'Don State Technical University, Rostov-on-Don — Specialist degree in International Economic Relations, 2002–2007',
       ],
-      projects: ['rostov-tram', 'cycling-rostov-on-don', 'zverevo-strategy-2030', 'temernik-river-park', 'urban-festival-rostov', 'great-rostov', 'urban-thinkers-campus-recife', 'rostov-300'],
+      projects: ['tun-foundation', 'rostov-tram', 'cycling-rostov-on-don', 'zverevo-strategy-2030', 'temernik-river-park', 'urban-festival-rostov', 'great-rostov', 'urban-thinkers-campus-recife', 'rostov-300'],
     },
     pastTitle: 'Project teams',
     pastText: 'For every project we build a team around the task: Mihail Veklenko together with the experts, partners and colleagues who joined him.',
@@ -255,6 +256,13 @@ const en: PageCopy = {
           { name: 'Grisha Krasnov', role: 'Video' },
           { name: 'Daria Solovyova', role: 'PR' },
           { name: 'Alexey Solovyov', role: 'SMM' },
+        ],
+      },
+      {
+        project: 'tun-foundation',
+        teamPage: false,
+        people: [
+          { name: 'Mihail Veklenko', role: 'Initiator and founder; urban planner of the housing programme' },
         ],
       },
       {

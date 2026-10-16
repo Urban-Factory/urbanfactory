@@ -100,7 +100,7 @@ const en = {
 
   'projects.meta.description':
     'Projects by Urban Factory: tram and cycling concepts, city strategies, parks, boulevards, festivals and international exchange.',
-  'projects.lead': 'Eleven projects since 2013 — from first festivals to city-wide programmes.',
+  'projects.lead': 'Twelve projects since 2013 — from first festivals to city-wide programmes.',
   'projects.filter.label': 'Filter by direction',
   'projects.filter.all': 'All',
   'projects.empty': 'No projects in this direction yet.',

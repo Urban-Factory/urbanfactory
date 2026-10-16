@@ -100,7 +100,7 @@ const led = f.projects.map((s) => bySlug.get(s)).filter((p) => p !== undefined);
       <p class="mt-4 max-w-2xl text-lead text-ink/85">{c.pastText}</p>
       <div class="mt-12 divide-y divide-line border-y border-line">
         {
-          c.past.map((group) => {
+          c.past.filter((g) => g.teamPage !== false).map((group) => {
             const p = bySlug.get(group.project);
             return p ? (
               <section class="grid gap-4 py-8 md:grid-cols-12 md:gap-8">
