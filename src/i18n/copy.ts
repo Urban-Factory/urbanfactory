@@ -159,8 +159,8 @@ const en: PageCopy = {
       ],
       projects: ['rostov-tram', 'cycling-rostov-on-don', 'zverevo-strategy-2030', 'temernik-river-park', 'urban-festival-rostov', 'great-rostov', 'urban-thinkers-campus-recife', 'rostov-300'],
     },
-    pastTitle: 'People who worked with us',
-    pastText: 'Experts and colleagues who took part in our past projects.',
+    pastTitle: 'Project teams',
+    pastText: 'For every project we build a team around the task: Mihail Veklenko together with the experts, partners and colleagues who joined him.',
     past: [
       {
         project: 'rostov-tram',

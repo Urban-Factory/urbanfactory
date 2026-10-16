@@ -132,7 +132,7 @@ const en = {
   'team.projectsLed': 'Projects led',
   'team.experience': 'Experience',
   'team.education': 'Education',
-  'project.people': 'People',
+  'project.people': 'Project team',
   'project.media': 'Interviews',
   'project.mediaInput': 'became an input to this project',
   'project.mediaPrefix': 'Interview with',
