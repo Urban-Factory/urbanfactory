@@ -6,12 +6,14 @@
 - [x] Этап 1 — аудит (29.09.2026): `C:\projects\Urban Factory\00_admin\site_stage1_audit.md`.
 - [x] Этап 2 — каркас (16.10.2026): Astro 7 + Tailwind 4, графика, i18n, дизайн-система, шапка/футер, главная EN, деплой в GitHub Pages (Actions зелёный, https://urban-factory.github.io/urbanfactory/en/). **Ждёт утверждения стиля.**
 - [x] Этап 3 — все страницы и кейсы EN (16.10.2026): Services, Agency, Projects (фильтр), 13 кейсов, Team, Contact. **Ждёт «ок».**
-- [ ] Этап 4 — HR и RU.
+- [x] Этап 4 — HR и RU (17.10.2026): все страницы, 12 кейсов, Media, интервью (HR — перевод с русского оригинала), переключатель языков активен. **Ждёт вычитки Михаила.**
 - [ ] Этап 5 — SEO, изображения, Lighthouse, 404.
 - [ ] Этап 6 — домен и DNS.
 - [ ] Этап 7 — README.
 
 ## Как устроено (этап 2)
+- Переводы (этап 4): строки интерфейса — src/i18n/ui.ts (en/hr/ru); тексты страниц — copy.ts (EN), copy.hr.ts, copy.ru.ts; кейсы — src/content/projects/<lang>/; Media — src/content/media/<lang>/; интервью — src/content/interviews/<lang>/. Глоссарий переводчика — в чате/скретчпаде (термины, имена, топонимы).
+- Документы для вычитки: `npm run translations:export` → translations-review/UrbanFactory-texts-HR.docx и …-RU.docx (папка в .gitignore). Таблица «ID · English · перевод»; правки присылать по ID.
 - `src/i18n/ui.ts` — все строки интерфейса; `published` — какие языки генерируются (сейчас только `en`; HR/RU в шапке показаны неактивными).
 - `src/pages/[lang]/index.astro` — главная; `src/pages/index.astro` — редирект `/` → `/en/`.
 - `src/content.config.ts` — коллекция `projects` (`src/content/projects/<lang>/<slug>.md`), шаблон `src/content/project.template.md`.
@@ -68,6 +70,7 @@
 - На главной 6 featured: Rostov Tram, I Bike RnD, Zverevo 2030, Kolesnikov Boulevard, Temernik, Urban Festival. Цифры (главная и «Агентство»): 2013, 12 проектов, 3,1 га, 119 км.
 
 ## Открытые вопросы (ждут Михаила)
+- Вычитка HR/RU по документам. На проверку: транслитерация имён (HR: Natalija Zubarevič, Aleksandr Semjonov, Dmitrij Gusev…; RU: Клементе Коэлью Жуниор, Ренату Линс, Ренату Рапозу, Денизе Моура; фамилии спикеров фестиваля); RU «Урбанистический фестиваль в Ростове» — было ли устоявшееся русское название; «GR» (RU) / «Odnosi s javnom upravom» (HR); «Основатель и генеральный директор».
 - (решено) 4 видео про трамвай — канал Rostov_tram: 22-press, 23-press, 24-press (TV и открытие путей), 25-talks (акция «Некролог ростовскому трамваю»); RU, только в RU-версии.
 - Media, verify: true — проверить ссылки: 10 «What twin cities can do» (Minsk Urban Platform, 01.10.2018); 14 «The Rostov agglomeration needs economies of scale» (Expert South, 15.05.2019); 19 «Tram network modernisation…» (Expert South, 10.10.2021).
 - Rostov 300: фото из Facebook с неизвестными правами не использованы — кейс без обложки. Нужны свои фото.
