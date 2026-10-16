@@ -6,7 +6,7 @@ import { Picture } from 'astro:assets';
 import portrait from '../../assets/team/mihail-veklenko.png';
 import { published, useTranslations, type Lang } from '../../i18n/ui';
 import { getCopy } from '../../i18n/copy';
-import { getProjects } from '../../lib/projects';
+import { byRecency, getProjects } from '../../lib/projects';
 import { localePath } from '../../lib/site';
 
 export function getStaticPaths() {
@@ -19,7 +19,10 @@ const c = getCopy(lang).team;
 const f = c.founder;
 const projects = await getProjects(lang);
 const bySlug = new Map(projects.map((p) => [p.data.slug, p]));
-const led = f.projects.map((s) => bySlug.get(s)).filter((p) => p !== undefined);
+const led = f.projects.map((s) => bySlug.get(s)).filter((p) => p !== undefined).sort(byRecency);
+const groups = c.past
+  .filter((g) => g.teamPage !== false && bySlug.has(g.project))
+  .sort((a, b) => byRecency(bySlug.get(a.project)!, bySlug.get(b.project)!));
 ---
 
 <Base lang={lang} title={`${c.title} — Urban Factory`} description={t('team.meta.description')}>
@@ -100,7 +103,7 @@ const led = f.projects.map((s) => bySlug.get(s)).filter((p) => p !== undefined);
       <p class="mt-4 max-w-2xl text-lead text-ink/85">{c.pastText}</p>
       <div class="mt-12 divide-y divide-line border-y border-line">
         {
-          c.past.filter((g) => g.teamPage !== false).map((group) => {
+          groups.map((group) => {
             const p = bySlug.get(group.project);
             return p ? (
               <section class="grid gap-4 py-8 md:grid-cols-12 md:gap-8">

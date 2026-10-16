@@ -9,7 +9,7 @@ summary: "An evening conversation with the architect of Curitiba in his studio: 
 cover: ../../../assets/media/jaime-lerner/01.jpg
 coverAlt: "The green courtyard of Jaime Lerner's studio in Curitiba at night, with lit glass-walled buildings among trees"
 related: [rostov-tram, great-rostov]
-order: 2
+order: 1
 ---
 
 Jaime Lerner is an architect in the Brazilian city of Curitiba and a living legend for anyone involved in urban planning. In three years, he has done in the city what other mayors take 30 years to do.

@@ -22,6 +22,10 @@
 - Тексты страниц — `src/i18n/copy.ts` (по языку), строки интерфейса — `src/i18n/ui.ts`. Ссылки между кейсами в Markdown — относительные (`../slug/`), чтобы работали с любым base.
 - Деплой: `.github/workflows/deploy.yml` (withastro/action → deploy-pages). До этапа 6 сайт на `https://urban-factory.github.io/urbanfactory/` (`BASE_PATH=/urbanfactory`). На этапе 6 поменять `SITE_URL`/`BASE_PATH` в workflow и добавить `public/CNAME`.
 
+## Правило сортировки (Михаил, 16.10.2026)
+- Везде на сайте сначала самое свежее, дальше по убыванию даты. Проекты — по году окончания, затем по году начала (lib/projects.ts → byRecency; «present» = текущий год); поле order — только при равенстве. Так сортируются: список проектов, избранное на главной, связанные проекты в Услугах, Key projects и Project teams на Team, соседние кейсы. Media — по полю date внутри каждого раздела. Интервью — по order (Lerner 1, Peñalosa 2).
+- Главная → Where we work: Yerevan, Zagreb, Rostov-on-Don, Zverevo, Moscow, Recife (по последней активности), под городом — страна.
+
 ## Правила перевода (Михаил, 16.10.2026) — учитывать на этапе 4
 - Видео не переводим. Ролик показывается только в версии сайта на языке ролика (поле lang у youtube / originalLang у записи media). Все видео Rostov 300 и TEDx — RU → только в /ru/. В коде: фильтр по языку в projects/[slug].astro и media/index.astro.
 - Переводим только контент, который произвёл Михаил: интервью, которые он брал (текстовые — Peñalosa, Lerner — на все языки), и его статьи (Articles by Mihail).

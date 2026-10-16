@@ -1,6 +1,5 @@
 ---
 import { Image } from 'astro:assets';
-import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import Logo from '../../components/Logo.astro';
 import ProjectCard from '../../components/ProjectCard.astro';
@@ -9,6 +8,7 @@ import Protected from '../../components/Protected.astro';
 import CtaBand from '../../components/CtaBand.astro';
 import { published, useTranslations, type Lang } from '../../i18n/ui';
 import { localePath } from '../../lib/site';
+import { getProjects } from '../../lib/projects';
 import hero from '../../assets/home/hero-festival.jpg';
 
 export function getStaticPaths() {
@@ -18,8 +18,8 @@ export function getStaticPaths() {
 const lang = Astro.params.lang as Lang;
 const t = useTranslations(lang);
 
-const all = await getCollection('projects', (p) => p.data.lang === lang);
-const featured = all.filter((p) => p.data.featured).sort((a, b) => a.data.order - b.data.order).slice(0, 6);
+// Сначала самое свежее (правило сайта, см. lib/projects.ts)
+const featured = (await getProjects(lang)).filter((p) => p.data.featured).slice(0, 6);
 // Чередуем ширину карточек: 7/5, 5/7, 7/5
 const spans = ['lg:col-span-7', 'lg:col-span-5', 'lg:col-span-5', 'lg:col-span-7', 'lg:col-span-7', 'lg:col-span-5'];
 
@@ -31,13 +31,15 @@ const directions = [
 
 const steps = ['home.approach.step1', 'home.approach.step2', 'home.approach.step3', 'home.approach.step4', 'home.approach.step5'] as const;
 
-const places: { city: string; note?: 'home.geo.founded' | 'home.geo.hq' }[] = [
-  { city: 'Rostov-on-Don', note: 'home.geo.founded' },
-  { city: 'Zagreb', note: 'home.geo.hq' },
-  { city: 'Zverevo', note: undefined },
-  { city: 'Moscow', note: undefined },
-  { city: 'Recife', note: undefined },
-];
+// Города — от самой свежей активности к более ранней; под городом — страна
+const places = [
+  { city: 'Yerevan', country: 'country.armenia' },
+  { city: 'Zagreb', country: 'country.croatia' },
+  { city: 'Rostov-on-Don', country: 'country.russia' },
+  { city: 'Zverevo', country: 'country.russia' },
+  { city: 'Moscow', country: 'country.russia' },
+  { city: 'Recife', country: 'country.brazil' },
+] as const;
 ---
 
 <Base lang={lang}>
@@ -161,8 +163,8 @@ const places: { city: string; note?: 'home.geo.founded' | 'home.geo.hq' }[] = [
         {
           places.map((p) => (
             <li class="bg-paper p-5">
-              <span class="block font-display text-xl font-bold uppercase md:text-2xl">{p.city}</span>
-              {p.note && <span class="mt-1 block text-sm text-muted">{t(p.note)}</span>}
+              <span class="block font-display text-lg font-bold uppercase sm:text-xl md:text-2xl">{p.city}</span>
+              <span class="mt-1 block text-sm text-muted">{t(p.country)}</span>
             </li>
           ))
         }

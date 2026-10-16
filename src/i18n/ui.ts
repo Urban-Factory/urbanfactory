@@ -82,10 +82,12 @@ const en = {
   'home.geo.eyebrow': 'Where we work',
   'home.geo.title': 'Local roots, international exchange',
   'home.geo.text':
-    'Founded in Rostov-on-Don in 2013, headquartered in Zagreb since 2020, with partners from Recife to Zagreb.',
+    'Founded in Rostov-on-Don in 2013, headquartered in Zagreb since 2020, with projects and partners from Recife to Yerevan.',
 
-  'home.geo.founded': 'Founded in 2013',
-  'home.geo.hq': 'Headquarters since 2020',
+  'country.armenia': 'Armenia',
+  'country.croatia': 'Croatia',
+  'country.russia': 'Russia',
+  'country.brazil': 'Brazil',
 
   'home.cta.title': 'Have a city, a street or a river to work on?',
   'home.cta.text': 'Email is the best way to reach us.',
