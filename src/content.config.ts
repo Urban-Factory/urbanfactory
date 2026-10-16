@@ -77,6 +77,7 @@ const media = defineCollection({
     interview: z.string().optional(), // slug интервью с полным текстом на сайте
     video: z.string().optional(), // id ролика YouTube — становится основной ссылкой карточки
     seeAlso: z.object({ project: z.string(), label: z.string() }).optional(), // строка-ссылка на кейс
+    series: z.string().optional(), // slug проекта: вывести его серию роликов (поле youtube) сеткой
     verify: z.boolean().default(false), // ссылку нужно проверить перед публикацией
   }),
 });

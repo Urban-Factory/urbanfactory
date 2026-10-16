@@ -8,6 +8,7 @@ import Logo from '../../../components/Logo.astro';
 import LiteYouTube from '../../../components/LiteYouTube.astro';
 import { languages, published, useTranslations, type Lang } from '../../../i18n/ui';
 import { localePath } from '../../../lib/site';
+import { getProjects } from '../../../lib/projects';
 
 export function getStaticPaths() {
   return published.map((lang) => ({ params: { lang } }));
@@ -26,6 +27,7 @@ const sortKey = (d: string) => (d + '-00-00').slice(0, 10);
 const entries = (await getCollection('media', (m) => m.data.lang === lang)).sort((a, b) =>
   sortKey(b.data.date).localeCompare(sortKey(a.data.date)),
 );
+const seriesBySlug = new Map((await getProjects(lang)).map((p) => [p.data.slug, p.data.youtube]));
 const interviews = new Map(
   (await getCollection('interviews', (m) => m.data.lang === lang)).map((i) => [i.data.slug, i]),
 );
@@ -77,8 +79,34 @@ function card(e: CollectionEntry<'media'>) {
             <h2 id={`${s}-title`} class="border-t-4 border-ink pt-6 text-h2">{t(`media.section.${s}`)}</h2>
 
             {s === 'interviews' ? (
-              <ul class="mt-10 grid gap-14 md:grid-cols-2 md:gap-x-8 lg:grid-cols-3">
+              <ul class="mt-10 grid gap-14 md:grid-cols-2 md:gap-x-8">
                 {list.map((e, i) => {
+                  const series = e.data.series ? seriesBySlug.get(e.data.series) ?? [] : [];
+                  if (series.length > 0)
+                    return (
+                      <li class="md:col-span-2">
+                        <div class="flex flex-wrap items-baseline justify-between gap-x-8 gap-y-2">
+                          <h3 class="text-2xl leading-[1.05] md:text-3xl">{e.data.title}</h3>
+                          <p class="text-sm text-ink/80">
+                            {e.data.outlet}
+                            <span class="mx-2 inline-block border border-ink/30 px-1.5 text-xs leading-5 font-semibold">{t(`media.lang.${e.data.originalLang}`)}</span>
+                            {e.data.role}
+                          </p>
+                        </div>
+                        <ol class="mt-6 grid gap-x-6 gap-y-8 sm:grid-cols-2 lg:grid-cols-4">
+                          {series.map((v, n) => (
+                            <li>
+                              <LiteYouTube id={v.id} title={`${n + 1}. ${v.title}`} lang={lang} videoLang={v.lang} />
+                            </li>
+                          ))}
+                        </ol>
+                        {e.data.seeAlso && (
+                          <a href={localePath(lang, `/projects/${e.data.seeAlso.project}/`)} class="link-arrow mt-6 text-sm font-bold text-red">
+                            {e.data.seeAlso.label}
+                          </a>
+                        )}
+                      </li>
+                    );
                   const c = card(e);
                   return (
                     <li>
