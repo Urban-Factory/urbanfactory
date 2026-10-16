@@ -30,6 +30,10 @@ const projects = defineCollection({
       // Видео (YouTube и т.п.): блок на странице кейса появляется, только если поле заполнено
       videoRu: z.url().optional(),
       videoEn: z.url().optional(),
+      // Серия роликов YouTube (lite-embed): id ролика, заголовок, язык видео
+      youtube: z
+        .array(z.object({ id: z.string(), title: z.string(), lang: z.enum(['ru', 'en', 'hr']).default('ru') }))
+        .default([]),
       featured: z.boolean().default(false),
       order: z.number().default(100),
     }),
@@ -69,8 +73,10 @@ const media = defineCollection({
     originalLang: z.enum(['ru', 'en', 'hr', 'pt']),
     role: z.string(),
     url: z.url().optional(), // внешняя ссылка
+    urlLabel: z.string().optional(), // подпись ссылки вместо «Original»
     interview: z.string().optional(), // slug интервью с полным текстом на сайте
-    video: z.url().optional(), // на будущее
+    video: z.string().optional(), // id ролика YouTube — становится основной ссылкой карточки
+    seeAlso: z.object({ project: z.string(), label: z.string() }).optional(), // строка-ссылка на кейс
     verify: z.boolean().default(false), // ссылку нужно проверить перед публикацией
   }),
 });

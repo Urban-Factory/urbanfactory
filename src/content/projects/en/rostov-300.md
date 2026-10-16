@@ -12,6 +12,43 @@ results:
   - "Expert platform launched at the Don State Public Library"
   - "Programme of 8 themed discussions"
   - "12 video interviews on YouTube, about 10,500 views"
+youtube:
+  - id: "e_133Y1FtFg"
+    title: "Mihail Veklenko, introduction"
+    lang: ru
+  - id: "K5Qs_nt_sIQ"
+    title: "Natalia Zubarevich: development paths for Rostov-on-Don"
+    lang: ru
+  - id: "W0Mn3RPZXro"
+    title: "Sergey Alekseev: historic foundation, compact diverse city"
+    lang: ru
+  - id: "CT7QwhBfeqQ"
+    title: "Artur Tokarev: what to do with historic buildings"
+    lang: ru
+  - id: "tVI6793pFIs"
+    title: "Alexander Semenov: transport system, is there an alternative to the metro?"
+    lang: ru
+  - id: "6Q17q8sK7ZE"
+    title: "Sergey Trukhachev: moving industry out, traffic flows, housing renewal"
+    lang: ru
+  - id: "GciYjM6lzqw"
+    title: "Alexey Karachinsky: Rostov-on-Temernik, criteria of a comfortable city"
+    lang: ru
+  - id: "3uJYVGEe9eQ"
+    title: "Dmitry Gusev: cycling in Rostov, infrastructure, economy"
+    lang: ru
+  - id: "axoWdCL9rpU"
+    title: "Viktor Pivtorypavlo: Rostov musicians of the 90s, creative people"
+    lang: ru
+  - id: "UYTufN9Af7U"
+    title: "Rostov 300 team: sociology of the city"
+    lang: ru
+  - id: "TS1GVhs7p4M"
+    title: "Nikolay Pryanishnikov: Rostov as a future centre of constructive urbanism"
+    lang: ru
+  - id: "XoG1hZO08EU"
+    title: "Natalia Belyakova: the brand of Rostov-on-Don and the region"
+    lang: ru
 featured: false
 order: 10
 ---

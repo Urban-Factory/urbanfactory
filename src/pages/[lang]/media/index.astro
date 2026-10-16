@@ -5,6 +5,7 @@ import Base from '../../../layouts/Base.astro';
 import PageHeader from '../../../components/PageHeader.astro';
 import CtaBand from '../../../components/CtaBand.astro';
 import Logo from '../../../components/Logo.astro';
+import LiteYouTube from '../../../components/LiteYouTube.astro';
 import { languages, published, useTranslations, type Lang } from '../../../i18n/ui';
 import { localePath } from '../../../lib/site';
 
@@ -46,8 +47,9 @@ function card(e: CollectionEntry<'media'>) {
     meta: iv ? `${iv.data.date} · ${iv.data.place}` : formatDate(e.data.date),
     cover: iv?.data.cover,
     coverAlt: iv?.data.coverAlt ?? '',
-    href: iv ? localePath(lang, `/media/${iv.data.slug}/`) : e.data.url,
+    href: iv ? localePath(lang, `/media/${iv.data.slug}/`) : e.data.video ? `https://www.youtube.com/watch?v=${e.data.video}` : e.data.url,
     internal: Boolean(iv),
+    video: iv ? undefined : e.data.video,
   };
 }
 ---
@@ -81,6 +83,9 @@ function card(e: CollectionEntry<'media'>) {
                   return (
                     <li>
                       <article class="group relative flex h-full flex-col">
+                        {c.video ? (
+                          <LiteYouTube id={c.video} title={c.title} lang={lang} videoLang={e.data.originalLang === 'pt' ? undefined : e.data.originalLang} class="relative z-10 [&_a]:aspect-[4/3] [&_figcaption]:hidden" />
+                        ) : (
                         <div class="aspect-[4/3] overflow-hidden bg-surface">
                           {c.cover ? (
                             <Image
@@ -97,6 +102,7 @@ function card(e: CollectionEntry<'media'>) {
                             </div>
                           )}
                         </div>
+                        )}
                         <p class="mt-5 eyebrow text-red">{c.meta}</p>
                         <h3 class="mt-3 text-2xl leading-[1.05] md:text-3xl">
                           {c.href ? (
@@ -121,12 +127,18 @@ function card(e: CollectionEntry<'media'>) {
                         </p>
                         <div class="relative z-10 mt-auto flex flex-wrap gap-x-6 gap-y-2 pt-5 text-sm">
                           {c.internal && <span class="link-arrow" aria-hidden="true">{t('media.read')}</span>}
+                          {c.video && <span class="link-arrow" aria-hidden="true">{t('media.watch')}</span>}
                           {e.data.url && (
                             <a href={e.data.url} target="_blank" rel="noopener" class="underline underline-offset-4 hover:text-red">
-                              {t('media.original')} ↗<span class="sr-only"> ({t('media.newWindow')})</span>
+                              {e.data.urlLabel ?? t('media.original')} ↗<span class="sr-only"> ({t('media.newWindow')})</span>
                             </a>
                           )}
                         </div>
+                        {e.data.seeAlso && (
+                          <a href={localePath(lang, `/projects/${e.data.seeAlso.project}/`)} class="link-arrow relative z-10 mt-3 text-sm font-bold text-red">
+                            {e.data.seeAlso.label}
+                          </a>
+                        )}
                       </article>
                     </li>
                   );

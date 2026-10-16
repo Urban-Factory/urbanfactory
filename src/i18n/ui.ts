@@ -138,6 +138,9 @@ const en = {
   'project.videoRu': 'Video (Russian)',
   'project.videoEn': 'Video (English)',
   'project.video': 'Video',
+  'project.videoSeries': 'Video interviews',
+  'video.play': 'Play video',
+  'media.watch': 'Watch the video',
 
   'media.title': 'Media',
   'media.lead': 'Interviews, articles, talks and press coverage — Mihail Veklenko and Urban Factory in the media.',

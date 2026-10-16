@@ -4,6 +4,7 @@ import { getCollection, render } from 'astro:content';
 import Base from '../../../layouts/Base.astro';
 import CategoryTag from '../../../components/CategoryTag.astro';
 import CtaBand from '../../../components/CtaBand.astro';
+import LiteYouTube from '../../../components/LiteYouTube.astro';
 import { published, useTranslations, type Lang } from '../../../i18n/ui';
 import { getProjects, type Project } from '../../../lib/projects';
 import { localePath } from '../../../lib/site';
@@ -166,6 +167,21 @@ const facts = [
               </li>
             ))}
           </ul>
+        </section>
+      )
+    }
+
+    {
+      p.youtube.length > 0 && (
+        <section class="wrap pb-section" aria-labelledby="series-title">
+          <h2 id="series-title" class="eyebrow text-muted">{t('project.videoSeries')}</h2>
+          <ol class="mt-6 grid gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
+            {p.youtube.map((v, i) => (
+              <li>
+                <LiteYouTube id={v.id} title={`${i + 1}. ${v.title}`} lang={lang} videoLang={v.lang} />
+              </li>
+            ))}
+          </ol>
         </section>
       )
     }

@@ -1,0 +1,65 @@
+---
+/**
+ * Лёгкое видео YouTube: превью-картинка и кнопка; iframe (youtube-nocookie.com)
+ * создаётся только по клику. Без JS — обычная ссылка на YouTube.
+ */
+import { useTranslations, type Lang } from '../i18n/ui';
+
+interface Props {
+  id: string;
+  title: string;
+  lang: Lang;
+  videoLang?: 'ru' | 'en' | 'hr';
+  class?: string;
+}
+const { id, title, lang, videoLang, class: cls } = Astro.props;
+const t = useTranslations(lang);
+const watch = `https://www.youtube.com/watch?v=${id}`;
+---
+
+<figure class={cls}>
+  <a
+    href={watch}
+    target="_blank"
+    rel="noopener"
+    data-lite-yt={id}
+    data-title={title}
+    class="group relative block aspect-video overflow-hidden bg-ink"
+  >
+    <img
+      src={`https://i.ytimg.com/vi/${id}/hqdefault.jpg`}
+      alt=""
+      loading="lazy"
+      decoding="async"
+      width="480"
+      height="360"
+      class="h-full w-full object-cover opacity-90 transition-opacity group-hover:opacity-100"
+    />
+    <span class="absolute inset-0 flex items-center justify-center" aria-hidden="true">
+      <span class="flex h-14 w-20 items-center justify-center bg-red transition-transform group-hover:scale-110 motion-reduce:transition-none">
+        <svg width="22" height="24" viewBox="0 0 22 24" fill="#fff"><path d="M0 0v24l22-12z"></path></svg>
+      </span>
+    </span>
+    <span class="sr-only">{t('video.play')}: {title}</span>
+  </a>
+  <figcaption class="mt-3 flex items-start gap-2 text-sm">
+    {videoLang && <span class="inline-block shrink-0 border border-ink/30 px-1.5 text-xs leading-5 font-semibold">{t(`media.lang.${videoLang}`)}</span>}
+    <span>{title}</span>
+  </figcaption>
+</figure>
+
+<script>
+  document.querySelectorAll<HTMLAnchorElement>('a[data-lite-yt]').forEach((a) => {
+    a.addEventListener('click', (e) => {
+      e.preventDefault();
+      const iframe = document.createElement('iframe');
+      iframe.src = `https://www.youtube-nocookie.com/embed/${a.dataset.liteYt}?autoplay=1&rel=0`;
+      iframe.title = a.dataset.title ?? '';
+      iframe.allow = 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen';
+      iframe.allowFullscreen = true;
+      iframe.className = 'aspect-video w-full bg-ink';
+      a.replaceWith(iframe);
+      iframe.focus();
+    });
+  });
+</script>
