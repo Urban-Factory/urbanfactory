@@ -97,7 +97,7 @@ const en: PageCopy = {
       {
         year: 'Today',
         title: 'Working from Zagreb',
-        text: 'Urban Factory by MAVEK design works from Zagreb on strategy, mobility, public space and architectural concepts with partners across Europe and beyond.',
+        text: 'Urban Factory by MAVEK design works from Zagreb on urban strategy, mobility and public space with partners across Europe and beyond.',
       },
     ],
     approach: [
@@ -134,7 +134,7 @@ const en: PageCopy = {
       role: 'Founder & CEO',
       bio: [
         'Mihail founded Urban Factory in Rostov-on-Don in 2013, after more than a decade in real estate and development.',
-        'He initiated and led the agency’s key projects: the tram network concept for Rostov-on-Don, the cycling programme for Rostov-on-Don, the Zverevo Development Strategy 2030, the Temernik River Park and the Urban Festival where Urban Factory was born.',
+        'He initiated and led the agency’s key transport and planning projects — the Rostov tram network concept, the cycling programme for Rostov-on-Don, the Great Rostov agglomeration rail concept and the Zverevo Development Strategy 2030 — and co-founded ANO Park Temernik and the Urban Festival where Urban Factory was born.',
         'He holds a Postgraduate Diploma in Urban Studies from The University of Manchester (joint programme with MSSES) and is a postgraduate student in urban transport at the Faculty of Transport and Traffic Sciences in Zagreb.',
         'Since 2020 he has led the agency from Zagreb, Croatia.',
       ],
@@ -220,7 +220,7 @@ const en: PageCopy = {
           { name: 'Diana Karnaukhova', role: 'Co-founder and organiser' },
           { name: 'Alexey Karachinsky', role: 'Co-founder and organiser' },
           { name: 'Mariya Iskrennikova', role: '“Botaniki” — festival in the Botanical Garden, 2013' },
-          { name: 'Sviatoslav Murunov', role: 'Center for Applied Urbanism — lecturer, 2014' },
+          { name: 'Sviatoslav Murunov', role: 'Centre for Applied Urbanism — lecturer, 2014' },
           { name: 'Marina Khrustaleva', role: 'Arkhnadzor — lecturer, 2014' },
           { name: 'Daria Zueva', role: 'Lecturer, 2014' },
         ],
