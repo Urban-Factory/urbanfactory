@@ -27,7 +27,7 @@
   --text-lead--line-height: 1.5;
 
   --spacing-gutter: clamp(1rem, 0.5rem + 2.5vw, 3rem);
-  --spacing-section: clamp(4rem, 2.5rem + 6vw, 9rem);
+  --spacing-section: clamp(3.5rem, 2.5rem + 3.5vw, 6.5rem);
   --container-site: 90rem;
 
   --ease-out: cubic-bezier(0.22, 1, 0.36, 1);

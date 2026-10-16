@@ -74,8 +74,9 @@ const en = {
 
   'home.numbers.eyebrow': 'In numbers',
   'home.num.founded': 'founded in Rostov-on-Don',
-  'home.num.projects': 'projects on this site',
+  'home.num.projects': 'published projects',
   'home.num.area': 'hectares of public space designed with residents',
+  'home.num.cycle': 'km of cycle lanes in Rostov-on-Don today — a network that grew from our research',
   'home.num.tram': 'km city tram programme our network concept fed into',
 
   'home.geo.eyebrow': 'Where we work',

@@ -65,7 +65,6 @@ const en: PageCopy = {
           'Parks, rivers and waterfronts',
           'Modular and temporary installations',
           'Participatory design',
-          'Architectural concepts',
         ],
       },
     },
@@ -103,9 +102,9 @@ const en: PageCopy = {
     approach: [
       { title: 'Research', text: 'We start with the city as it is: data, history, people and the real resources at hand.' },
       { title: 'Concept', text: 'A clear idea that can be explained on one page and defended in any room.' },
-      { title: 'Public support (when needed)', text: 'When a project needs it, festivals, forums, workshops and media turn a concept into a shared goal.' },
+      { title: 'Public support (when needed)', text: 'Festivals, forums, workshops and media turn a concept into a goal the city shares.' },
       { title: 'Development', text: 'We develop the project in detail — design, documentation and the briefs for competitions and tenders — so it survives the hand-over.' },
-      { title: 'Implementation', text: 'We stay with the project through design and construction for as long as we are needed.' },
+      { title: 'Implementation', text: 'We stay with the project through construction and launch, for as long as we are needed.' },
     ],
     principles: [
       {
@@ -256,6 +255,12 @@ const en: PageCopy = {
           { name: 'Grisha Krasnov', role: 'Video' },
           { name: 'Daria Solovyova', role: 'PR' },
           { name: 'Alexey Solovyov', role: 'SMM' },
+        ],
+      },
+      {
+        project: 'urban-islands',
+        people: [
+          { name: 'Mihail Veklenko', role: 'Project manager; government relations — work with the municipality' },
         ],
       },
       {
