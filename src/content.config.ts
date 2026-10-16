@@ -35,9 +35,10 @@ const projects = defineCollection({
     }),
 });
 
-// Интервью и публикации: src/content/media/<lang>/<slug>.md
-const media = defineCollection({
-  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/media', generateId: byPath }),
+// Интервью с полным текстом (страницы /media/<slug>/): src/content/interviews/<lang>/<slug>.md
+// Текст интервью — опубликованный ранее, не редактировать; правятся только описания людей.
+const interviews = defineCollection({
+  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/interviews', generateId: byPath }),
   schema: ({ image }) =>
     z.object({
       title: z.string(),
@@ -55,4 +56,23 @@ const media = defineCollection({
     }),
 });
 
-export const collections = { projects, media };
+// Публикации на странице Media (по записи на публикацию): src/content/media/<lang>/<id>.md
+// Заголовок — НАШ нейтральный, оригинальные заголовки не копируем.
+const media = defineCollection({
+  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/media', generateId: byPath }),
+  schema: z.object({
+    title: z.string(),
+    lang: z.enum(['en', 'hr', 'ru']),
+    section: z.enum(['interviews', 'articles', 'talks', 'press']),
+    date: z.string(), // YYYY-MM-DD, YYYY-MM или YYYY
+    outlet: z.string(),
+    originalLang: z.enum(['ru', 'en', 'hr', 'pt']),
+    role: z.string(),
+    url: z.url().optional(), // внешняя ссылка
+    interview: z.string().optional(), // slug интервью с полным текстом на сайте
+    video: z.url().optional(), // на будущее
+    verify: z.boolean().default(false), // ссылку нужно проверить перед публикацией
+  }),
+});
+
+export const collections = { projects, interviews, media };

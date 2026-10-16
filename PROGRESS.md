@@ -23,6 +23,8 @@
 - Деплой: `.github/workflows/deploy.yml` (withastro/action → deploy-pages). До этапа 6 сайт на `https://urban-factory.github.io/urbanfactory/` (`BASE_PATH=/urbanfactory`). На этапе 6 поменять `SITE_URL`/`BASE_PATH` в workflow и добавить `public/CNAME`.
 
 ## Ключевые решения
+- 16.10.2026: Media — 20 публикаций из 01_research/media_publications.md (раздел «Показываем»), коллекция media: src/content/media/<lang>/NN-<section>.md (по записи на публикацию; поля: title — НАШ нейтральный заголовок, section, date, outlet, originalLang, role, url, interview, video, verify). Разделы: Interviews by Mihail · Articles by Mihail · Talks · Press. Интервью с полным текстом — отдельная коллекция interviews (src/content/interviews/<lang>/), страницы /media/<slug>/. TEDx везде: «TEDxBolshayaSadovayaStreet, Rostov-on-Don, 2018».
+- 16.10.2026: ID записей коллекций — путь файла (en/slug), иначе EN и RU с одинаковым slug перезаписывают друг друга (из-за этого пропадало интервью Пеньялосы). Места интервью: «площадка, город, страна» (Moscow Urban Forum, Moscow, Russia; Jaime Lerner Arquitetos Associados studio, Curitiba, Brazil). Пеньялоса — 6 декабря 2013.
 - 16.10.2026: встреча с Лернером — 14 апреля 2016. Тексты интервью — зафиксированные ранее опубликованные тексты: дословно по источникам (RU — опубликованная страница, EN — docx Михаила), НЕ редактировать (исключение, согласовано 16.10.2026: в EN исправлены только артефакты машинного перевода — метки собеседников → «J. L.:»/«M. V.:», имя → Mihail Veklenko). Редактируются только описания людей (разделы About…, title/summary/alt). Фото основателя — src/assets/team/mihail-veklenko.png (astro:assets Picture, AVIF/WebP, фон — токен surface).
 - 16.10.2026 (правки Михаила, роли и факты подтверждены лично — это источник):
   - Цифры «8 forums / 6 festivals / 2 summer schools / 120 students» — НЕ подтверждены, на сайт не выводить. Проектов 12.
@@ -45,6 +47,7 @@
 - На главной 6 featured: Rostov Tram, I Bike RnD, Zverevo 2030, Kolesnikov Boulevard, Temernik, Urban Festival. Цифры (главная и «Агентство»): 2013, 13 проектов, 3,1 га, 119 км, 8 форумов, 6 фестивалей, 2 летние школы, 120 студентов.
 
 ## Открытые вопросы (ждут Михаила)
+- Media, verify: true — проверить ссылки: 10 «What twin cities can do» (Minsk Urban Platform, 01.10.2018); 14 «The Rostov agglomeration needs economies of scale» (Expert South, 15.05.2019); 19 «Tram network modernisation…» (Expert South, 10.10.2021).
 - Rostov 300: фото из Facebook с неизвестными правами не использованы — кейс без обложки. Нужны свои фото.
 - Фото низкого разрешения: Temernik (897px), Gagarin bridge (748–894px), Rivers & cities (~900px), I Bike RnD (1080px).
 - Команда: фото Михаила. В «People who worked with us» — только люди, чья роль описана в кейсах (Monteiro, Botler, Guedes, Karnaukhova, Karachinsky, Kotlyarova, Rud, Protsenko). Sarkisyants, Maranhão, Khrustaleva, Krasnov, Litvinova — не указаны: нет проекта/роли в материалах.

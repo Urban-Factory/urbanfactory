@@ -36,7 +36,7 @@ const t = useTranslations(lang);
 const p = project.data;
 const { Content } = await render(project);
 const people = getCopy(lang).team.past.find((g) => g.project === p.slug)?.people ?? [];
-const interviews = (await getCollection('media', (m) => m.data.lang === lang && m.data.related.includes(p.slug))).sort(
+const interviews = (await getCollection('interviews', (m) => m.data.lang === lang && m.data.related.includes(p.slug))).sort(
   (a, b) => a.data.order - b.data.order,
 );
 const videos = [

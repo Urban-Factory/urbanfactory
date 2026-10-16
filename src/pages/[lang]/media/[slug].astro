@@ -8,12 +8,12 @@ import { getProjects } from '../../../lib/projects';
 import { localePath } from '../../../lib/site';
 
 export async function getStaticPaths() {
-  const items = await getCollection('media', (m) => (published as string[]).includes(m.data.lang));
+  const items = await getCollection('interviews', (m) => (published as string[]).includes(m.data.lang));
   return items.map((item) => ({ params: { lang: item.data.lang, slug: item.data.slug }, props: { item } }));
 }
 
 interface Props {
-  item: CollectionEntry<'media'>;
+  item: CollectionEntry<'interviews'>;
 }
 
 const { item } = Astro.props;
