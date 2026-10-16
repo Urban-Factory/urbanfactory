@@ -74,7 +74,12 @@ function card(e: CollectionEntry<'media'>) {
   <div class="wrap space-y-20 pb-section md:space-y-28">
     {
       sections.map((s) => {
-        const list = entries.filter((e) => e.data.section === s && !(e.data.series && (seriesBySlug.get(e.data.series) ?? []).length === 0));
+        const list = entries.filter(
+          (e) =>
+            e.data.section === s &&
+            !(e.data.series && (seriesBySlug.get(e.data.series) ?? []).length === 0) &&
+            !(e.data.video && !e.data.url && !e.data.interview && !showVideo(e)),
+        );
         if (list.length === 0) return null;
         return (
           <section id={s} class="scroll-mt-24" aria-labelledby={`${s}-title`}>

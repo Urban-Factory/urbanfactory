@@ -55,7 +55,7 @@
 - На главной 6 featured: Rostov Tram, I Bike RnD, Zverevo 2030, Kolesnikov Boulevard, Temernik, Urban Festival. Цифры (главная и «Агентство»): 2013, 13 проектов, 3,1 га, 119 км, 8 форумов, 6 фестивалей, 2 летние школы, 120 студентов.
 
 ## Открытые вопросы (ждут Михаила)
-- 4 видео про трамвай для Media: на канале @urbanfactory.agency их нет (там 12 интервью Rostov 300 + 1 видео «Путешествия»). Нужна ссылка на канал/плейлист.
+- (решено) 4 видео про трамвай — канал Rostov_tram: 22-press, 23-press, 24-press (TV и открытие путей), 25-talks (акция «Некролог ростовскому трамваю»); RU, только в RU-версии.
 - На канале есть 13-е интервью Rostov 300, не вошедшее в список: «Алексан Мкртчян: туристический потенциал и позиционирование Ростова» (sk2xS92M4RA, 51:30). Добавлять?
 - Media, verify: true — проверить ссылки: 10 «What twin cities can do» (Minsk Urban Platform, 01.10.2018); 14 «The Rostov agglomeration needs economies of scale» (Expert South, 15.05.2019); 19 «Tram network modernisation…» (Expert South, 10.10.2021).
 - Rostov 300: фото из Facebook с неизвестными правами не использованы — кейс без обложки. Нужны свои фото.
