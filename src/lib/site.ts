@@ -23,7 +23,7 @@ export const protectedContacts = {
   whatsapp: ['MDc0MDMwNjE5', 'NTgz'],
 } as const;
 
-/** Ссылка с учётом base (до этапа 6 сайт живёт в подпапке /urbanfactory/). */
+/** Ссылка с учётом base (BASE_PATH из workflow; на домене — корень). */
 export function url(path = '/'): string {
   const base = import.meta.env.BASE_URL.replace(/\/$/, '');
   const p = path.startsWith('/') ? path : `/${path}`;
