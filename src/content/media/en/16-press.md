@@ -1,7 +1,7 @@
 ---
 title: "Rostov 300: conversation with economist Natalia Zubarevich"
 lang: en
-section: interviews
+section: press
 date: "2021-03-15"
 outlet: "AiF Rostov"
 originalLang: ru
