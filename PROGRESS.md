@@ -23,6 +23,7 @@
 - Деплой: `.github/workflows/deploy.yml` (withastro/action → deploy-pages). До этапа 6 сайт на `https://urban-factory.github.io/urbanfactory/` (`BASE_PATH=/urbanfactory`). На этапе 6 поменять `SITE_URL`/`BASE_PATH` в workflow и добавить `public/CNAME`.
 
 ## Ключевые решения
+- 16.10.2026: встреча с Лернером — 14 апреля 2016. Тексты интервью — зафиксированные ранее опубликованные тексты: дословно по источникам (RU — опубликованная страница, EN — docx Михаила), НЕ редактировать. Редактируются только описания людей (разделы About…, title/summary/alt). Фото основателя — src/assets/team/mihail-veklenko.png (astro:assets Picture, AVIF/WebP, фон — токен surface).
 - 16.10.2026 (правки Михаила, роли и факты подтверждены лично — это источник):
   - Цифры «8 forums / 6 festivals / 2 summer schools / 120 students» — НЕ подтверждены, на сайт не выводить. Проектов 12.
   - Small Wooden House удалён (не относится к UF).
@@ -44,8 +45,7 @@
 - На главной 6 featured: Rostov Tram, I Bike RnD, Zverevo 2030, Kolesnikov Boulevard, Temernik, Urban Festival. Цифры (главная и «Агентство»): 2013, 13 проектов, 3,1 га, 119 км, 8 форумов, 6 фестивалей, 2 летние школы, 120 студентов.
 
 ## Открытые вопросы (ждут Михаила)
-- Jaime Lerner: на сайте дата «2018», но в тексте интервью первая поездка в Бразилию — апрель 2016 (и другие признаки 2016). Уточнить дату.
-- Jaime Lerner: раздел «About Jaime Lerner» и заголовки разделов написаны нами (в источнике их нет) — проверить.
+- EN-тексты интервью (docx) — сырой машинный перевод, оставлен дословно: метки «Ж. L», «М. W», «Michael/Mikhail Veklenko», «swamped the presidency», «Barso». Исправлять ли эти явные артефакты?
 - Rostov 300: фото из Facebook с неизвестными правами не использованы — кейс без обложки. Нужны свои фото.
 - Фото низкого разрешения: Temernik (897px), Gagarin bridge (748–894px), Rivers & cities (~900px), I Bike RnD (1080px).
 - Команда: фото Михаила. В «People who worked with us» — только люди, чья роль описана в кейсах (Monteiro, Botler, Guedes, Karnaukhova, Karachinsky, Kotlyarova, Rud, Protsenko). Sarkisyants, Maranhão, Khrustaleva, Krasnov, Litvinova — не указаны: нет проекта/роли в материалах.

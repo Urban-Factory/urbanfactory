@@ -127,7 +127,7 @@ const en = {
   'agency.principles': 'Principles',
 
   'team.meta.description': 'Mihail Veklenko, founder and CEO of Urban Factory, and the people who worked with us on past projects.',
-  'team.photo': 'Photo of',
+  'team.photo': 'Portrait of',
   'team.expertise': 'Expertise',
   'team.projectsLed': 'Projects led',
   'team.experience': 'Experience',

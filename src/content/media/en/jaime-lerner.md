@@ -3,7 +3,7 @@ title: "Jaime Lerner: innovation is simply starting"
 slug: jaime-lerner
 lang: en
 person: "Jaime Lerner"
-date: "2018"
+date: "14 April 2016"
 place: "Curitiba, Brazil"
 summary: "An evening conversation with the architect of Curitiba in his studio: the birth of bus rapid transit, living close to work, the courage to start, and why mobility and the economy cannot be separated."
 cover: ../../../assets/media/jaime-lerner/01.jpg
@@ -12,146 +12,140 @@ related: [rostov-tram, great-rostov]
 order: 2
 ---
 
-Jaime Lerner is the architect of the Brazilian city of Curitiba and a living legend for everyone involved in urban planning. In three years he did for the city what takes other mayors thirty. Curitiba is called the "green capital" of Brazil and the "greenest" city in the world, a city without traffic jams, litter or poverty. Urbanist Mihail Veklenko met Jaime Lerner at his studio in Curitiba.
+Jaime Lerner is an architect in the Brazilian city of Curitiba and a living legend for anyone involved in urban planning. In three years, he has done in the city what other mayors take 30 years to do.
 
-![Jaime Lerner, an elderly man with white hair in a black T-shirt, speaking](../../../assets/media/jaime-lerner/02.jpg)
-*Jaime Lerner*
+Curitiba has been called the "green capital" of Brazil and the "greenest" city in the world, with no traffic jams, no rubbish and no poverty.
 
-## A visit to the studio
+Urbanist Michael Veklenko met Jaime Lerner at his workshop in Curitiba.
 
-I first came to Brazil in April 2016, and after São Paulo, the country's economic centre, I was lucky enough to visit the world-famous city of Curitiba — a kind of Mecca for transport planners and for everyone looking for new solutions for urban mobility. A city that has proved true the saying that success is where preparation meets opportunity. In 1971 the architect Jaime Lerner became its mayor. He proposed innovative solutions and, thanks to a favourable political and economic situation, was able to put them into practice.
+The first time I came to Brazil in April 2016, after São Paulo - the economic centre of the country - I was lucky enough to get to the world-famous city of Curitiba. A kind of Mecca of transport workers, all those who are looking for new solutions for urban mobility. A city that has confirmed in life the expression that success is when willingness meets opportunity. In 1971, architect Jaime Lerner became its mayor. He proposed innovative solutions and, thanks to a favourable political and economic situation, was able to realise them.
 
-On my unplanned trip to Curitiba I never even dreamed of meeting Jaime in person, but when friends told me that the legendary architect's studio was just a couple of blocks away, I knew I could not miss the chance. The studio consists of two small buildings on the site of a private house in a low-rise neighbourhood: a green courtyard, two cosy buildings with spacious interiors and the workshop where Lerner's team works. Next to the studio there is a bar where Jaime often unwinds and where he has his own table — one of those amusing city stories. It is not a table set aside for the former mayor and governor: Lerner brought the table to the bar himself, which is why it is always reserved for him.
+On my unplanned trip to Curitiba, I had not even dreamed of meeting Jaime in person, but when I heard from friends that the legendary architect's studio was a couple of blocks away, I realised that I should not miss this opportunity. The studio is two small buildings on the base of a private house, in a neighbourhood with low-rise buildings. A green courtyard and two cosy buildings with spacious interiors and a workshop where the team of architect Lerner works. Incidentally, next to the workshop is a bar where Jaime often relaxes and has his private table. This is one of the fun stories of the city. It's not the table that was allocated to the former mayor and governor, it's a table that Lerner himself brought to the bar, which is why it's always reserved for him.
 
-![Through tall steel-framed windows overgrown with greenery, an architect works at a desk inside the studio](../../../assets/media/jaime-lerner/03.jpg)
-*Jaime Lerner's studio*
+My friend Gabriel called the workshop and arranged a meeting for 6:00 pm that evening. It was raining that evening, we met at home and drove together to Jaime Lerner's office. For about one hour I managed to chat with one of the legendary men of contemporary urbanism.
 
-My friend Gabriel phoned the studio and arranged a meeting for six in the evening. It was raining that evening; we met at his home and drove to Jaime Lerner's office together. For about an hour I was able to talk with one of the legendary figures of modern urbanism.
+Ж. L: Hello!
 
-![The open-plan studio with desks, computers and stacks of papers, surrounded by windows looking out onto trees](../../../assets/media/jaime-lerner/04.jpg)
-*Inside the studio, where Lerner's team works*
+М. W.: Hello!
 
-## São Paulo, Rio and the spread of BRT
+Ж. L: So you work as a planner?
 
-Jaime Lerner: Hello!
+М. V.: Not exactly. I am neither a planner nor an architect; I am an economist by first education, and I continued my studies in urban and territorial management in Moscow at Shaninka under the University of Manchester programme. My main experience is in urbanism; we set up a public organisation called Urban Factory in my hometown and started promoting projects to develop Rostov-on-Don in various areas: transport, architecture, historical heritage, public spaces, development of industrial areas, media projects.
 
-**Mihail Veklenko: Hello!**
+Ж. L.: I have been to Russia many times. In Moscow, Perm, St. Petersburg. I love St. Petersburg very much and I am happy that my trip fell outside the cold season. I had a wonderful time in your country and I plan to visit St Petersburg again. I still travel a lot despite my age. It's not so easy anymore, but I'm not worried about aeroplanes. The problem is not the planes, the problem is the airports. The worst airport in the world is in São Paulo. I don't really have much choice, as I always fly out of São Paulo when I'm travelling. I could use the airport in Rio, but from Curitiba it's easier to fly through São Paulo. It's one big shopping centre, not an airport, there's little space and huge distances. I hate São Paulo.
 
-Jaime Lerner: So, you work as a planner?
+The city used to be a place of the avant-garde, but that time has passed. The problem is that now there is no, shall we say, "intelligent life" there. People don't like their city.
 
-**Mihail Veklenko: Not exactly. I'm neither a planner nor an architect. My first degree is in economics; I then studied urban and regional management in Moscow at the Moscow School of Social and Economic Sciences (Shaninka), on a University of Manchester programme. My main experience is in urbanism: we set up a non-profit organisation, Urban Factory, in my home city and started promoting projects for the development of Rostov-on-Don in various fields — transport, architecture, historical heritage, public spaces, the redevelopment of industrial areas, media projects.**
+М. V.: But São Paulo is not so bad, is it? Sure, it's not as well organised as Curitiba, but still.....
 
-Jaime Lerner: I have been to Russia many times — Moscow, Perm, St Petersburg. I love St Petersburg very much, and I was glad my trip didn't fall in the cold season. I had a wonderful time in your country and I plan to visit St Petersburg again. I still travel a lot, despite my age. It's not so easy any more, but I don't worry about the planes. The problem isn't the planes, it's the airports. The worst airport in the world is in São Paulo. I don't have much choice, because I always fly out of São Paulo when I travel. I could use the airport in Rio, but from Curitiba it's easier to fly via São Paulo. It isn't an airport, it's one big shopping centre: there's little space and the distances are huge. I hate São Paulo.
+Ж. L.: The city used to be a place of the avant-garde, but that time has passed. The problem is that now there is no, shall we say, "intelligent life" there. People don't love their city. At the same time, in Rio people love the city, the taxi drivers there know everything! And in São Paulo, people don't know the city and don't like it. They spend a huge amount of time in traffic jams. Our office is now working on an agglomeration project in Rio. There are twenty-one municipalities in the city, which means a lot of work, paperwork and bureaucracy.
 
-**Mihail Veklenko: But São Paulo isn't that bad, is it? Of course, it isn't as well organised as Curitiba, but still…**
+М. W.: Is this a kind of application of the Curitiba experience or something completely different?
 
-Jaime Lerner: The city used to be a place of the avant-garde, but that time has passed. The problem is that there is no longer, shall we say, an "intelligent life" there. People don't love their city. In Rio, on the other hand, people love the city — the taxi drivers there know everything! In São Paulo people don't know the city and don't love it. They spend an enormous amount of time in traffic jams. Our office is now working on a metropolitan project for Rio. There are twenty-one municipalities in the metropolitan area, which means a lot of work, a lot of paperwork and bureaucracy.
+Ж. L.: It's completely different. I think when we talk about mobility, we refer to Curitiba because it was the first city in the world to implement a bus rapid transit system. Now this system is used in 250 cities around the world. Then this experiment was set up in Bogota, the capital of Colombia, where Mayor Enrique Peñalosa did a very good job. Then the same thing happened in Seoul in Korea, Istanbul in Turkey, Mexico City in Mexico, now Rio, many cities in China and Europe.
 
-**Mihail Veklenko: Is that a kind of application of the Curitiba experience, or something completely different?**
+М. W.: Aren't they trying the same system in São Paulo?
 
-Jaime Lerner: Something completely different. I think that when we talk about mobility, we refer to Curitiba because it was the first city in the world to implement a bus rapid transit system. Today the system is used in 250 cities around the world. The experiment was then repeated in Bogotá, the capital of Colombia, where Mayor Enrique Peñalosa did a very good job. Then the same happened in Seoul in Korea, Istanbul in Turkey, Mexico City in Mexico, and now in Rio and in many cities in China and Europe.
+Ж. L.: In São Paulo they are trying it, but the concept is different. It's the same in the north-east of Brazil, in Recife. If Curitiba has 100% dedicated lanes, buses in both São Paulo and Recife share the road space with cars.
 
-**Mihail Veklenko: Aren't they trying the same system in São Paulo?**
+The problem of São Paulo... you know, this city itself is not that complicated, the problem and the complications are in the minds of the people. Those people who want to "sell" the city, who are involved in real estate, in commerce. If you want to show them a simple idea in São Paulo, they won't accept it. It's bound to be complicated, because it's São Paulo.....
 
-Jaime Lerner: They are trying it in São Paulo, but the concept is different. The same goes for the north-east of Brazil, for Recife. In Curitiba the lanes are 100% dedicated, while in both São Paulo and Recife the buses share the road with cars.
+MV: It sounds like you don't like São Paulo?
 
-The problem with São Paulo… you know, the city itself isn't that complicated; the problem and the complications are in people's heads — the people who want to "sell" the city, who are in real estate and commerce. If you want to show them a simple idea in São Paulo, they won't accept it. It has to be complicated, because it's São Paulo…
+JL: I hate São Paulo! When you talk about mobility, you have to apply a few very simple things. Firstly, use the car less. But to do that, it's important to have a good public transport system. Secondly, live close to your work. Because otherwise you spend hours travelling. You don't have to forget that there are six million cars in São Paulo, and each car requires twenty-five square metres to park near your home and the same amount near your work.
 
-## Live close to work
+М. W: So if you multiply fifty square metres by six million, it turns out that the city needs three hundred million square metres just for parking.....
 
-**Mihail Veklenko: It sounds as if you don't like São Paulo?**
+Ж. L.: I would say that fifty square metres is comparable in size to a small flat or office. Instead of six million cars, you can make it so that work is close to home. That will reduce transport problems. And it's the same situation everywhere I've spoken and talked about mobility. Everyone makes the same mistake when they ask about new technologies, driverless cars and so on. They forget that these technologies utilise existing urban space. The concept of "living near work" works much better than all the latest technology and the use of the latest devices. These people are just using new ideas to sell some of their technologies and products.
 
-Jaime Lerner: I hate São Paulo! When you talk about mobility, you need to apply a few very simple things. First, use the car less — but for that you need a good public transport system. Second, live close to your work, because otherwise you spend hours on the road. Don't forget that São Paulo has six million cars, and every car needs twenty-five square metres to park near home and the same again near work.
+You can't just take a bus stop from one place to another because it causes a public outcry.
 
-**Mihail Veklenko: So if you multiply fifty square metres by six million, the city needs three hundred million square metres just for parking…**
+М. V.: But how did you implement all this here in Curitiba? Even when you become mayor, you still have to go through the bureaucracy. It's not enough to have a good idea for a transport system, you also have to calculate the economics.
 
-Jaime Lerner: I would say that fifty square metres is about the size of a small flat or office. Instead of six million cars, you can make sure that work is close to home. That reduces transport problems. And it's the same everywhere I've spoken about mobility. Everyone makes the same mistake: they ask about new technologies, driverless cars and so on. They forget that these technologies still use the existing urban space. The idea of "living close to work" works much better than all the latest technologies and gadgets. These people are just using new ideas to sell their own technologies and products.
+Ж. L.: I don't remember. I'm too old, it was a long time ago. All I remember is that it was very complicated. You can't just move a bus stop from one place to another because there is a public outcry. And to make these changes in all the systems of the city... You can imagine how difficult it was and how much resistance we met.
 
-## How Curitiba did it
+М. V.: Do you believe that at that time political unity gave certain advantages for the realisation of your ideas?
 
-**Mihail Veklenko: But how did you achieve all this here in Curitiba? Even as mayor, you still have to get through the bureaucratic obstacles. It isn't enough to have a good idea for a transport system — you also have to work out the economics.**
+Ж. L.: No. At that time, mayors had very little influence. I was appointed for the first time and that meant that I could be asked to step down the very next week. So we had to work very quickly. I often said to my team: we might not be in these positions next week. I remember the night we launched the rapid transit system. We launched after midnight to see if everything was working well. And I was saying to the driver: look, you probably don't realise it, but what you're starting now is likely to be a whole new way of moving people around in cities. And now when I'm walking around the city and I meet him, he always honks twice at me, greeting me.
 
-Jaime Lerner: I don't remember. I'm too old, it was a very long time ago. All I remember is that it was very difficult. You can't simply move a bus stop from one place to another — it provokes public protest. And to make these changes across all the city's systems… You can imagine how hard it was and how much resistance we met.
+М. V.: How do you feel now these days in Curitiba as you observe the results of your work?
 
-**Mihail Veklenko: Do you think that political unity at the time gave you certain advantages in implementing your ideas?**
+Ж. L.: I left politics fourteen years ago, having decided that I had done enough in this field. Working in my city is what makes me happy. I'm changing the way people behave and the way they feel in the city.
 
-Jaime Lerner: No. At that time mayors had very little influence. I had been appointed for the first time, which meant I could be asked to step down the very next week. So we had to work very fast. I often told my team: we may not be in these positions next week. I remember the night we launched the rapid transit system. We started after midnight to check that everything worked properly. And I said to the driver: look, you probably don't realise it, but what you're starting now will most likely be a completely new way of moving people around cities. And now, whenever I'm walking around the city and he passes me, he always honks twice to greet me.
+М. V.: The people here are very nice. Yesterday when we flew into town, the airport taxi driver was so happy, he was just enjoying life. Regardless of who he is where he is or what position he holds. Very cheerful, friendly, relaxed and happy. He truly enjoys life for no particular reason. And so everywhere we ask for directions to somewhere, people are very happy.
 
-**Mihail Veklenko: How do you feel in Curitiba these days, seeing the results of your work?**
+Ж. L: And you know why? - Why? - Because we're Russian! (laughs). I love Russian culture, it's very sentimental. When I was president of the international union of architects, I often visited many countries. There were one and a half thousand of us architects, that is, one and a half thousand egos.
 
-Jaime Lerner: I left politics fourteen years ago, having decided I had worked in that field long enough. Working for my city is what makes me happy. I am changing the way people behave and how they feel in the city.
+М. V.: We have just flown back from India. I think you can imagine the difference between the chaos that is going on in the cities of India, especially the big cities, and the peace and tranquillity that we are seeing now in the cities of Brazil. Have you ever been to India?
 
-**Mihail Veklenko: The people here are very pleasant. Yesterday, when we flew in, the taxi driver from the airport was so happy — he was simply enjoying life, regardless of who he is, where he is or what position he holds. Very cheerful, friendly, relaxed and happy. He genuinely enjoys life for no particular reason. And it's the same everywhere we've asked for directions: people are very happy.**
+Ж. L.: Yes, I have been to Mumbai, a very difficult city. I've also been to Goa and some other places. India is complicated by its political system, because the mayor does not have full power. There is a city parliament: they inherited that system from the British because all the former colonies try to get as far away from centralising power as possible. You can see this in other countries as well. When you look at other countries, most of them have centralised power.
 
-Jaime Lerner: And do you know why?
+М. W: And here in Brazil, when you're the mayor, do you have a lot of power?
 
-**Mihail Veklenko: Why?**
+Ж. L.: Yes, full autonomy. But these are terrible times in the country.
 
-Jaime Lerner: Because we're Russians! (laughs) I love Russian culture, it is very sentimental. When I was president of the International Union of Architects, I visited many countries. There were one and a half thousand of us architects — that is, one and a half thousand egos.
+М. Q: Because of the economic crisis or impeachment?
 
-**Mihail Veklenko: We have just flown in from India. I think you can imagine the difference between the chaos in Indian cities, especially the big ones, and the calm and peace we see now in Brazilian cities. Have you ever been to India?**
+Ж. L: Because of everything.
 
-Jaime Lerner: Yes, I've been to Mumbai — a very difficult city. I've also been to Goa and a few other places. India is complicated by its system of government: the mayor doesn't have full power. There is a city council instead — a system they inherited from the British, because all former colonies try to move as far away as possible from centralised power. You can see this in other countries too. If you look at other countries, most of them have centralised power.
+М. V.: I think this is a permanent crisis. We happen to live in an era of crisis. Should we attach such importance to it then?
 
-**Mihail Veklenko: And here in Brazil, when you are mayor, do you have a lot of power?**
+Ж. L.: Yes, but now everything is somehow particularly complicated. "Ta Russo", although in translation it means something very complicated. It was much better three years ago. (The expression "ta russo" means "in Russian", used in speech to show something complicated, confusing, difficult - note).
 
-Jaime Lerner: Yes, full autonomy. But the country is going through a terrible time right now.
+Never stop doing what you have to do. You must have the courage to go through a crisis. You can't just waste time during a crisis.
 
-**Mihail Veklenko: Because of the economic crisis?**
+М. V.: Don't you think the crisis is a time of opportunity?
 
-Jaime Lerner: Because of everything.
+Ж. L.: Of course, never stop doing what you have to do. You have to have the courage to go through a crisis. You can't just waste time during a crisis.
 
-## Crisis is no reason to stop
+М. V.: But do you feel better now because you are out of politics? Or in times of crisis, do you still have the desire to go back and use your skills again?
 
-**Mihail Veklenko: I think the crisis is permanent — we happen to live in an age of crisis. Should we really attach so much importance to it?**
+Ж. L.: No, I would like to help if I could, but politics has become so dirty. I left politics in a very timely manner. There's an expression: "enough is enough." I don't regret being a politician, and I'm happy that I had the chance to be mayor and governor. I liked being mayor more because it involves being close to the people. It was the best time of my life, I was younger, but also because being a mayor involves working directly with people.
 
-Jaime Lerner: Yes, but right now everything is especially difficult — *tá russo*, as we say. Three years ago things were much better. (*Tá russo* literally means "it's Russian" and is used in Brazilian Portuguese to describe something complicated, confusing or difficult. — Ed.)
+М. Q.: Is Brazil now applying the Curitiba experience? I don't mean just bus rapid transit lines, but the full-fledged Curitiba experience, is it now being disseminated throughout the country?
 
-**Mihail Veklenko: Don't you think a crisis is a time of opportunity?**
+Ж. L.: It's complicated because of bureaucracy and politics. And also because it's too simple a solution. Every mayor thinks, "since it's so simple, I should have guessed it myself. Why should I apply these ideas in my city?"... And the problem is that they all want to find excuses why they don't apply these solutions. And they want to have all the answers. But you can't always be the guy who knows everything and solves everything. Planning a city is a trajectory where you have to leave space for people to correct you if you're doing something wrong. Innovation is nothing more than just getting into action. It's important to have the courage to start, and then you can make improvements little by little. But it's always a story about experience along the way. We learnt a lot by doing it ourselves. We've learnt a lot in the process. Sometimes I get really annoyed when I see solutions and they don't apply them.
 
-Jaime Lerner: Of course. Never stop doing what you have to do. You must have the courage to go through a crisis. You can't just waste the time a crisis gives you.
+Innovation is nothing more than simply getting into action.
 
-**Mihail Veklenko: But do you feel better now that you are out of politics? Or, in a time of crisis, do you still feel the urge to go back and put your skills to use?**
+М. V.: In Curitiba or outside of Curitiba?
 
-Jaime Lerner: No. I would like to help if I could, but I left politics at just the right time. There's a saying: enough is enough. I don't regret having been in politics, and I'm happy I had the chance to be mayor and governor. I liked being mayor more, because it means being close to people. It was the best time of my life — partly because I was younger, but also because a mayor works directly with people.
+Ж. L.: In other cities. Curitiba has always been committed to innovation. And when you stop innovating, you see that people want more and more, but that can still be fixed. It is not that difficult to achieve this new quality in the public transport system. It's not that difficult. We are working on ideas for Curitiba.
 
-## Innovation is simply starting
+М. Q: So you are still working on ideas for Curitiba now?
 
-**Mihail Veklenko: Is Brazil applying the Curitiba experience today? I don't just mean bus rapid transit lines, but the Curitiba experience as a whole — is it spreading across the country?**
+Ж. L.: It's not my job, but I love Curitiba, so in our office we keep working on ideas for the city. I can only recommend, because I'm no longer in the top position in the administration. But you know, it's hard enough to work with people who tend to say that there are no solutions left. This example applies in São Paulo, where they are convinced that there are no solutions for the city better than the ones they have already applied. And they are very proud when they say this. They almost have an orgasm when they say that São Paulo has so many solutions and there are no others left. And you say that no, there are actually solutions, they don't believe you or often just ignore you. Because they like this state of affairs where there are no solutions. They like to say that São Paulo is so big that there are no solutions for it.
 
-Jaime Lerner: It's difficult because of bureaucracy and politics. And also because the solution is too simple. Every mayor thinks: "If it's that simple, I should have thought of it myself. Why should I apply these ideas in my city?" The problem is that they all look for excuses not to apply these solutions. And they want to have all the answers. But you can't always be the guy who knows everything and solves everything. Planning a city is a trajectory, and you have to leave room for people who can correct you if you are doing something wrong. Innovation is nothing more than simply starting. What matters is having the courage to start; then you can improve things little by little. It's always about the experience you gain along the way. We learned a great deal by doing things ourselves — we learned a lot in the process. Sometimes I get very annoyed when I see that there are solutions and they don't apply them.
+The vehicle uses wheels on tyres but drives on a rail in the middle, and then there is no need to use a driver. The bus can move completely on its own on the rail, but still on tyres. Runs better, quieter, more efficiently.
 
-**Mihail Veklenko: In Curitiba or elsewhere?**
+М. V.: You have applied a beautiful design and well-designed cylinder-shaped stations, doors that open jointly at the station and on the bus. The system is over thirty years old. I understand that you used high platform stations to make it more convenient for passengers to board and disembark, on the same level. Now that we have low-floor buses available, we can use this system with a different station design, can't we?
 
-Jaime Lerner: In other cities. Curitiba has always been committed to innovation. When you stop innovating, you see that people want more and more — but that can still be put right. It is not that hard to bring the public transport system to a new level of quality. It's really not that hard. We are working on ideas for Curitiba.
+Ж. L.: Yes, of course. We used the shape of a cylinder, because two stations in the shape of a rectangle on the street look like small houses. And the cylinder looks like a link, a connection. But in new cities, mayors want to create their own special designs for cities, so different cities use different shapes. We designed square stations for São Paulo, for example, just so there would be some distinction. We designed more comfortable stations that are appropriate for São Paulo. In Curitiba, we designed the cylinder so that all the infrastructure, such as air conditioning, is located under the floor. Although it is not necessary now, Curitiba has become not as hot a city as it used to be. In Rio, for example, they use air conditioning.
 
-**Mihail Veklenko: So you are still working on ideas for Curitiba?**
+М. V.: Well, look, for example, when we did projects in my city, we had no power and influence, because a public organisation has no power from the beginning. We started to promote certain solutions for the city, like building bicycle lanes or extending the tram network. And when I was asked questions - "What is the value, why develop public transport and cycle lanes?" I always tried to explain the benefits and how it works. For the most part, however, both business and government are focused on economic efficiency; they don't see the economics in public transport. Then I explained that the transport system in a city is equivalent to the circulatory system in the human body. Mobility is nothing but economy, because the speed of processes is the rhythm of the city. This is economic activity, that is, mobility directly affects the economy. But in the end, I was never able to convey this connection to the majority. So my question to you is, could you share your experience and observations on the relationship between urban transport and economic development of a city?
 
-Jaime Lerner: It isn't my job, but I love Curitiba, so in our office we keep working on ideas for the city. I can only make recommendations, since I no longer hold a senior position in the administration. But you know, it's quite hard to work with people who like to say there are no solutions left. That applies to São Paulo, where they are convinced there are no better solutions for the city than the ones they have already applied. And they are very proud when they say it. They practically revel in saying that São Paulo has so many solutions and there are no others left. And when you tell them that no, there actually are solutions, they don't believe you, or they simply ignore you. Because they like a situation where there are no solutions. They like to say that São Paulo is so big that there are no solutions for it.
-
-## Stations and new technology
-
-**Mihail Veklenko: You used an attractive design and well-planned cylindrical stations, with doors that open simultaneously on the station and on the bus. The system is more than thirty years old. As I understand it, you used high-platform stations so that passengers could board and alight more comfortably, at the same level. Now that low-floor buses are available, we can use this system with a different station design, can't we?**
-
-Jaime Lerner: Yes, of course. We chose the shape of a cylinder because two rectangular stations on a street look like little houses, whereas a cylinder looks like a link, a connection. But in new cities, mayors want their own special designs, so different cities use different shapes. For São Paulo, for example, we designed square stations, simply so that they would be different. We designed more comfortable stations that suit São Paulo. In Curitiba we designed the cylinder so that all the infrastructure, such as air conditioning, sits under the floor. Although it isn't needed now — Curitiba is not as hot as it used to be. In Rio, for example, they do use air conditioning.
-
-## Transport and the economy
-
-**Mihail Veklenko: Let me give you an example. When we worked on projects in my city, we had no power or influence — a non-profit organisation has no leverage to begin with. We started promoting certain solutions for the city, such as building cycle lanes or extending the tram network. And when people asked me, "What's the value? Why develop public transport and cycle lanes?", I always tried to explain the benefits and how it all works. But for the most part, both business and government think in terms of economic efficiency, and they don't see the economics of public transport. So I explained that a city's transport system is like the circulatory system of the human body. Mobility is nothing other than the economy, because the speed of processes is the rhythm of the city. That is economic activity — mobility has a direct impact on the economy. But in the end I never managed to get this link across to most people. So my question is: could you share your experience and observations on the relationship between urban transport and a city's economic development?**
-
-Jaime Lerner: The relationship is everywhere. When the economy is separated from people, any city, state or country heads for disaster. Curitiba has always been an example of a structure where living, working, moving and leisure all come together. In the United States, for the most part, they separate work from living. They don't have that sense, that feeling, and so when they face a particular problem they solve only that problem, and when another problem comes up, they solve only that one. That's American pragmatism, but in a city the concept is very important. So living, working, moving and leisure have to go hand in hand — that is very important. Because if I were to design the city of Curitiba, it would look like this. (draws)
+Ж. L.: The interconnectedness is ubiquitous. When economics is separated from people, any city, state or country faces disaster. Curitiba has always been an example, the structure - living, working, travelling and leisure - all together. For the most part in the US, they separate work from living. They don't have that sense, that feeling, and as a result, when they face a certain problem, they solve only that problem, when another problem arises, they solve only that problem. This is American pragmatism, but in the city the concept is very important. So life, work, movement and leisure should go in parallel, it is very important. Because if I design the city of Curitiba, it will look like this. (drawing)
 
 ![Jaime Lerner sketching at a table while Mihail Veklenko watches; next to them, his line sketch of Curitiba's transport plan with trunk lines crossing the centre and rings of connecting routes](../../../assets/media/jaime-lerner/05.jpg)
 *Jaime Lerner draws the structure of Curitiba's transport system for Mihail Veklenko*
 
-Here is the centre, then come the integrated lines and the trunk lines. It is important to have better public transport where population density is higher. By focusing on the densest parts of the city, the system can quickly prove its effectiveness. Curitiba carries two million six hundred thousand passengers a day. Two million people live in the city and another 2.5 million in the metropolitan area. In London, the most complex and oldest metro system serves 3 million people a day. Ours is a complete, interconnected system, which is why the figure is so high: it involves convenient transfers and using several buses on one journey. It isn't just a corridor, it's a complete system across the whole city — the stations, the buses. Now we have designed a new system, which I believe is the most modern and efficient today. The vehicle runs on rubber tyres but is guided by a rail in the middle, so there is no need for a driver. The bus can move entirely on its own along the rail, while still running on tyres. It works better, it's quieter and more efficient. It's very simple. I think this will become very important in the near future, because as soon as you have a bus rapid transit system, you try to improve it. You can already see examples of the system I've described in Paris and Shanghai. Your plan to develop a public transport system in your city based on trams is absolutely right, because a tram is not as expensive as a metro. At the same time it is a more stable, reliable system, and it can be automated as far as possible.
+Here is the centre, then there are integrated lines, trunk lines. It is important to have better public transport in places where the population density is higher. By focusing on the densest places in the city, the system can quickly show its effectiveness.  Curitiba has two million six hundred thousand passengers per day. Two million people live in the city and another 2.5 live in the agglomeration. In London, the most complex and oldest underground system serves 3 million people a day. It is a complete system, interconnected, and therefore the same number is larger because the system involves comfortable transfers and using multiple buses per journey. It's not just a corridor, it's a complete system throughout the city. The stations, the buses. We have now designed a new system. I believe it is the most modern and efficient to date. When a vehicle uses wheels on tyres but travels on a rail in the middle, and then there is no need to use a driver. The bus is completely able to move on its own on the rail but still on tyres. It works better, it's quieter, it's more efficient. It's a very simple thing to do. I think this is going to become very important in the near future, because as soon as you have a bus rapid transit system, you try to improve it. You can already see examples of the system I described in Paris and Shanghai. The fact that you intend to develop a public transport system based on the tram in your city is very right, because the tram is not as costly as the metro. At the same time, it is a more stable, reliable system and it can be automated as much as possible.
 
-**Mihail Veklenko: Mr Lerner, this has been a very enlightening meeting. I hope we will be able to apply your recommendations in our city.**
+М. V.: Mr Lerner, it was a very informative meeting. I hope we can apply your recommendations in our city.
 
-Jaime Lerner: Thank you, it was a pleasure talking to you. I hope I will be able to visit your city one day.
+Ж. L: Thank you, it was a pleasure chatting with you. I hope I will be able to visit your city one day.
+
+![Jaime Lerner, an elderly man with white hair in a black T-shirt, speaking](../../../assets/media/jaime-lerner/02.jpg)
+*Jaime Lerner*
+
+![Through tall steel-framed windows overgrown with greenery, an architect works at a desk inside the studio](../../../assets/media/jaime-lerner/03.jpg)
+*Jaime Lerner's studio*
 
 ![Jaime Lerner and Mihail Veklenko shaking hands in the studio in the evening](../../../assets/media/jaime-lerner/06.jpg)
 *Jaime Lerner and Mihail Veklenko after the conversation*
+
+![The open-plan studio with desks, computers and stacks of papers, surrounded by windows looking out onto trees](../../../assets/media/jaime-lerner/04.jpg)
+*Inside the studio, where Lerner's team works*
 
 ## About Jaime Lerner
 

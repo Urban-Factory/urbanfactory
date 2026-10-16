@@ -2,7 +2,8 @@
 import Base from '../../layouts/Base.astro';
 import PageHeader from '../../components/PageHeader.astro';
 import CtaBand from '../../components/CtaBand.astro';
-import Logo from '../../components/Logo.astro';
+import { Picture } from 'astro:assets';
+import portrait from '../../assets/team/mihail-veklenko.png';
 import { published, useTranslations, type Lang } from '../../i18n/ui';
 import { getCopy } from '../../i18n/copy';
 import { getProjects } from '../../lib/projects';
@@ -19,10 +20,6 @@ const f = c.founder;
 const projects = await getProjects(lang);
 const bySlug = new Map(projects.map((p) => [p.data.slug, p]));
 const led = f.projects.map((s) => bySlug.get(s)).filter((p) => p !== undefined);
-const initials = f.name
-  .split(' ')
-  .map((w) => w[0])
-  .join('');
 ---
 
 <Base lang={lang} title={`${c.title} — Urban Factory`} description={t('team.meta.description')}>
@@ -31,12 +28,17 @@ const initials = f.name
   <!-- Основатель -->
   <section class="wrap pb-section">
     <article class="grid gap-10 md:grid-cols-12 md:gap-12">
-      <!-- Фото основателя пока нет — карточка с инициалами -->
-      <div class="md:col-span-5 lg:col-span-4">
-        <div class="relative aspect-[4/5] bg-ink text-paper md:sticky md:top-28" role="img" aria-label={`${t('team.photo')} ${f.name}`}>
-          <span class="absolute bottom-6 left-6 font-display text-[clamp(4rem,10vw,8rem)] leading-none font-bold" aria-hidden="true">{initials}</span>
-          <Logo variant="mark" class="absolute top-6 right-6 h-14 text-red" />
-        </div>
+      <div class="self-start md:sticky md:top-28 md:col-span-5 lg:col-span-4">
+        <!-- Фото с прозрачным фоном; фон — токен surface -->
+        <Picture
+          src={portrait}
+          alt={`${t('team.photo')} ${f.name}`}
+          formats={['avif', 'webp']}
+          widths={[320, 480, 640, 960, 1200]}
+          sizes="(min-width: 1024px) 30vw, (min-width: 768px) 40vw, 100vw"
+          loading="eager"
+          class="aspect-square w-full bg-surface object-cover"
+        />
       </div>
       <div class="md:col-span-7 lg:col-span-7 lg:col-start-6">
         <p class="eyebrow text-red">{f.role}</p>
