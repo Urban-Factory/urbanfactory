@@ -18,10 +18,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      # До этапа 6 (свой домен) сайт открывается по адресу urban-factory.github.io/urbanfactory/.
-      # После подключения urbanfactory.agency: SITE_URL=https://urbanfactory.agency, BASE_PATH=/
-      SITE_URL: https://urban-factory.github.io
-      BASE_PATH: /urbanfactory
+      # Сайт на своём домене (этап 6). Домен задан и в public/CNAME.
+      SITE_URL: https://urbanfactory.agency
+      BASE_PATH: /
     steps:
       - uses: actions/checkout@v5
       - uses: withastro/action@v5

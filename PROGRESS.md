@@ -8,7 +8,11 @@
 - [x] Этап 3 — все страницы и кейсы EN (16.10.2026): Services, Agency, Projects (фильтр), 13 кейсов, Team, Contact. **Ждёт «ок».**
 - [x] Этап 4 — HR и RU (17.10.2026): все страницы, 12 кейсов, Media, интервью (HR — перевод с русского оригинала), переключатель языков активен. **Ждёт вычитки Михаила.**
 - [ ] Этап 5 — SEO, изображения, Lighthouse, 404.
-- [ ] Этап 6 — домен и DNS.
+- [ ] Этап 6 — домен и DNS. Подготовлено в ветке launch-domain (17.10.2026), ждёт «DNS готов» от Михаила:
+  - workflow: SITE_URL=https://urbanfactory.agency, BASE_PATH=/; public/CNAME; canonical/hreflang/OG/sitemap — на домен (проверено сборкой).
+  - sitemap.xml (свой эндпоинт, hreflang-альтернативы, без редиректов), robots.txt, 404.html на трёх языках.
+  - Старый urbanfactory.agency (Hetzner) отдаёт только заглушку хостинга «mavekdesign.com», внутренних страниц нет; HTTPS там с чужим сертификатом. Редиректы сделаны для 20 путей прежнего сайта агентства (те же пути на новом домене → RU-страницы; astro.config.mjs → redirects).
+  - DNS (Hetzner konsoleH): A @ → 185.199.108–111.153; AAAA @ → 2606:50c0:8000–8003::153; www → CNAME urban-factory.github.io. MX и почтовые записи НЕ трогать.
 - [ ] Этап 7 — README.
 
 ## Как устроено (этап 2)

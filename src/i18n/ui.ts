@@ -26,6 +26,9 @@ const en = {
   'a11y.footerNav': 'Footer navigation',
   'a11y.soon': 'coming soon',
 
+  'notFound.title': 'Page not found',
+  'notFound.text': 'This page doesn\'t exist or has moved. Try the home page or our projects.',
+  'notFound.home': 'Home page',
   'nav.services': 'Services',
   'nav.agency': 'Agency',
   'nav.projects': 'Projects',
@@ -200,6 +203,9 @@ export const ui: Record<Lang, Partial<Record<UIKey, string>>> = {
     'a11y.footerNav': 'Navigacija u podnožju',
     'a11y.soon': 'uskoro',
 
+    'notFound.title': 'Stranica nije pronađena',
+    'notFound.text': 'Ova stranica ne postoji ili je premještena. Pokušajte s početnom stranicom ili našim projektima.',
+    'notFound.home': 'Početna stranica',
     'nav.services': 'Usluge',
     'nav.agency': 'Agencija',
     'nav.projects': 'Projekti',
@@ -369,6 +375,9 @@ export const ui: Record<Lang, Partial<Record<UIKey, string>>> = {
     'a11y.footerNav': 'Навигация в подвале',
     'a11y.soon': 'скоро',
 
+    'notFound.title': 'Страница не найдена',
+    'notFound.text': 'Такой страницы нет или она переехала. Начните с главной или с наших проектов.',
+    'notFound.home': 'Главная',
     'nav.services': 'Услуги',
     'nav.agency': 'Агентство',
     'nav.projects': 'Проекты',
