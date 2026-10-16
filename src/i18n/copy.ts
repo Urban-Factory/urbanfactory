@@ -22,7 +22,7 @@ export interface PageCopy {
   team: {
     title: string;
     lead: string;
-    founder: { name: string; role: string; bio: string[]; expertise: string[]; experience: string[]; projects: string[] };
+    founder: { name: string; role: string; bio: string[]; expertise: string[]; experience: string[]; education: string[]; projects: string[] };
     pastTitle: string;
     pastText: string;
     past: { project: string; people: { name: string; role: string }[] }[];
@@ -146,23 +146,40 @@ const en: PageCopy = {
         'International cooperation',
       ],
       experience: [
-        'Producer of 5 sessions, Moscow Urban Forum, 2013',
+        'Session producer, Moscow Urban Forum (2013)',
         'Tutor, Faculty of Media Communications, Don State Technical University, 2014–2015',
         'On-site consultant, Innopolis, 2015',
         'Transport researcher, CRISALIDE (EU ERA.NET RUS Plus), 2018–2019',
         'Koordinator voditelja projekata, Institut IGH, Zagreb, 2022',
-        'Postgraduate study “Gradski promet”, Faculty of Transport and Traffic Sciences, University of Zagreb, 2024–present',
+      ],
+      education: [
+        'Postgraduate study “Gradski promet” (urban transport), Faculty of Transport and Traffic Sciences, University of Zagreb — 2024–present',
+        'The University of Manchester (programme delivered with the Moscow School of Social and Economic Sciences) — Postgraduate Diploma in Urban Studies, 2013–2015 (awarded Oct 2015)',
+        'Don State Technical University, Rostov-on-Don — Specialist degree in International Economic Relations, 2002–2007',
       ],
       projects: ['rostov-tram', 'cycling-rostov-on-don', 'zverevo-strategy-2030', 'temernik-river-park', 'urban-festival-rostov', 'great-rostov', 'urban-thinkers-campus-recife', 'rostov-300'],
     },
     pastTitle: 'People who worked with us',
     pastText: 'Experts and colleagues who took part in our past projects.',
     past: [
-      { project: 'rostov-tram', people: [{ name: 'Alexander Semenov', role: 'MOO “City and Transport” — partner' }] },
-      { project: 'cycling-rostov-on-don', people: [{ name: 'Dmitry Gusev', role: 'Head of the I Bike RnD media project; won the design tender' }] },
+      {
+        project: 'rostov-tram',
+        people: [
+          { name: 'Mihail Veklenko', role: 'Initiator and project lead' },
+          { name: 'Alexander Semenov', role: 'MOO “City and Transport” — partner' },
+        ],
+      },
+      {
+        project: 'cycling-rostov-on-don',
+        people: [
+          { name: 'Mihail Veklenko', role: 'Initiator and project lead' },
+          { name: 'Dmitry Gusev', role: 'Head of the I Bike RnD media project; won the design tender' },
+        ],
+      },
       {
         project: 'zverevo-strategy-2030',
         people: [
+          { name: 'Mihail Veklenko', role: 'Project lead' },
           { name: 'Elena Ishchenko', role: 'Territorial marketing expert' },
           { name: 'Nikolay Pryanishnikov', role: 'MSSES' },
           { name: 'Grisha Krasnov', role: 'Video' },
@@ -172,6 +189,7 @@ const en: PageCopy = {
       {
         project: 'kolesnikov-boulevard',
         people: [
+          { name: 'Mihail Veklenko', role: 'Urban planner' },
           { name: 'Julia Litvinova', role: 'Architect' },
           { name: 'Mikael Sarkisyants', role: 'Consulting architect' },
           { name: 'Alexey Matveenko', role: '“Gorod-Park” — workshop format' },
@@ -182,17 +200,25 @@ const en: PageCopy = {
       {
         project: 'temernik-river-park',
         people: [
-          { name: 'Yuri Pogrebshchikov', role: 'Director, ANO “Park Temernik”' },
-          { name: 'N. N. Britvina', role: 'Initiative group' },
+          { name: 'Mihail Veklenko', role: 'Co-founder of the ANO; urban planner and economist — river strategy and economics, international partnerships, forums' },
+          { name: 'Yuri Pogrebshchikov', role: 'Director, ANO Park Temernik' },
+          { name: 'N. N. Britvina', role: 'Initiative group, ANO Park Temernik' },
+          { name: 'N. N. Britvin', role: 'ANO Park Temernik' },
+          { name: 'S. B. Shneider', role: 'Chamber of Commerce and Industry of the Rostov Region — moderator of the Small Rivers forum, 2018' },
+          { name: 'Sotnikova', role: '“Eco-river Temernik” concept, 2017' },
+          { name: 'Strelchenko', role: 'Cadastral survey of the riverbank' },
+          { name: 'Bespalov', role: 'Don State Technical University — river rehabilitation algorithm' },
           { name: 'Prof. Circe Monteiro', role: 'INCITI / UFPE, Recife' },
+          { name: 'Swami Jyothirmayah', role: 'Speaker, Moscow Urban Forum 2017' },
           { name: 'Don State Technical University', role: 'Academic partner' },
         ],
       },
       {
         project: 'urban-festival-rostov',
         people: [
-          { name: 'Diana Karnaukhova', role: 'Festival team' },
-          { name: 'Alexey Karachinsky', role: 'Festival team' },
+          { name: 'Mihail Veklenko', role: 'Co-founder and organiser' },
+          { name: 'Diana Karnaukhova', role: 'Co-founder and organiser' },
+          { name: 'Alexey Karachinsky', role: 'Co-founder and organiser' },
           { name: 'Mariya Iskrennikova', role: '“Botaniki” — festival in the Botanical Garden, 2013' },
           { name: 'Sviatoslav Murunov', role: 'Center for Applied Urbanism — lecturer, 2014' },
           { name: 'Marina Khrustaleva', role: 'Arkhnadzor — lecturer, 2014' },
@@ -202,6 +228,7 @@ const en: PageCopy = {
       {
         project: 'great-rostov',
         people: [
+          { name: 'Mihail Veklenko', role: 'Initiator and project lead; urban planner — transport and territorial planning' },
           { name: 'Milton Botler', role: 'Recife — co-author of the high-speed rail proposal' },
           { name: 'Pedro Guedes', role: 'Recife — co-author of the high-speed rail proposal' },
           { name: 'Nikolay Protsenko', role: 'Journalist' },
@@ -210,6 +237,7 @@ const en: PageCopy = {
       {
         project: 'urban-thinkers-campus-recife',
         people: [
+          { name: 'Mihail Veklenko', role: 'Organiser and moderator of the session' },
           { name: 'Prof. Circe Monteiro', role: 'INCITI' },
           { name: 'Bárbara Maranhão', role: 'Interpreter' },
           { name: 'Clemente Coelho Junior', role: 'Speaker' },
@@ -219,15 +247,9 @@ const en: PageCopy = {
         ],
       },
       {
-        project: 'rivers-and-cities',
-        people: [
-          { name: 'Prof. Circe Monteiro', role: 'INCITI / UFPE, Recife' },
-          { name: 'Swami Jyothirmayah', role: 'Speaker, Moscow Urban Forum 2017' },
-        ],
-      },
-      {
         project: 'rostov-300',
         people: [
+          { name: 'Mihail Veklenko', role: 'Co-curator and author of the concept' },
           { name: 'Alexandra Chernova', role: 'Co-curator, Don State Public Library' },
           { name: 'Daria Rud', role: 'Sociologist' },
           { name: 'Nikolay Protsenko', role: 'Journalist' },
@@ -236,7 +258,13 @@ const en: PageCopy = {
           { name: 'Alexey Solovyov', role: 'SMM' },
         ],
       },
-      { project: 'gagarin-bridge', people: [{ name: 'E. Kotlyarova', role: 'Illustrations' }] },
+      {
+        project: 'gagarin-bridge',
+        people: [
+          { name: 'Mihail Veklenko', role: 'Author of the concept idea' },
+          { name: 'E. Kotlyarova', role: 'Architect — illustrations of the concept' },
+        ],
+      },
     ],
   },
   contact: {

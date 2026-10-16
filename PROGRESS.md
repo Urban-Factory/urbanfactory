@@ -28,6 +28,10 @@
 - Публикации СМИ (Press) не переводим — даём ссылку на оригинал.
 
 ## Ключевые решения
+- 16.10.2026 (роли подтверждены Михаилом): в КАЖДОМ проекте в списке людей (Team → «People who worked with us» и блок People на странице проекта) первой строкой «Mihail Veklenko — роль» (данные: src/i18n/copy.ts → team.past). Роли: Rostov Tram, Cycling — initiator and project lead; Zverevo — project lead; Kolesnikov — urban planner; Temernik — co-founder of the ANO, urban planner and economist; Urban Festival — co-founder and organiser; Great Rostov — initiator and project lead, urban planner (transport and territorial planning); UTC Recife — organiser and moderator of the session; Rostov 300 — co-curator and author of the concept; Gagarin bridge — author of the concept idea. E. Kotlyarova — «Architect — illustrations of the concept».
+- 16.10.2026: Rivers & cities влит в Temernik River Park (раздел «International part: Recife ↔ Rostov-on-Don», фото перенесены). Проектов 11. Старый URL /<lang>/projects/rivers-and-cities/ — страница-редирект (noindex) на Temernik; на этапе 5 исключить из sitemap.
+- 16.10.2026: у основателя раздел Education (FPZ Zagreb 2024–; Manchester/MSSES 2013–2015; DSTU 2002–2007); в Experience — «Session producer, Moscow Urban Forum (2013)», FPZ убран в Education.
+- 16.10.2026: Rostov 300 — 13 роликов (добавлен Aleksan Mkrtchyan, sk2xS92M4RA); «12 video interviews» в тексте верно (12 бесед + вступление).
 - 16.10.2026: TEDx — видео 7NrY4BeLrgI (RU, канал TEDx Talks) в записи 11-talks.md; плеер только в RU-версии.
 - 16.10.2026: видео — компонент components/LiteYouTube.astro (превью i.ytimg.com, iframe youtube-nocookie.com только по клику, без JS — ссылка на YouTube). У проекта поле youtube: [{id, title, lang}] — в кейсе Rostov 300 12 роликов (блок «Video interviews»). Отчёт Rostov 300 пока не добавляем.
 - 16.10.2026: Media → Interviews by Mihail: все 12 видео Rostov 300 сеткой (запись 21-interviews.md с полем series: rostov-300 — ролики берутся из кейса, один источник), затем Lerner и Peñalosa. Видеоинтервью с Зубаревич — 2 марта 2021. Статья AiF (15.03.2021) — в Press.
@@ -52,11 +56,10 @@
 - Палитра (утверждена в аудите): ink #1D1D1B, red #9C0001 (Engagement & Events), blue #0000F6 (Strategy & Mobility), green #5DA130 / #3F7A1F (Design & Architecture), surface #F4F3EF, muted #6B6B66. В самом логотипе «.agency» — #C10000 (как в исходнике).
 - Шрифты: Roboto Condensed (заголовки) + Inter (текст), self-hosted через @fontsource (кириллица + Latin Ext).
 - Тексты: без политики и имён должностных лиц; фонд-донор Rostov 300 не упоминать; старые сайты не упоминать; основатель — Mihail Veklenko.
-- На главной 6 featured: Rostov Tram, I Bike RnD, Zverevo 2030, Kolesnikov Boulevard, Temernik, Urban Festival. Цифры (главная и «Агентство»): 2013, 13 проектов, 3,1 га, 119 км, 8 форумов, 6 фестивалей, 2 летние школы, 120 студентов.
+- На главной 6 featured: Rostov Tram, I Bike RnD, Zverevo 2030, Kolesnikov Boulevard, Temernik, Urban Festival. Цифры (главная и «Агентство»): 2013, 11 проектов, 3,1 га, 119 км, 8 форумов, 6 фестивалей, 2 летние школы, 120 студентов.
 
 ## Открытые вопросы (ждут Михаила)
 - (решено) 4 видео про трамвай — канал Rostov_tram: 22-press, 23-press, 24-press (TV и открытие путей), 25-talks (акция «Некролог ростовскому трамваю»); RU, только в RU-версии.
-- На канале есть 13-е интервью Rostov 300, не вошедшее в список: «Алексан Мкртчян: туристический потенциал и позиционирование Ростова» (sk2xS92M4RA, 51:30). Добавлять?
 - Media, verify: true — проверить ссылки: 10 «What twin cities can do» (Minsk Urban Platform, 01.10.2018); 14 «The Rostov agglomeration needs economies of scale» (Expert South, 15.05.2019); 19 «Tram network modernisation…» (Expert South, 10.10.2021).
 - Rostov 300: фото из Facebook с неизвестными правами не использованы — кейс без обложки. Нужны свои фото.
 - Фото низкого разрешения: Temernik (897px), Gagarin bridge (748–894px), Rivers & cities (~900px), I Bike RnD (1080px).

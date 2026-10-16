@@ -1,0 +1,26 @@
+---
+// Rivers & cities влит в Temernik River Park (16.10.2026). Старый адрес — редирект.
+// На этапе 5 исключить из sitemap.
+import { published, type Lang } from '../../../i18n/ui';
+import { localePath } from '../../../lib/site';
+
+export function getStaticPaths() {
+  return published.map((lang) => ({ params: { lang } }));
+}
+const lang = Astro.params.lang as Lang;
+const target = localePath(lang, '/projects/temernik-river-park/');
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <title>Temernik River Park — Urban Factory</title>
+    <meta http-equiv="refresh" content={`0; url=${target}`} />
+    <link rel="canonical" href={new URL(target, Astro.site).href} />
+    <meta name="robots" content="noindex" />
+  </head>
+  <body>
+    <a href={target}>Temernik River Park</a>
+  </body>
+</html>

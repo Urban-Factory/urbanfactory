@@ -49,6 +49,9 @@ youtube:
   - id: "XoG1hZO08EU"
     title: "Natalia Belyakova: the brand of Rostov-on-Don and the region"
     lang: ru
+  - id: "sk2xS92M4RA"
+    title: "Aleksan Mkrtchyan: tourism potential and positioning of Rostov-on-Don"
+    lang: ru
 featured: false
 order: 10
 ---

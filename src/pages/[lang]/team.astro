@@ -49,6 +49,12 @@ const led = f.projects.map((s) => bySlug.get(s)).filter((p) => p !== undefined);
 
         <div class="mt-12 grid gap-10 sm:grid-cols-2">
           <div class="sm:col-span-2">
+            <h3 class="eyebrow text-muted">{t('team.education')}</h3>
+            <ul class="mt-5 divide-y divide-line border-y border-line">
+              {f.education.map((e) => <li class="py-3">{e}</li>)}
+            </ul>
+          </div>
+          <div class="sm:col-span-2">
             <h3 class="eyebrow text-muted">{t('team.experience')}</h3>
             <ul class="mt-5 divide-y divide-line border-y border-line">
               {f.experience.map((e) => <li class="py-3">{e}</li>)}
