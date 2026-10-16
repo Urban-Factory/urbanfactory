@@ -178,7 +178,7 @@ const en: PageCopy = {
         project: 'cycling-rostov-on-don',
         people: [
           { name: 'Mihail Veklenko', role: 'Initiator and project lead; urban and transport planner' },
-          { name: 'Dmitry Gusev', role: 'Head of the I Bike RnD media project; won the design tender' },
+          { name: 'Dmitry Gusev', role: 'Velovod — head of the I Bike RnD media project; won the design tender and prepared the city cycle network scheme (2018–2019)' },
         ],
       },
       {
