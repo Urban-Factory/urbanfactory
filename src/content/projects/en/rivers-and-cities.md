@@ -12,7 +12,7 @@ results:
   - "Recife's Capibaribe linear park presented at Moscow Urban Forum 2017"
   - "Prof. Circe Monteiro's 2018 visit to Russia, organised by Urban Factory"
   - "International input to the first Small Rivers in Large Cities forum (Rostov-on-Don, 2018)"
-  - "Memorandum of cooperation between the Temernik Park non-profit and INCITI"
+  - "Memorandum of cooperation between the Temernik Park non-profit and INCITI, signed in October 2018"
 cover: ../../../assets/projects/rivers-and-cities/cover.jpg
 coverAlt: "A conference hall during the Small Rivers in Large Cities forum, with a slide of a riverside park on the screen"
 gallery:
@@ -41,6 +41,6 @@ Rostov-on-Don has a small river, the Temernik, that has long been polluted and c
 ## Result
 
 - Recife's experience reached the people working on the Temernik River — city experts, universities and residents.
-- A memorandum of cooperation was signed between the Temernik Park non-profit and INCITI.
+- A memorandum of cooperation between the Temernik Park non-profit and INCITI was signed in October 2018.
 - Rostov universities and INCITI discussed student exchange and joint research.
 - A lasting exchange between Recife and Rostov-on-Don, which fed into the Temernik River Park project.
