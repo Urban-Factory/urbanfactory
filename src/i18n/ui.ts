@@ -53,7 +53,7 @@ const en = {
   'home.dir.engagement.text':
     'Festivals, forums and participatory processes that bring residents, experts, business and city teams to one table.',
   'home.dir.strategy.text':
-    'City and territorial strategies, public transport networks and cycling concepts that fit real budgets and real operators.',
+    'City and territorial strategies, public transport and cycling networks, housing programmes — built to fit real budgets and real operators.',
   'home.dir.design.text':
     'Streets, parks and public spaces designed together with the people who will use them — from concept to competition brief.',
   'home.dir.more': 'More about this direction',

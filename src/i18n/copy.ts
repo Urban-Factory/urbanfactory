@@ -45,15 +45,18 @@ const en: PageCopy = {
           'Participatory workshops and community engagement',
           'International exchange and study visits',
           'Discussion series and video interviews',
+          'Government relations: working with city administrations, business and partners',
         ],
       },
       strategy: {
         intro:
-          'We write strategies that a city can afford. From development strategies for small towns to tram, rail and cycling networks for a metropolitan region, our work is built around real budgets, real operators and real timelines.',
+          'We write strategies that a city can afford. From development strategies for small towns to tram, rail and cycling networks for a metropolitan region and a housing programme for displaced families, our work is built around real budgets, real operators and real timelines.',
         formats: [
+          'Urban research: surveys, mobility data, stakeholder interviews',
           'City and territorial development strategies',
           'Public transport network concepts: tram, rail, agglomeration',
           'Cycling concepts and active mobility',
+          'Housing programmes',
           'Project economics and partnership models',
           'Briefs and documentation for design competitions and tenders',
         ],
@@ -64,6 +67,8 @@ const en: PageCopy = {
         formats: [
           'Concepts for streets, squares and boulevards',
           'Parks, rivers and waterfronts',
+          'Transport design concepts: tram redesign, a cycle and pedestrian bridge',
+          'Settlement planning',
           'Modular and temporary installations',
           'Participatory design',
         ],
