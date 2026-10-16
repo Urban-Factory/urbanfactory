@@ -79,6 +79,9 @@ youtube:
     lang: ru
     recorded: "2020"
     published: "2021-02-01"
+cover: ../../../assets/projects/rostov-300/cover.jpg
+coverAlt: "Rostov 300 logo: the number 300 and the word Rostov drawn with city icons — tram, bicycle, trees, river"
+coverFit: contain # логотип — показывать целиком, без кадрирования
 featured: false
 order: 10
 ---

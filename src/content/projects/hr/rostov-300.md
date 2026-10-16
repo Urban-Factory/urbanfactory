@@ -79,6 +79,9 @@ youtube:
     lang: ru
     recorded: "2020"
     published: "2021-02-01"
+cover: ../../../assets/projects/rostov-300/cover.jpg
+coverAlt: "Logotip projekta Rostov 300: broj 300 i riječ Rostov iscrtani gradskim ikonama — tramvaj, bicikl, drveće, rijeka"
+coverFit: contain # логотип — показывать целиком, без кадрирования
 featured: false
 order: 10
 ---

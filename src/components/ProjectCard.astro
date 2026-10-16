@@ -31,7 +31,7 @@ const sizes = size === 'large' ? '(min-width: 1024px) 58vw, 100vw' : '(min-width
           widths={widths}
           sizes={sizes}
           loading={eager ? 'eager' : 'lazy'}
-          class="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03] motion-reduce:transition-none"
+          class={`h-full w-full transition-transform duration-700 ease-out group-hover:scale-[1.03] motion-reduce:transition-none ${p.coverFit === 'contain' ? 'bg-paper object-contain p-[8%]' : 'object-cover'}`}
         />
       ) : (
         <div class="flex h-full items-center justify-center text-ink/10">

@@ -79,6 +79,9 @@ youtube:
     lang: ru
     recorded: "2020"
     published: "2021-02-01"
+cover: ../../../assets/projects/rostov-300/cover.jpg
+coverAlt: "Логотип проекта «Ростов 300»: число 300 и слово «Ростов», нарисованные городскими иконками — трамвай, велосипед, деревья, река"
+coverFit: contain # логотип — показывать целиком, без кадрирования
 featured: false
 order: 10
 ---

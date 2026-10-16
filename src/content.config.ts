@@ -25,6 +25,7 @@ const projects = defineCollection({
       summary: z.string(),
       cover: image().optional(),
       coverAlt: z.string().optional(),
+      coverFit: z.enum(['cover', 'contain']).default('cover'), // contain — логотип/схема целиком на белом
       gallery: z.array(z.object({ src: image(), alt: z.string() })).default([]),
       results: z.array(z.string()).default([]),
       // Видео (YouTube и т.п.): блок на странице кейса появляется, только если поле заполнено
