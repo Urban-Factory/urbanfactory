@@ -1,0 +1,19 @@
+---
+// Корень сайта → /en/ (GitHub Pages не умеет серверных редиректов)
+import { localePath } from '../lib/site';
+const target = localePath('en', '/');
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Urban Factory</title>
+    <meta http-equiv="refresh" content={`0; url=${target}`} />
+    <link rel="canonical" href={new URL(target, Astro.site).href} />
+    <meta name="robots" content="noindex" />
+  </head>
+  <body>
+    <a href={target}>Urban Factory</a>
+  </body>
+</html>

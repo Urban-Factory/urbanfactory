@@ -1,0 +1,207 @@
+---
+import { Image } from 'astro:assets';
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Logo from '../../components/Logo.astro';
+import ProjectCard from '../../components/ProjectCard.astro';
+import { published, useTranslations, type Lang } from '../../i18n/ui';
+import { localePath } from '../../lib/site';
+import hero from '../../assets/home/hero-festival.jpg';
+
+export function getStaticPaths() {
+  return published.map((lang) => ({ params: { lang } }));
+}
+
+const lang = Astro.params.lang as Lang;
+const t = useTranslations(lang);
+
+const all = await getCollection('projects', (p) => p.data.lang === lang);
+const featured = all.filter((p) => p.data.featured).sort((a, b) => a.data.order - b.data.order).slice(0, 6);
+// Чередуем ширину карточек: 7/5, 5/7, 7/5
+const spans = ['lg:col-span-7', 'lg:col-span-5', 'lg:col-span-5', 'lg:col-span-7', 'lg:col-span-7', 'lg:col-span-5'];
+
+const directions = [
+  { id: 'engagement', color: 'bg-red', text: 'text-red', n: '01' },
+  { id: 'strategy', color: 'bg-blue', text: 'text-blue', n: '02' },
+  { id: 'design', color: 'bg-green', text: 'text-green-text', n: '03' },
+] as const;
+
+const steps = ['home.approach.step1', 'home.approach.step2', 'home.approach.step3', 'home.approach.step4', 'home.approach.step5'] as const;
+
+// Только подтверждённые цифры (спорные — см. PROGRESS.md, ждут решения)
+const numbers = [
+  { value: '2013', key: 'home.num.founded' },
+  { value: '13', key: 'home.num.projects' }, // 13 кейсов по аудиту (этап 3)
+  { value: '3.1', key: 'home.num.area' },
+  { value: '119', key: 'home.num.tram' },
+] as const;
+
+const places: { city: string; note?: 'home.geo.founded' | 'home.geo.hq' }[] = [
+  { city: 'Rostov-on-Don', note: 'home.geo.founded' },
+  { city: 'Zagreb', note: 'home.geo.hq' },
+  { city: 'Zverevo', note: undefined },
+  { city: 'Moscow', note: undefined },
+  { city: 'Recife', note: undefined },
+  { city: 'Istria', note: undefined },
+];
+---
+
+<Base lang={lang}>
+  <!-- Первый экран -->
+  <section class="wrap pt-12 pb-10 md:pt-20 md:pb-16">
+    <p class="eyebrow text-red">{t('home.hero.eyebrow')}</p>
+    <h1 class="mt-5 max-w-[14ch] text-display">
+      {t('home.hero.title')}<span class="text-red">.</span>
+    </h1>
+    <div class="mt-8 grid gap-8 md:mt-12 md:grid-cols-12 md:items-end">
+      <p class="max-w-2xl text-lead text-ink/85 md:col-span-7">{t('home.hero.lead')}</p>
+      <div class="flex flex-wrap gap-3 md:col-span-5 md:justify-end">
+        <a href={localePath(lang, '/projects/')} class="inline-flex min-h-12 items-center bg-ink px-6 font-display font-semibold tracking-[0.08em] text-paper uppercase transition-colors hover:bg-red">
+          {t('home.hero.cta')}
+        </a>
+        <a href={localePath(lang, '/contact/')} class="inline-flex min-h-12 items-center border-2 border-ink px-6 font-display font-semibold tracking-[0.08em] uppercase transition-colors hover:bg-ink hover:text-paper">
+          {t('home.hero.cta2')}
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="relative">
+      <Image
+        src={hero}
+        alt={t('home.hero.imageAlt')}
+        widths={[480, 800, 1200, 1600, 2224]}
+        sizes="(min-width: 1440px) 1344px, 100vw"
+        loading="eager"
+        fetchpriority="high"
+        class="aspect-[4/3] w-full object-cover md:aspect-[21/9]"
+      />
+      <!-- Вертикальная плашка из фирстиля -->
+      <div class="absolute top-0 right-6 hidden h-full w-[clamp(5rem,9vw,8.5rem)] flex-col items-center justify-between bg-red py-8 text-paper md:flex" aria-hidden="true">
+        <Logo variant="mark" class="h-[clamp(4rem,8vw,7rem)]" />
+        <span class="font-display text-sm font-bold tracking-[0.3em] uppercase [writing-mode:vertical-rl] rotate-180">Urban Factory</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Три направления -->
+  <section class="wrap py-section" aria-labelledby="directions-title">
+    <div class="reveal max-w-3xl">
+      <p class="eyebrow text-muted">{t('home.directions.eyebrow')}</p>
+      <h2 id="directions-title" class="mt-4 text-h2">{t('home.directions.title')}</h2>
+    </div>
+    <ul class="mt-12 grid gap-px bg-line md:mt-16 md:grid-cols-3">
+      {
+        directions.map((d) => (
+          <li class="reveal flex flex-col bg-paper pt-0 pb-10 md:px-8 md:first:pl-0 md:last:pr-0">
+            <span class:list={['block h-1.5 w-full', d.color]} aria-hidden="true" />
+            <span class:list={['mt-6 font-display text-lg font-bold', d.text]}>{d.n}</span>
+            <h3 class="mt-2 text-3xl leading-none">{t(`cat.${d.id}`)}</h3>
+            <p class="mt-5 flex-1 text-ink/85">{t(`home.dir.${d.id}.text`)}</p>
+            <a href={localePath(lang, `/services/#${d.id}`)} class="link-arrow mt-8 text-sm">
+              {t('home.dir.more')}<span class="sr-only">: {t(`cat.${d.id}`)}</span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  <!-- Избранные проекты -->
+  <section class="bg-surface py-section" aria-labelledby="featured-title">
+    <div class="wrap">
+      <div class="reveal flex flex-wrap items-end justify-between gap-6">
+        <div>
+          <p class="eyebrow text-muted">{t('home.featured.eyebrow')}</p>
+          <h2 id="featured-title" class="mt-4 text-h1">{t('home.featured.title')}</h2>
+        </div>
+        <a href={localePath(lang, '/projects/')} class="link-arrow">{t('home.featured.all')}</a>
+      </div>
+      <div class="mt-12 grid gap-x-8 gap-y-16 md:mt-16 md:grid-cols-2 lg:grid-cols-12">
+        {
+          featured.map((p, i) => (
+            <div class:list={['reveal', spans[i]]}>
+              <ProjectCard project={p} lang={lang} size={spans[i] === 'lg:col-span-7' ? 'large' : 'default'} />
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Подход -->
+  <section class="wrap py-section" aria-labelledby="approach-title">
+    <div class="grid gap-10 lg:grid-cols-12">
+      <div class="reveal lg:col-span-5">
+        <p class="eyebrow text-muted">{t('home.approach.eyebrow')}</p>
+        <h2 id="approach-title" class="mt-4 text-h2">{t('home.approach.title')}</h2>
+        <p class="mt-6 max-w-prose text-lead text-ink/85">{t('home.approach.text')}</p>
+      </div>
+      <ol class="reveal lg:col-span-6 lg:col-start-7">
+        {
+          steps.map((s, i) => (
+            <li class="flex items-baseline gap-6 border-b border-line py-5 first:border-t">
+              <span class="w-8 font-display text-lg font-bold text-red">{String(i + 1).padStart(2, '0')}</span>
+              <span class="font-display text-2xl font-bold uppercase md:text-3xl">{t(s)}</span>
+            </li>
+          ))
+        }
+      </ol>
+    </div>
+  </section>
+
+  <!-- Цифры -->
+  <section class="bg-ink py-section text-paper" aria-labelledby="numbers-title">
+    <div class="wrap">
+      <h2 id="numbers-title" class="eyebrow text-paper/70">{t('home.numbers.eyebrow')}</h2>
+      <dl class="mt-12 grid gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-4">
+        {
+          numbers.map((n) => (
+            <div class="reveal border-t border-paper/25 pt-6">
+              <dt class="sr-only">{t(n.key)}</dt>
+              <dd>
+                <span class="block font-display text-[clamp(3.5rem,2rem+5vw,6.5rem)] leading-none font-bold">{n.value}</span>
+                <span class="mt-4 block max-w-[22ch] text-paper/80">{t(n.key)}</span>
+              </dd>
+            </div>
+          ))
+        }
+      </dl>
+    </div>
+  </section>
+
+  <!-- География -->
+  <section class="wrap py-section" aria-labelledby="geo-title">
+    <div class="grid gap-10 lg:grid-cols-12">
+      <div class="reveal lg:col-span-5">
+        <p class="eyebrow text-muted">{t('home.geo.eyebrow')}</p>
+        <h2 id="geo-title" class="mt-4 text-h2">{t('home.geo.title')}</h2>
+        <p class="mt-6 max-w-prose text-ink/85">{t('home.geo.text')}</p>
+      </div>
+      <ul class="reveal grid grid-cols-2 gap-px self-end bg-line sm:grid-cols-3 lg:col-span-6 lg:col-start-7">
+        {
+          places.map((p) => (
+            <li class="bg-paper p-5">
+              <span class="block font-display text-xl font-bold uppercase md:text-2xl">{p.city}</span>
+              {p.note && <span class="mt-1 block text-sm text-muted">{t(p.note)}</span>}
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-red text-paper">
+    <div class="wrap flex flex-col gap-8 py-16 md:flex-row md:items-end md:justify-between md:py-24">
+      <div class="max-w-3xl">
+        <h2 class="text-h2">{t('home.cta.title')}</h2>
+        <p class="mt-4 text-lead text-paper/90">{t('home.cta.text')}</p>
+      </div>
+      <a href={localePath(lang, '/contact/')} class="inline-flex min-h-12 shrink-0 items-center self-start bg-paper px-7 font-display font-semibold tracking-[0.08em] text-ink uppercase transition-colors hover:bg-ink hover:text-paper md:self-auto">
+        {t('home.cta.button')}
+      </a>
+    </div>
+  </section>
+</Base>

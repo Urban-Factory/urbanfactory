@@ -1,0 +1,62 @@
+---
+import Logo from './Logo.astro';
+import { useTranslations, type Lang } from '../i18n/ui';
+import { contacts, localePath } from '../lib/site';
+import { mainNav } from '../lib/nav';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const t = useTranslations(lang);
+const year = new Date().getFullYear();
+---
+
+<footer class="bg-ink text-paper">
+  <div class="wrap grid gap-12 py-16 md:grid-cols-12 md:py-20">
+    <div class="md:col-span-5">
+      <a href={localePath(lang, '/')} aria-label={t('a11y.home')} class="inline-block h-12 text-paper">
+        <Logo class="h-full" />
+      </a>
+      <p class="mt-6 max-w-sm font-display text-xl font-semibold tracking-wide uppercase">{t('home.hero.title')}</p>
+    </div>
+
+    <nav class="md:col-span-3" aria-label={t('a11y.footerNav')}>
+      <ul class="space-y-3">
+        {
+          mainNav.map((item) => (
+            <li>
+              <a href={localePath(lang, item.href)} class="font-display font-semibold tracking-[0.08em] uppercase hover:text-paper/70">
+                {t(item.key)}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+
+    <div class="space-y-3 md:col-span-4">
+      <p class="eyebrow text-paper/70">{t('footer.write')}</p>
+      <p><a href={`mailto:${contacts.email}`} class="text-lg underline-offset-4 hover:underline">{contacts.email}</a></p>
+      <p><a href={contacts.whatsapp} class="underline-offset-4 hover:underline" rel="noopener">WhatsApp {contacts.whatsappLabel}</a></p>
+      <ul class="flex gap-6 pt-2">
+        <li><a href={contacts.telegram} class="underline-offset-4 hover:underline" rel="noopener">Telegram</a></li>
+        <li><a href={contacts.instagram} class="underline-offset-4 hover:underline" rel="noopener">Instagram</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="border-t border-paper/15">
+    <p class="wrap flex flex-col gap-1 py-6 text-sm text-paper/70 md:flex-row md:flex-wrap md:gap-x-3">
+      <span class="text-paper">{t('site.byline')}</span>
+      <span aria-hidden="true" class="hidden md:inline">·</span>
+      <span>{contacts.company}</span>
+      <span aria-hidden="true" class="hidden md:inline">·</span>
+      <span>{contacts.address}</span>
+      <span aria-hidden="true" class="hidden md:inline">·</span>
+      <span>{t('footer.oib')}: {contacts.oib}</span>
+      <span aria-hidden="true" class="hidden md:inline">·</span>
+      <span>© {year}</span>
+    </p>
+  </div>
+</footer>

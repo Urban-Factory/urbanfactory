@@ -1,0 +1,14 @@
+---
+import logo from '../assets/brand/logo-horizontal-current.svg?raw';
+import vertical from '../assets/brand/logo-vertical-current.svg?raw';
+import mark from '../assets/brand/mark-current.svg?raw';
+
+interface Props {
+  variant?: 'full' | 'vertical' | 'mark';
+  class?: string;
+}
+const { variant = 'full', class: cls } = Astro.props;
+const svg = ({ full: logo, vertical, mark }[variant]).replace('<svg ', '<svg aria-hidden="true" focusable="false" ');
+---
+
+<span class:list={['block [&>svg]:h-full [&>svg]:w-auto', cls]} set:html={svg} />

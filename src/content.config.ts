@@ -1,0 +1,32 @@
+import { defineCollection } from 'astro:content';
+import { glob } from 'astro/loaders';
+import { z } from 'astro/zod';
+
+const category = z.enum(['engagement', 'strategy', 'design']);
+
+// Проекты: src/content/projects/<lang>/<slug>.md — по одному файлу на язык.
+// Шаблон для нового проекта: src/content/project.template.md
+const projects = defineCollection({
+  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/projects' }),
+  schema: ({ image }) =>
+    z.object({
+      title: z.string(),
+      slug: z.string(),
+      lang: z.enum(['en', 'hr', 'ru']),
+      category: z.array(category).min(1),
+      year: z.string(),
+      city: z.string(),
+      country: z.string(),
+      client: z.string().optional(),
+      role: z.string(),
+      summary: z.string(),
+      cover: image().optional(),
+      coverAlt: z.string().optional(),
+      gallery: z.array(z.object({ src: image(), alt: z.string() })).default([]),
+      results: z.array(z.string()).default([]),
+      featured: z.boolean().default(false),
+      order: z.number().default(100),
+    }),
+});
+
+export const collections = { projects };

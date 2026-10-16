@@ -1,0 +1,120 @@
+---
+import Logo from './Logo.astro';
+import { languages, published, useTranslations, type Lang } from '../i18n/ui';
+import { localePath } from '../lib/site';
+import { mainNav } from '../lib/nav';
+
+interface Props {
+  lang: Lang;
+  path: string;
+}
+const { lang, path } = Astro.props;
+const t = useTranslations(lang);
+const langs = Object.keys(languages) as Lang[];
+const isActive = (href: string) => path.startsWith(href);
+---
+
+<header class="sticky top-0 z-40 border-b border-line bg-paper/95 backdrop-blur">
+  <div class="wrap flex h-16 items-center justify-between gap-6 md:h-20">
+    <a href={localePath(lang, '/')} aria-label={t('a11y.home')} class="h-9 shrink-0 md:h-11">
+      <Logo class="h-full" />
+    </a>
+
+    <nav aria-label={t('a11y.mainNav')} class="hidden lg:block">
+      <ul class="flex items-center gap-8">
+        {
+          mainNav.map((item) => (
+            <li>
+              <a
+                href={localePath(lang, item.href)}
+                aria-current={isActive(item.href) ? 'page' : undefined}
+                class="font-display text-[0.95rem] font-semibold tracking-[0.08em] uppercase underline-offset-8 hover:underline aria-[current=page]:text-red aria-[current=page]:underline"
+              >{t(item.key)}</a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+
+    <div class="flex items-center gap-3">
+      <ul class="flex items-center font-display text-sm font-semibold tracking-widest" aria-label={t('a11y.language')}>
+        {
+          langs.map((l) =>
+            l === lang ? (
+              <li><span class="block px-1.5 py-2 text-ink" aria-current="true">{languages[l].label}</span></li>
+            ) : published.includes(l) ? (
+              <li>
+                <a href={localePath(l, path)} hreflang={languages[l].htmlLang} lang={languages[l].htmlLang} class="block px-1.5 py-2 text-muted hover:text-ink" title={languages[l].name}>
+                  {languages[l].label}
+                </a>
+              </li>
+            ) : (
+              <li>
+                <span class="block cursor-default px-1.5 py-2 text-muted" title={`${languages[l].name} — ${t('a11y.soon')}`}>
+                  <span aria-hidden="true">{languages[l].label}</span>
+                  <span class="sr-only">{languages[l].name} — {t('a11y.soon')}</span>
+                </span>
+              </li>
+            ),
+          )
+        }
+      </ul>
+
+      <button
+        type="button"
+        class="-mr-2 flex h-11 w-11 items-center justify-center lg:hidden"
+        aria-controls="mobile-nav"
+        aria-expanded="false"
+        aria-label={t('a11y.menu')}
+        data-label-open={t('a11y.menu')}
+        data-label-close={t('a11y.close')}
+        data-menu-toggle
+      >
+        <svg width="26" height="18" viewBox="0 0 26 18" aria-hidden="true" class="overflow-visible">
+          <rect class="origin-center transition-transform duration-300" data-bar y="0" width="26" height="3" fill="currentColor"></rect>
+          <rect class="transition-opacity duration-300" data-bar y="7.5" width="26" height="3" fill="currentColor"></rect>
+          <rect class="origin-center transition-transform duration-300" data-bar y="15" width="26" height="3" fill="currentColor"></rect>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <nav id="mobile-nav" aria-label={t('a11y.mainNav')} class="hidden border-t border-line bg-paper lg:hidden" data-menu>
+    <ul class="wrap flex flex-col py-4">
+      {
+        mainNav.map((item) => (
+          <li>
+            <a
+              href={localePath(lang, item.href)}
+              aria-current={isActive(item.href) ? 'page' : undefined}
+              class="block border-b border-line py-4 font-display text-2xl font-bold uppercase aria-[current=page]:text-red"
+            >{t(item.key)}</a>
+          </li>
+        ))
+      }
+    </ul>
+  </nav>
+</header>
+
+<script>
+  const btn = document.querySelector<HTMLButtonElement>('[data-menu-toggle]');
+  const menu = document.querySelector<HTMLElement>('[data-menu]');
+  if (btn && menu) {
+    const set = (open: boolean) => {
+      btn.setAttribute('aria-expanded', String(open));
+      btn.setAttribute('aria-label', (open ? btn.dataset.labelClose : btn.dataset.labelOpen) ?? '');
+      menu.classList.toggle('hidden', !open);
+      const [b1, b2, b3] = btn.querySelectorAll<SVGRectElement>('[data-bar]');
+      b1.style.transform = open ? 'translateY(7.5px) rotate(45deg)' : '';
+      b2.style.opacity = open ? '0' : '';
+      b3.style.transform = open ? 'translateY(-7.5px) rotate(-45deg)' : '';
+    };
+    btn.addEventListener('click', () => set(btn.getAttribute('aria-expanded') !== 'true'));
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && btn.getAttribute('aria-expanded') === 'true') {
+        set(false);
+        btn.focus();
+      }
+    });
+  }
+</script>

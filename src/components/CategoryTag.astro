@@ -1,0 +1,16 @@
+---
+import { useTranslations, type Lang } from '../i18n/ui';
+
+interface Props {
+  category: 'engagement' | 'strategy' | 'design';
+  lang: Lang;
+}
+const { category, lang } = Astro.props;
+const t = useTranslations(lang);
+const dot = { engagement: 'bg-red', strategy: 'bg-blue', design: 'bg-green' }[category];
+---
+
+<span class="inline-flex items-center gap-2 text-xs font-semibold tracking-[0.1em] text-ink uppercase font-display">
+  <span class:list={['h-2.5 w-2.5', dot]} aria-hidden="true"></span>
+  {t(`cat.${category}.short`)}
+</span>
