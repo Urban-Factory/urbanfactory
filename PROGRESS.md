@@ -28,6 +28,9 @@
 - Тексты: без политики и имён должностных лиц; фонд-донор Rostov 300 не упоминать; старые сайты не упоминать; основатель — Mihail Veklenko.
 - На главной 6 featured: Rostov Tram, I Bike RnD, Zverevo 2030, Kolesnikov Boulevard, Temernik, Urban Festival. Цифры на главной — только бесспорные: 2013, 13 проектов, 3,1 га, 119 км.
 
+## Блокер этапа 2
+- Коммит `d3a244a` сделан локально, push отклонён: у токена gh нет scope `workflow` (нужен для `.github/workflows/deploy.yml`). Решение: `gh auth refresh -h github.com -s workflow`, затем `git push -u origin main` и проверить прогон Actions.
+
 ## Открытые вопросы (ждут Михаила)
 - Цифры: посетители фестиваля 2013; «8 форумов / 6 фестивалей / 2 школы»; WCF 1 500 или 2 000 — на сайт пока не выводятся.
 - I Bike RnD: точная роль UF/Михаила (в карточке нейтрально: «Research and cycling concept»).
