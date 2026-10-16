@@ -1,0 +1,15 @@
+---
+interface Props {
+  title: string;
+  lead?: string;
+  eyebrow?: string;
+}
+const { title, lead, eyebrow } = Astro.props;
+---
+
+<section class="wrap pt-12 pb-12 md:pt-20 md:pb-20">
+  {eyebrow && <p class="eyebrow text-red">{eyebrow}</p>}
+  <h1 class:list={['max-w-[18ch] text-h1', eyebrow && 'mt-5']}>{title}</h1>
+  {lead && <p class="mt-6 max-w-3xl text-lead text-ink/85 md:mt-8">{lead}</p>}
+  <slot />
+</section>

@@ -1,0 +1,87 @@
+---
+import Base from '../../layouts/Base.astro';
+import PageHeader from '../../components/PageHeader.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import { published, useTranslations, type Lang } from '../../i18n/ui';
+import { getCopy } from '../../i18n/copy';
+import { categories, getProjects } from '../../lib/projects';
+import { localePath } from '../../lib/site';
+
+export function getStaticPaths() {
+  return published.map((lang) => ({ params: { lang } }));
+}
+
+const lang = Astro.params.lang as Lang;
+const t = useTranslations(lang);
+const c = getCopy(lang).services;
+const projects = await getProjects(lang);
+const style = {
+  engagement: { bar: 'bg-red', text: 'text-red', n: '01' },
+  strategy: { bar: 'bg-blue', text: 'text-blue', n: '02' },
+  design: { bar: 'bg-green', text: 'text-green-text', n: '03' },
+} as const;
+---
+
+<Base lang={lang} title={`${c.title} — Urban Factory`} description={t('services.meta.description')}>
+  <PageHeader title={c.title} lead={c.lead}>
+    <ul class="mt-10 flex flex-wrap gap-x-8 gap-y-3">
+      {
+        categories.map((cat) => (
+          <li>
+            <a href={`#${cat}`} class="link-arrow text-sm">
+              <span class:list={['h-2.5 w-2.5', style[cat].bar]} aria-hidden="true" />
+              {t(`cat.${cat}`)}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </PageHeader>
+
+  {
+    categories.map((cat, i) => {
+      const block = c.blocks[cat];
+      const related = projects.filter((p) => p.data.category.includes(cat));
+      return (
+        <section id={cat} class:list={['scroll-mt-24 py-section', i % 2 === 0 ? 'bg-surface' : 'bg-paper']} aria-labelledby={`${cat}-title`}>
+          <div class="wrap grid gap-12 lg:grid-cols-12">
+            <div class="reveal lg:col-span-5">
+              <span class:list={['block h-1.5 w-24', style[cat].bar]} aria-hidden="true" />
+              <span class:list={['mt-6 block font-display text-lg font-bold', style[cat].text]}>{style[cat].n}</span>
+              <h2 id={`${cat}-title`} class="mt-2 text-h2">{t(`cat.${cat}`)}</h2>
+              <p class="mt-6 text-lead text-ink/85">{block.intro}</p>
+            </div>
+            <div class="reveal grid gap-12 sm:grid-cols-2 lg:col-span-6 lg:col-start-7">
+              <div>
+                <h3 class="eyebrow text-muted">{t('services.formats')}</h3>
+                <ul class="mt-5 space-y-3">
+                  {block.formats.map((f) => (
+                    <li class="flex gap-3">
+                      <span class:list={['mt-2.5 h-2 w-2 shrink-0', style[cat].bar]} aria-hidden="true" />
+                      <span>{f}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div>
+                <h3 class="eyebrow text-muted">{t('services.projects')}</h3>
+                <ul class="mt-5 divide-y divide-line border-y border-line">
+                  {related.map((p) => (
+                    <li>
+                      <a href={localePath(lang, `/projects/${p.data.slug}/`)} class="group flex items-baseline justify-between gap-4 py-3">
+                        <span class="font-display font-semibold uppercase group-hover:text-red">{p.data.title}</span>
+                        <span class="shrink-0 text-sm text-muted">{p.data.year}</span>
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      );
+    })
+  }
+
+  <CtaBand lang={lang} />
+</Base>

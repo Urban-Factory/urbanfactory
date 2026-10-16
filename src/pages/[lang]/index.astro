@@ -4,6 +4,8 @@ import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import Logo from '../../components/Logo.astro';
 import ProjectCard from '../../components/ProjectCard.astro';
+import Numbers from '../../components/Numbers.astro';
+import CtaBand from '../../components/CtaBand.astro';
 import { published, useTranslations, type Lang } from '../../i18n/ui';
 import { localePath } from '../../lib/site';
 import hero from '../../assets/home/hero-festival.jpg';
@@ -27,14 +29,6 @@ const directions = [
 ] as const;
 
 const steps = ['home.approach.step1', 'home.approach.step2', 'home.approach.step3', 'home.approach.step4', 'home.approach.step5'] as const;
-
-// Только подтверждённые цифры (спорные — см. PROGRESS.md, ждут решения)
-const numbers = [
-  { value: '2013', key: 'home.num.founded' },
-  { value: '13', key: 'home.num.projects' }, // 13 кейсов по аудиту (этап 3)
-  { value: '3.1', key: 'home.num.area' },
-  { value: '119', key: 'home.num.tram' },
-] as const;
 
 const places: { city: string; note?: 'home.geo.founded' | 'home.geo.hq' }[] = [
   { city: 'Rostov-on-Don', note: 'home.geo.founded' },
@@ -151,25 +145,7 @@ const places: { city: string; note?: 'home.geo.founded' | 'home.geo.hq' }[] = [
     </div>
   </section>
 
-  <!-- Цифры -->
-  <section class="bg-ink py-section text-paper" aria-labelledby="numbers-title">
-    <div class="wrap">
-      <h2 id="numbers-title" class="eyebrow text-paper/70">{t('home.numbers.eyebrow')}</h2>
-      <dl class="mt-12 grid gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-4">
-        {
-          numbers.map((n) => (
-            <div class="reveal border-t border-paper/25 pt-6">
-              <dt class="sr-only">{t(n.key)}</dt>
-              <dd>
-                <span class="block font-display text-[clamp(3.5rem,2rem+5vw,6.5rem)] leading-none font-bold">{n.value}</span>
-                <span class="mt-4 block max-w-[22ch] text-paper/80">{t(n.key)}</span>
-              </dd>
-            </div>
-          ))
-        }
-      </dl>
-    </div>
-  </section>
+  <Numbers lang={lang} />
 
   <!-- География -->
   <section class="wrap py-section" aria-labelledby="geo-title">
@@ -192,16 +168,5 @@ const places: { city: string; note?: 'home.geo.founded' | 'home.geo.hq' }[] = [
     </div>
   </section>
 
-  <!-- CTA -->
-  <section class="bg-red text-paper">
-    <div class="wrap flex flex-col gap-8 py-16 md:flex-row md:items-end md:justify-between md:py-24">
-      <div class="max-w-3xl">
-        <h2 class="text-h2">{t('home.cta.title')}</h2>
-        <p class="mt-4 text-lead text-paper/90">{t('home.cta.text')}</p>
-      </div>
-      <a href={localePath(lang, '/contact/')} class="inline-flex min-h-12 shrink-0 items-center self-start bg-paper px-7 font-display font-semibold tracking-[0.08em] text-ink uppercase transition-colors hover:bg-ink hover:text-paper md:self-auto">
-        {t('home.cta.button')}
-      </a>
-    </div>
-  </section>
+  <CtaBand lang={lang} />
 </Base>

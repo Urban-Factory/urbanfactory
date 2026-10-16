@@ -1,0 +1,157 @@
+---
+import { Image } from 'astro:assets';
+import { render } from 'astro:content';
+import Base from '../../../layouts/Base.astro';
+import CategoryTag from '../../../components/CategoryTag.astro';
+import CtaBand from '../../../components/CtaBand.astro';
+import { published, useTranslations, type Lang } from '../../../i18n/ui';
+import { getProjects, type Project } from '../../../lib/projects';
+import { localePath } from '../../../lib/site';
+
+export async function getStaticPaths() {
+  const paths: { params: { lang: Lang; slug: string }; props: Props }[] = [];
+  for (const lang of published) {
+    const list = await getProjects(lang);
+    list.forEach((project, i) => {
+      paths.push({
+        params: { lang, slug: project.data.slug },
+        props: { project, prev: list[i - 1], next: list[i + 1] },
+      });
+    });
+  }
+  return paths;
+}
+
+interface Props {
+  project: Project;
+  prev?: Project;
+  next?: Project;
+}
+
+const { project, prev, next } = Astro.props;
+const lang = Astro.params.lang as Lang;
+const t = useTranslations(lang);
+const p = project.data;
+const { Content } = await render(project);
+
+const facts = [
+  { label: t('project.years'), value: p.year },
+  { label: t('project.place'), value: `${p.city}, ${p.country}` },
+  ...(p.client ? [{ label: t('project.client'), value: p.client }] : []),
+  { label: t('project.role'), value: p.role },
+];
+---
+
+<Base lang={lang} title={`${p.title} — Urban Factory`} description={p.summary}>
+  <article>
+    <header class="wrap pt-10 pb-10 md:pt-16 md:pb-14">
+      <a href={localePath(lang, '/projects/')} class="eyebrow text-muted hover:text-ink">← {t('project.all')}</a>
+      <div class="mt-8 flex flex-wrap gap-3">
+        {p.category.map((c) => <CategoryTag category={c} lang={lang} />)}
+      </div>
+      <h1 class="mt-5 max-w-[22ch] text-h1">{p.title}</h1>
+      <p class="mt-6 max-w-3xl text-lead text-ink/85 md:mt-8">{p.summary}</p>
+    </header>
+
+    {
+      p.cover && (
+        <div class="wrap">
+          <Image
+            src={p.cover}
+            alt={p.coverAlt ?? ''}
+            widths={[480, 800, 1200, 1600, 2000]}
+            sizes="(min-width: 1440px) 1344px, 100vw"
+            loading="eager"
+            fetchpriority="high"
+            class="aspect-[3/2] w-full object-cover md:aspect-[21/9]"
+          />
+        </div>
+      )
+    }
+
+    <div class="wrap grid gap-12 py-section lg:grid-cols-12">
+      <aside class="lg:col-span-4">
+        <dl class="divide-y divide-line border-y border-line lg:sticky lg:top-28">
+          {
+            facts.map((f) => (
+              <div class="grid grid-cols-[7.5rem_1fr] gap-4 py-4">
+                <dt class="eyebrow pt-0.5 text-xs text-muted">{f.label}</dt>
+                <dd>{f.value}</dd>
+              </div>
+            ))
+          }
+        </dl>
+      </aside>
+
+      <div class="lg:col-span-7 lg:col-start-6">
+        <div class="prose-uf">
+          <Content />
+        </div>
+
+        {
+          p.results.length > 0 && (
+            <section class="mt-14 bg-surface p-6 md:p-10" aria-labelledby="results-title">
+              <h2 id="results-title" class="text-2xl">{t('project.results')}</h2>
+              <ul class="mt-6 space-y-4">
+                {p.results.map((r) => (
+                  <li class="flex gap-4">
+                    <span class="mt-2.5 h-2 w-2 shrink-0 bg-red" aria-hidden="true" />
+                    <span>{r}</span>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )
+        }
+      </div>
+    </div>
+
+    {
+      p.gallery.length > 0 && (
+        <section class="wrap pb-section" aria-labelledby="gallery-title">
+          <h2 id="gallery-title" class="eyebrow text-muted">{t('project.gallery')}</h2>
+          <ul class="mt-6 grid gap-4 md:grid-cols-2 md:gap-6">
+            {p.gallery.map((g, i) => (
+              <li class:list={[p.gallery.length % 2 === 1 && i === 0 && 'md:col-span-2']}>
+                <figure>
+                  <Image
+                    src={g.src}
+                    alt={g.alt}
+                    widths={[480, 800, 1200, 1600]}
+                    sizes={p.gallery.length % 2 === 1 && i === 0 ? '(min-width: 1440px) 1344px, 100vw' : '(min-width: 768px) 50vw, 100vw'}
+                    class="w-full bg-surface"
+                  />
+                </figure>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )
+    }
+
+    <nav class="border-t border-line" aria-label={t('project.all')}>
+      <div class="wrap grid gap-px md:grid-cols-2">
+        {
+          prev ? (
+            <a href={localePath(lang, `/projects/${prev.data.slug}/`)} class="group block py-10 md:pr-8">
+              <span class="eyebrow text-muted">← {t('project.prev')}</span>
+              <span class="mt-3 block font-display text-2xl font-bold uppercase group-hover:text-red">{prev.data.title}</span>
+            </a>
+          ) : (
+            <span />
+          )
+        }
+        {
+          next && (
+            <a href={localePath(lang, `/projects/${next.data.slug}/`)} class="group block py-10 text-right md:pl-8">
+              <span class="eyebrow text-muted">{t('project.next')} →</span>
+              <span class="mt-3 block font-display text-2xl font-bold uppercase group-hover:text-red">{next.data.title}</span>
+            </a>
+          )
+        }
+      </div>
+    </nav>
+  </article>
+
+  <CtaBand lang={lang} />
+</Base>

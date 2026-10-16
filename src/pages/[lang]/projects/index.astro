@@ -1,0 +1,105 @@
+---
+import Base from '../../../layouts/Base.astro';
+import PageHeader from '../../../components/PageHeader.astro';
+import ProjectCard from '../../../components/ProjectCard.astro';
+import CtaBand from '../../../components/CtaBand.astro';
+import { published, useTranslations, type Lang } from '../../../i18n/ui';
+import { categories, getProjects } from '../../../lib/projects';
+
+export function getStaticPaths() {
+  return published.map((lang) => ({ params: { lang } }));
+}
+
+const lang = Astro.params.lang as Lang;
+const t = useTranslations(lang);
+const projects = await getProjects(lang);
+const dot = { engagement: 'bg-red', strategy: 'bg-blue', design: 'bg-green' } as const;
+---
+
+<Base lang={lang} title={`${t('nav.projects')} — Urban Factory`} description={t('projects.meta.description')}>
+  <PageHeader title={t('nav.projects')} lead={t('projects.lead')} />
+
+  <section class="wrap pb-section">
+    <!-- Фильтр: без JS видны все проекты, кнопки скрыты -->
+    <div class="mb-12 hidden flex-wrap gap-2 [.js_&]:flex" role="group" aria-label={t('projects.filter.label')} data-filter>
+      <button type="button" data-cat="all" aria-pressed="true" class="filter-btn">{t('projects.filter.all')}</button>
+      {
+        categories.map((c) => (
+          <button type="button" data-cat={c} aria-pressed="false" class="filter-btn">
+            <span class:list={['h-2.5 w-2.5', dot[c]]} aria-hidden="true" />
+            {t(`cat.${c}`)}
+          </button>
+        ))
+      }
+    </div>
+
+    <ul class="grid gap-x-8 gap-y-16 sm:grid-cols-2 lg:grid-cols-3" data-projects>
+      {
+        projects.map((p, i) => (
+          <li data-cats={p.data.category.join(' ')}>
+            <ProjectCard project={p} lang={lang} eager={i < 3} />
+          </li>
+        ))
+      }
+    </ul>
+    <p class="hidden text-muted" data-empty>{t('projects.empty')}</p>
+    <p class="sr-only" aria-live="polite" data-status></p>
+  </section>
+
+  <CtaBand lang={lang} />
+</Base>
+
+<style>
+  .filter-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    min-height: 2.75rem;
+    padding: 0 1.1rem;
+    border: 2px solid var(--color-ink);
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    transition: background-color 0.2s, color 0.2s;
+  }
+  .filter-btn:hover {
+    background: var(--color-surface);
+  }
+  .filter-btn[aria-pressed='true'] {
+    background: var(--color-ink);
+    color: var(--color-paper);
+  }
+</style>
+
+<script>
+  const root = document.querySelector<HTMLElement>('[data-filter]');
+  const items = document.querySelectorAll<HTMLElement>('[data-projects] > li');
+  const empty = document.querySelector<HTMLElement>('[data-empty]');
+  const status = document.querySelector<HTMLElement>('[data-status]');
+  const buttons = root ? [...root.querySelectorAll<HTMLButtonElement>('button')] : [];
+
+  function apply(cat: string) {
+    let shown = 0;
+    items.forEach((li) => {
+      const ok = cat === 'all' || (li.dataset.cats ?? '').split(' ').includes(cat);
+      li.hidden = !ok;
+      if (ok) shown++;
+    });
+    buttons.forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.cat === cat)));
+    empty?.classList.toggle('hidden', shown > 0);
+    if (status) status.textContent = String(shown);
+  }
+
+  buttons.forEach((b) =>
+    b.addEventListener('click', () => {
+      const cat = b.dataset.cat ?? 'all';
+      apply(cat);
+      history.replaceState(null, '', cat === 'all' ? location.pathname : `#${cat}`);
+    }),
+  );
+
+  const initial = location.hash.slice(1);
+  if (buttons.some((b) => b.dataset.cat === initial)) apply(initial);
+</script>

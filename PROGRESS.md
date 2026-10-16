@@ -5,7 +5,7 @@
 ## Статус
 - [x] Этап 1 — аудит (29.09.2026): `C:\projects\Urban Factory\00_admin\site_stage1_audit.md`.
 - [x] Этап 2 — каркас (16.10.2026): Astro 7 + Tailwind 4, графика, i18n, дизайн-система, шапка/футер, главная EN, деплой в GitHub Pages (Actions зелёный, https://urban-factory.github.io/urbanfactory/en/). **Ждёт утверждения стиля.**
-- [ ] Этап 3 — все страницы и кейсы EN.
+- [x] Этап 3 — все страницы и кейсы EN (16.10.2026): Services, Agency, Projects (фильтр), 13 кейсов, Team, Contact. **Ждёт «ок».**
 - [ ] Этап 4 — HR и RU.
 - [ ] Этап 5 — SEO, изображения, Lighthouse, 404.
 - [ ] Этап 6 — домен и DNS.
@@ -19,6 +19,7 @@
 - `src/assets/brand/` — логотип в SVG, векторизован из PDF папки `final`: `logo-horizontal` (шапка/футер), `logo-vertical`, `logo-agency` (с «.agency»), `mark` (знак). Вариант `*-current.svg` красится через `currentColor`.
 - `src/assets/projects/<slug>/cover.jpg` — обложки (уменьшены до ≤2400px; WebP генерирует astro:assets).
 - `src/lib/site.ts` — контакты, `url()`/`localePath()` с учётом base.
+- Тексты страниц — `src/i18n/copy.ts` (по языку), строки интерфейса — `src/i18n/ui.ts`. Ссылки между кейсами в Markdown — относительные (`../slug/`), чтобы работали с любым base.
 - Деплой: `.github/workflows/deploy.yml` (withastro/action → deploy-pages). До этапа 6 сайт на `https://urban-factory.github.io/urbanfactory/` (`BASE_PATH=/urbanfactory`). На этапе 6 поменять `SITE_URL`/`BASE_PATH` в workflow и добавить `public/CNAME`.
 
 ## Ключевые решения
@@ -29,6 +30,12 @@
 - На главной 6 featured: Rostov Tram, I Bike RnD, Zverevo 2030, Kolesnikov Boulevard, Temernik, Urban Festival. Цифры на главной — только бесспорные: 2013, 13 проектов, 3,1 га, 119 км.
 
 ## Открытые вопросы (ждут Михаила)
+- Rostov 300: фото из Facebook с неизвестными правами не использованы — кейс без обложки. Нужны свои фото.
+- Rivers & cities: меморандум АНО «Парк Темерник» — INCITI указан как подписанный (10.2018), в файлах только проект — подтвердить.
+- Urban Festival: в тексте названы организаторы 2013 — Diana Karnaukhova, Alexey Karachinsky — согласовать.
+- Small Wooden House: роль UF — «in collaboration with»; количество страниц не указываем.
+- Great Rostov: обложка — схема ТПУ 2020 года.
+- Фото низкого разрешения: Temernik (897px), Gagarin bridge (748–894px), Rivers & cities (~900px), I Bike RnD (1080px).
 - Цифры: посетители фестиваля 2013; «8 форумов / 6 фестивалей / 2 школы»; WCF 1 500 или 2 000 — на сайт пока не выводятся.
 - I Bike RnD: точная роль UF/Михаила (в карточке нейтрально: «Research and cycling concept»).
 - Команда: кого из экспертов показываем, согласия и фото; фото Михаила.

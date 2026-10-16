@@ -96,8 +96,45 @@ const en = {
   'footer.write': 'Write to us',
   'footer.rights': 'All rights reserved.',
 
+  'projects.meta.description':
+    'Projects by Urban Factory: tram and cycling concepts, city strategies, parks, boulevards, festivals and international exchange.',
+  'projects.lead': 'Thirteen projects from 2013 to today — from first festivals to city-wide programmes.',
+  'projects.filter.label': 'Filter by direction',
+  'projects.filter.all': 'All',
+  'projects.empty': 'No projects in this direction yet.',
+
   'project.years': 'Years',
-  'project.city': 'City',
+  'project.place': 'Place',
+  'project.client': 'Client',
+  'project.role': 'Our role',
+  'project.directions': 'Directions',
+  'project.results': 'Results',
+  'project.gallery': 'Gallery',
+  'project.all': 'All projects',
+  'project.next': 'Next project',
+  'project.prev': 'Previous project',
+
+  'services.meta.description':
+    'Engagement & Events, Strategic Planning & Mobility, Urban Design & Architecture — what Urban Factory does and how.',
+  'services.formats': 'Formats',
+  'services.projects': 'Projects',
+
+  'agency.meta.description':
+    'Urban Factory: founded in Rostov-on-Don in 2013, headquartered in Zagreb since 2020. History, approach and principles.',
+  'agency.history': 'History',
+  'agency.approach': 'Approach',
+  'agency.principles': 'Principles',
+
+  'team.meta.description': 'The Urban Factory team: founder and CEO Mihail Veklenko and a network of experts and partners.',
+  'team.photo': 'Photo of',
+
+  'contact.meta.description': 'Contact Urban Factory in Zagreb: email, WhatsApp, Telegram, Instagram.',
+  'contact.email': 'Email',
+  'contact.whatsapp': 'WhatsApp',
+  'contact.telegram': 'Telegram',
+  'contact.instagram': 'Instagram',
+  'contact.address': 'Office',
+  'contact.map': 'Open on the map',
 };
 
 export type UIKey = keyof typeof en;

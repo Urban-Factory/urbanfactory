@@ -1,0 +1,59 @@
+---
+import Base from '../../layouts/Base.astro';
+import PageHeader from '../../components/PageHeader.astro';
+import { published, useTranslations, type Lang } from '../../i18n/ui';
+import { getCopy } from '../../i18n/copy';
+import { contacts } from '../../lib/site';
+
+export function getStaticPaths() {
+  return published.map((lang) => ({ params: { lang } }));
+}
+
+const lang = Astro.params.lang as Lang;
+const t = useTranslations(lang);
+const c = getCopy(lang).contact;
+
+const channels = [
+  { label: t('contact.email'), value: contacts.email, href: `mailto:${contacts.email}` },
+  { label: t('contact.whatsapp'), value: contacts.whatsappLabel, href: contacts.whatsapp },
+  { label: t('contact.telegram'), value: '@mveklenko', href: contacts.telegram },
+  { label: t('contact.instagram'), value: '@urbanfactory.agency', href: contacts.instagram },
+];
+---
+
+<Base lang={lang} title={`${c.title} — Urban Factory`} description={t('contact.meta.description')}>
+  <PageHeader title={c.title} lead={c.lead} />
+
+  <section class="wrap pb-section">
+    <div class="grid gap-12 lg:grid-cols-12">
+      <ul class="divide-y divide-line border-y border-line lg:col-span-7">
+        {
+          channels.map((ch) => (
+            <li>
+              <a href={ch.href} rel={ch.href.startsWith('http') ? 'noopener' : undefined} class="group grid gap-1 py-6 sm:grid-cols-[10rem_1fr] sm:items-baseline sm:gap-6 md:py-8">
+                <span class="eyebrow text-muted">{ch.label}</span>
+                <span class="font-display text-[clamp(1.5rem,1rem+2vw,2.5rem)] leading-tight font-bold break-words group-hover:text-red">{ch.value}</span>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+
+      <address class="not-italic lg:col-span-4 lg:col-start-9">
+        <div class="bg-ink p-8 text-paper md:p-10">
+          <p class="eyebrow text-paper/70">{t('contact.address')}</p>
+          <p class="mt-4 font-display text-2xl leading-snug font-bold uppercase">
+            {contacts.address.split(', ').map((line) => <span class="block">{line}</span>)}
+          </p>
+          <a href={contacts.mapUrl} rel="noopener" class="link-arrow mt-8 text-sm">{t('contact.map')}</a>
+          <hr class="my-8 border-paper/20" />
+          <p class="text-sm text-paper/80">
+            {t('site.byline')}<br />
+            {contacts.company}<br />
+            {t('footer.oib')}: {contacts.oib}
+          </p>
+        </div>
+      </address>
+    </div>
+  </section>
+</Base>
