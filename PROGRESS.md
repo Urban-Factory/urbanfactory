@@ -22,7 +22,13 @@
 - Тексты страниц — `src/i18n/copy.ts` (по языку), строки интерфейса — `src/i18n/ui.ts`. Ссылки между кейсами в Markdown — относительные (`../slug/`), чтобы работали с любым base.
 - Деплой: `.github/workflows/deploy.yml` (withastro/action → deploy-pages). До этапа 6 сайт на `https://urban-factory.github.io/urbanfactory/` (`BASE_PATH=/urbanfactory`). На этапе 6 поменять `SITE_URL`/`BASE_PATH` в workflow и добавить `public/CNAME`.
 
+## Правила перевода (Михаил, 16.10.2026) — учитывать на этапе 4
+- Видео не переводим. Ролик показывается только в версии сайта на языке ролика (поле lang у youtube / originalLang у записи media). Все видео Rostov 300 и TEDx — RU → только в /ru/. В коде: фильтр по языку в projects/[slug].astro и media/index.astro.
+- Переводим только контент, который произвёл Михаил: интервью, которые он брал (текстовые — Peñalosa, Lerner — на все языки), и его статьи (Articles by Mihail).
+- Публикации СМИ (Press) не переводим — даём ссылку на оригинал.
+
 ## Ключевые решения
+- 16.10.2026: TEDx — видео 7NrY4BeLrgI (RU, канал TEDx Talks) в записи 11-talks.md; плеер только в RU-версии.
 - 16.10.2026: видео — компонент components/LiteYouTube.astro (превью i.ytimg.com, iframe youtube-nocookie.com только по клику, без JS — ссылка на YouTube). У проекта поле youtube: [{id, title, lang}] — в кейсе Rostov 300 12 роликов (блок «Video interviews»). Отчёт Rostov 300 пока не добавляем.
 - 16.10.2026: Media → Interviews by Mihail: все 12 видео Rostov 300 сеткой (запись 21-interviews.md с полем series: rostov-300 — ролики берутся из кейса, один источник), затем Lerner и Peñalosa. Видеоинтервью с Зубаревич — 2 марта 2021. Статья AiF (15.03.2021) — в Press.
 - 16.10.2026: Media — 20 публикаций из 01_research/media_publications.md (раздел «Показываем»), коллекция media: src/content/media/<lang>/NN-<section>.md (по записи на публикацию; поля: title — НАШ нейтральный заголовок, section, date, outlet, originalLang, role, url, interview, video, verify). Разделы: Interviews by Mihail · Articles by Mihail · Talks · Press. Интервью с полным текстом — отдельная коллекция interviews (src/content/interviews/<lang>/), страницы /media/<slug>/. TEDx везде: «TEDxBolshayaSadovayaStreet, Rostov-on-Don, 2018».
@@ -49,7 +55,8 @@
 - На главной 6 featured: Rostov Tram, I Bike RnD, Zverevo 2030, Kolesnikov Boulevard, Temernik, Urban Festival. Цифры (главная и «Агентство»): 2013, 13 проектов, 3,1 га, 119 км, 8 форумов, 6 фестивалей, 2 летние школы, 120 студентов.
 
 ## Открытые вопросы (ждут Михаила)
-- TEDx talk: нужна ссылка на видео выступления (YouTube), чтобы показать его плеером в разделе Talks.
+- 4 видео про трамвай для Media: на канале @urbanfactory.agency их нет (там 12 интервью Rostov 300 + 1 видео «Путешествия»). Нужна ссылка на канал/плейлист.
+- На канале есть 13-е интервью Rostov 300, не вошедшее в список: «Алексан Мкртчян: туристический потенциал и позиционирование Ростова» (sk2xS92M4RA, 51:30). Добавлять?
 - Media, verify: true — проверить ссылки: 10 «What twin cities can do» (Minsk Urban Platform, 01.10.2018); 14 «The Rostov agglomeration needs economies of scale» (Expert South, 15.05.2019); 19 «Tram network modernisation…» (Expert South, 10.10.2021).
 - Rostov 300: фото из Facebook с неизвестными правами не использованы — кейс без обложки. Нужны свои фото.
 - Фото низкого разрешения: Temernik (897px), Gagarin bridge (748–894px), Rivers & cities (~900px), I Bike RnD (1080px).

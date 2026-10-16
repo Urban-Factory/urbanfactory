@@ -27,7 +27,9 @@ const sortKey = (d: string) => (d + '-00-00').slice(0, 10);
 const entries = (await getCollection('media', (m) => m.data.lang === lang)).sort((a, b) =>
   sortKey(b.data.date).localeCompare(sortKey(a.data.date)),
 );
-const seriesBySlug = new Map((await getProjects(lang)).map((p) => [p.data.slug, p.data.youtube]));
+// Видео не переводим: ролики показываем только в версии сайта на языке ролика
+const seriesBySlug = new Map((await getProjects(lang)).map((p) => [p.data.slug, p.data.youtube.filter((v) => v.lang === lang)]));
+const showVideo = (e: CollectionEntry<'media'>) => Boolean(e.data.video) && e.data.originalLang === lang;
 const interviews = new Map(
   (await getCollection('interviews', (m) => m.data.lang === lang)).map((i) => [i.data.slug, i]),
 );
@@ -51,7 +53,7 @@ function card(e: CollectionEntry<'media'>) {
     coverAlt: iv?.data.coverAlt ?? '',
     href: iv ? localePath(lang, `/media/${iv.data.slug}/`) : e.data.video ? `https://www.youtube.com/watch?v=${e.data.video}` : e.data.url,
     internal: Boolean(iv),
-    video: iv ? undefined : e.data.video,
+    video: iv || e.data.originalLang !== lang ? undefined : e.data.video,
   };
 }
 ---
@@ -72,7 +74,7 @@ function card(e: CollectionEntry<'media'>) {
   <div class="wrap space-y-20 pb-section md:space-y-28">
     {
       sections.map((s) => {
-        const list = entries.filter((e) => e.data.section === s);
+        const list = entries.filter((e) => e.data.section === s && !(e.data.series && (seriesBySlug.get(e.data.series) ?? []).length === 0));
         if (list.length === 0) return null;
         return (
           <section id={s} class="scroll-mt-24" aria-labelledby={`${s}-title`}>
@@ -196,6 +198,11 @@ function card(e: CollectionEntry<'media'>) {
                     </div>
                     {e.data.url && (
                       <span class="text-sm md:col-span-2 md:pt-1 md:text-right" aria-hidden="true">{t('media.original')} ↗</span>
+                    )}
+                    {showVideo(e) && (
+                      <div class="md:col-span-6 md:col-start-3">
+                        <LiteYouTube id={e.data.video!} title={e.data.title} lang={lang} class="[&_figcaption]:hidden" />
+                      </div>
                     )}
                   </li>
                 ))}

@@ -40,6 +40,8 @@ const people = getCopy(lang).team.past.find((g) => g.project === p.slug)?.people
 const interviews = (await getCollection('interviews', (m) => m.data.lang === lang && m.data.related.includes(p.slug))).sort(
   (a, b) => a.data.order - b.data.order,
 );
+// Видео не переводим: ролики показываем только в версии сайта на языке ролика
+const series = p.youtube.filter((v) => v.lang === lang);
 const videos = [
   ...(p.videoEn ? [{ label: t('project.videoEn'), src: embedUrl(p.videoEn) }] : []),
   ...(p.videoRu ? [{ label: t('project.videoRu'), src: embedUrl(p.videoRu) }] : []),
@@ -172,11 +174,11 @@ const facts = [
     }
 
     {
-      p.youtube.length > 0 && (
+      series.length > 0 && (
         <section class="wrap pb-section" aria-labelledby="series-title">
           <h2 id="series-title" class="eyebrow text-muted">{t('project.videoSeries')}</h2>
           <ol class="mt-6 grid gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
-            {p.youtube.map((v, i) => (
+            {series.map((v, i) => (
               <li>
                 <LiteYouTube id={v.id} title={`${i + 1}. ${v.title}`} lang={lang} videoLang={v.lang} />
               </li>
