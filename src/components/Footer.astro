@@ -61,7 +61,7 @@ const year = new Date().getFullYear();
       <span aria-hidden="true" class="hidden md:inline">·</span>
       <span>{contacts.company}</span>
       <span aria-hidden="true" class="hidden md:inline">·</span>
-      <span>{contacts.address}</span>
+      <span>{contacts.addressLines.join(', ')}, {t('country.croatia')}</span>
       <span aria-hidden="true" class="hidden md:inline">·</span>
       <span>{t('footer.oib')}: {contacts.oib}</span>
       <span aria-hidden="true" class="hidden md:inline">·</span>

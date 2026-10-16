@@ -33,12 +33,12 @@ const steps = ['home.approach.step1', 'home.approach.step2', 'home.approach.step
 
 // Города — от самой свежей активности к более ранней; под городом — страна
 const places = [
-  { city: 'Yerevan', country: 'country.armenia' },
-  { city: 'Zagreb', country: 'country.croatia' },
-  { city: 'Rostov-on-Don', country: 'country.russia' },
-  { city: 'Zverevo', country: 'country.russia' },
-  { city: 'Moscow', country: 'country.russia' },
-  { city: 'Recife', country: 'country.brazil' },
+  { city: 'city.yerevan', country: 'country.armenia' },
+  { city: 'city.zagreb', country: 'country.croatia' },
+  { city: 'city.rostov', country: 'country.russia' },
+  { city: 'city.zverevo', country: 'country.russia' },
+  { city: 'city.moscow', country: 'country.russia' },
+  { city: 'city.recife', country: 'country.brazil' },
 ] as const;
 ---
 
@@ -163,7 +163,7 @@ const places = [
         {
           places.map((p) => (
             <li class="bg-paper p-5">
-              <span class="block font-display text-lg font-bold uppercase sm:text-xl md:text-2xl">{p.city}</span>
+              <span class="block font-display text-lg font-bold uppercase sm:text-xl md:text-2xl">{t(p.city)}</span>
               <span class="mt-1 block text-sm text-muted">{t(p.country)}</span>
             </li>
           ))

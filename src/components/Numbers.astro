@@ -24,7 +24,7 @@ const numbers = [
         numbers.map((n) => (
           <div class="reveal flex flex-col-reverse justify-end border-t border-paper/25 pt-6">
             <dt class="mt-4 max-w-[22ch] text-paper/80">{t(n.key)}</dt>
-            <dd class="font-display text-[clamp(3.5rem,2rem+5vw,6.5rem)] leading-none font-bold">{n.value}</dd>
+            <dd class="font-display text-[clamp(3.5rem,2rem+5vw,6.5rem)] leading-none font-bold">{lang === 'en' ? n.value : n.value.replace('.', ',')}</dd>
           </div>
         ))
       }

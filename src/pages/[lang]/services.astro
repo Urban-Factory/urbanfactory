@@ -4,7 +4,7 @@ import PageHeader from '../../components/PageHeader.astro';
 import CtaBand from '../../components/CtaBand.astro';
 import { published, useTranslations, type Lang } from '../../i18n/ui';
 import { getCopy } from '../../i18n/copy';
-import { categories, getProjects } from '../../lib/projects';
+import { categories, formatYears, getProjects } from '../../lib/projects';
 import { localePath } from '../../lib/site';
 
 export function getStaticPaths() {
@@ -70,7 +70,7 @@ const style = {
                     <li>
                       <a href={localePath(lang, `/projects/${p.data.slug}/`)} class="group flex items-baseline justify-between gap-4 py-3">
                         <span class="font-display font-semibold uppercase group-hover:text-red">{p.data.title}</span>
-                        <span class="shrink-0 text-sm text-muted">{p.data.year}</span>
+                        <span class="shrink-0 text-sm text-muted">{formatYears(p.data.year, t('project.present'))}</span>
                       </a>
                     </li>
                   ))}

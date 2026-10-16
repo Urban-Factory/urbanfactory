@@ -6,7 +6,7 @@ import CategoryTag from '../../../components/CategoryTag.astro';
 import CtaBand from '../../../components/CtaBand.astro';
 import LiteYouTube from '../../../components/LiteYouTube.astro';
 import { published, useTranslations, type Lang } from '../../../i18n/ui';
-import { getProjects, type Project } from '../../../lib/projects';
+import { formatYears, getProjects, type Project } from '../../../lib/projects';
 import { localePath } from '../../../lib/site';
 import { getCopy } from '../../../i18n/copy';
 import { embedUrl } from '../../../lib/video';
@@ -48,7 +48,7 @@ const videos = [
 ];
 
 const facts = [
-  { label: t('project.years'), value: p.year },
+  { label: t('project.years'), value: formatYears(p.year, t('project.present')) },
   { label: t('project.place'), value: `${p.city}, ${p.country}` },
   ...(p.client ? [{ label: t('project.client'), value: p.client }] : []),
   { label: t('project.role'), value: p.role },

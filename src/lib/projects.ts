@@ -18,6 +18,11 @@ export function projectYears(year: string): [number, number] {
   return [start, end];
 }
 
+/** Годы для показа: «2023–present» → «2023–danas» и т. п. */
+export function formatYears(year: string, present: string): string {
+  return year.replace(/present|today|now/i, present);
+}
+
 /**
  * Правило сайта: сначала самое свежее. Сортировка по году окончания (по убыванию),
  * затем по году начала (по убыванию); при равенстве — поле order.

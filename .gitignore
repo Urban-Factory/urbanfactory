@@ -22,3 +22,6 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# рабочие документы для вычитки переводов (генерируются scripts/export-translations.mjs)
+translations-review/

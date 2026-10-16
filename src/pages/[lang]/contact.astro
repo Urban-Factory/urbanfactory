@@ -57,7 +57,7 @@ const secondary =
         <div class="bg-ink p-8 text-paper md:p-10">
           <p class="eyebrow text-paper/70">{t('contact.address')}</p>
           <p class="mt-4 font-display text-2xl leading-snug font-bold uppercase">
-            {contacts.address.split(', ').map((line) => <span class="block">{line}</span>)}
+            {[...contacts.addressLines, t('country.croatia')].map((line) => <span class="block">{line}</span>)}
           </p>
           <hr class="my-8 border-paper/20" />
           <p class="text-sm text-paper/80">

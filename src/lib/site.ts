@@ -5,7 +5,7 @@ export const contacts = {
   instagramLabel: '@urbanfactory.agency',
   telegram: 'https://t.me/mveklenko',
   telegramLabel: '@mveklenko',
-  address: 'Strojarska cesta 20, 10000 Zagreb, Croatia',
+  addressLines: ['Strojarska cesta 20', '10000 Zagreb'],
   company: 'MAVEK design d.o.o.',
   oib: '13103774326',
 };

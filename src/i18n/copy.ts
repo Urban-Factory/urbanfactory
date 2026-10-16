@@ -1,8 +1,10 @@
 /**
  * Тексты страниц (длинные блоки). Короткие строки интерфейса — в ui.ts.
- * Переводы HR/RU добавляются сюда же отдельными объектами (этап 4).
+ * EN — здесь; переводы — copy.hr.ts и copy.ru.ts (та же структура PageCopy).
  */
 import type { Lang } from './ui';
+import { hr } from './copy.hr.ts';
+import { ru } from './copy.ru.ts';
 
 type Item = { title: string; text: string };
 
@@ -31,7 +33,7 @@ export interface PageCopy {
   contact: { title: string; lead: string };
 }
 
-const en: PageCopy = {
+export const en: PageCopy = {
   services: {
     title: 'Services',
     lead: 'Three directions that work as one process: we listen to the city, turn what we hear into a strategy, and carry it through to design and implementation.',
@@ -291,7 +293,7 @@ const en: PageCopy = {
   },
 };
 
-const copy: Record<Lang, PageCopy> = { en, hr: en, ru: en };
+const copy: Record<Lang, PageCopy> = { en, hr: hr ?? en, ru: ru ?? en };
 
 export function getCopy(lang: Lang): PageCopy {
   return copy[lang];

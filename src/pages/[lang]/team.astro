@@ -6,7 +6,7 @@ import { Picture } from 'astro:assets';
 import portrait from '../../assets/team/mihail-veklenko.png';
 import { published, useTranslations, type Lang } from '../../i18n/ui';
 import { getCopy } from '../../i18n/copy';
-import { byRecency, getProjects } from '../../lib/projects';
+import { byRecency, formatYears, getProjects } from '../../lib/projects';
 import { localePath } from '../../lib/site';
 
 export function getStaticPaths() {
@@ -84,7 +84,7 @@ const groups = c.past
                   <li>
                     <a href={localePath(lang, `/projects/${p.data.slug}/`)} class="group flex items-baseline justify-between gap-4 py-3">
                       <span class="font-display font-semibold uppercase group-hover:text-red">{p.data.title.split(':')[0]}</span>
-                      <span class="shrink-0 text-sm text-muted">{p.data.year}</span>
+                      <span class="shrink-0 text-sm text-muted">{formatYears(p.data.year, t('project.present'))}</span>
                     </a>
                   </li>
                 ))
@@ -109,7 +109,7 @@ const groups = c.past
               <section class="grid gap-4 py-8 md:grid-cols-12 md:gap-8">
                 <h3 class="text-xl md:col-span-4">
                   <a href={localePath(lang, `/projects/${group.project}/`)} class="underline-offset-4 hover:text-red hover:underline">{p.data.title.split(':')[0]}</a>
-                  <span class="mt-1 block font-sans text-sm font-normal tracking-normal text-muted normal-case">{p.data.year}</span>
+                  <span class="mt-1 block font-sans text-sm font-normal tracking-normal text-muted normal-case">{formatYears(p.data.year, t('project.present'))}</span>
                 </h3>
                 <ul class="grid gap-x-8 gap-y-4 sm:grid-cols-2 md:col-span-8 lg:grid-cols-3">
                   {group.people.map((person) => (

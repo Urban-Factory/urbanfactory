@@ -10,7 +10,8 @@
     "dev": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "translations:export": "node scripts/export-translations.mjs"
   },
   "dependencies": {
     "@fontsource-variable/inter": "^5.3.0",
@@ -22,6 +23,8 @@
   "devDependencies": {
     "@astrojs/check": "^0.9.10",
     "@types/node": "^26.6.5",
-    "typescript": "^6.0.3"
+    "docx": "^9.12.0",
+    "typescript": "^6.0.3",
+    "yaml": "^2.9.1"
   }
 }
