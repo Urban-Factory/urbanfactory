@@ -2,12 +2,15 @@ import { defineCollection } from 'astro:content';
 import { glob } from 'astro/loaders';
 import { z } from 'astro/zod';
 
+// ID записи = путь файла (en/rostov-tram), а не поле slug: иначе версии на разных языках с одинаковым slug перезаписывают друг друга
+const byPath = ({ entry }: { entry: string }) => entry.replace(/\.mdx?$/, '');
+
 const category = z.enum(['engagement', 'strategy', 'design']);
 
 // Проекты: src/content/projects/<lang>/<slug>.md — по одному файлу на язык.
 // Шаблон для нового проекта: src/content/project.template.md
 const projects = defineCollection({
-  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/projects' }),
+  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/projects', generateId: byPath }),
   schema: ({ image }) =>
     z.object({
       title: z.string(),
@@ -34,7 +37,7 @@ const projects = defineCollection({
 
 // Интервью и публикации: src/content/media/<lang>/<slug>.md
 const media = defineCollection({
-  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/media' }),
+  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/media', generateId: byPath }),
   schema: ({ image }) =>
     z.object({
       title: z.string(),

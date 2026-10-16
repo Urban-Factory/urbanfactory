@@ -4,7 +4,7 @@ slug: jaime-lerner
 lang: en
 person: "Jaime Lerner"
 date: "14 April 2016"
-place: "Curitiba, Brazil"
+place: "Jaime Lerner Arquitetos Associados studio, Curitiba, Brazil"
 summary: "An evening conversation with the architect of Curitiba in his studio: the birth of bus rapid transit, living close to work, the courage to start, and why mobility and the economy cannot be separated."
 cover: ../../../assets/media/jaime-lerner/01.jpg
 coverAlt: "The green courtyard of Jaime Lerner's studio in Curitiba at night, with lit glass-walled buildings among trees"
