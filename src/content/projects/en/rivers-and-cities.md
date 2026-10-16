@@ -6,7 +6,7 @@ category: [engagement]
 year: "2017–2018"
 city: Moscow, Rostov-on-Don
 country: Russia
-role: "Building partnerships and inter-territorial cooperation: international speakers, visit programme, partner meetings"
+role: "Partner and co-organiser of the “Aqua est vita” session at Moscow Urban Forum 2017; organiser of Prof. Circe Monteiro’s 2018 visit"
 summary: "Two years of exchange between Recife and Rostov-on-Don on how cities can live with their rivers — from a Moscow Urban Forum session to a week of lectures, meetings and a river forum in Rostov."
 results:
   - "Recife's Capibaribe linear park presented at Moscow Urban Forum 2017"
@@ -32,7 +32,7 @@ Rostov-on-Don has a small river, the Temernik, that has long been polluted and c
 
 ## What we did
 
-**Moscow Urban Forum, 2017.** For the session "Aqua est vita: the role of the river in the modern megalopolis", Mihail Veklenko organised the participation of two speakers: Prof. Circe Monteiro, head of the INCITI research institute at UFPE, who presented the Capibaribe Park project, and Swami Jyothirmayah of the Art of Living Foundation.
+**Moscow Urban Forum, 2017.** For the session "Aqua est vita: the role of the river in the modern megalopolis", Urban Factory was a partner and co-organiser of the session (the forum itself is organised by the Moscow Urban Forum directorate). Mihail Veklenko brought two speakers: Prof. Circe Monteiro, head of the INCITI research institute at UFPE, who presented the Capibaribe Park project, and Swami Jyothirmayah of the Art of Living Foundation.
 
 **Prof. Monteiro's visit, 2018.** Urban Factory invited Prof. Monteiro to Russia and organised the whole programme: a public lecture on the Capibaribe linear park in Moscow; a talk at the forum in Rostov-on-Don; a walk and tree planting by the Temernik River; a working meeting with the Temernik Park non-profit; and meetings with Rostov universities on student exchange, joint research and training.
 

@@ -30,6 +30,7 @@ const en = {
   'nav.agency': 'Agency',
   'nav.projects': 'Projects',
   'nav.team': 'Team',
+  'nav.media': 'Media',
   'nav.contact': 'Contact',
 
   'cat.engagement': 'Engagement & Events',
@@ -46,7 +47,6 @@ const en = {
     'We help cities change with the people who live in them — from research and strategy to public spaces, transport and built results.',
   'home.hero.imageAlt': 'Urban Festival in Rostov-on-Don: people at tables and pallet furniture under yellow flags in a courtyard amphitheatre',
   'home.hero.cta': 'See our projects',
-  'home.hero.cta2': 'Get in touch',
 
   'home.directions.eyebrow': 'What we do',
   'home.directions.title': 'Three directions, one process',
@@ -66,8 +66,8 @@ const en = {
   'home.approach.title': 'From research to built result',
   'home.approach.step1': 'Research',
   'home.approach.step2': 'Concept',
-  'home.approach.step3': 'Public support',
-  'home.approach.step4': 'Competition brief',
+  'home.approach.step3': 'Public support (when needed)',
+  'home.approach.step4': 'Development',
   'home.approach.step5': 'Implementation',
   'home.approach.text':
     'We stay with a project for as long as it takes. Our tram and cycling concepts for Rostov-on-Don travelled all the way from first sketches to tender documents and construction.',
@@ -76,23 +76,20 @@ const en = {
   'home.num.founded': 'founded in Rostov-on-Don',
   'home.num.projects': 'projects on this site',
   'home.num.area': 'hectares of public space designed with residents',
-  'home.num.forums': 'forums and conferences organised',
-  'home.num.festivals': 'city festivals',
-  'home.num.schools': 'summer schools',
-  'home.num.students': 'summer-school students',
   'home.num.tram': 'km city tram programme our network concept fed into',
 
   'home.geo.eyebrow': 'Where we work',
   'home.geo.title': 'Local roots, international exchange',
   'home.geo.text':
-    'Founded in Rostov-on-Don in 2013, headquartered in Zagreb since 2020, with projects and partners from Recife to Istria.',
+    'Founded in Rostov-on-Don in 2013, headquartered in Zagreb since 2020, with partners from Recife to Zagreb.',
 
   'home.geo.founded': 'Founded in 2013',
   'home.geo.hq': 'Headquarters since 2020',
 
   'home.cta.title': 'Have a city, a street or a river to work on?',
-  'home.cta.text': 'Write to us by email, WhatsApp or Telegram.',
-  'home.cta.button': 'Contact us',
+  'home.cta.text': 'Email is the best way to reach us.',
+  'cta.write': 'Write to us',
+  'cta.other': 'All contacts',
 
   'footer.company': 'MAVEK design d.o.o.',
   'footer.oib': 'OIB',
@@ -102,7 +99,7 @@ const en = {
 
   'projects.meta.description':
     'Projects by Urban Factory: tram and cycling concepts, city strategies, parks, boulevards, festivals and international exchange.',
-  'projects.lead': 'Thirteen projects from 2013 to today — from first festivals to city-wide programmes.',
+  'projects.lead': 'Twelve projects since 2013 — from first festivals to city-wide programmes.',
   'projects.filter.label': 'Filter by direction',
   'projects.filter.all': 'All',
   'projects.empty': 'No projects in this direction yet.',
@@ -133,14 +130,28 @@ const en = {
   'team.photo': 'Photo of',
   'team.expertise': 'Expertise',
   'team.projectsLed': 'Projects led',
+  'team.experience': 'Experience',
+  'project.people': 'People',
+  'project.media': 'Interviews',
+  'project.mediaInput': 'became an input to this project',
+  'project.mediaPrefix': 'Interview with',
+  'project.videoRu': 'Video (Russian)',
+  'project.videoEn': 'Video (English)',
+  'project.video': 'Video',
+
+  'media.title': 'Media',
+  'media.lead': 'Interviews with leading urbanists, recorded by Urban Factory.',
+  'media.meta.description': 'Interviews by Urban Factory: Enrique Peñalosa and Jaime Lerner on cities, transport and public space.',
+  'media.read': 'Read the interview',
+  'media.firstPublished': 'First published',
+  'media.related': 'Related projects',
+  'media.all': 'All interviews',
 
   'contact.meta.description': 'Contact Urban Factory in Zagreb: email, WhatsApp, Telegram, Instagram.',
   'contact.email': 'Email',
-  'contact.whatsapp': 'WhatsApp',
-  'contact.telegram': 'Telegram',
-  'contact.instagram': 'Instagram',
+  'contact.phone': 'Phone',
+  'contact.messengers': 'Messengers and social media',
   'contact.address': 'Office',
-  'contact.map': 'Open on the map',
 };
 
 export type UIKey = keyof typeof en;

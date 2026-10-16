@@ -114,6 +114,10 @@
     font-size: 1.2rem;
   }
 
+  .prose-uf img { width: 100%; height: auto; margin-top: 2em; background: var(--color-surface); }
+  .prose-uf p:has(> img) + p > em:only-child { display: block; margin-top: -0.4em; font-size: 0.875rem; color: var(--color-muted); }
+  .prose-interview p > strong:first-child { color: var(--color-red); }
+
   /* Появление при прокрутке — только если пользователь не просит меньше движения */
   @media (prefers-reduced-motion: no-preference) {
     .js .reveal {

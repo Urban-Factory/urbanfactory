@@ -46,6 +46,12 @@ const initials = f.name
         </div>
 
         <div class="mt-12 grid gap-10 sm:grid-cols-2">
+          <div class="sm:col-span-2">
+            <h3 class="eyebrow text-muted">{t('team.experience')}</h3>
+            <ul class="mt-5 divide-y divide-line border-y border-line">
+              {f.experience.map((e) => <li class="py-3">{e}</li>)}
+            </ul>
+          </div>
           <div>
             <h3 class="eyebrow text-muted">{t('team.expertise')}</h3>
             <ul class="mt-5 space-y-3">
@@ -84,26 +90,29 @@ const initials = f.name
     <div class="wrap">
       <h2 id="past-title" class="text-h2">{c.pastTitle}</h2>
       <p class="mt-4 max-w-2xl text-lead text-ink/85">{c.pastText}</p>
-      <ul class="mt-12 grid gap-px bg-line sm:grid-cols-2 lg:grid-cols-4">
+      <div class="mt-12 divide-y divide-line border-y border-line">
         {
-          c.past.map((person) => (
-            <li class="flex flex-col bg-surface p-6">
-              <span class="font-display text-xl font-bold uppercase">{person.name}</span>
-              <span class="mt-2 flex-1 text-sm text-ink/80">{person.role}</span>
-              <ul class="mt-4 space-y-1 text-sm">
-                {person.projects.map((s) => {
-                  const p = bySlug.get(s);
-                  return p ? (
+          c.past.map((group) => {
+            const p = bySlug.get(group.project);
+            return p ? (
+              <section class="grid gap-4 py-8 md:grid-cols-12 md:gap-8">
+                <h3 class="text-xl md:col-span-4">
+                  <a href={localePath(lang, `/projects/${group.project}/`)} class="underline-offset-4 hover:text-red hover:underline">{p.data.title.split(':')[0]}</a>
+                  <span class="mt-1 block font-sans text-sm font-normal tracking-normal text-muted normal-case">{p.data.year}</span>
+                </h3>
+                <ul class="grid gap-x-8 gap-y-4 sm:grid-cols-2 md:col-span-8 lg:grid-cols-3">
+                  {group.people.map((person) => (
                     <li>
-                      <a href={localePath(lang, `/projects/${s}/`)} class="underline underline-offset-4 hover:text-red">{p.data.title.split(':')[0]}</a>
+                      <span class="block font-display font-bold uppercase">{person.name}</span>
+                      <span class="block text-sm text-ink/80">{person.role}</span>
                     </li>
-                  ) : null;
-                })}
-              </ul>
-            </li>
-          ))
+                  ))}
+                </ul>
+              </section>
+            ) : null;
+          })
         }
-      </ul>
+      </div>
     </div>
   </section>
 

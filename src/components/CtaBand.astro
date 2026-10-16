@@ -1,4 +1,6 @@
 ---
+import Protected from './Protected.astro';
+import NoJsContact from './NoJsContact.astro';
 import { useTranslations, type Lang } from '../i18n/ui';
 import { localePath } from '../lib/site';
 
@@ -15,8 +17,14 @@ const t = useTranslations(lang);
       <h2 class="text-h2">{t('home.cta.title')}</h2>
       <p class="mt-4 text-lead text-paper/90">{t('home.cta.text')}</p>
     </div>
-    <a href={localePath(lang, '/contact/')} class="inline-flex min-h-12 shrink-0 items-center self-start bg-paper px-7 font-display font-semibold tracking-[0.08em] text-ink uppercase transition-colors hover:bg-ink hover:text-paper md:self-auto">
-      {t('home.cta.button')}
-    </a>
+    <div class="flex shrink-0 flex-col items-start gap-4 md:items-end">
+      <Protected
+        kind="email"
+        text={t('cta.write')}
+        class="inline-flex min-h-14 items-center bg-paper px-8 font-display text-lg font-bold tracking-[0.08em] text-ink uppercase transition-colors hover:bg-ink hover:text-paper"
+      />
+      <NoJsContact class="font-display text-lg font-bold underline underline-offset-4" />
+      <a href={localePath(lang, '/contact/')} class="link-arrow text-sm text-paper/90 hover:text-paper">{t('cta.other')}</a>
+    </div>
   </div>
 </section>

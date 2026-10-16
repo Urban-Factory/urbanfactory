@@ -23,6 +23,18 @@
 - Деплой: `.github/workflows/deploy.yml` (withastro/action → deploy-pages). До этапа 6 сайт на `https://urban-factory.github.io/urbanfactory/` (`BASE_PATH=/urbanfactory`). На этапе 6 поменять `SITE_URL`/`BASE_PATH` в workflow и добавить `public/CNAME`.
 
 ## Ключевые решения
+- 16.10.2026 (правки Михаила, роли и факты подтверждены лично — это источник):
+  - Цифры «8 forums / 6 festivals / 2 summer schools / 120 students» — НЕ подтверждены, на сайт не выводить. Проектов 12.
+  - Small Wooden House удалён (не относится к UF).
+  - Велопроект: «Cycling Rostov-on-Don» (slug cycling-rostov-on-don; HR «Biciklizacija Rostova na Donu», RU «Велосипедизация Ростова-на-Дону»). I Bike RnD — медиапроект внутри, руководил Dmitry Gusev; тендер на проектирование выиграл Dmitry Gusev. Михаил — создал и инициировал проект, организовал и провёл исследование, консультировал до реализации. Хронология 2014 → 2014–2015 → 2016 → 2017 → 2018 → 2020.
+  - Мост на пл. Гагарина: «Concept idea by Mihail Veklenko; illustrations by E. Kotlyarova».
+  - Rostov Tram, Great Rostov: Михаил — автор, руководитель, координатор; партнёр в трамвае — только Alexander Semenov.
+  - Rivers & cities: UF — партнёр-соорганизатор сессии «Aqua est vita» (МУФ 2017), форум организует дирекция МУФ. Видео — поля videoRu/videoEn во frontmatter, блок скрыт, пока пусто.
+  - Team: акцент на Михаиле + блок Experience; «People who worked with us» сгруппированы по проектам (данные — src/i18n/copy.ts → team.past; они же выводятся на страницах кейсов в блоке People). Не показывать: Pishchulina, Rashpil, Karen Medvedev, Mariya Vyskrebentseva, Tatiana Alcantara, Arsenia Godall, Dubover (карточкой), Pligin, Füg, Lerner, Peñalosa; должностных лиц не указывать.
+  - Контакты: главный канал — email (кнопка «Write to us» на главной, в Contacts, в футере и в CTA). Email и телефон закодированы (src/lib/site.ts → protectedContacts), собираются JS (components/Protected.astro); без JS — «Telegram: @mveklenko». Ссылки на карту нет.
+  - Media: новая страница /media/ (коллекция media, EN + RU, HR — этап 4): интервью Enrique Peñalosa (МУФ, 12.2013; first published Delovoy Kvartal 24.02.2014) и Jaime Lerner (Curitiba, 2018). urbanfactory.ru — только источник, на сайте не упоминается. В кейсах Rostov Tram и Great Rostov — строка «Interview with … became an input to this project» (автоматически по полю related).
+  - Agency: Approach (research → concept → public support (when needed) → development → implementation) → Principles → History → Numbers.
+  - Палитра без изменений, #9C0001.
 - 16.10.2026 (ответы Михаила): фестиваль 2013 — 2 000 посетителей и 8 000 онлайн за 16 дней; на сайте «8 forums · 6 festivals · 2 summer schools (120 students)»; I Bike RnD — Михаил инициатор, главный организатор и руководитель проекта от начала до конца, другие участвовали в отдельных фазах; WCF — 1 500 участников из русскоговорящих стран (для CV, на сайте не используется); команда — акцент на Михаиле, остальные только как «People who worked with us» (участники прошлых проектов), не как текущая команда.
 - 16.10.2026: меморандум АНО «Парк Темерник» — INCITI подписан в 10.2018; организаторы фестиваля 2013 — Mihail Veklenko, Diana Karnaukhova, Alexey Karachinsky (имена на сайте); обложка Great Rostov (схема ТПУ 2020) — оставляем.
 - Языки EN/HR/RU, корень → /en/.
@@ -32,8 +44,9 @@
 - На главной 6 featured: Rostov Tram, I Bike RnD, Zverevo 2030, Kolesnikov Boulevard, Temernik, Urban Festival. Цифры (главная и «Агентство»): 2013, 13 проектов, 3,1 га, 119 км, 8 форумов, 6 фестивалей, 2 летние школы, 120 студентов.
 
 ## Открытые вопросы (ждут Михаила)
+- Jaime Lerner: на сайте дата «2018», но в тексте интервью первая поездка в Бразилию — апрель 2016 (и другие признаки 2016). Уточнить дату.
+- Jaime Lerner: раздел «About Jaime Lerner» и заголовки разделов написаны нами (в источнике их нет) — проверить.
 - Rostov 300: фото из Facebook с неизвестными правами не использованы — кейс без обложки. Нужны свои фото.
-- Small Wooden House: роль UF — «in collaboration with»; количество страниц не указываем.
 - Фото низкого разрешения: Temernik (897px), Gagarin bridge (748–894px), Rivers & cities (~900px), I Bike RnD (1080px).
 - Команда: фото Михаила. В «People who worked with us» — только люди, чья роль описана в кейсах (Monteiro, Botler, Guedes, Karnaukhova, Karachinsky, Kotlyarova, Rud, Protsenko). Sarkisyants, Maranhão, Khrustaleva, Krasnov, Litvinova — не указаны: нет проекта/роли в материалах.
 - Фото: для Temernik обложки нет (стоит заглушка-знак); I Bike RnD — только 1080px; Zverevo — кадр из видео.

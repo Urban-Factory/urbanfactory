@@ -22,7 +22,7 @@ Rostov-on-Don will turn 300 in 2049. The city had development plans for the comi
 
 ## What we did
 
-We created Rostov 300, an expert platform of the city's urban community. Mihail Veklenko wrote the concept and the programme, co-curated the project with a cultural expert from the Don State Public Library and led the project team.
+We created Rostov 300, an expert platform of the city's urban community. Mihail Veklenko wrote the concept and the programme, co-curated the project with Alexandra Chernova of the Don State Public Library and led the project team.
 
 The programme had eight themed discussions: heritage and history; culture and sport; the urban environment; economy, infrastructure, trade and tourism; education and technology; urban sociology; human capital; and ecology. The platform opened in March 2020 at the Don State Public Library with a first discussion on heritage — which historic buildings to keep, and what Rostov risks losing.
 

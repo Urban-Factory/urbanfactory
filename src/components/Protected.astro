@@ -1,0 +1,42 @@
+---
+/**
+ * Ссылка на email / телефон / WhatsApp, которую собирает JS на клиенте.
+ * В HTML нет ни адреса, ни номера. Без JS элемент скрыт — рядом нужен <NoJsContact />.
+ *   kind  — email | phone | whatsapp
+ *   text  — видимая подпись; если не задана, показывается сам адрес/номер
+ */
+interface Props {
+  kind: 'email' | 'phone' | 'whatsapp';
+  text?: string;
+  class?: string;
+}
+const { kind, text, class: cls } = Astro.props;
+---
+
+<a hidden data-protected={kind} data-show-value={text ? undefined : ''} class={cls}><slot />{text}</a>
+
+<script>
+  import { protectedContacts as c } from '../lib/site';
+
+  const decode = (parts: readonly string[]) => [...atob(parts.join(''))].reverse().join('');
+
+  document.querySelectorAll<HTMLAnchorElement>('a[data-protected]').forEach((a) => {
+    const kind = a.dataset.protected;
+    let href = '';
+    let value = '';
+    if (kind === 'email') {
+      value = decode(c.email);
+      href = `mailto:${value}`;
+    } else if (kind === 'phone') {
+      value = decode(c.phoneLabel);
+      href = `tel:${decode(c.phone)}`;
+    } else if (kind === 'whatsapp') {
+      value = decode(c.phoneLabel);
+      href = `https://wa.me/${decode(c.whatsapp)}`;
+      a.rel = 'noopener';
+    }
+    a.href = href;
+    if (a.hasAttribute('data-show-value')) a.append(value);
+    a.hidden = false;
+  });
+</script>

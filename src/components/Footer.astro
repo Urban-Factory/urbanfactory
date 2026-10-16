@@ -1,5 +1,7 @@
 ---
 import Logo from './Logo.astro';
+import Protected from './Protected.astro';
+import NoJsContact from './NoJsContact.astro';
 import { useTranslations, type Lang } from '../i18n/ui';
 import { contacts, localePath } from '../lib/site';
 import { mainNav } from '../lib/nav';
@@ -35,13 +37,20 @@ const year = new Date().getFullYear();
       </ul>
     </nav>
 
-    <div class="space-y-3 md:col-span-4">
+    <div class="md:col-span-4">
       <p class="eyebrow text-paper/70">{t('footer.write')}</p>
-      <p><a href={`mailto:${contacts.email}`} class="text-lg underline-offset-4 hover:underline">{contacts.email}</a></p>
-      <p><a href={contacts.whatsapp} class="underline-offset-4 hover:underline" rel="noopener">WhatsApp {contacts.whatsappLabel}</a></p>
-      <ul class="flex gap-6 pt-2">
-        <li><a href={contacts.telegram} class="underline-offset-4 hover:underline" rel="noopener">Telegram</a></li>
-        <li><a href={contacts.instagram} class="underline-offset-4 hover:underline" rel="noopener">Instagram</a></li>
+      <Protected
+        kind="email"
+        text={t('cta.write')}
+        class="mt-4 inline-flex min-h-12 items-center bg-red px-6 font-display font-bold tracking-[0.08em] text-paper uppercase transition-colors hover:bg-paper hover:text-ink"
+      />
+      <p class="mt-3 text-paper/80"><Protected kind="email" class="underline-offset-4 hover:underline" /></p>
+      <NoJsContact class="underline underline-offset-4" />
+      <p class="mt-4"><Protected kind="phone" class="underline-offset-4 hover:underline" /></p>
+      <ul class="mt-5 flex flex-wrap gap-2 text-sm">
+        <li><Protected kind="whatsapp" text="WhatsApp" class="inline-flex min-h-10 items-center border border-paper/40 px-3 hover:border-paper" /></li>
+        <li><a href={contacts.telegram} rel="noopener" class="inline-flex min-h-10 items-center border border-paper/40 px-3 hover:border-paper">Telegram</a></li>
+        <li><a href={contacts.instagram} rel="noopener" class="inline-flex min-h-10 items-center border border-paper/40 px-3 hover:border-paper">Instagram</a></li>
       </ul>
     </div>
   </div>

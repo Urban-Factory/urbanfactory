@@ -7,7 +7,7 @@ year: "2013–2023"
 city: Rostov-on-Don
 country: Russia
 client: Own initiative, later city transport department
-role: Author of the tram network concept and the fleet renewal programme; public advocacy for light rail
+role: "Author, project lead and coordinator — tram network concept, fleet renewal programme, public advocacy for light rail. Partner: Alexander Semenov (MOO “City and Transport”)"
 summary: "A tram network concept and a redesign of the existing fleet that informed the city’s competition documents and, in 2023, a 119 km tram programme."
 results:
   - "Network concept and supporting work handed over to the city transport department"
@@ -38,7 +38,7 @@ Mihail Veklenko proposed another route. Make the existing tram the backbone of a
 ## What we did
 
 - **Network concept (2013).** We presented the first version of an expanded tram network at the Urban Festival in September 2013, with a simple comparison: about 25 billion roubles for a developed tram network against 75–100 billion for one metro line.
-- **Fleet renewal programme (2014).** Together with the city tram operator we built a plan around the depot’s real resources: return about 40 idle cars to service, fit new components, renew interiors and restyle the front and rear with composite parts. The Tatra T3 redesign aimed to extend service life to 30 years. A full-size mock-up of the tram front was shown at the 2014 festival.
+- **Fleet renewal programme (2014).** We built a plan around the depot’s real resources: return about 40 idle cars to service, fit new components, renew interiors and restyle the front and rear with composite parts. The Tatra T3 redesign aimed to extend service life to 30 years. A full-size mock-up of the tram front was shown at the 2014 festival.
 - **Saving a line (2015).** When a street reconstruction plan proposed removing the tracks on Stanislavskogo Street, we prepared an alternative that kept them, and ran a public campaign: round tables, media, street actions.
 - **Strategy and competition (2018–2019).** Mihail proposed a three-level rail system based on the tram — metro-tram on segregated track, a fast “long” tram and the regular tram — with about 20 district routes. This work fed into the competition documents for the tram programme.
 - **Expert advice (2021–2023).** Specialists of the concession winner consulted Mihail on network development.

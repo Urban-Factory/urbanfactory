@@ -51,3 +51,13 @@ More than 100 volunteers helped to run the first festival.
 - A new public square — Square #1 — on a plot that had stood empty.
 - 7 local NGOs and 50 graduates grew out of the festival and the 2014 school.
 - Urban Factory itself — the festival became the starting point for our later work on parks, transport and public space.
+
+## Speakers and partners
+
+**Festival team:** Mihail Veklenko, Diana Karnaukhova, Alexey Karachinsky. In 2013 Mariya Iskrennikova (“Botaniki”) ran the festival programme in the Botanical Garden.
+
+**Lecturers 2014:** Sviatoslav Murunov (Center for Applied Urbanism), Marina Khrustaleva (Arkhnadzor), Daria Zueva.
+
+**Speakers 2013:** Malenko, Popova, Klimovsky, P. Ivanov, Mironov Workshop, Lagodina, Potemkin, Tokarev, Grishechkin, Grinenko; webinars — Arutyunyan, Korolev, Morozov. **Speakers 2014:** Dubover, Bogdanovsky, Vozyanov, Shtompel, Logachev, Sarkisyants.
+
+**Partner organisations:** IKEA (2013), MEGA (2014).

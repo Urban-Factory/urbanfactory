@@ -1,0 +1,12 @@
+---
+import { contacts } from '../lib/site';
+
+interface Props {
+  class?: string;
+}
+const { class: cls } = Astro.props;
+---
+
+<noscript>
+  <a href={contacts.telegram} rel="noopener" class={cls}>Telegram: {contacts.telegramLabel}</a>
+</noscript>

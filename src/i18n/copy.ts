@@ -22,10 +22,10 @@ export interface PageCopy {
   team: {
     title: string;
     lead: string;
-    founder: { name: string; role: string; bio: string[]; expertise: string[]; projects: string[] };
+    founder: { name: string; role: string; bio: string[]; expertise: string[]; experience: string[]; projects: string[] };
     pastTitle: string;
     pastText: string;
-    past: { name: string; role: string; projects: string[] }[];
+    past: { project: string; people: { name: string; role: string }[] }[];
   };
   contact: { title: string; lead: string };
 }
@@ -103,8 +103,8 @@ const en: PageCopy = {
     approach: [
       { title: 'Research', text: 'We start with the city as it is: data, history, people and the real resources at hand.' },
       { title: 'Concept', text: 'A clear idea that can be explained on one page and defended in any room.' },
-      { title: 'Public support', text: 'Festivals, forums, workshops and media turn a concept into a shared goal.' },
-      { title: 'Competition brief', text: 'We help put the idea into tender and competition documents, so it survives the hand-over.' },
+      { title: 'Public support (when needed)', text: 'When a project needs it, festivals, forums, workshops and media turn a concept into a shared goal.' },
+      { title: 'Development', text: 'We develop the project in detail — design, documentation and the briefs for competitions and tenders — so it survives the hand-over.' },
       { title: 'Implementation', text: 'We stay with the project through design and construction for as long as we are needed.' },
     ],
     principles: [
@@ -134,7 +134,7 @@ const en: PageCopy = {
       role: 'Founder & CEO',
       bio: [
         'Mihail founded Urban Factory in Rostov-on-Don in 2013, after more than a decade in real estate and development.',
-        'He initiated and led the agency’s key projects: the tram network concept for Rostov-on-Don, the I Bike RnD cycling programme, the Zverevo Development Strategy 2030, the Temernik River Park and the Urban Festival where Urban Factory was born.',
+        'He initiated and led the agency’s key projects: the tram network concept for Rostov-on-Don, the cycling programme for Rostov-on-Don, the Zverevo Development Strategy 2030, the Temernik River Park and the Urban Festival where Urban Factory was born.',
         'He holds a Postgraduate Diploma in Urban Studies from The University of Manchester (joint programme with MSSES) and is a postgraduate student in urban transport at the Faculty of Transport and Traffic Sciences in Zagreb.',
         'Since 2020 he has led the agency from Zagreb, Croatia.',
       ],
@@ -145,24 +145,103 @@ const en: PageCopy = {
         'Project economics and partnerships',
         'International cooperation',
       ],
-      projects: ['rostov-tram', 'i-bike-rnd', 'zverevo-strategy-2030', 'temernik-river-park', 'urban-festival-rostov', 'great-rostov', 'urban-thinkers-campus-recife', 'rostov-300'],
+      experience: [
+        'Producer of 5 sessions, Moscow Urban Forum, 2013',
+        'Tutor, Faculty of Media Communications, Don State Technical University, 2014–2015',
+        'On-site consultant, Innopolis, 2015',
+        'Transport researcher, CRISALIDE (EU ERA.NET RUS Plus), 2018–2019',
+        'Koordinator voditelja projekata, Institut IGH, Zagreb, 2022',
+        'Postgraduate study “Gradski promet”, Faculty of Transport and Traffic Sciences, University of Zagreb, 2024–present',
+      ],
+      projects: ['rostov-tram', 'cycling-rostov-on-don', 'zverevo-strategy-2030', 'temernik-river-park', 'urban-festival-rostov', 'great-rostov', 'urban-thinkers-campus-recife', 'rostov-300'],
     },
     pastTitle: 'People who worked with us',
     pastText: 'Experts and colleagues who took part in our past projects.',
     past: [
-      { name: 'Prof. Circe Monteiro', role: 'INCITI, Federal University of Pernambuco (Recife) — international partner', projects: ['temernik-river-park', 'rivers-and-cities', 'urban-thinkers-campus-recife'] },
-      { name: 'Milton Botler', role: 'Recife — co-author of the high-speed rail proposal', projects: ['great-rostov'] },
-      { name: 'Pedro Guedes', role: 'Recife — co-author of the high-speed rail proposal', projects: ['great-rostov'] },
-      { name: 'Diana Karnaukhova', role: 'Co-organiser of the first Urban Festival', projects: ['urban-festival-rostov'] },
-      { name: 'Alexey Karachinsky', role: 'Architect, co-organiser of the first Urban Festival', projects: ['urban-festival-rostov'] },
-      { name: 'E. Kotlyarova', role: 'Architect of the cycle and pedestrian bridge', projects: ['gagarin-bridge'] },
-      { name: 'Daria Rud', role: 'Sociologist — socio-cultural study of the city', projects: ['rostov-300'] },
-      { name: 'Nikolay Protsenko', role: 'Journalist — texts and interviews', projects: ['rostov-300'] },
+      { project: 'rostov-tram', people: [{ name: 'Alexander Semenov', role: 'MOO “City and Transport” — partner' }] },
+      { project: 'cycling-rostov-on-don', people: [{ name: 'Dmitry Gusev', role: 'Head of the I Bike RnD media project; won the design tender' }] },
+      {
+        project: 'zverevo-strategy-2030',
+        people: [
+          { name: 'Elena Ishchenko', role: 'Territorial marketing expert' },
+          { name: 'Nikolay Pryanishnikov', role: 'MSSES' },
+          { name: 'Grisha Krasnov', role: 'Video' },
+          { name: 'Prof. Circe Monteiro', role: 'Expert round table' },
+        ],
+      },
+      {
+        project: 'kolesnikov-boulevard',
+        people: [
+          { name: 'Julia Litvinova', role: 'Architect' },
+          { name: 'Mikael Sarkisyants', role: 'Consulting architect' },
+          { name: 'Alexey Matveenko', role: '“Gorod-Park” — workshop format' },
+          { name: 'Elena Ishchenko', role: 'Territorial marketing expert' },
+          { name: 'Nikolay Pryanishnikov', role: 'MSSES' },
+        ],
+      },
+      {
+        project: 'temernik-river-park',
+        people: [
+          { name: 'Yuri Pogrebshchikov', role: 'Director, ANO “Park Temernik”' },
+          { name: 'N. N. Britvina', role: 'Initiative group' },
+          { name: 'Prof. Circe Monteiro', role: 'INCITI / UFPE, Recife' },
+          { name: 'Don State Technical University', role: 'Academic partner' },
+        ],
+      },
+      {
+        project: 'urban-festival-rostov',
+        people: [
+          { name: 'Diana Karnaukhova', role: 'Festival team' },
+          { name: 'Alexey Karachinsky', role: 'Festival team' },
+          { name: 'Mariya Iskrennikova', role: '“Botaniki” — festival in the Botanical Garden, 2013' },
+          { name: 'Sviatoslav Murunov', role: 'Center for Applied Urbanism — lecturer, 2014' },
+          { name: 'Marina Khrustaleva', role: 'Arkhnadzor — lecturer, 2014' },
+          { name: 'Daria Zueva', role: 'Lecturer, 2014' },
+        ],
+      },
+      {
+        project: 'great-rostov',
+        people: [
+          { name: 'Milton Botler', role: 'Recife — co-author of the high-speed rail proposal' },
+          { name: 'Pedro Guedes', role: 'Recife — co-author of the high-speed rail proposal' },
+          { name: 'Nikolay Protsenko', role: 'Journalist' },
+        ],
+      },
+      {
+        project: 'urban-thinkers-campus-recife',
+        people: [
+          { name: 'Prof. Circe Monteiro', role: 'INCITI' },
+          { name: 'Bárbara Maranhão', role: 'Interpreter' },
+          { name: 'Clemente Coelho Junior', role: 'Speaker' },
+          { name: 'Renato Lins', role: 'Speaker' },
+          { name: 'Renato Raposo', role: 'Speaker' },
+          { name: 'Denise Moura', role: 'Speaker' },
+        ],
+      },
+      {
+        project: 'rivers-and-cities',
+        people: [
+          { name: 'Prof. Circe Monteiro', role: 'INCITI / UFPE, Recife' },
+          { name: 'Swami Jyothirmayah', role: 'Speaker, Moscow Urban Forum 2017' },
+        ],
+      },
+      {
+        project: 'rostov-300',
+        people: [
+          { name: 'Alexandra Chernova', role: 'Co-curator, Don State Public Library' },
+          { name: 'Daria Rud', role: 'Sociologist' },
+          { name: 'Nikolay Protsenko', role: 'Journalist' },
+          { name: 'Grisha Krasnov', role: 'Video' },
+          { name: 'Daria Solovyova', role: 'PR' },
+          { name: 'Alexey Solovyov', role: 'SMM' },
+        ],
+      },
+      { project: 'gagarin-bridge', people: [{ name: 'E. Kotlyarova', role: 'Illustrations' }] },
     ],
   },
   contact: {
     title: 'Contact',
-    lead: 'Write to us about your city, street, river or project. The fastest way is email or WhatsApp.',
+    lead: 'Write to us about your city, street, river or project. Email is the best way to reach us.',
   },
 };
 

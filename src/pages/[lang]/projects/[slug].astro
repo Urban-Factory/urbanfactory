@@ -1,12 +1,14 @@
 ---
 import { Image } from 'astro:assets';
-import { render } from 'astro:content';
+import { getCollection, render } from 'astro:content';
 import Base from '../../../layouts/Base.astro';
 import CategoryTag from '../../../components/CategoryTag.astro';
 import CtaBand from '../../../components/CtaBand.astro';
 import { published, useTranslations, type Lang } from '../../../i18n/ui';
 import { getProjects, type Project } from '../../../lib/projects';
 import { localePath } from '../../../lib/site';
+import { getCopy } from '../../../i18n/copy';
+import { embedUrl } from '../../../lib/video';
 
 export async function getStaticPaths() {
   const paths: { params: { lang: Lang; slug: string }; props: Props }[] = [];
@@ -33,6 +35,14 @@ const lang = Astro.params.lang as Lang;
 const t = useTranslations(lang);
 const p = project.data;
 const { Content } = await render(project);
+const people = getCopy(lang).team.past.find((g) => g.project === p.slug)?.people ?? [];
+const interviews = (await getCollection('media', (m) => m.data.lang === lang && m.data.related.includes(p.slug))).sort(
+  (a, b) => a.data.order - b.data.order,
+);
+const videos = [
+  ...(p.videoEn ? [{ label: t('project.videoEn'), src: embedUrl(p.videoEn) }] : []),
+  ...(p.videoRu ? [{ label: t('project.videoRu'), src: embedUrl(p.videoRu) }] : []),
+];
 
 const facts = [
   { label: t('project.years'), value: p.year },
@@ -103,8 +113,62 @@ const facts = [
             </section>
           )
         }
+
+        {
+          interviews.length > 0 && (
+            <section class="mt-10 border-l-4 border-red pl-6" aria-label={t('project.media')}>
+              <ul class="space-y-3">
+                {interviews.map((m) => (
+                  <li class="text-lead">
+                    {t('project.mediaPrefix')}{' '}
+                    <a href={localePath(lang, `/media/${m.data.slug}/`)} class="font-semibold underline underline-offset-4 hover:text-red">{m.data.person}</a>{' '}
+                    {t('project.mediaInput')}.
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )
+        }
+
+        {
+          people.length > 0 && (
+            <section class="mt-14" aria-labelledby="people-title">
+              <h2 id="people-title" class="eyebrow text-muted">{t('project.people')}</h2>
+              <ul class="mt-5 grid gap-x-8 gap-y-4 border-t border-line pt-5 sm:grid-cols-2">
+                {people.map((person) => (
+                  <li>
+                    <span class="block font-display font-bold uppercase">{person.name}</span>
+                    <span class="block text-sm text-ink/80">{person.role}</span>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )
+        }
       </div>
     </div>
+
+    {
+      videos.length > 0 && (
+        <section class="wrap pb-section" aria-labelledby="video-title">
+          <h2 id="video-title" class="eyebrow text-muted">{t('project.video')}</h2>
+          <ul class="mt-6 grid gap-6 md:grid-cols-2">
+            {videos.map((v) => (
+              <li>
+                <iframe
+                  src={v.src}
+                  title={`${p.title} — ${v.label}`}
+                  loading="lazy"
+                  allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+                  class="aspect-video w-full bg-ink"
+                />
+                <p class="mt-2 text-sm text-muted">{v.label}</p>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )
+    }
 
     {
       p.gallery.length > 0 && (

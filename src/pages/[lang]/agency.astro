@@ -18,22 +18,6 @@ const c = getCopy(lang).agency;
 <Base lang={lang} title={`${c.title} — Urban Factory`} description={t('agency.meta.description')}>
   <PageHeader title={t('home.hero.title')} eyebrow={c.title} lead={c.lead} />
 
-  <!-- История -->
-  <section class="wrap pb-section" aria-labelledby="history-title">
-    <h2 id="history-title" class="eyebrow text-muted">{t('agency.history')}</h2>
-    <ol class="mt-8 border-t border-line">
-      {
-        c.history.map((h) => (
-          <li class="reveal grid gap-3 border-b border-line py-8 md:grid-cols-12 md:gap-8 md:py-10">
-            <span class="font-display text-3xl font-bold text-red md:col-span-3 md:text-4xl">{h.year}</span>
-            <h3 class="text-2xl md:col-span-4 md:text-3xl">{h.title}</h3>
-            <p class="text-ink/85 md:col-span-5">{h.text}</p>
-          </li>
-        ))
-      }
-    </ol>
-  </section>
-
   <!-- Подход -->
   <section class="bg-surface py-section" aria-labelledby="approach-title">
     <div class="wrap">
@@ -66,6 +50,22 @@ const c = getCopy(lang).agency;
         ))
       }
     </ul>
+  </section>
+
+  <!-- История -->
+  <section class="wrap pb-section" aria-labelledby="history-title">
+    <h2 id="history-title" class="eyebrow text-muted">{t('agency.history')}</h2>
+    <ol class="mt-8 border-t border-line">
+      {
+        c.history.map((h) => (
+          <li class="reveal grid gap-3 border-b border-line py-8 md:grid-cols-12 md:gap-8 md:py-10">
+            <span class="font-display text-3xl font-bold text-red md:col-span-3 md:text-4xl">{h.year}</span>
+            <h3 class="text-2xl md:col-span-4 md:text-3xl">{h.title}</h3>
+            <p class="text-ink/85 md:col-span-5">{h.text}</p>
+          </li>
+        ))
+      }
+    </ol>
   </section>
 
   <Numbers lang={lang} />

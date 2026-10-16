@@ -5,6 +5,7 @@ import Base from '../../layouts/Base.astro';
 import Logo from '../../components/Logo.astro';
 import ProjectCard from '../../components/ProjectCard.astro';
 import Numbers from '../../components/Numbers.astro';
+import Protected from '../../components/Protected.astro';
 import CtaBand from '../../components/CtaBand.astro';
 import { published, useTranslations, type Lang } from '../../i18n/ui';
 import { localePath } from '../../lib/site';
@@ -36,7 +37,6 @@ const places: { city: string; note?: 'home.geo.founded' | 'home.geo.hq' }[] = [
   { city: 'Zverevo', note: undefined },
   { city: 'Moscow', note: undefined },
   { city: 'Recife', note: undefined },
-  { city: 'Istria', note: undefined },
 ];
 ---
 
@@ -53,9 +53,11 @@ const places: { city: string; note?: 'home.geo.founded' | 'home.geo.hq' }[] = [
         <a href={localePath(lang, '/projects/')} class="inline-flex min-h-12 items-center bg-ink px-6 font-display font-semibold tracking-[0.08em] text-paper uppercase transition-colors hover:bg-red">
           {t('home.hero.cta')}
         </a>
-        <a href={localePath(lang, '/contact/')} class="inline-flex min-h-12 items-center border-2 border-ink px-6 font-display font-semibold tracking-[0.08em] uppercase transition-colors hover:bg-ink hover:text-paper">
-          {t('home.hero.cta2')}
-        </a>
+        <Protected
+          kind="email"
+          text={t('cta.write')}
+          class="inline-flex min-h-12 items-center border-2 border-ink px-6 font-display font-semibold tracking-[0.08em] uppercase transition-colors hover:bg-ink hover:text-paper"
+        />
       </div>
     </div>
   </section>

@@ -7,7 +7,7 @@ year: "2013–2015"
 city: Rostov-on-Don
 country: Russia
 client: Own initiative
-role: "Idea and concept: Mihail Veklenko; architecture: E. Kotlyarova"
+role: "Concept idea by Mihail Veklenko; illustrations by E. Kotlyarova"
 summary: "A concept proposal for a cycle and pedestrian bridge over Gagarin Square, with gentle ramps, a wooden deck and the square’s greenery kept intact."
 results:
   - "Concept proposal with drawings on a survey base and presentation boards (2015)"
@@ -30,7 +30,7 @@ We wanted to turn the junction into a connection: shorter, safer routes for peop
 
 ## What we did
 
-The idea and concept came from Mihail Veklenko. The architectural solution was developed by architect E. Kotlyarova, working with the Urban Factory team. The first description dates from October 2013; the drawings were completed in January 2015.
+The idea and concept came from Mihail Veklenko. The illustrations were made by E. Kotlyarova, working with the Urban Factory team. The first description dates from October 2013; the drawings were completed in January 2015.
 
 The concept proposes:
 
@@ -43,7 +43,7 @@ We prepared schemes on a survey base, presentation boards and an aerial overlay,
 
 ## Result
 
-The proposal was not adopted, and the project did not continue. We show it here as what it is: a concept proposal. It is an early example of how we work on mobility — starting from people on foot and on bicycles, and tying a local design to the wider network. The same thinking runs through our cycling work in [I Bike RnD](../i-bike-rnd/).
+The proposal was not adopted, and the project did not continue. We show it here as what it is: a concept proposal. It is an early example of how we work on mobility — starting from people on foot and on bicycles, and tying a local design to the wider network. The same thinking runs through our cycling work in [Cycling Rostov-on-Don](../cycling-rostov-on-don/).
 
 ## Numbers
 

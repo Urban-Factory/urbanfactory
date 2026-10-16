@@ -3,5 +3,6 @@ export const mainNav = [
   { key: 'nav.agency', href: '/agency/' },
   { key: 'nav.projects', href: '/projects/' },
   { key: 'nav.team', href: '/team/' },
+  { key: 'nav.media', href: '/media/' },
   { key: 'nav.contact', href: '/contact/' },
 ] as const;

@@ -1,16 +1,27 @@
 import type { Lang } from '../i18n/ui';
 
 export const contacts = {
-  email: 'info@urbanfactory.agency',
   instagram: 'https://www.instagram.com/urbanfactory.agency',
-  whatsapp: 'https://wa.me/385916030470',
-  whatsappLabel: '+385 91 603 0470',
+  instagramLabel: '@urbanfactory.agency',
   telegram: 'https://t.me/mveklenko',
+  telegramLabel: '@mveklenko',
   address: 'Strojarska cesta 20, 10000 Zagreb, Croatia',
-  mapUrl: 'https://www.openstreetmap.org/search?query=Strojarska%20cesta%2020%2C%20Zagreb',
   company: 'MAVEK design d.o.o.',
   oib: '13103774326',
 };
+
+/**
+ * Email и телефон не лежат в HTML открытым текстом (защита от ботов):
+ * строка перевёрнута, закодирована в base64 и разбита на части.
+ * Собирает их скрипт в components/Protected.astro. Новое значение:
+ *   node -e "console.log(Buffer.from([...'текст'].reverse().join('')).toString('base64'))"
+ */
+export const protectedContacts = {
+  email: ['eWNuZWdhLnly', 'b3RjYWZuYWJy', 'dUBvZm5p'],
+  phone: ['MDc0MDMwNjE5', 'NTgzKw=='],
+  phoneLabel: ['MDc0MCAzMDYg', 'MTkgNTgzKw=='],
+  whatsapp: ['MDc0MDMwNjE5', 'NTgz'],
+} as const;
 
 /** Ссылка с учётом base (до этапа 6 сайт живёт в подпапке /urbanfactory/). */
 export function url(path = '/'): string {

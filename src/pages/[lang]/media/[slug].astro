@@ -1,0 +1,94 @@
+---
+import { Image } from 'astro:assets';
+import { getCollection, render, type CollectionEntry } from 'astro:content';
+import Base from '../../../layouts/Base.astro';
+import CtaBand from '../../../components/CtaBand.astro';
+import { published, useTranslations, type Lang } from '../../../i18n/ui';
+import { getProjects } from '../../../lib/projects';
+import { localePath } from '../../../lib/site';
+
+export async function getStaticPaths() {
+  const items = await getCollection('media', (m) => (published as string[]).includes(m.data.lang));
+  return items.map((item) => ({ params: { lang: item.data.lang, slug: item.data.slug }, props: { item } }));
+}
+
+interface Props {
+  item: CollectionEntry<'media'>;
+}
+
+const { item } = Astro.props;
+const lang = Astro.params.lang as Lang;
+const t = useTranslations(lang);
+const m = item.data;
+const { Content } = await render(item);
+const projects = await getProjects(lang);
+const related = projects.filter((p) => m.related.includes(p.data.slug));
+---
+
+<Base lang={lang} title={`${m.title} — Urban Factory`} description={m.summary}>
+  <article>
+    <header class="wrap pt-10 pb-10 md:pt-16 md:pb-14">
+      <a href={localePath(lang, '/media/')} class="eyebrow text-muted hover:text-ink">← {t('media.all')}</a>
+      <p class="mt-8 eyebrow text-red">{m.date} · {m.place}</p>
+      <h1 class="mt-5 max-w-[22ch] text-h1">{m.title}</h1>
+      <p class="mt-6 max-w-3xl text-lead text-ink/85 md:mt-8">{m.summary}</p>
+    </header>
+
+    {
+      m.cover && (
+        <div class="wrap">
+          <Image
+            src={m.cover}
+            alt={m.coverAlt ?? ''}
+            widths={[480, 800, 1200, 1600, 2000]}
+            sizes="(min-width: 1440px) 1344px, 100vw"
+            loading="eager"
+            fetchpriority="high"
+            class="max-h-[80vh] w-full object-cover"
+          />
+        </div>
+      )
+    }
+
+    <div class="wrap grid gap-12 py-section lg:grid-cols-12">
+      <div class="prose-uf prose-interview lg:col-span-8 lg:col-start-3">
+        <Content />
+      </div>
+
+      <footer class="space-y-8 lg:col-span-8 lg:col-start-3">
+        {
+          m.firstPublished && (
+            <p class="border-t border-line pt-6 text-sm text-muted">
+              {t('media.firstPublished')}:{' '}
+              {m.firstPublished.url ? (
+                <a href={m.firstPublished.url} rel="noopener" class="underline underline-offset-4 hover:text-ink">
+                  {m.firstPublished.label}
+                </a>
+              ) : (
+                m.firstPublished.label
+              )}
+            </p>
+          )
+        }
+        {
+          related.length > 0 && (
+            <div class="bg-surface p-6 md:p-8">
+              <h2 class="eyebrow text-muted">{t('media.related')}</h2>
+              <ul class="mt-4 space-y-2">
+                {related.map((p) => (
+                  <li>
+                    <a href={localePath(lang, `/projects/${p.data.slug}/`)} class="font-display text-xl font-bold uppercase hover:text-red">
+                      {p.data.title}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )
+        }
+      </footer>
+    </div>
+  </article>
+
+  <CtaBand lang={lang} />
+</Base>
