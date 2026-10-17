@@ -28,19 +28,19 @@ Rostov-on-Don, Azov, Aksay, Bataysk, Novocherkassk and Taganrog work as one conu
 
 The planned Moscow–Adler high-speed line created a second problem. Its station was planned about 15 km outside the city, on the opposite side from the new Platov airport. Trains inside the city are slow, and the centre sits inside a rail ring with only nine crossings.
 
-## What we did
+## What was done
 
-We started the work on our own initiative in 2016 and developed it actively from autumn 2017.
+Urban Factory started the work on its own initiative in 2016 and developed it actively from autumn 2017.
 
-- **Research.** We collected data on the region’s railways: 583 km of track, of which about 110 km carry no passengers. We sent data requests to transport authorities and developers.
+- **Research.** The team collected data on the region’s railways: 583 km of track, of which about 110 km carry no passengers, and sent data requests to transport authorities and developers.
 - **Concept.** The text works at three scales: the macro-region and logistics, the conurbation, and the compact city. Its core thesis: transport infrastructure built ahead of demand will decide Great Rostov’s competitiveness.
-- **One rail system.** We proposed linking the tram networks of the three cities, using some railway track for trams, running city trains on about 250 km of existing lines, and introducing one zonal fare with free timed transfers.
-- **High-speed rail.** With Milton Botler and Pedro Guedes from Recife, Brazil, we proposed routing the line past Platov airport with a stop there, and a new city station reachable by tram. Further ideas: extending rail from Azov along the coast and rebuilding Pervomaiskaya as the city’s second station.
-- **Public presentation.** We presented the concept at the public library in Rostov-on-Don on 3 June 2018.
+- **One rail system.** The concept proposed linking the tram networks of the three cities, using some railway track for trams, running city trains on about 250 km of existing lines, and introducing one zonal fare with free timed transfers.
+- **High-speed rail.** Together with Milton Botler and Pedro Guedes from Recife, Brazil, Urban Factory proposed routing the line past Platov airport with a stop there, and a new city station reachable by tram. Further ideas: extending rail from Azov along the coast and rebuilding Pervomaiskaya as the city’s second station.
+- **Public presentation.** The concept was presented at the public library in Rostov-on-Don on 3 June 2018.
 
 ## Result
 
-Great Rostov is a complete strategic concept, not a built project. It set out how rail can tie a conurbation of several cities together, starting from the infrastructure it already has. The high-speed rail proposal was sent to the city transport department in 2019. Parts of the thinking — the tram as the backbone and interchanges with city trains — carried into our work on the [Rostov tram](../rostov-tram/).
+Great Rostov is a complete strategic concept, not a built project. It set out how rail can tie a conurbation of several cities together, starting from the infrastructure it already has. The high-speed rail proposal was sent to the city transport department in 2019. Parts of the thinking — the tram as the backbone and interchanges with city trains — carried into the agency’s work on the [Rostov tram](../rostov-tram/).
 
 ## Numbers
 

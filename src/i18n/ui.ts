@@ -27,7 +27,7 @@ const en = {
   'a11y.soon': 'coming soon',
 
   'notFound.title': 'Page not found',
-  'notFound.text': 'This page doesn\'t exist or has moved. Try the home page or our projects.',
+  'notFound.text': 'This page doesn\'t exist or has moved. Try the home page or the projects.',
   'notFound.home': 'Home page',
   'nav.services': 'Services',
   'nav.agency': 'Agency',
@@ -47,11 +47,11 @@ const en = {
   'home.hero.eyebrow': 'Urban development agency · Zagreb',
   'home.hero.title': 'The city is the people',
   'home.hero.lead':
-    'We help cities change with the people who live in them — from research and strategy to public spaces, transport and built results.',
-  'home.hero.imageAlt': 'Urban Festival in Rostov-on-Don: people at tables and pallet furniture under yellow flags in a courtyard amphitheatre',
-  'home.hero.cta': 'See our projects',
+    'Urban Factory helps cities change together with the people who live in them — from research and strategy to public spaces, transport and built results.',
+  'home.hero.imageAlt': 'Urban Festival Rostov: people at tables and pallet furniture under yellow flags in a courtyard amphitheatre',
+  'home.hero.cta': 'See projects',
 
-  'home.directions.eyebrow': 'What we do',
+  'home.directions.eyebrow': 'Directions',
   'home.directions.title': 'Three directions, one process',
   'home.dir.engagement.text':
     'Festivals, forums and participatory processes that bring residents, experts, business and city teams to one table.',
@@ -65,23 +65,23 @@ const en = {
   'home.featured.title': 'Projects',
   'home.featured.all': 'All projects',
 
-  'home.approach.eyebrow': 'How we work',
+  'home.approach.eyebrow': 'Approach',
   'home.approach.title': 'From research to built result',
   'home.approach.step1': 'Research',
   'home.approach.step2': 'Concept',
-  'home.approach.step3': 'Public support (when needed)',
+  'home.approach.step3': 'Public support',
   'home.approach.step4': 'Development',
-  'home.approach.step5': 'Implementation',
+  'home.approach.step5': 'Implementation support',
   'home.approach.text':
-    'We stay with a project for as long as it takes. Our tram and cycling concepts for Rostov-on-Don travelled all the way from first sketches to tender documents and construction.',
+    'Urban Factory takes a project from research to a tender-ready brief and remains available as an adviser during implementation. The tram and cycling concepts for Rostov-on-Don went from first sketches to tender documents, and both projects went on to construction.',
 
   'home.numbers.eyebrow': 'In numbers',
   'home.num.founded': 'founded in Rostov-on-Don',
   'home.num.projects': 'published projects',
   'home.num.area': 'hectares of public space',
-  'home.num.tram': 'km city tram programme our network concept fed into',
+  'home.num.tram': 'km city tram programme informed by the network concept',
 
-  'home.geo.eyebrow': 'Where we work',
+  'home.geo.eyebrow': 'Geography',
   'home.geo.title': 'Local roots, international exchange',
   'home.geo.text':
     'Founded in Rostov-on-Don in 2013, headquartered in Zagreb since 2020, with projects and partners from Recife to Yerevan.',
@@ -98,14 +98,14 @@ const en = {
   'country.brazil': 'Brazil',
 
   'home.cta.title': 'Have a city, a street or a river to work on?',
-  'home.cta.text': 'Email is the best way to reach us.',
-  'cta.write': 'Write to us',
+  'home.cta.text': 'Email is the best way to get in touch.',
+  'cta.write': 'Get in touch',
   'cta.other': 'All contacts',
 
   'footer.company': 'MAVEK design d.o.o.',
   'footer.oib': 'OIB',
   'footer.follow': 'Follow',
-  'footer.write': 'Write to us',
+  'footer.write': 'Get in touch',
   'footer.rights': 'All rights reserved.',
 
   'projects.meta.description':
@@ -138,7 +138,7 @@ const en = {
   'agency.approach': 'Approach',
   'agency.principles': 'Principles',
 
-  'team.meta.description': 'Mihail Veklenko, founder and CEO of Urban Factory, and the people who worked with us on past projects.',
+  'team.meta.description': 'Mihail Veklenko, founder and CEO of Urban Factory, and the people who worked with him on past projects.',
   'team.photo': 'Portrait of',
   'team.expertise': 'Expertise',
   'team.projectsLed': 'Key projects',
@@ -199,12 +199,12 @@ export const ui: Record<Lang, Partial<Record<UIKey, string>>> = {
     'a11y.close': 'Zatvori izbornik',
     'a11y.language': 'Jezik',
     'a11y.home': 'Urban Factory — početna',
-    'a11y.mainNav': 'Glavna navigacija',
-    'a11y.footerNav': 'Navigacija u podnožju',
+    'a11y.mainNav': 'Glavni izbornik',
+    'a11y.footerNav': 'Izbornik u podnožju',
     'a11y.soon': 'uskoro',
 
     'notFound.title': 'Stranica nije pronađena',
-    'notFound.text': 'Ova stranica ne postoji ili je premještena. Pokušajte s početnom stranicom ili našim projektima.',
+    'notFound.text': 'Ova stranica ne postoji ili je premještena. Pokušajte s početnom stranicom ili stranicom projekata.',
     'notFound.home': 'Početna stranica',
     'nav.services': 'Usluge',
     'nav.agency': 'Agencija',
@@ -224,11 +224,11 @@ export const ui: Record<Lang, Partial<Record<UIKey, string>>> = {
     'home.hero.eyebrow': 'Agencija za urbani razvoj · Zagreb',
     'home.hero.title': 'Grad su ljudi',
     'home.hero.lead':
-      'Pomažemo gradovima da se mijenjaju zajedno s ljudima koji u njima žive — od istraživanja i strategije do javnih prostora, prometa i izvedenih rezultata.',
-    'home.hero.imageAlt': 'Urban Festival u Rostovu na Donu: ljudi za stolovima i namještaj od paleta pod žutim zastavama u amfiteatru dvorišta',
-    'home.hero.cta': 'Pogledajte naše projekte',
+      'Urban Factory pomaže gradovima da se mijenjaju zajedno s ljudima koji u njima žive — od istraživanja i strategije do javnih prostora, prometa i izvedenih rezultata.',
+    'home.hero.imageAlt': 'Festival gradskog prostora Rostov: ljudi za stolovima i namještaj od paleta pod žutim zastavama u amfiteatru dvorišta',
+    'home.hero.cta': 'Pogledajte projekte',
 
-    'home.directions.eyebrow': 'Što radimo',
+    'home.directions.eyebrow': 'Područja rada',
     'home.directions.title': 'Tri smjera, jedan proces',
     'home.dir.engagement.text':
       'Festivali, forumi i participativni procesi koji za isti stol okupljaju stanovnike, stručnjake, poduzetnike i gradske timove.',
@@ -242,26 +242,26 @@ export const ui: Record<Lang, Partial<Record<UIKey, string>>> = {
     'home.featured.title': 'Projekti',
     'home.featured.all': 'Svi projekti',
 
-    'home.approach.eyebrow': 'Kako radimo',
+    'home.approach.eyebrow': 'Pristup',
     'home.approach.title': 'Od istraživanja do izvedenog rezultata',
     'home.approach.step1': 'Istraživanje',
     'home.approach.step2': 'Koncept',
-    'home.approach.step3': 'Javna podrška (kada je potrebna)',
+    'home.approach.step3': 'Javna podrška',
     'home.approach.step4': 'Razrada',
-    'home.approach.step5': 'Provedba',
+    'home.approach.step5': 'Podrška provedbi',
     'home.approach.text':
-      'S projektom ostajemo onoliko dugo koliko je potrebno. Naši koncepti tramvajske i biciklističke mreže za Rostov na Donu prošli su cijeli put od prvih skica do natječajne dokumentacije i gradnje.',
+      'Urban Factory vodi projekt od istraživanja do projektnog zadatka spremnog za natječaj i ostaje na raspolaganju kao savjetnik tijekom provedbe. Koncepti tramvajske i biciklističke mreže za Rostov na Donu prošli su put od prvih skica do natječajne dokumentacije, a oba su projekta došla do gradnje.',
 
     'home.numbers.eyebrow': 'U brojkama',
-    'home.num.founded': 'osnovani u Rostovu na Donu',
+    'home.num.founded': 'osnovana u Rostovu na Donu',
     'home.num.projects': 'objavljenih projekata',
     'home.num.area': 'hektara javnog prostora',
-    'home.num.tram': 'km gradskog tramvajskog programa u koji je ušao naš koncept mreže',
+    'home.num.tram': 'km gradskog tramvajskog programa za koji je koncept mreže poslužio kao podloga',
 
-    'home.geo.eyebrow': 'Gdje radimo',
+    'home.geo.eyebrow': 'Geografija',
     'home.geo.title': 'Lokalni korijeni, međunarodna razmjena',
     'home.geo.text':
-      'Osnovani u Rostovu na Donu 2013. godine, sa sjedištem u Zagrebu od 2020., s projektima i partnerima od Recifea do Erevana.',
+      'Osnovana u Rostovu na Donu 2013. godine, sa sjedištem u Zagrebu od 2020., s projektima i partnerima od Recifea do Erevana.',
 
     'city.yerevan': 'Erevan',
     'city.zagreb': 'Zagreb',
@@ -275,18 +275,18 @@ export const ui: Record<Lang, Partial<Record<UIKey, string>>> = {
     'country.brazil': 'Brazil',
 
     'home.cta.title': 'Imate grad, ulicu ili rijeku na kojoj treba raditi?',
-    'home.cta.text': 'Najbolje nam je pisati e-poštom.',
-    'cta.write': 'Pišite nam',
+    'home.cta.text': 'Najbolje je javiti se e-poštom.',
+    'cta.write': 'Javite se',
     'cta.other': 'Svi kontakti',
 
     'footer.company': 'MAVEK design d.o.o.',
     'footer.oib': 'OIB',
-    'footer.follow': 'Pratite nas',
-    'footer.write': 'Pišite nam',
+    'footer.follow': 'Društvene mreže',
+    'footer.write': 'Javite se',
     'footer.rights': 'Sva prava pridržana.',
 
     'projects.meta.description':
-      'Projekti agencije Urban Factory: koncepti tramvajske i biciklističke mreže, strategije gradova, parkovi, bulevari, festivali i međunarodna razmjena.',
+      'Projekti agencije Urban Factory: koncepti tramvajske i biciklističke mreže, strategije gradova, parkovi, šetališta, festivali i međunarodna razmjena.',
     'projects.lead': 'Dvanaest projekata od 2013. — od prvih festivala do programa za cijeli grad.',
     'projects.filter.label': 'Filtriraj po smjeru',
     'projects.filter.all': 'Svi',
@@ -310,12 +310,12 @@ export const ui: Record<Lang, Partial<Record<UIKey, string>>> = {
     'services.projects': 'Projekti',
 
     'agency.meta.description':
-      'Urban Factory: osnovan u Rostovu na Donu 2013., sa sjedištem u Zagrebu od 2020. Povijest, pristup i načela.',
+      'Urban Factory: osnovana u Rostovu na Donu 2013., sa sjedištem u Zagrebu od 2020. Povijest, pristup i načela.',
     'agency.history': 'Povijest',
     'agency.approach': 'Pristup',
     'agency.principles': 'Načela',
 
-    'team.meta.description': 'Mihail Veklenko, osnivač i direktor agencije Urban Factory, i ljudi koji su s nama radili na dosadašnjim projektima.',
+    'team.meta.description': 'Mihail Veklenko, osnivač i direktor agencije Urban Factory, i ljudi koji su s njim radili na dosadašnjim projektima.',
     'team.photo': 'Portret:',
     'team.expertise': 'Stručnost',
     'team.projectsLed': 'Ključni projekti',
@@ -376,7 +376,7 @@ export const ui: Record<Lang, Partial<Record<UIKey, string>>> = {
     'a11y.soon': 'скоро',
 
     'notFound.title': 'Страница не найдена',
-    'notFound.text': 'Такой страницы нет или она переехала. Начните с главной или с наших проектов.',
+    'notFound.text': 'Такой страницы нет или она переехала. Начните с главной или со страницы проектов.',
     'notFound.home': 'Главная',
     'nav.services': 'Услуги',
     'nav.agency': 'Агентство',
@@ -396,11 +396,11 @@ export const ui: Record<Lang, Partial<Record<UIKey, string>>> = {
     'home.hero.eyebrow': 'Агентство городского развития · Загреб',
     'home.hero.title': 'Город — это люди',
     'home.hero.lead':
-      'Мы помогаем городам меняться вместе с людьми, которые в них живут, — от исследований и стратегии до общественных пространств, транспорта и реализованных решений.',
-    'home.hero.imageAlt': 'Урбан-фестиваль в Ростове-на-Дону: люди за столами и мебель из паллет под жёлтыми флагами в амфитеатре во дворе',
+      'Urban Factory помогает городам меняться вместе с людьми, которые в них живут, — от исследований и стратегии до общественных пространств, транспорта и реализованных решений.',
+    'home.hero.imageAlt': 'Фестиваль городской среды в Ростове-на-Дону: люди за столами и мебель из паллет под жёлтыми флагами в амфитеатре во дворе',
     'home.hero.cta': 'Смотреть проекты',
 
-    'home.directions.eyebrow': 'Что мы делаем',
+    'home.directions.eyebrow': 'Направления',
     'home.directions.title': 'Три направления, один процесс',
     'home.dir.engagement.text':
       'Фестивали, форумы и соучаствующие процессы, которые собирают за одним столом жителей, экспертов, бизнес и городские команды.',
@@ -414,26 +414,26 @@ export const ui: Record<Lang, Partial<Record<UIKey, string>>> = {
     'home.featured.title': 'Проекты',
     'home.featured.all': 'Все проекты',
 
-    'home.approach.eyebrow': 'Как мы работаем',
+    'home.approach.eyebrow': 'Подход',
     'home.approach.title': 'От исследования до результата',
     'home.approach.step1': 'Исследование',
     'home.approach.step2': 'Концепция',
-    'home.approach.step3': 'Общественная поддержка (при необходимости)',
+    'home.approach.step3': 'Общественная поддержка',
     'home.approach.step4': 'Разработка',
-    'home.approach.step5': 'Реализация',
+    'home.approach.step5': 'Сопровождение реализации',
     'home.approach.text':
-      'Мы остаёмся с проектом столько, сколько нужно. Наши трамвайная и велосипедная концепции для Ростова-на-Дону прошли весь путь от первых эскизов до конкурсной документации и строительства.',
+      'Urban Factory ведёт проект от исследования до технического задания, готового для тендера, и остаётся консультантом на этапе реализации. Трамвайная и велосипедная концепции для Ростова-на-Дону прошли путь от первых эскизов до тендерной документации, и оба проекта дошли до строительства.',
 
     'home.numbers.eyebrow': 'В цифрах',
-    'home.num.founded': 'основаны в Ростове-на-Дону',
+    'home.num.founded': 'основано в Ростове-на-Дону',
     'home.num.projects': 'опубликованных проектов',
     'home.num.area': 'гектаров общественных пространств',
-    'home.num.tram': 'км городской трамвайной программы, в которую вошла наша концепция сети',
+    'home.num.tram': 'км городской трамвайной программы, в которой учтена концепция сети',
 
-    'home.geo.eyebrow': 'Где мы работаем',
+    'home.geo.eyebrow': 'География',
     'home.geo.title': 'Местные корни, международный обмен',
     'home.geo.text':
-      'Основаны в Ростове-на-Дону в 2013 году, с 2020 года штаб-квартира в Загребе; проекты и партнёры — от Ресифи до Еревана.',
+      'Основано в Ростове-на-Дону в 2013 году, с 2020 года штаб-квартира в Загребе; проекты и партнёры — от Ресифи до Еревана.',
 
     'city.yerevan': 'Ереван',
     'city.zagreb': 'Загреб',
@@ -447,14 +447,14 @@ export const ui: Record<Lang, Partial<Record<UIKey, string>>> = {
     'country.brazil': 'Бразилия',
 
     'home.cta.title': 'Есть город, улица или река, с которой нужно поработать?',
-    'home.cta.text': 'Лучше всего написать нам на почту.',
-    'cta.write': 'Написать нам',
+    'home.cta.text': 'Лучше всего написать на почту.',
+    'cta.write': 'Связаться',
     'cta.other': 'Все контакты',
 
     'footer.company': 'MAVEK design d.o.o.',
     'footer.oib': 'OIB',
-    'footer.follow': 'Мы в соцсетях',
-    'footer.write': 'Написать нам',
+    'footer.follow': 'Соцсети',
+    'footer.write': 'Связаться',
     'footer.rights': 'Все права защищены.',
 
     'projects.meta.description':
@@ -487,7 +487,7 @@ export const ui: Record<Lang, Partial<Record<UIKey, string>>> = {
     'agency.approach': 'Подход',
     'agency.principles': 'Принципы',
 
-    'team.meta.description': 'Михаил Векленко, основатель и генеральный директор Urban Factory, и люди, работавшие с нами над прошлыми проектами.',
+    'team.meta.description': 'Михаил Векленко, основатель и генеральный директор Urban Factory, и люди, работавшие с ним над прошлыми проектами.',
     'team.photo': 'Портрет:',
     'team.expertise': 'Компетенции',
     'team.projectsLed': 'Ключевые проекты',

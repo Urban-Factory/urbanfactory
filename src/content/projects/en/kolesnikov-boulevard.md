@@ -31,20 +31,20 @@ order: 4
 
 ## Challenge
 
-After the Zverevo Development Strategy 2030 was adopted, the town needed a first visible project. The city wanted to enter a national competition for public spaces in small towns. A park was considered first, but after consultations the choice fell on Kolesnikov Boulevard. In December 2018 public hearings and the town's resident working group, the Team of Change, confirmed it.
+After the Socio-economic Development Strategy of the town of Zverevo to 2030 was adopted, the town needed a first visible project. The city wanted to enter a national competition for public spaces in small towns. A park was considered first, but after consultations the choice fell on Kolesnikov Boulevard. In December 2018 public hearings and the town's resident working group, the Team of Change, confirmed it.
 
 The boulevard covers 3.1 ha. The task was to turn it into a place that different groups of residents would actually use, and to do it in a few months, in time for the competition.
 
-## What we did
+## What was done
 
 The work ran from November 2018 to March 2019 under four contracts:
 
-1. **Data and analysis.** We collected source data and studied the site.
-2. **Participatory design.** A public workshop in February 2019 and a walk around the site with residents. We mapped how different communities use the area: garage owners, young mothers, anglers, children, young people, older residents and sports groups.
+1. **Data and analysis.** Urban Factory collected source data and studied the site.
+2. **Participatory design.** A public workshop in February 2019 and a walk around the site with residents. The team mapped how different communities use the area: garage owners, young mothers, anglers, children, young people, older residents and sports groups.
 3. **Concept.** Functional zoning, a transport scheme, a map of community activity, building heights, utilities and a master plan with a planting list, plus 3D visualisations.
 4. **Feasibility study.** Costs and a list of street furniture and play equipment.
 
-We also wrote an open letter to local entrepreneurs and collected letters of support from local businesses ready to co-finance the project. The competition application, presentation and album were prepared together with the city. The project was presented to the regional expert commission in March 2019.
+Urban Factory also wrote an open letter to local entrepreneurs and collected letters of support from local businesses ready to co-finance the project. The competition application, presentation and album were prepared together with the city. The project was presented to the regional expert commission in March 2019.
 
 ## Result
 

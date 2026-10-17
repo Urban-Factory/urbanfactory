@@ -26,11 +26,11 @@ order: 12
 
 Trg Gagarina veliko je prometno čvorište blizu centra Rostova na Donu. Ceste oko njega međusobno odsijecaju okolne dijelove grada, a zelena površina u sredini trga stoji neiskorištena između prometnih traka.
 
-Htjeli smo čvorište pretvoriti u poveznicu: kraće i sigurnije pravce za pješake i bicikliste te upotrebljivo zeleno mjesto u srcu gusto izgrađene četvrti.
+Cilj je bio čvorište pretvoriti u poveznicu: kraće i sigurnije pravce za pješake i bicikliste te upotrebljivo zeleno mjesto u srcu gusto izgrađene četvrti.
 
-## Što smo napravili
+## Što je napravljeno
 
-Ideja i koncept potekli su od Mihaila Veklenka. Ilustracije je izradila E. Kotljarova u suradnji s timom Urban Factoryja. Prvi opis datira iz listopada 2013., a nacrti su dovršeni u siječnju 2015.
+Ideja i koncept potekli su od Mihaila Veklenka. Ilustracije je izradila E. Kotljarova u suradnji s timom agencije Urban Factory. Prvi opis datira iz listopada 2013., a nacrti su dovršeni u siječnju 2015.
 
 Koncept predlaže:
 
@@ -39,11 +39,11 @@ Koncept predlaže:
 - **Mjesto, a ne samo prijelaz.** Postojeća stabla se čuvaju i sadi se novo zelenilo. Dvije ili tri zone za odmor na praznim zelenim površinama, dostupne s mosta i zaštićene od buke i prašine s ceste gustim živicama.
 - **Veza s prometom.** Okvirna ideja prijelaznog čvora između tramvaja i parkirališta P+R.
 
-Pripremili smo sheme na geodetskoj podlozi, prezentacijske panoe i prikaz na snimci iz zraka te početkom 2015. predali prijedlog s popratnim pismom.
+Urban Factory pripremila je sheme na geodetskoj podlozi, prezentacijske panoe i prikaz na snimci iz zraka te početkom 2015. predala prijedlog s popratnim pismom.
 
 ## Rezultat
 
-Prijedlog nije prihvaćen i projekt nije nastavljen. Ovdje ga prikazujemo kao ono što jest: idejni prijedlog. To je rani primjer našeg pristupa mobilnosti — polazimo od pješaka i biciklista te lokalno rješenje povezujemo sa širom mrežom. Isto razmišljanje prožima naš rad na biciklističkom prometu u projektu [Biciklizacija Rostova na Donu](../cycling-rostov-on-don/).
+Prijedlog nije prihvaćen i projekt nije nastavljen. Ovdje je prikazan kao ono što jest: idejni prijedlog. To je rani primjer pristupa agencije mobilnosti — polazište su pješaci i biciklisti, a lokalno se rješenje povezuje sa širom mrežom. Isto razmišljanje prožima i rad agencije na biciklističkom prometu u projektu [Biciklizacija Rostova na Donu](../cycling-rostov-on-don/).
 
 ## Brojke
 

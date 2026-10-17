@@ -34,7 +34,7 @@ M. V.: Not exactly. I am neither a planner nor an architect; I am an economist b
 
 J. L.: I have been to Russia many times. In Moscow, Perm, St. Petersburg. I love St. Petersburg very much and I am happy that my trip fell outside the cold season. I had a wonderful time in your country and I plan to visit St Petersburg again. I still travel a lot despite my age. It's not so easy anymore, but I'm not worried about aeroplanes. The problem is not the planes, the problem is the airports. The worst airport in the world is in São Paulo. I don't really have much choice, as I always fly out of São Paulo when I'm travelling. I could use the airport in Rio, but from Curitiba it's easier to fly through São Paulo. It's one big shopping centre, not an airport, there's little space and huge distances. I hate São Paulo.
 
-The city used to be a place of the avant-garde, but that time has passed. The problem is that now there is no, shall we say, "intelligent life" there. People don't like their city.
+> The city used to be a place of the avant-garde, but that time has passed. The problem is that now there is no, shall we say, "intelligent life" there. People don't like their city.
 
 M. V.: But São Paulo is not so bad, is it? Sure, it's not as well organised as Curitiba, but still.....
 
@@ -58,7 +58,7 @@ M. V.: So if you multiply fifty square metres by six million, it turns out that 
 
 J. L.: I would say that fifty square metres is comparable in size to a small flat or office. Instead of six million cars, you can make it so that work is close to home. That will reduce transport problems. And it's the same situation everywhere I've spoken and talked about mobility. Everyone makes the same mistake when they ask about new technologies, driverless cars and so on. They forget that these technologies utilise existing urban space. The concept of "living near work" works much better than all the latest technology and the use of the latest devices. These people are just using new ideas to sell some of their technologies and products.
 
-You can't just take a bus stop from one place to another because it causes a public outcry.
+> You can't just take a bus stop from one place to another because it causes a public outcry.
 
 M. V.: But how did you implement all this here in Curitiba? Even when you become mayor, you still have to go through the bureaucracy. It's not enough to have a good idea for a transport system, you also have to calculate the economics.
 
@@ -92,7 +92,7 @@ M. V.: I think this is a permanent crisis. We happen to live in an era of crisis
 
 J. L.: Yes, but now everything is somehow particularly complicated. "Ta Russo", although in translation it means something very complicated. It was much better three years ago. (The expression "ta russo" means "in Russian", used in speech to show something complicated, confusing, difficult - note).
 
-Never stop doing what you have to do. You must have the courage to go through a crisis. You can't just waste time during a crisis.
+> Never stop doing what you have to do. You must have the courage to go through a crisis. You can't just waste time during a crisis.
 
 M. V.: Don't you think the crisis is a time of opportunity?
 
@@ -106,7 +106,7 @@ M. V.: Is Brazil now applying the Curitiba experience? I don't mean just bus rap
 
 J. L.: It's complicated because of bureaucracy and politics. And also because it's too simple a solution. Every mayor thinks, "since it's so simple, I should have guessed it myself. Why should I apply these ideas in my city?"... And the problem is that they all want to find excuses why they don't apply these solutions. And they want to have all the answers. But you can't always be the guy who knows everything and solves everything. Planning a city is a trajectory where you have to leave space for people to correct you if you're doing something wrong. Innovation is nothing more than just getting into action. It's important to have the courage to start, and then you can make improvements little by little. But it's always a story about experience along the way. We learnt a lot by doing it ourselves. We've learnt a lot in the process. Sometimes I get really annoyed when I see solutions and they don't apply them.
 
-Innovation is nothing more than simply getting into action.
+> Innovation is nothing more than simply getting into action.
 
 M. V.: In Curitiba or outside of Curitiba?
 

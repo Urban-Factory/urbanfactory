@@ -1,5 +1,5 @@
 ---
-title: "Metro-tramvaj kao kompromis između tramvaja i metroa"
+title: "Brzi tramvaj kao kompromis između klasičnog tramvaja i metroa"
 lang: hr
 section: press
 date: "2018-09-19"

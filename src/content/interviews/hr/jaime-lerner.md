@@ -34,7 +34,7 @@ M. V.: Ne baš. Nisam ni planer ni arhitekt; po prvom obrazovanju sam ekonomist,
 
 J. L.: Bio sam u Rusiji mnogo puta. U Moskvi, Permu, Sankt Peterburgu. Jako volim Peterburg i sretan sam što putovanje nije palo u hladno doba godine. Proveo sam divno vrijeme u vašoj zemlji i planiram ponovno posjetiti Peterburg. Još uvijek mnogo putujem, unatoč godinama. Više nije tako lako, ali zbog zrakoplova se ne brinem. Problem nisu zrakoplovi, problem su zračne luke. Najgora zračna luka na svijetu je u São Paulu. Zapravo nemam velikog izbora, jer uvijek letim iz São Paula kada putujem. Mogu koristiti zračnu luku u Riju, ali iz Curitibe je jednostavnije letjeti preko São Paula. To je jedan veliki trgovački centar, a ne zračna luka, ima malo mjesta, a udaljenosti su goleme. Mrzim São Paulo.
 
-Nekada je taj grad bio mjesto avangarde, ali to je vrijeme prošlo. Problem je u tome što ondje sada nema, recimo tako, „inteligentnog života”. Ljudi ne vole svoj grad.
+> Nekada je taj grad bio mjesto avangarde, ali to je vrijeme prošlo. Problem je u tome što ondje sada nema, recimo tako, „inteligentnog života”. Ljudi ne vole svoj grad.
 
 M. V.: Ali São Paulo ipak nije tako loš? Naravno, nije tako dobro organiziran kao Curitiba, ali ipak…
 
@@ -58,7 +58,7 @@ M. V.: Dakle, ako pomnožimo pedeset četvornih metara sa šest milijuna, ispada
 
 J. L.: Rekao bih da je pedeset četvornih metara po površini usporedivo s malim stanom ili uredom. Umjesto šest milijuna automobila, može se učiniti da posao bude blizu kuće. To će smanjiti prometne probleme. I ista je situacija svugdje gdje sam nastupao i govorio o mobilnosti. Svi čine istu pogrešku kada pitaju o novim tehnologijama, automobilima bez vozača i tako dalje. Zaboravljaju da se za te tehnologije koristi već postojeći gradski prostor. Koncepcija „živjeti blizu posla” djeluje mnogo bolje od svih najsuvremenijih tehnologija i primjene najnovijih uređaja. Ti ljudi samo koriste nove ideje kako bi prodali neke svoje tehnologije i proizvode.
 
-Ne možete tek tako uzeti i premjestiti autobusnu stanicu s jednog mjesta na drugo, jer to izaziva prosvjed javnosti.
+> Ne možete tek tako uzeti i premjestiti autobusnu stanicu s jednog mjesta na drugo, jer to izaziva prosvjed javnosti.
 
 M. V.: Ali kako ste sve to proveli ovdje u Curitibi? Čak i kada postanete gradonačelnik, svejedno morate proći kroz birokratske prepreke. Nije dovoljno samo imati dobru ideju za stvaranje prometnog sustava, treba izračunati i ekonomiku.
 
@@ -92,7 +92,7 @@ M. V.: Mislim da je to permanentna kriza. Zapalo nas je živjeti u doba krize. T
 
 J. L.: Da, ali sada je sve nekako osobito složeno. „Ta Russo”, iako u prijevodu znači nešto vrlo složeno. Još prije tri godine bilo je znatno bolje. (Izraz „ta russo” u doslovnom prijevodu znači „na ruskom”, a u govoru se koristi kako bi se označilo nešto složeno, zamršeno, teško — nap.)
 
-Nikad ne prestaj raditi ono što moraš. Moraš imati hrabrosti proći kroz krizu. Ne smiješ tek tako gubiti vrijeme za vrijeme krize.
+> Nikad ne prestaj raditi ono što moraš. Moraš imati hrabrosti proći kroz krizu. Ne smiješ tek tako gubiti vrijeme za vrijeme krize.
 
 M. V.: Ne mislite li da je kriza vrijeme prilika?
 
@@ -106,7 +106,7 @@ M. V.: Primjenjuje li sada Brazil iskustvo Curitibe? Ne mislim samo na linije br
 
 J. L.: Sve je složeno zbog birokracije i politike. I još zato što je to prejednostavno rješenje. Svaki gradonačelnik misli: „Ako je to tako jednostavno, trebao sam se i sam dosjetiti. Zašto bih te ideje primjenjivao u svom gradu?”… I problem je u tome što svi oni žele pronaći opravdanja zašto ta rješenja ne primjenjuju. I žele imati sve odgovore. Ali ne možeš uvijek biti tip koji sve zna i rješava sva pitanja. Planiranje grada je putanja na kojoj moraš ostaviti prostor ljudima koji će te moći ispraviti ako nešto radiš pogrešno. Inovacija nije ništa drugo nego jednostavno početi djelovati. Važno je imati hrabrosti započeti, a zatim se već malo-pomalo mogu uvoditi poboljšanja. Ali to je uvijek priča o iskustvu stečenom tijekom rada. Mnogo smo naučili radeći to sami. Mnogo smo naučili u procesu rada. Ponekad me jako ljuti kada vidim rješenja, a oni ih ne primjenjuju.
 
-Inovacija nije ništa drugo nego jednostavno početi djelovati.
+> Inovacija nije ništa drugo nego jednostavno početi djelovati.
 
 M. V.: U Curitibi ili izvan nje?
 

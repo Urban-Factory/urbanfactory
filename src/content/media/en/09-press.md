@@ -1,5 +1,5 @@
 ---
-title: "Metro-tram in the South of Russia"
+title: "High-speed tram in the South of Russia"
 lang: en
 section: press
 date: "2018"

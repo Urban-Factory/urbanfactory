@@ -10,7 +10,7 @@ role: "Strategija i ekonomika rijeke, međunarodna partnerstva, forumi, pokretan
 summary: "Vraćanje zapuštene gradske rijeke u javni život — neprofitna organizacija, međunarodno partnerstvo s Recifeom i Prva milja linearnog parka, otvorena 2023."
 results:
   - "Osnovana ANO „Park Temernik”"
-  - "Moskovski urbanistički forum 2017.: sesija „Aqua est vita” u suorganizaciji Urban Factoryja"
+  - "Moskovski urbanistički forum 2017.: panel-rasprava „Aqua est vita” u suorganizaciji s Urban Factory"
   - "Posjet prof. Circe Monteiro Rostovu na Donu, 2018."
   - "Prvi forum „Male rijeke u velikim gradovima”, 5.–6. listopada 2018."
   - "Memorandum o suradnji između ANO „Park Temernik” i INCITI/UFPE, listopad 2018."
@@ -36,7 +36,7 @@ Temernik je mala rijeka koja protječe kroz Rostov na Donu. Desetljećima je u p
 
 Da bi se to promijenilo, osnovana je neprofitna organizacija: ANO „Park Temernik”. Riječ je o koaliciji poslovnog sektora, stručnjaka i javnosti. Cilj joj je obnoviti rijeku i pretvoriti njezine obale u ekološki park gradskog značaja, u suradnji s regionalnim programom ekološke obnove porječja Temernika.
 
-## Što smo napravili
+## Što je napravljeno
 
 Mihail Veklenko bio je suosnivač neprofitne organizacije i član njezina užeg tima.
 
@@ -45,9 +45,9 @@ Mihail Veklenko bio je suosnivač neprofitne organizacije i član njezina užeg 
 
 ## Međunarodni dio: Recife ↔ Rostov na Donu
 
-Recife u Brazilu suočio se sa sličnim problemom s rijekom Capibaribe — i odgovorio linearnim parkom dugim 15 km, koji je grad razvio zajedno s INCITI-jem, istraživačkim institutom Saveznog sveučilišta Pernambuca (UFPE). Htjeli smo da inicijativa za Temernik izravno uči iz tog iskustva.
+Recife u Brazilu suočio se sa sličnim problemom s rijekom Capibaribe — i odgovorio linearnim parkom dugim 15 km, koji je grad razvio zajedno s INCITI-jem, istraživačkim institutom Saveznog sveučilišta Pernambuca (UFPE). Cilj je bio da inicijativa za Temernik izravno uči iz tog iskustva.
 
-- **Moskovski urbanistički forum, 2017.** Urban Factory bila je suorganizator sesije „Aqua est vita: uloga rijeke u suvremenoj megalopoli” (sam forum organizira direkcija Moskovskog urbanističkog foruma). Mihail je doveo dvoje govornika: prof. Circe Monteiro, voditeljicu INCITI-ja, koja je predstavila projekt parka Capibaribe, i Swamija Jyothirmayaha.
+- **Moskovski urbanistički forum, 2017.** Urban Factory bila je suorganizator panel-rasprave „Aqua est vita: uloga rijeke u suvremenoj megalopoli” (sam forum organizira direkcija Moskovskog urbanističkog foruma). Mihail je doveo dvoje govornika: prof. Circe Monteiro, voditeljicu INCITI-ja, koja je predstavila projekt parka Capibaribe, i Swamija Jyothirmayaha (The Art of Living Foundation).
 - **Posjet prof. Monteiro Rostovu na Donu, 2018.** Urban Factory organizirala je cijeli program: javno predavanje o linearnom parku Capibaribe u Moskvi; izlaganje na forumu u Rostovu na Donu; šetnju i sadnju stabala uz Temernik; radni sastanak s ANO „Park Temernik”; sastanke s rostovskim sveučilištima o razmjeni studenata, zajedničkim istraživanjima i obrazovanju.
 - **Forum „Male rijeke u velikim gradovima”, 5.–6. listopada 2018.** Prof. Monteiro podijelila je kako je Recife korak po korak gradio svoj park — mali javni prostori, svaki dovršen zasebno, povezani u jedan zeleni koridor.
 - **Memorandum, listopad 2018.** ANO „Park Temernik” i INCITI/UFPE potpisali su memorandum o suradnji.

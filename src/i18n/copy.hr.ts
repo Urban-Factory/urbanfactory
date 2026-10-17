@@ -4,28 +4,29 @@ import type { PageCopy } from './copy';
 export const hr: PageCopy = {
   services: {
     title: 'Usluge',
-    lead: 'Tri smjera koji funkcioniraju kao jedan proces: slušamo grad, ono što čujemo pretvaramo u strategiju i vodimo je do projekta i provedbe.',
+    lead: 'Tri područja rada povezana u jedan proces: istraživanje i uključivanje stanovnika i dionika, strategija i koncept, projektiranje i podrška provedbi.',
     blocks: {
       engagement: {
         intro:
-          'Promjena u gradu počinje razgovorom. Osmišljavamo i vodimo događanja i participativne procese koji za isti stol okupljaju stanovnike, stručnjake, poduzetnike i gradske timove — i njihove ideje pretvaramo u projektni zadatak koji se može izvesti.',
+          'Promjena u gradu počinje razgovorom. Urban Factory osmišljava i vodi događanja i participativne procese koji za isti stol okupljaju stanovnike, stručnjake, poduzetnike i gradske timove te njihove ideje pretvara u projektni zadatak.',
         formats: [
           'Gradski festivali i događanja u javnom prostoru',
           'Forumi, konferencije i stručni skupovi',
           'Participativne radionice i uključivanje zajednice',
-          'Međunarodna razmjena i studijska putovanja',
+          'Međunarodna razmjena iskustava i studijska putovanja',
           'Ciklusi rasprava i video intervjui',
-          'Odnosi s javnom upravom: suradnja s gradskim upravama, poduzetnicima i partnerima',
+          'Odnosi s javnom upravom: općine i gradovi, regionalna i državna tijela',
+          'Partnerstva s poduzetnicima, sveučilištima i udrugama',
         ],
       },
       strategy: {
         intro:
-          'Pišemo strategije koje si grad može priuštiti. Od razvojnih strategija za male gradove do tramvajskih, željezničkih i biciklističkih mreža za metropolitansku regiju i stambenog programa za raseljene obitelji — naš rad temelji se na stvarnim proračunima, stvarnim operaterima i stvarnim rokovima.',
+          'Urban Factory izrađuje strategije koje si grad može priuštiti: od razvojnih strategija za male gradove do tramvajskih, željezničkih i biciklističkih mreža za metropolitansku regiju i stambenog programa za raseljene obitelji. Rad se temelji na stvarnim proračunima, stvarnim operaterima i stvarnim rokovima. Zato se projekti od samog početka pripremaju tako da budu izvedivi.',
         formats: [
           'Urbana istraživanja: ankete, podaci o mobilnosti, intervjui s dionicima',
-          'Strategije razvoja gradova i područja',
-          'Koncepti mreže javnog prijevoza: tramvaj, željeznica, aglomeracija',
-          'Biciklistički koncepti i aktivna mobilnost',
+          'Strategije razvoja na svim razinama: četvrt, grad, aglomeracija, regija',
+          'Javni prijevoz: tramvaj i laka gradska željeznica, gradska i prigradska željeznica, autobus i trolejbus; presjedališta i jedinstvena tarifa',
+          'Aktivna mobilnost: pješačke i biciklističke mreže',
           'Stambeni programi',
           'Ekonomika projekata i modeli partnerstva',
           'Projektni zadaci i dokumentacija za projektne natječaje i javne nabave',
@@ -33,9 +34,9 @@ export const hr: PageCopy = {
       },
       design: {
         intro:
-          'Javne prostore projektiramo zajedno s ljudima koji će ih koristiti. Ulice, bulevari, parkovi i riječne obale — od prve radionice sa stanovnicima do koncepta, projektne dokumentacije i projektnog zadatka za natječaj.',
+          'Javni prostori projektiraju se zajedno s ljudima koji će ih koristiti. Ulice, šetališta, parkovi i riječne obale — od prve radionice sa stanovnicima do koncepta, projektne dokumentacije i projektnog zadatka za natječaj.',
         formats: [
-          'Koncepti ulica, trgova i bulevara',
+          'Koncepti ulica, trgova i šetališta',
           'Parkovi, rijeke i obale',
           'Koncepti prometnog dizajna: redizajn tramvaja, most za bicikliste i pješake',
           'Planiranje naselja',
@@ -47,12 +48,12 @@ export const hr: PageCopy = {
   },
   agency: {
     title: 'Agencija',
-    lead: 'Urban Factory je međunarodna agencija za urbani razvoj. Osnovani smo u Rostovu na Donu 2013. godine, a od 2020. sjedište nam je u Zagrebu.',
+    lead: 'Urban Factory međunarodna je agencija za urbani razvoj, osnovana u Rostovu na Donu 2013., a od 2020. sa sjedištem u Zagrebu.',
     history: [
       {
         year: '2013',
         title: 'Rođeni na festivalu',
-        text: 'Urban Factory nastao je na Urban Festivalu u Rostovu na Donu — gradskom festivalu o javnom prostoru, na kojem su se prvi put pojavili ime i ideja agencije.',
+        text: 'Urban Factory nastala je na Festivalu gradskog prostora Rostov — gradskom festivalu o javnom prostoru u Rostovu na Donu, na kojem su se prvi put pojavili ime i ideja agencije.',
       },
       {
         year: '2013–2016',
@@ -62,12 +63,12 @@ export const hr: PageCopy = {
       {
         year: '2016–2019',
         title: 'Strategije i međunarodna razmjena',
-        text: 'Razvojna strategija koju je usvojilo gradsko vijeće, participativno projektiranje bulevara, koncept aglomeracijske željeznice i oživljavanje gradske rijeke — uz stalnu razmjenu s partnerima u Recifeu u Brazilu.',
+        text: 'Razvojna strategija koju je usvojilo gradsko vijeće, participativno projektiranje šetališta, koncept aglomeracijske željeznice i oživljavanje gradske rijeke — uz stalnu razmjenu s partnerima u Recifeu u Brazilu.',
       },
       {
         year: '2020',
         title: 'Zagreb',
-        text: 'Stručna platforma Rostov 300 bila je naš posljednji veliki projekt u Rostovu na Donu. Iste je godine agencija preselila sjedište u Zagreb.',
+        text: 'Stručna platforma Rostov 300 bila je posljednji veliki projekt agencije u Rostovu na Donu. Iste je godine agencija preselila sjedište u Zagreb.',
       },
       {
         year: 'Danas',
@@ -76,40 +77,40 @@ export const hr: PageCopy = {
       },
     ],
     approach: [
-      { title: 'Istraživanje', text: 'Polazimo od grada kakav jest: podataka, povijesti, ljudi i stvarnih resursa kojima raspolažemo.' },
+      { title: 'Istraživanje', text: 'Svaki projekt polazi od grada kakav jest: podataka, povijesti, ljudi i stvarnih resursa.' },
       { title: 'Koncept', text: 'Jasna ideja koja se može objasniti na jednoj stranici i obraniti u svakoj prostoriji.' },
-      { title: 'Javna podrška (kada je potrebna)', text: 'Festivali, forumi, radionice i mediji pretvaraju koncept u cilj koji grad dijeli.' },
-      { title: 'Razrada', text: 'Projekt razrađujemo u detalje — projekt, dokumentaciju i projektne zadatke za natječaje i javne nabave — kako bi preživio primopredaju.' },
-      { title: 'Provedba', text: 'S projektom ostajemo tijekom gradnje i puštanja u rad, onoliko dugo koliko smo potrebni.' },
+      { title: 'Javna podrška', text: 'Festivali, forumi, radionice i mediji pretvaraju koncept u cilj koji grad dijeli.' },
+      { title: 'Razrada', text: 'Projekt se razrađuje u detalje — projekt, dokumentacija i projektni zadaci za natječaje i javne nabave — kako bi preživio primopredaju.' },
+      { title: 'Podrška provedbi', text: 'Nakon predaje projektnog zadatka Urban Factory ostaje na raspolaganju gradu i izvođačima kao savjetnik tijekom gradnje i puštanja u rad.' },
     ],
     principles: [
       {
         title: 'Grad su ljudi',
-        text: 'Svaki projekt počinje i završava s ljudima koji žive u tom mjestu. Njihovo znanje naš je glavni izvor.',
+        text: 'Svaki projekt počinje i završava s ljudima koji žive u tom mjestu. Njihovo znanje glavni je izvor.',
       },
       {
-        title: 'Realni od samog početka',
-        text: 'Rješenja koja odgovaraju stvarnom proračunu i stvarnom operateru. Za Rostov na Donu predložili smo razvoj postojeće tramvajske mreže umjesto metroa koji si grad ne bi mogao priuštiti.',
+        title: 'Izvedivo od samog početka',
+        text: 'Rješenja koja odgovaraju stvarnom proračunu i stvarnom operateru. Za Rostov na Donu Urban Factory predložila je razvoj postojeće tramvajske mreže umjesto metroa koji si grad ne bi mogao priuštiti.',
       },
       {
         title: 'Prevoditelji između svjetova',
-        text: 'Govorimo jezikom gradskih uprava, poduzetnika, stručnjaka i stanovnika — i pomažemo im da se međusobno razumiju.',
+        text: 'Urban Factory govori jezikom gradskih uprava, poduzetnika, stručnjaka i stanovnika — i pomaže im da se međusobno razumiju.',
       },
       {
         title: 'Lokalni korijeni, međunarodna razmjena',
-        text: 'Međunarodno iskustvo donosimo u lokalne projekte, a lokalno iskustvo u međunarodne — od Rostova na Donu do Recifea i Zagreba.',
+        text: 'Međunarodno iskustvo ulazi u lokalne projekte, a lokalno u međunarodne — od Rostova na Donu do Recifea i Zagreba.',
       },
     ],
   },
   team: {
     title: 'Tim',
-    lead: 'Urban Factory vodi njegov osnivač Mihail Veklenko. Za svaki projekt okupljamo stručnjake koji su mu potrebni.',
+    lead: 'Urban Factory vodi njezin osnivač Mihail Veklenko. Za svaki projekt angažiraju se potrebni stručnjaci.',
     founder: {
       name: 'Mihail Veklenko',
       role: 'Osnivač i direktor',
       bio: [
         'Mihail je osnovao Urban Factory u Rostovu na Donu 2013. godine, nakon više od deset godina rada u području nekretnina i razvoja.',
-        'Pokrenuo je i vodio ključne prometne i planerske projekte agencije — koncept rostovske tramvajske mreže, biciklistički program za Rostov na Donu, koncept željeznice aglomeracije Veliki Rostov i Strategiju razvoja Zvereva 2030. — te je suosnivač ANO „Park Temernik” i Urban Festivala na kojem je nastao Urban Factory.',
+        'Pokrenuo je i vodio ključne prometne i planerske projekte agencije — koncept rostovske tramvajske mreže, biciklistički program za Rostov na Donu, koncept jedinstvenog tračničkog sustava Aglomeracija Rostov i Strategiju društveno-gospodarskog razvoja grada Zvereva do 2030. — te je suosnivač ANO „Park Temernik” i Festivala gradskog prostora Rostov, na kojem je nastala Urban Factory.',
         'Ima poslijediplomsku diplomu iz urbanih studija Sveučilišta u Manchesteru (zajednički program s Moskovskom visokom školom društvenih i ekonomskih znanosti) i polaznik je poslijediplomskog studija gradskog prometa na Fakultetu prometnih znanosti u Zagrebu.',
         'Od 2020. agenciju vodi iz Zagreba.',
       ],
@@ -121,8 +122,8 @@ export const hr: PageCopy = {
         'Međunarodna suradnja',
       ],
       experience: [
-        'Producent sesija, Moskovski urbanistički forum (2013.)',
-        'Mentor, Fakultet medijskih komunikacija, Donsko državno tehničko sveučilište, 2014.–2015.',
+        'Producent panel-rasprava, Moskovski urbanistički forum (2013.)',
+        'Tutor, Fakultet medijskih komunikacija, Donsko državno tehničko sveučilište, 2014.–2015.',
         'Konzultant na terenu, Innopolis, 2015.',
         'Istraživač u području prometa, CRISALIDE (EU ERA.NET RUS Plus), 2018.–2019.',
         'Koordinator voditelja projekata, Institut IGH, Zagreb, 2022.',
@@ -135,7 +136,7 @@ export const hr: PageCopy = {
       projects: ['tun-foundation', 'rostov-tram', 'cycling-rostov-on-don', 'zverevo-strategy-2030', 'temernik-river-park', 'urban-festival-rostov', 'great-rostov', 'urban-thinkers-campus-recife', 'rostov-300'],
     },
     pastTitle: 'Projektni timovi',
-    pastText: 'Za svaki projekt okupljamo tim prema zadatku: Mihail Veklenko zajedno sa stručnjacima, partnerima i kolegama koji su mu se pridružili.',
+    pastText: 'Tim svakog projekta okuplja se prema zadatku: Mihail Veklenko zajedno sa stručnjacima, partnerima i kolegama koji su mu se pridružili.',
     past: [
       {
         project: 'rostov-tram',
@@ -148,7 +149,7 @@ export const hr: PageCopy = {
         project: 'cycling-rostov-on-don',
         people: [
           { name: 'Mihail Veklenko', role: 'Inicijator i voditelj projekta; urbanist i prometni planer' },
-          { name: 'Dmitrij Gusev', role: 'Velovod — voditelj medijskog projekta I Bike RnD; pobijedio na natječaju za projektiranje i izradio shemu gradske biciklističke mreže (2018.–2019.)' },
+          { name: 'Dmitrij Gusev', role: 'Voditelj medijskog projekta I Bike RnD; njegova tvrtka Velovod pobijedila je na natječaju za projektiranje i izradila shemu gradske biciklističke mreže (2018.–2019.)' },
         ],
       },
       {
@@ -166,7 +167,7 @@ export const hr: PageCopy = {
         people: [
           { name: 'Mihail Veklenko', role: 'Urbanist, voditelj projekta' },
           { name: 'Julija Litvinova', role: 'Arhitektica' },
-          { name: 'Mikael Sarkisjanc', role: 'Arhitekt konzultant' },
+          { name: 'Mikael Sarkisjanc', role: 'Arhitekt' },
           { name: 'Aleksej Matvejenko', role: '„Gorod-Park” — format radionice' },
           { name: 'Elena Iščenko', role: 'Stručnjakinja za teritorijalni marketing' },
           { name: 'Nikolaj Prjanišnikov', role: 'Moskovska visoka škola društvenih i ekonomskih znanosti' },
@@ -177,14 +178,12 @@ export const hr: PageCopy = {
         people: [
           { name: 'Mihail Veklenko', role: 'Suosnivač ANO; urbanist i ekonomist — strategija i ekonomika rijeke, međunarodna partnerstva, forumi' },
           { name: 'Jurij Pogrebščikov', role: 'Direktor, ANO „Park Temernik”' },
-          { name: 'N. N. Britvina', role: 'Inicijativna skupina, ANO „Park Temernik”' },
-          { name: 'N. N. Britvin', role: 'ANO „Park Temernik”' },
-          { name: 'S. B. Šnejder', role: 'Gospodarska i industrijska komora Rostovske oblasti — moderator foruma „Male rijeke u velikim gradovima”, 2018.' },
+          { name: 'Nikolaj Britvin', role: 'Predsjednik uprave, ANO „Park Temernik”; inicijativna skupina' },
+          { name: 'Sergej Šnejder', role: 'Gospodarska i industrijska komora Rostovske oblasti — moderator foruma „Male rijeke u velikim gradovima”, 2018.' },
           { name: 'Sotnikova', role: 'Koncept „Eko-rijeka Temernik”, 2017.' },
-          { name: 'Strelčenko', role: 'Katastarska izmjera obale' },
+          { name: 'Aleksej Strelčenko', role: 'Katastarska izmjera obale' },
           { name: 'Bespalov', role: 'Donsko državno tehničko sveučilište — algoritam revitalizacije rijeke' },
           { name: 'Prof. Circe Monteiro', role: 'INCITI / UFPE, Recife' },
-          { name: 'Swami Jyothirmayah', role: 'Govornik, Moskovski urbanistički forum 2017.' },
           { name: 'Donsko državno tehničko sveučilište', role: 'Akademski partner' },
         ],
       },
@@ -212,7 +211,7 @@ export const hr: PageCopy = {
       {
         project: 'urban-thinkers-campus-recife',
         people: [
-          { name: 'Mihail Veklenko', role: 'Organizator i moderator sesije' },
+          { name: 'Mihail Veklenko', role: 'Organizator i moderator predavanja' },
           { name: 'Prof. Circe Monteiro', role: 'INCITI' },
           { name: 'Bárbara Maranhão', role: 'Prevoditeljica' },
           { name: 'Clemente Coelho Junior', role: 'Govornik' },
@@ -257,6 +256,6 @@ export const hr: PageCopy = {
   },
   contact: {
     title: 'Kontakt',
-    lead: 'Pišite nam o svom gradu, ulici, rijeci ili projektu. Najbolje nam je pisati e-poštom.',
+    lead: 'Pišite o svom gradu, ulici, rijeci ili projektu. Najbolje je javiti se e-poštom.',
   },
 };

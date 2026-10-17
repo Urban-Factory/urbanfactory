@@ -1,5 +1,5 @@
 ---
-title: "Što mogu gradovi pobratimi"
+title: "Što mogu gradovi pobratimi?"
 lang: hr
 section: articles
 date: "2018-10-01"

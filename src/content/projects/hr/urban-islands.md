@@ -30,22 +30,22 @@ order: 11
 
 ## Izazov
 
-U središtu Rostova na Donu ima mnogo malih praznih parcela preostalih nakon rušenja starih kuća. Stoje prazne i ograđene. U isto vrijeme kvaliteta javnog prostora bila je jedna od prvih tema koje su okupile naš tim i Urbani festival.
+U središtu Rostova na Donu ima mnogo malih praznih parcela preostalih nakon rušenja starih kuća. Stoje prazne i ograđene. U isto vrijeme kvaliteta javnog prostora bila je jedna od prvih tema koje su okupile tim agencije i Festival gradskog prostora Rostov.
 
 Pitanje je bilo jednostavno: mogu li te praznine postati mali, korisni parkovi, napravljeni s ljudima koji žive oko njih?
 
-## Što smo napravili
+## Što je napravljeno
 
-- **Ispitivanje na terenu (2014.).** Na drugom Urbanom festivalu uredili smo privremeni park na praznoj parceli na kojoj je bila srušena zgrada. Napravili smo to sami, s aktivnim stanovnicima i volonterima.
-- **Koncept (2014.).** Opisali smo „Otoke budućnosti”: mrežu malih trgova diljem grada, „zelenu kartu” Rostova i standardnu opremu za svaki otok — fontane s pitkom vodom, info-točke, Wi-Fi, parkiralište za bicikle, mobilnu pozornicu, uličnu knjižnicu.
+- **Ispitivanje na terenu (2014.).** Na drugom Festivalu gradskog prostora Rostov uređen je privremeni park na praznoj parceli na kojoj je bila srušena zgrada. Tim ga je uredio sam, s aktivnim stanovnicima i volonterima.
+- **Koncept (2014.).** Opisani su „Otoci budućnosti”: mreža malih trgova diljem grada, „zelena karta” Rostova i standardna oprema za svaki otok — fontane s pitkom vodom, info-točke, Wi-Fi, parkiralište za bicikle, mobilnu pozornicu, uličnu knjižnicu.
 - **Zajedničko projektiranje.** Modul mikroparka nastao je iz zajedničkog istraživanja i zajedničkog projektiranja sa stanovnicima. Na radionicama su nastale makete; konačni modul ima 3×6 m, izrađen je od šperploče, s klupama, stolovima i dijelovima sa zelenilom.
-- **Do realizacije.** U jednom je trenutku projekt gotovo propao. Mihail Veklenko pronašao je način da se realizira unutar postojećih procedura. To je tipično za našu ulogu: prevodimo između službenika, poslovnog sektora, stanovnika i stručnjaka kako bi ideja mogla proći kroz pravila svakoga od njih.
+- **Do realizacije.** U jednom je trenutku projekt gotovo propao. Mihail Veklenko pronašao je način da se realizira unutar postojećih procedura. To je tipično za ulogu agencije: Urban Factory prevodi između službenika, poslovnog sektora, stanovnika i stručnjaka kako bi ideja mogla proći kroz pravila svakoga od njih.
 
 ## Rezultat
 
 Modularni mikropark postavljen je u Parku Revolucije u Rostovu na Donu 2015. Dvije godine festivalskog rada i zajedničkog projektiranja sa stanovnicima pretvorio je u stvaran objekt u javnom parku.
 
-Ideja je otišla i dalje. Godine 2017. pripremili smo prilagodbu modula za Recife u Brazilu pod nazivom „Ilhas do Futuro”.
+Ideja je otišla i dalje. Godine 2017. Urban Factory pripremila je prilagodbu modula za Recife u Brazilu pod nazivom „Ilhas do Futuro”.
 
 ## Brojke
 

@@ -36,7 +36,7 @@ The Temernik is a small river that crosses Rostov-on-Don. For decades it worked,
 
 To change this, a non-profit was created: ANO Park Temernik. It is a coalition of business, experts and the public. Its aim is to rehabilitate the river and turn its banks into a city-wide ecological park, working alongside the regional programme for the ecological recovery of the Temernik basin.
 
-## What we did
+## What was done
 
 Mihail Veklenko was a co-founder of the non-profit and a member of its core team.
 
@@ -45,9 +45,9 @@ Mihail Veklenko was a co-founder of the non-profit and a member of its core team
 
 ## International part: Recife ↔ Rostov-on-Don
 
-Recife in Brazil faced a similar problem with the Capibaribe river — and answered it with a 15 km linear park, developed by the city together with INCITI, a research institute of the Federal University of Pernambuco (UFPE). We wanted the Temernik initiative to learn directly from that experience.
+Recife in Brazil faced a similar problem with the Capibaribe river — and answered it with a 15 km linear park, developed by the city together with INCITI, a research institute of the Federal University of Pernambuco (UFPE). The aim was for the Temernik initiative to learn directly from that experience.
 
-- **Moscow Urban Forum, 2017.** Urban Factory was a co-organiser of the session “Aqua est vita: the role of the river in the modern megalopolis” (the forum itself is organised by the Moscow Urban Forum directorate). Mihail brought two speakers: Prof. Circe Monteiro, head of INCITI, who presented the Capibaribe Park project, and Swami Jyothirmayah.
+- **Moscow Urban Forum, 2017.** Urban Factory was a co-organiser of the session “Aqua est vita: the role of the river in the modern megalopolis” (the forum itself is organised by the Moscow Urban Forum directorate). Mihail brought two speakers: Prof. Circe Monteiro, head of INCITI, who presented the Capibaribe Park project, and Swami Jyothirmayah (The Art of Living Foundation).
 - **Prof. Monteiro’s visit to Rostov-on-Don, 2018.** Urban Factory organised the whole programme: a public lecture on the Capibaribe linear park in Moscow; a talk at the forum in Rostov-on-Don; a walk and tree planting by the Temernik; a working meeting with ANO Park Temernik; meetings with Rostov universities on student exchange, joint research and training.
 - **Forum “Small Rivers in Big Cities”, 5–6 October 2018.** Prof. Monteiro shared how Recife built its park step by step — small public spaces, each finished on its own, joined into one green corridor.
 - **Memorandum, October 2018.** ANO Park Temernik and INCITI/UFPE signed a memorandum of cooperation.

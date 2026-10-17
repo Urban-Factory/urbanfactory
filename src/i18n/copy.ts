@@ -36,28 +36,29 @@ export interface PageCopy {
 export const en: PageCopy = {
   services: {
     title: 'Services',
-    lead: 'Three directions that work as one process: we listen to the city, turn what we hear into a strategy, and carry it through to design and implementation.',
+    lead: 'Three lines of work connected in one process: research and engagement of residents and stakeholders, strategy and concept, design and implementation support.',
     blocks: {
       engagement: {
         intro:
-          'Change in a city starts with conversation. We design and run events and participatory processes that bring residents, experts, business and city teams to the same table — and turn their ideas into a brief that can be built.',
+          'Change in a city starts with conversation. Urban Factory designs and runs events and participatory processes that bring residents, experts, business and city teams to the same table, and turns their ideas into a project brief.',
         formats: [
           'City festivals and public-space events',
           'Forums, conferences and expert sessions',
           'Participatory workshops and community engagement',
-          'International exchange and study visits',
+          'International exchange of experience and study visits',
           'Discussion series and video interviews',
-          'Government relations: working with city administrations, business and partners',
+          'Government relations: municipalities, regional and national authorities',
+          'Partnerships with business, universities and NGOs',
         ],
       },
       strategy: {
         intro:
-          'We write strategies that a city can afford. From development strategies for small towns to tram, rail and cycling networks for a metropolitan region and a housing programme for displaced families, our work is built around real budgets, real operators and real timelines.',
+          'Urban Factory prepares strategies that a city can afford: from development strategies for small towns to tram, rail and cycling networks for a metropolitan region and a housing programme for displaced families. The work is built around real budgets, real operators and real timelines. That is why projects are prepared from the start to be implementable.',
         formats: [
           'Urban research: surveys, mobility data, stakeholder interviews',
-          'City and territorial development strategies',
-          'Public transport network concepts: tram, rail, agglomeration',
-          'Cycling concepts and active mobility',
+          'Development strategies at every scale: district, city, agglomeration, region',
+          'Public transport: tram and light rail, urban and suburban rail, bus and trolleybus; interchanges and integrated fares',
+          'Active mobility: walking and cycling networks',
           'Housing programmes',
           'Project economics and partnership models',
           'Briefs and documentation for design competitions and tenders',
@@ -65,7 +66,7 @@ export const en: PageCopy = {
       },
       design: {
         intro:
-          'We design public spaces together with the people who will use them. Streets, boulevards, parks and riverbanks — from the first workshop with residents to a concept, a design package and a competition brief.',
+          'Public spaces are designed together with the people who will use them. Streets, boulevards, parks and riverbanks — from the first workshop with residents to a concept, a design package and a competition brief.',
         formats: [
           'Concepts for streets, squares and boulevards',
           'Parks, rivers and waterfronts',
@@ -79,12 +80,12 @@ export const en: PageCopy = {
   },
   agency: {
     title: 'Agency',
-    lead: 'Urban Factory is an international urban development agency. We were founded in Rostov-on-Don in 2013 and have been based in Zagreb, Croatia, since 2020.',
+    lead: 'Urban Factory is an international urban development agency, founded in Rostov-on-Don in 2013 and based in Zagreb, Croatia, since 2020.',
     history: [
       {
         year: '2013',
         title: 'Born at a festival',
-        text: 'Urban Factory began at the Urban Festival in Rostov-on-Don — a city festival about public space, where the name and the idea of the agency first appeared.',
+        text: 'Urban Factory began at Urban Festival Rostov — a city festival about public space in Rostov-on-Don, where the name and the idea of the agency first appeared.',
       },
       {
         year: '2013–2016',
@@ -99,7 +100,7 @@ export const en: PageCopy = {
       {
         year: '2020',
         title: 'Zagreb',
-        text: 'The Rostov 300 expert platform was our last major project in Rostov-on-Don. In the same year the agency moved its headquarters to Zagreb, Croatia.',
+        text: 'The Rostov 300 expert platform was the agency’s last major project in Rostov-on-Don. In the same year it moved its headquarters to Zagreb, Croatia.',
       },
       {
         year: 'Today',
@@ -108,40 +109,40 @@ export const en: PageCopy = {
       },
     ],
     approach: [
-      { title: 'Research', text: 'We start with the city as it is: data, history, people and the real resources at hand.' },
+      { title: 'Research', text: 'Every project starts with the city as it is: data, history, people and the real resources at hand.' },
       { title: 'Concept', text: 'A clear idea that can be explained on one page and defended in any room.' },
-      { title: 'Public support (when needed)', text: 'Festivals, forums, workshops and media turn a concept into a goal the city shares.' },
-      { title: 'Development', text: 'We develop the project in detail — design, documentation and the briefs for competitions and tenders — so it survives the hand-over.' },
-      { title: 'Implementation', text: 'We stay with the project through construction and launch, for as long as we are needed.' },
+      { title: 'Public support', text: 'Festivals, forums, workshops and media turn a concept into a goal the city shares.' },
+      { title: 'Development', text: 'The project is developed in detail — design, documentation and briefs for competitions and tenders — so it survives the hand-over.' },
+      { title: 'Implementation support', text: 'After the brief is handed over, Urban Factory remains available as an adviser to the city and the contractors through construction and launch.' },
     ],
     principles: [
       {
         title: 'The city is the people',
-        text: 'Every project starts and ends with the people who live in the place. Their knowledge is our main source.',
+        text: 'Every project starts and ends with the people who live in the place. Their knowledge is the main source.',
       },
       {
-        title: 'Realistic by design',
-        text: 'Solutions that fit the real budget and the real operator. For Rostov-on-Don we proposed developing the existing tram network instead of a metro the city could not afford.',
+        title: 'Feasible by design',
+        text: 'Solutions that fit the real budget and the real operator. For Rostov-on-Don, Urban Factory proposed developing the existing tram network instead of a metro the city could not afford.',
       },
       {
         title: 'Translators between worlds',
-        text: 'We speak the languages of city administrations, business, experts and residents — and help them understand each other.',
+        text: 'Urban Factory speaks the languages of city administrations, business, experts and residents — and helps them understand each other.',
       },
       {
         title: 'Local roots, international exchange',
-        text: 'We bring international experience to local projects and local experience to international ones — from Rostov-on-Don to Recife and Zagreb.',
+        text: 'International experience goes into local projects, and local experience into international ones — from Rostov-on-Don to Recife and Zagreb.',
       },
     ],
   },
   team: {
     title: 'Team',
-    lead: 'Urban Factory is led by its founder, Mihail Veklenko. For each project we bring together the specialists it needs.',
+    lead: 'Urban Factory is led by its founder, Mihail Veklenko. For each project, the necessary specialists are brought in.',
     founder: {
       name: 'Mihail Veklenko',
       role: 'Founder & CEO',
       bio: [
         'Mihail founded Urban Factory in Rostov-on-Don in 2013, after more than a decade in real estate and development.',
-        'He initiated and led the agency’s key transport and planning projects — the Rostov tram network concept, the cycling programme for Rostov-on-Don, the Great Rostov agglomeration rail concept and the Zverevo Development Strategy 2030 — and co-founded ANO Park Temernik and the Urban Festival where Urban Factory was born.',
+        'He initiated and led the agency’s key transport and planning projects — the Rostov tram network concept, the cycling programme for Rostov-on-Don, the Great Rostov agglomeration rail concept and the Socio-economic Development Strategy of the town of Zverevo to 2030 — and co-founded ANO Park Temernik and Urban Festival Rostov, where Urban Factory was born.',
         'He holds a Postgraduate Diploma in Urban Studies from The University of Manchester (joint programme with MSSES) and is a postgraduate student in urban transport at the Faculty of Transport and Traffic Sciences in Zagreb.',
         'Since 2020 he has led the agency from Zagreb, Croatia.',
       ],
@@ -167,7 +168,7 @@ export const en: PageCopy = {
       projects: ['tun-foundation', 'rostov-tram', 'cycling-rostov-on-don', 'zverevo-strategy-2030', 'temernik-river-park', 'urban-festival-rostov', 'great-rostov', 'urban-thinkers-campus-recife', 'rostov-300'],
     },
     pastTitle: 'Project teams',
-    pastText: 'For every project we build a team around the task: Mihail Veklenko together with the experts, partners and colleagues who joined him.',
+    pastText: 'Each project team is built around the task: Mihail Veklenko together with the experts, partners and colleagues who joined him.',
     past: [
       {
         project: 'rostov-tram',
@@ -180,7 +181,7 @@ export const en: PageCopy = {
         project: 'cycling-rostov-on-don',
         people: [
           { name: 'Mihail Veklenko', role: 'Initiator and project lead; urban and transport planner' },
-          { name: 'Dmitry Gusev', role: 'Velovod — head of the I Bike RnD media project; won the design tender and prepared the city cycle network scheme (2018–2019)' },
+          { name: 'Dmitry Gusev', role: 'Head of the I Bike RnD media project; his company Velovod won the design tender and prepared the city cycle network scheme (2018–2019)' },
         ],
       },
       {
@@ -198,7 +199,7 @@ export const en: PageCopy = {
         people: [
           { name: 'Mihail Veklenko', role: 'Urban planner, project lead' },
           { name: 'Julia Litvinova', role: 'Architect' },
-          { name: 'Mikael Sarkisyants', role: 'Consulting architect' },
+          { name: 'Mikael Sarkisyants', role: 'Architect' },
           { name: 'Alexey Matveenko', role: '“Gorod-Park” — workshop format' },
           { name: 'Elena Ishchenko', role: 'Territorial marketing expert' },
           { name: 'Nikolay Pryanishnikov', role: 'MSSES' },
@@ -209,14 +210,12 @@ export const en: PageCopy = {
         people: [
           { name: 'Mihail Veklenko', role: 'Co-founder of the ANO; urban planner and economist — river strategy and economics, international partnerships, forums' },
           { name: 'Yuri Pogrebshchikov', role: 'Director, ANO Park Temernik' },
-          { name: 'N. N. Britvina', role: 'Initiative group, ANO Park Temernik' },
-          { name: 'N. N. Britvin', role: 'ANO Park Temernik' },
-          { name: 'S. B. Shneider', role: 'Chamber of Commerce and Industry of the Rostov Region — moderator of the Small Rivers forum, 2018' },
+          { name: 'Nikolay Britvin', role: 'Chairman of the Board, ANO Park Temernik; initiative group' },
+          { name: 'Sergey Shneider', role: 'Chamber of Commerce and Industry of the Rostov Region — moderator of the Small Rivers forum, 2018' },
           { name: 'Sotnikova', role: '“Eco-river Temernik” concept, 2017' },
-          { name: 'Strelchenko', role: 'Cadastral survey of the riverbank' },
+          { name: 'Alexey Strelchenko', role: 'Cadastral survey of the riverbank' },
           { name: 'Bespalov', role: 'Don State Technical University — river rehabilitation algorithm' },
           { name: 'Prof. Circe Monteiro', role: 'INCITI / UFPE, Recife' },
-          { name: 'Swami Jyothirmayah', role: 'Speaker, Moscow Urban Forum 2017' },
           { name: 'Don State Technical University', role: 'Academic partner' },
         ],
       },
@@ -289,7 +288,7 @@ export const en: PageCopy = {
   },
   contact: {
     title: 'Contact',
-    lead: 'Write to us about your city, street, river or project. Email is the best way to reach us.',
+    lead: 'Write about your city, street, river or project. Email is the best way to get in touch.',
   },
 };
 

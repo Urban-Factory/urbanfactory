@@ -7,11 +7,11 @@ year: "2014–2023"
 city: Rostov na Donu
 country: Rusija
 role: "Istraživanje (GPS tragovi, ankete, intervjui, okrugli stol dionika), koncept biciklističkog prometa, savjetovanje do realizacije"
-summary: "Kako je bicikl postao dio prometnog sustava Rostova na Donu — od upita grada i našeg istraživanja s biciklistima do natječaja za projektiranje, sheme gradske biciklističke mreže i biciklističkih staza koje se od 2021. grade u fazama."
+summary: "Kako je bicikl postao dio prometnog sustava Rostova na Donu — od upita grada i istraživanja koje je Urban Factory provela s biciklistima do natječaja za projektiranje, sheme gradske biciklističke mreže i biciklističkih staza koje se od 2021. grade u fazama."
 results:
   - "Istraživanje s biciklistima i dionicima: GPS tragovi, ankete, intervjui, okrugli stol"
   - "Rezultati istraživanja postali su temelj projektnog zadatka za natječaj gradskog odjela za promet"
-  - "Shemu gradske biciklističke mreže izradio je pobjednik natječaja, Velovod (2018.–2019.)"
+  - "Shemu gradske biciklističke mreže izradila je pobjednica natječaja, tvrtka Velovod (2018.–2019.)"
   - "Biciklističke staze grade se u fazama od 2021.: Puškinska ulica (oko 3,5 km), četvrt Levencovski (2023.)"
 cover: ../../../assets/projects/cycling-rostov-on-don/cover.jpg
 coverAlt: "Skupna vožnja biciklom kaldrmiranom ulicom pokraj stare zgrade od crvene opeke u Rostovu na Donu"
@@ -30,7 +30,7 @@ Grad je 2014. postavio jednostavno pitanje: treba li Rostov na Donu graditi bici
 
 Da bi odgovorio na pitanje, grad je trebao činjenice: tko vozi, gdje, zašto — i što zaustavlja sve ostale.
 
-## Što smo napravili
+## Što je napravljeno
 
 Mihail Veklenko osmislio je i pokrenuo projekt te organizirao istraživanje. Urban Factory provela ga je 2014.–2015.:
 
@@ -45,12 +45,12 @@ Unutar programa djelovao je medijski projekt I Bike RnD, koji je vodio Dmitrij G
 
 ## Rezultat
 
-Rezultati istraživanja postali su temelj projektnog zadatka za natječaj za projektiranje gradskog odjela za promet. Natječaj je dobio Velovod (Dmitrij Gusev), koji je izradio shemu gradske biciklističke mreže. Mihail je savjetovao na projektu sve do njegove realizacije.
+Rezultati istraživanja postali su temelj projektnog zadatka za natječaj za projektiranje gradskog odjela za promet. Natječaj je dobila tvrtka Velovod (Dmitrij Gusev), koja je izradila shemu gradske biciklističke mreže. Mihail je savjetovao na projektu sve do njegove realizacije.
 
 - **2014.** — upit grada
 - **2014.–2015.** — istraživanje: GPS tragovi, ankete, intervjui, okrugli stol dionika
-- **Natječaj za projektiranje** gradskog odjela za promet — pobjednik Velovod (Dmitrij Gusev)
-- **2018.–2019.** — shema gradske biciklističke mreže koju je izradio Velovod
+- **Natječaj za projektiranje** gradskog odjela za promet — pobjednica tvrtka Velovod (Dmitrij Gusev)
+- **2018.–2019.** — shema gradske biciklističke mreže koju je izradila tvrtka Velovod
 - **Od 2021.** — biciklističke staze grade se u fazama: Puškinska ulica (oko 3,5 km); četvrt Levencovski (2023.)
 
 Ovdje je počela biciklistička mreža Rostova na Donu: istraživanje provedeno s ljudima koji koriste ulicu oblikovalo je odluku grada — i staze su se pojavile na terenu.

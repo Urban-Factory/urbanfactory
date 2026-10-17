@@ -32,13 +32,13 @@ order: 8
 
 Urban Thinkers Campus format je UN-Habitata: otvoreni susreti na kojima gradovi, sveučilišta i civilno društvo raspravljaju o tome kako Novu urbanu agendu provesti u praksi. Godine 2017. istraživački institut INCITI pri Saveznom sveučilištu Pernambuca održao je u Recifeu kampus o vodi i otpornosti. Recife je grad rijeka, kanala i mangrova te se suočava s poplavama i onečišćenjem vode. Organizatori su tražili praktične i jeftine ideje koje mogu koristiti stanovnici i gradske službe.
 
-## Što smo napravili
+## Što je napravljeno
 
 Mihail Veklenko organizirao je, koordinirao i moderirao jednu od sesija kampusa — međunarodni okrugli stol o tome kako stanovnici mogu pomoći u brizi za vode svojega grada. Održan je 30. studenoga 2017. u Casarão das Artes u Recifeu.
 
-Okupili smo govornike i osmislili program. Na panelu su bili ekološka nevladina organizacija koja radi na parku mangrova u Recifeu, gradski program permakulture i kompostiranja, istraživač upravljanja vodama iz INCITI-ja, think tank za pitanja upravljanja i zaklada za socijalne projekte. Teme su se kretale od kućnog kompostiranja i vrijednosti gradskih mangrova do urbanog dizajna osjetljivog na vodu i jednostavnih bioloških metoda pročišćavanja otpadnih voda.
+Tim je okupio govornike i osmislio program. Na panelu su bili ekološka nevladina organizacija koja se bavi šumom mangrova u Recifeu, gradski program permakulture i kompostiranja, istraživač upravljanja vodama iz INCITI-ja, think tank za pitanja upravljanja i zaklada za socijalne projekte. Teme su se kretale od kućnog kompostiranja i vrijednosti gradskih šuma mangrova do urbanog dizajna osjetljivog na vodu i jednostavnih bioloških metoda pročišćavanja otpadnih voda.
 
-Mihail je moderirao raspravu i održao jedno od izlaganja. Nakon sesije napisali smo izvještaj za kampus: otvorena pitanja, prijedloge za lokalni akcijski plan, ideje za praćenje te za uključivanje škola i sveučilišta.
+Mihail je moderirao raspravu i održao jedno od izlaganja. Nakon sesije Urban Factory napisala je izvještaj za kampus: otvorena pitanja, prijedloge za lokalni akcijski plan, ideje za praćenje te za uključivanje škola i sveučilišta.
 
 ## Rezultat
 

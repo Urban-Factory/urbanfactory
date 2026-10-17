@@ -1,5 +1,5 @@
 ---
-title: "Metro-tramvaj na jugu Rusije"
+title: "Brzi tramvaj na jugu Rusije"
 lang: hr
 section: press
 date: "2018"

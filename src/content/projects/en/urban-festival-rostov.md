@@ -7,12 +7,12 @@ year: "2013–2014"
 city: Rostov-on-Don
 country: Russia
 role: "Concept, programme and organisation"
-summary: "A city festival about public space where Urban Factory was born — and which left behind a new public square and a network of local initiatives."
+summary: "A city festival about public space, held in 2013 and 2014. It brought Rostov’s urban initiatives together for the first time, left behind a new public square and gave birth to Urban Factory."
 results:
   - "2013: 16 days, 2,000 visitors and 8,000 people reached online"
   - "100+ volunteers"
-  - "7 local NGOs and 50 graduates grew out of the festival and the 2014 school"
   - "About 1,500 people at the educational picnic in the park"
+  - "Rostov’s urban initiatives brought together on one platform for the first time"
   - "2014: a new public square on a vacant city plot"
 cover: ../../../assets/projects/urban-festival-rostov/cover.jpg
 coverAlt: "A child on a rope swing above paving stones and yellow festival flags, seen from above"
@@ -31,33 +31,31 @@ order: 6
 
 ## Challenge
 
-In 2013 residents of Rostov-on-Don had few chances to discuss their city in public, and little experience of shaping it together. We wanted to show that public space belongs to the people who use it, and that change can start with a weekend, a few chairs and an open conversation.
+In 2013 residents of Rostov-on-Don had few chances to discuss their city in public and little experience of changing it together. The organisers set out to show that public space belongs to the people who use it, and that change can start with a weekend, a few chairs and an open conversation.
 
-## What we did
+## What was done
 
-A small team of organisers — Mihail Veklenko, Diana Karnaukhova and Alexey Karachinsky — launched the first Urban Festival Rostov in 2013. Over 16 days it welcomed 2,000 visitors and reached another 8,000 people online. The programme mixed lectures, a participatory design workshop, a conference, city walks, a free market, open-air cinema and a neighbours' table. An educational picnic in a city park brought together about 1,500 people. Mihail presented a concept for a light-rail network for the city.
+**2013.** A small team of organisers — Mihail Veklenko, Diana Karnaukhova and Alexey Karachinsky — launched the first Urban Festival Rostov. Over 16 days it welcomed 2,000 visitors and reached another 8,000 people online; more than 100 volunteers helped to run it. The programme mixed lectures, a participatory design workshop, a conference, city walks, a free market, open-air cinema and a neighbours’ table. Mariya Iskrennikova (“Botaniki”) ran the festival programme in the Botanical Garden. An educational picnic in a city park brought together about 1,500 people. Mihail presented the first version of an expanded tram network for the city. For the first time the festival brought Rostov’s urban initiatives together on one platform.
 
-The Urban Factory brand was invented by Mihail at this festival. It was announced at the end as a platform for design, education and city projects.
+The Urban Factory brand was invented by Mihail at this festival and announced at its close as a platform for design, education and city projects.
 
-In 2014 the second festival took over a vacant plot left after demolition. We turned it into Square #1 — with benches, flower beds, a street library and a pitch for gorodki, a traditional Russian game. The programme included lectures by guest experts, the presentation of the I Bike RnD cycling project, a full-size model of a new tram front designed by the Urban Factory team, and a round table on how to train young professionals in urban development.
+**2014.** The second festival took over a vacant plot left after demolition and turned it into Square #1, with benches, flower beds, a street library and a pitch for gorodki, a traditional Russian game. The festival hosted an educational programme by Sviatoslav Murunov (Centre for Applied Urbanism, Moscow). The programme also included lectures by guest experts, the presentation of the I Bike RnD cycling project, a full-size mock-up of the updated Tatra T3 tram front designed by the Urban Factory team, and a round table on training young professionals in urban development.
 
-The festival also hosted training sessions of the Centre for Applied Urbanism (Moscow), which Mihail represented in Rostov in 2014.
-
-More than 100 volunteers helped to run the first festival.
+**2015.** The festival was held twice, in 2013 and 2014, and did not take place in 2015.
 
 ## Result
 
 - 2,000 visitors and 8,000 people online over 16 days of the first festival.
+- Rostov’s urban initiatives brought together on one platform for the first time.
 - A new public square — Square #1 — on a plot that had stood empty.
-- 7 local NGOs and 50 graduates grew out of the festival and the 2014 school.
-- Urban Factory itself — the festival became the starting point for our later work on parks, transport and public space.
+- Urban Factory itself: the festival became the starting point for the agency’s later work on parks, transport and public space.
 
 ## Speakers and partners
 
-**Festival team:** Mihail Veklenko, Diana Karnaukhova, Alexey Karachinsky. In 2013 Mariya Iskrennikova (“Botaniki”) ran the festival programme in the Botanical Garden.
+**Festival team:** Mihail Veklenko, Diana Karnaukhova, Alexey Karachinsky.
 
 **Lecturers 2014:** Sviatoslav Murunov (Centre for Applied Urbanism), Marina Khrustaleva (Arkhnadzor), Daria Zueva.
 
-**Speakers 2013:** Malenko, Popova, Klimovsky, P. Ivanov, Mironov Workshop, Lagodina, Potemkin, Tokarev, Grishechkin, Grinenko; webinars — Arutyunyan, Korolev, Morozov. **Speakers 2014:** Dubover, Bogdanovsky, Vozyanov, Shtompel, Logachev, Sarkisyants.
+**Speakers 2013:** Malenko, Popova, Klimovsky, P. Ivanov, Mironov Workshop, Lagodina, Potemkin, Tokarev, Grishechkin, Grinenko; webinars — Arutyunyan, Korolev, Morozov. **Speakers 2014:** Bogdanovsky, Vozyanov, Shtompel, Logachev, Sarkisyants.
 
 **Partner organisations:** IKEA (2013), MEGA (2014).

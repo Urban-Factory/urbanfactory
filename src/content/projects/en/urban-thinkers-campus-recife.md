@@ -32,13 +32,13 @@ order: 8
 
 Urban Thinkers Campus is a UN-Habitat format: open meetings where cities, universities and civil society discuss how to put the New Urban Agenda into practice. In 2017 the INCITI research institute at the Federal University of Pernambuco ran a campus in Recife on water and resilience. Recife is a city of rivers, canals and mangroves, and it faces flooding and water pollution. The organisers wanted practical, low-cost ideas that residents and city services could use.
 
-## What we did
+## What was done
 
 Mihail Veklenko organised, coordinated and moderated one of the campus sessions — an international round table on how residents can help take care of their city's waters. It took place on 30 November 2017 at Casarão das Artes in Recife.
 
-We brought the speakers together and built the programme. The panel included an environmental NGO working on Recife's mangrove park, the city's permaculture and composting programme, a water-management researcher from INCITI, a governance think tank and a social-projects foundation. Topics ranged from household composting and the value of urban mangroves to water-sensitive urban design and simple biological methods for treating wastewater.
+Urban Factory brought the speakers together and built the programme. The panel included an environmental NGO working on Recife's mangrove park, the city's permaculture and composting programme, a water-management researcher from INCITI, a governance think tank and a social-projects foundation. Topics ranged from household composting and the value of urban mangroves to water-sensitive urban design and simple biological methods for treating wastewater.
 
-Mihail moderated the debate and gave one of the presentations. After the session we wrote the report for the campus: issues discussed, proposals for a local action plan, ideas for monitoring and for involving schools and universities.
+Mihail moderated the debate and gave one of the presentations. After the session Urban Factory wrote the report for the campus: issues discussed, proposals for a local action plan, ideas for monitoring and for involving schools and universities.
 
 ## Result
 

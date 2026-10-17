@@ -1,5 +1,5 @@
 ---
-title: "Rostov 300: razgovor s ekonomistkinjom Natalijom Zubarevič"
+title: "Rostov 300: razgovor s ekonomisticom Natalijom Zubarevič"
 lang: hr
 section: press
 date: "2021-03-15"

@@ -1,5 +1,5 @@
 ---
-title: "Metro-tram as a compromise between tram and metro"
+title: "High-speed tram as a compromise between the conventional tram and the metro"
 lang: en
 section: press
 date: "2018-09-19"

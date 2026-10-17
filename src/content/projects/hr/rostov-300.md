@@ -88,15 +88,15 @@ order: 10
 
 ## Izazov
 
-Rostov na Donu navršit će 300 godina 2049. Grad je imao planove razvoja za nadolazeće godine, ali ne i zajedničku sliku o tome što želi biti za tri desetljeća. Htjeli smo pokrenuti taj razgovor — otvoreno i s ljudima koji grad poznaju s različitih strana.
+Rostov na Donu navršit će 300 godina 2049. Grad je imao planove razvoja za nadolazeće godine, ali ne i zajedničku sliku o tome što želi biti za tri desetljeća. Cilj je bio pokrenuti taj razgovor — otvoreno i s ljudima koji grad poznaju s različitih strana.
 
-## Što smo napravili
+## Što je napravljeno
 
-Osnovali smo Rostov 300, stručnu platformu gradske urbanističke zajednice. Mihail Veklenko napisao je koncept i program, bio je sukustos projekta zajedno s Aleksandrom Černovom iz Donske državne javne knjižnice i vodio je projektni tim.
+Urban Factory osnovala je Rostov 300, stručnu platformu gradske urbanističke zajednice. Mihail Veklenko napisao je koncept i program, bio je sukustos projekta zajedno s Aleksandrom Černovom iz Donske državne javne knjižnice i vodio je projektni tim.
 
 Program je obuhvaćao osam tematskih rasprava: baština i povijest; kultura i sport; urbani okoliš; gospodarstvo, infrastruktura, trgovina i turizam; obrazovanje i tehnologija; urbana sociologija; ljudski kapital; i ekologija. Koncept je napisan u veljači 2020. Platforma je otvorena 5. ožujka 2020. u Donskoj državnoj javnoj knjižnici prvom raspravom o baštini — koje povijesne zgrade sačuvati i što Rostov riskira izgubiti.
 
-Kad je pandemija zatvorila javne prostore, u travnju 2020. projekt smo preselili online. Mihail je snimio video intervjue s ekonomistima, arhitektima, stručnjacima za promet i biciklizam, stručnjacima za brendiranje i turizam te kulturnjacima. Ključno pitanje u svakom razgovoru: s kojim se izazovima grad danas suočava? U projektnom timu bili su sociologinja Darja Rud, koja je vodila sociokulturno istraživanje grada, i novinar Nikolaj Procenko, koji je radio na tekstovima.
+Kad je pandemija zatvorila javne prostore, u travnju 2020. projekt je preseljen online. Mihail je snimio video intervjue s ekonomistima, arhitektima, stručnjacima za promet i biciklizam, stručnjacima za brendiranje i turizam te kulturnjacima. Ključno pitanje u svakom razgovoru: s kojim se izazovima grad danas suočava? U projektnom timu bili su sociologinja Darja Rud, koja je vodila sociokulturno istraživanje grada, i novinar Nikolaj Procenko, koji je radio na tekstovima.
 
 Na YouTube kanalu projekta objavljeno je dvanaest videa, uključujući raspravu projektnog tima o sociologiji grada.
 

@@ -7,7 +7,7 @@ year: "2014–2023"
 city: Rostov-on-Don
 country: Russia
 role: "Research (GPS tracks, surveys, interviews, stakeholder round table), cycling concept, consulting until implementation"
-summary: "How cycling became part of the transport system of Rostov-on-Don — from a city request and our research with cyclists to a design tender, a city cycle network scheme and cycle lanes built in phases from 2021."
+summary: "How cycling became part of the transport system of Rostov-on-Don — from a city request and Urban Factory’s research with cyclists to a design tender, a city cycle network scheme and cycle lanes built in phases from 2021."
 results:
   - "Research with cyclists and stakeholders: GPS tracks, surveys, interviews, a round table"
   - "Research results became the basis of the brief for the city transport department’s design tender"
@@ -30,7 +30,7 @@ In 2014 the city asked a simple question: should Rostov-on-Don build cycle lanes
 
 To answer the question, the city needed facts: who rides, where, why — and what stops everyone else.
 
-## What we did
+## What was done
 
 Mihail Veklenko created and initiated the project and organised the research. In 2014–2015 Urban Factory carried it out:
 
