@@ -27,7 +27,7 @@ const c = getCopy(lang).agency;
         {
           c.approach.map((a, i) => (
             <li class="reveal bg-surface p-6 lg:p-8">
-              <span class="font-display text-lg font-bold text-red">{String(i + 1).padStart(2, '0')}</span>
+              <span class="font-display text-lg font-bold text-red-text">{String(i + 1).padStart(2, '0')}</span>
               <h3 class="mt-3 text-2xl">{a.title}</h3>
               <p class="mt-3 text-ink/85">{a.text}</p>
             </li>
@@ -59,7 +59,7 @@ const c = getCopy(lang).agency;
       {
         c.history.map((h) => (
           <li class="reveal grid gap-3 border-b border-line py-8 md:grid-cols-12 md:gap-8 md:py-10">
-            <span class="font-display text-3xl font-bold text-red md:col-span-3 md:text-4xl">{h.year}</span>
+            <span class="font-display text-3xl font-bold text-red-text md:col-span-3 md:text-4xl">{h.year}</span>
             <h3 class="text-2xl md:col-span-4 md:text-3xl">{h.title}</h3>
             <p class="text-ink/85 md:col-span-5">{h.text}</p>
           </li>

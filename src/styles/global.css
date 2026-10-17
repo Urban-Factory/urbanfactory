@@ -5,14 +5,18 @@
 /* Дизайн-система Urban Factory — фирстиль 2024 (папка final) */
 @theme {
   --color-ink: #1d1d1b;
-  --color-paper: #ffffff;
-  --color-surface: #f4f3ef;
-  --color-line: #dcdad3;
-  --color-muted: #6b6b66;
-  --color-red: #9c0001;     /* Engagement & Events, акцент бренда */
-  --color-blue: #0000f6;    /* Strategic Planning & Mobility */
-  --color-green: #5da130;   /* Urban Design & Architecture — крупные элементы */
-  --color-green-text: #3f7a1f; /* зелёный для текста (AA) */
+  --color-paper: #f3f3e7;
+  --color-surface: #eae9da;
+  --color-line: #d6d4c8;
+  --color-muted: #646460;
+  /* Приглушённая палитра: светлые цвета — только плашки, полосы, метки, фон CTA;
+     весь цветной текст, маркеры и обводки фокуса — через *-text (AA на paper и surface) */
+  --color-red: #cd7166;        /* Engagement & Events, акцент бренда */
+  --color-red-text: #a8483d;
+  --color-blue: #6c719f;       /* Strategic Planning & Mobility */
+  --color-blue-text: #4a4f7d;
+  --color-green: #8ea360;      /* Urban Design & Architecture */
+  --color-green-text: #5b6d32;
 
   --font-display: 'Roboto Condensed Variable', 'Arial Narrow', sans-serif;
   --font-sans: 'Inter Variable', system-ui, -apple-system, 'Segoe UI', sans-serif;
@@ -49,10 +53,13 @@
     letter-spacing: -0.01em;
   }
   :focus-visible {
-    outline: 3px solid var(--color-blue);
+    outline: 3px solid var(--color-blue-text);
     outline-offset: 3px;
   }
-  ::selection { background: var(--color-red); color: #fff; }
+  /* На тёмном и коралловом фоне обводка *-text не видна (< 3:1) — берём контрастный цвет фона-соседа */
+  .bg-ink :focus-visible { outline-color: var(--color-paper); }
+  .bg-red :focus-visible { outline-color: var(--color-ink); }
+  ::selection { background: var(--color-red); color: var(--color-ink); }
 }
 
 @layer components {
@@ -104,9 +111,9 @@
   .prose-uf ul { list-style: square; }
   .prose-uf ol { list-style: decimal; }
   .prose-uf li + li { margin-top: 0.4em; }
-  .prose-uf li::marker { color: var(--color-red); }
+  .prose-uf li::marker { color: var(--color-red-text); }
   .prose-uf a { text-decoration: underline; text-underline-offset: 0.2em; }
-  .prose-uf a:hover { color: var(--color-red); }
+  .prose-uf a:hover { color: var(--color-red-text); }
   .prose-uf strong { color: var(--color-ink); font-weight: 600; }
   .prose-uf blockquote {
     margin-block: 2rem;
@@ -119,7 +126,7 @@
 
   .prose-uf img { width: 100%; height: auto; margin-top: 2em; background: var(--color-surface); }
   .prose-uf p:has(> img) + p > em:only-child { display: block; margin-top: -0.4em; font-size: 0.875rem; color: var(--color-muted); }
-  .prose-interview p > strong:first-child { color: var(--color-red); }
+  .prose-interview p > strong:first-child { color: var(--color-red-text); }
 
   /* Появление при прокрутке — только если пользователь не просит меньше движения */
   @media (prefers-reduced-motion: no-preference) {

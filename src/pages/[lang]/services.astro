@@ -16,8 +16,8 @@ const t = useTranslations(lang);
 const c = getCopy(lang).services;
 const projects = await getProjects(lang);
 const style = {
-  engagement: { bar: 'bg-red', text: 'text-red', n: '01' },
-  strategy: { bar: 'bg-blue', text: 'text-blue', n: '02' },
+  engagement: { bar: 'bg-red', text: 'text-red-text', n: '01' },
+  strategy: { bar: 'bg-blue', text: 'text-blue-text', n: '02' },
   design: { bar: 'bg-green', text: 'text-green-text', n: '03' },
 } as const;
 ---
@@ -69,7 +69,7 @@ const style = {
                   {related.map((p) => (
                     <li>
                       <a href={localePath(lang, `/projects/${p.data.slug}/`)} class="group flex items-baseline justify-between gap-4 py-3">
-                        <span class="font-display font-semibold uppercase group-hover:text-red">{p.data.title}</span>
+                        <span class="font-display font-semibold uppercase group-hover:text-red-text">{p.data.title}</span>
                         <span class="shrink-0 text-sm text-muted">{formatYears(p.data.year, t('project.present'))}</span>
                       </a>
                     </li>

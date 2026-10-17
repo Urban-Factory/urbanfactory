@@ -124,7 +124,7 @@ const facts = [
                 {interviews.map((m) => (
                   <li class="text-lead">
                     {t('project.mediaPrefix')}{' '}
-                    <a href={localePath(lang, `/media/${m.data.slug}/`)} class="font-semibold underline underline-offset-4 hover:text-red">{m.data.person}</a>{' '}
+                    <a href={localePath(lang, `/media/${m.data.slug}/`)} class="font-semibold underline underline-offset-4 hover:text-red-text">{m.data.person}</a>{' '}
                     {t('project.mediaInput')}.
                   </li>
                 ))}
@@ -217,7 +217,7 @@ const facts = [
           prev ? (
             <a href={localePath(lang, `/projects/${prev.data.slug}/`)} class="group block py-10 md:pr-8">
               <span class="eyebrow text-muted">← {t('project.prev')}</span>
-              <span class="mt-3 block font-display text-2xl font-bold uppercase group-hover:text-red">{prev.data.title}</span>
+              <span class="mt-3 block font-display text-2xl font-bold uppercase group-hover:text-red-text">{prev.data.title}</span>
             </a>
           ) : (
             <span />
@@ -227,7 +227,7 @@ const facts = [
           next && (
             <a href={localePath(lang, `/projects/${next.data.slug}/`)} class="group block py-10 text-right md:pl-8">
               <span class="eyebrow text-muted">{t('project.next')} →</span>
-              <span class="mt-3 block font-display text-2xl font-bold uppercase group-hover:text-red">{next.data.title}</span>
+              <span class="mt-3 block font-display text-2xl font-bold uppercase group-hover:text-red-text">{next.data.title}</span>
             </a>
           )
         }

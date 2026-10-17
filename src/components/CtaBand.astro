@@ -11,11 +11,11 @@ const { lang } = Astro.props;
 const t = useTranslations(lang);
 ---
 
-<section class="bg-red text-paper">
+<section class="bg-red text-ink">
   <div class="wrap flex flex-col gap-8 py-16 md:flex-row md:items-end md:justify-between md:py-24">
     <div class="max-w-3xl">
       <h2 class="text-h2">{t('home.cta.title')}</h2>
-      <p class="mt-4 text-lead text-paper/90">{t('home.cta.text')}</p>
+      <p class="mt-4 text-lead">{t('home.cta.text')}</p>
     </div>
     <div class="flex shrink-0 flex-col items-start gap-4 md:items-end">
       <Protected
@@ -24,7 +24,7 @@ const t = useTranslations(lang);
         class="inline-flex min-h-14 items-center bg-paper px-8 font-display text-lg font-bold tracking-[0.08em] text-ink uppercase transition-colors hover:bg-ink hover:text-paper"
       />
       <NoJsContact class="font-display text-lg font-bold underline underline-offset-4" />
-      <a href={localePath(lang, '/contact/')} class="link-arrow text-sm text-paper/90 hover:text-paper">{t('cta.other')}</a>
+      <a href={localePath(lang, '/contact/')} class="link-arrow text-sm">{t('cta.other')}</a>
     </div>
   </div>
 </section>

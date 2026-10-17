@@ -29,17 +29,17 @@ const secondary =
         <Protected
           kind="email"
           text={t('cta.write')}
-          class="mt-4 inline-flex min-h-16 items-center bg-red px-8 font-display text-xl font-bold tracking-[0.08em] text-paper uppercase transition-colors hover:bg-ink md:text-2xl"
+          class="mt-4 inline-flex min-h-16 items-center bg-red px-8 font-display text-xl font-bold tracking-[0.08em] text-ink uppercase transition-colors hover:bg-ink hover:text-paper md:text-2xl"
         />
         <p class="mt-4 font-display text-[clamp(1.25rem,1rem+1.5vw,2rem)] font-bold break-words">
-          <Protected kind="email" class="hover:text-red" />
-          <NoJsContact class="hover:text-red" />
+          <Protected kind="email" class="hover:text-red-text" />
+          <NoJsContact class="hover:text-red-text" />
         </p>
 
         <div class="mt-12 border-t border-line pt-8">
           <p class="eyebrow text-muted">{t('contact.phone')}</p>
           <p class="mt-3 font-display text-[clamp(1.25rem,1rem+1.5vw,2rem)] font-bold">
-            <Protected kind="phone" class="hover:text-red" />
+            <Protected kind="phone" class="hover:text-red-text" />
           </p>
         </div>
 

@@ -29,7 +29,7 @@ const related = projects.filter((p) => m.related.includes(p.data.slug));
   <article>
     <header class="wrap pt-10 pb-10 md:pt-16 md:pb-14">
       <a href={localePath(lang, '/media/')} class="eyebrow text-muted hover:text-ink">← {t('media.all')}</a>
-      <p class="mt-8 eyebrow text-red">{m.date} · {m.place}</p>
+      <p class="mt-8 eyebrow text-red-text">{m.date} · {m.place}</p>
       <h1 class="mt-5 max-w-[22ch] text-h1">{m.title}</h1>
       <p class="mt-6 max-w-3xl text-lead text-ink/85 md:mt-8">{m.summary}</p>
     </header>
@@ -77,7 +77,7 @@ const related = projects.filter((p) => m.related.includes(p.data.slug));
               <ul class="mt-4 space-y-2">
                 {related.map((p) => (
                   <li>
-                    <a href={localePath(lang, `/projects/${p.data.slug}/`)} class="font-display text-xl font-bold uppercase hover:text-red">
+                    <a href={localePath(lang, `/projects/${p.data.slug}/`)} class="font-display text-xl font-bold uppercase hover:text-red-text">
                       {p.data.title}
                     </a>
                   </li>

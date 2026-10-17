@@ -28,7 +28,7 @@ const isActive = (href: string) => path.startsWith(href);
               <a
                 href={localePath(lang, item.href)}
                 aria-current={isActive(item.href) ? 'page' : undefined}
-                class="font-display text-[0.95rem] font-semibold tracking-[0.08em] uppercase underline-offset-8 hover:underline aria-[current=page]:text-red aria-[current=page]:underline"
+                class="font-display text-[0.95rem] font-semibold tracking-[0.08em] uppercase underline-offset-8 hover:underline aria-[current=page]:text-red-text aria-[current=page]:underline"
               >{t(item.key)}</a>
             </li>
           ))
@@ -87,7 +87,7 @@ const isActive = (href: string) => path.startsWith(href);
             <a
               href={localePath(lang, item.href)}
               aria-current={isActive(item.href) ? 'page' : undefined}
-              class="block border-b border-line py-4 font-display text-2xl font-bold uppercase aria-[current=page]:text-red"
+              class="block border-b border-line py-4 font-display text-2xl font-bold uppercase aria-[current=page]:text-red-text"
             >{t(item.key)}</a>
           </li>
         ))
