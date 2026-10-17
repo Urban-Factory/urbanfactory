@@ -14,6 +14,17 @@ results:
   - "Izvršeno svih pet faza projekta"
   - "Tjedna radna skupina „Tim promjena”"
   - "Dva videa o gradu"
+youtubeAllLangs: true # ролики показываем на всех языковых версиях с пометкой языка
+youtubeHeading: video
+youtube:
+  - id: "DU5MN6GY4vQ"
+    title: "Zverevo — grad mogućnosti"
+    lang: ru
+    published: "2018-08-11"
+  - id: "OwLi2oxNlTo"
+    title: "Zverevo — grad prijatelja, grad bližnjih"
+    lang: ru
+    published: "2018-08-12"
 cover: ../../../assets/projects/zverevo-strategy-2030/cover.jpg
 coverAlt: "Stanovnici i projektni tim rade nad velikim planovima grada na javnoj radionici"
 gallery:

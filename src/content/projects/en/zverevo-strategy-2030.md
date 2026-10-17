@@ -14,6 +14,17 @@ results:
   - "All five project stages delivered"
   - "Weekly working group, the “Team of Change”"
   - "Two videos about the town"
+youtubeAllLangs: true # ролики показываем на всех языковых версиях с пометкой языка
+youtubeHeading: video
+youtube:
+  - id: "DU5MN6GY4vQ"
+    title: "Zverevo — a Town of Opportunities"
+    lang: ru
+    published: "2018-08-11"
+  - id: "OwLi2oxNlTo"
+    title: "Zverevo — a Town of Friends, a Town of Family"
+    lang: ru
+    published: "2018-08-12"
 cover: ../../../assets/projects/zverevo-strategy-2030/cover.jpg
 coverAlt: "Residents and the project team working over large plans of the town at a public workshop"
 gallery:

@@ -14,6 +14,17 @@ results:
   - "Все пять этапов проекта выполнены"
   - "Еженедельная рабочая группа — «Команда перемен»"
   - "Два видеоролика о городе"
+youtubeAllLangs: true # ролики показываем на всех языковых версиях с пометкой языка
+youtubeHeading: video
+youtube:
+  - id: "DU5MN6GY4vQ"
+    title: "Зверево — город возможностей"
+    lang: ru
+    published: "2018-08-11"
+  - id: "OwLi2oxNlTo"
+    title: "Зверево — город друзей, город родных"
+    lang: ru
+    published: "2018-08-12"
 cover: ../../../assets/projects/zverevo-strategy-2030/cover.jpg
 coverAlt: "Жители и команда проекта работают над большими планами города на открытом воркшопе"
 gallery:

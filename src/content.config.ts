@@ -44,6 +44,7 @@ const projects = defineCollection({
         )
         .default([]),
       youtubeAllLangs: z.boolean().default(false), // true — ролики на всех языковых версиях (с пометкой языка)
+      youtubeHeading: z.enum(['interviews', 'video']).default('interviews'), // заголовок блока: «Видеоинтервью» или «Видео»
       featured: z.boolean().default(false),
       order: z.number().default(100),
     }),

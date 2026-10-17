@@ -176,7 +176,7 @@ const facts = [
     {
       series.length > 0 && (
         <section class="wrap pb-section" aria-labelledby="series-title">
-          <h2 id="series-title" class="eyebrow text-muted">{t('project.videoSeries')}</h2>
+          <h2 id="series-title" class="eyebrow text-muted">{t(p.youtubeHeading === 'video' ? 'project.video' : 'project.videoSeries')}</h2>
           <ol class="mt-6 grid gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
             {series.map((v, i) => (
               <li>
