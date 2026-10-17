@@ -40,9 +40,15 @@ Gradska uprava najprije je tražila zasebne zadatke: projekt parka i brend grada
 Rad je započeo u ljeto 2018. radionicom participativnog projektiranja i foresighta. U rujnu su uprava i Urban Factory potpisale sporazum o namjerama, a strategija je podijeljena u pet faza.
 
 - **„Tim promjena”.** Osnovali smo interdisciplinarnu radnu skupinu koja se sastajala svaki tjedan. Tematske skupine radile su na imidžu grada, gospodarstvu i poduzetništvu te zdravom gradu; potom su uslijedile skupine za turizam i obrazovanje.
-- **Radionice i stručnost.** Stanovnici su izravno radili na velikim planovima grada. Međunarodni okrugli stol donio je iskustvo iz Recifea u Brazilu, uz prof. Circe Monteiro s UFPE-a.
+- **Radionice i stručnost.** Stanovnici su izravno radili na velikim planovima grada. Međunarodni okrugli stol upoznao je sudionike s iskustvom Recifea u Brazilu, uz sudjelovanje prof. Circe Monteiro (UFPE). Radionice smo vodili sami, a pozvali smo i vanjske stručnjake koje smo dovodili u Zverevo na radne sastanke s gradskom upravom i „Timom promjena”:
+  - Sergej Truhačev — direktor „Južnog urbanističkog centra”, kandidat arhitektonskih znanosti: prostorno planiranje, generalni i master planovi gradova.
+  - Andrej Prohorov — zamjenik direktora „Južnog urbanističkog centra”: generalni planovi, pravila korištenja i izgradnje zemljišta, prometna rješenja i komunalna infrastruktura općina.
+  - Jelena Iščenko — marketinška savjetnica, stručnjakinja za turizam Agencije za strateške inicijative: brendovi teritorija („Slobodni Don”, „Grad s okusom”, „Proizvedeno na Donu”), tehnike kolektivnog mišljenja.
+  - Aleksej Matvejenko — voditelj agencije „Grad-park”: gradska događanja, gastronomija, turistički brend Rostova na Donu.
 - **Ulaganja i partneri.** Pripremili smo materijale o području prioritetnog razvoja za potencijalne investitore i podržali kontakte grada s partnerskim gradovima u inozemstvu.
-- **Mediji.** Snimljena su i objavljena dva videa o gradu u sklopu komunikacijskog plana strategije.
+- **Zverevo Media.** U sklopu komunikacijskog plana strategije snimljena su i objavljena dva videa o gradu (kanal Zverevo Team, kolovoz 2018.):
+  - [„Zverevo — grad mogućnosti”](https://youtu.be/DU5MN6GY4vQ)
+  - [„Zverevo — grad prijatelja, grad bližnjih”](https://youtu.be/OwLi2oxNlTo)
 
 Strategija postavlja misiju — grad-park s inovativnim gospodarstvom. Uspoređuje tri scenarija (inercijski, inovativni i ciljni) i utvrđuje četiri smjera: zdrav grad, turizam, inovativno gospodarstvo i obrazovanje.
 

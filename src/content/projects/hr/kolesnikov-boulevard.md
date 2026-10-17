@@ -8,7 +8,7 @@ city: Zverevo
 country: Rusija
 client: Gradska uprava Zvereva
 role: "Participativno projektiranje, koncept, studija izvedivosti"
-summary: "Bulevar od 3,1 ha projektiran zajedno sa stanovnicima, od prvih radionica do cjelovite projektne dokumentacije predane gradu."
+summary: "Bulevar od 3,1 ha projektiran zajedno sa stanovnicima: od prvih radionica do cjelovite projektne dokumentacije predane gradu."
 results:
   - "3,1 ha javnog prostora projektiranog sa stanovnicima"
   - "Sva četiri ugovora izvršena u cijelosti"

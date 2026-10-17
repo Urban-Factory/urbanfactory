@@ -78,7 +78,7 @@ const en = {
   'home.numbers.eyebrow': 'In numbers',
   'home.num.founded': 'founded in Rostov-on-Don',
   'home.num.projects': 'published projects',
-  'home.num.area': 'hectares of public space designed with residents',
+  'home.num.area': 'hectares of public space',
   'home.num.tram': 'km city tram programme our network concept fed into',
 
   'home.geo.eyebrow': 'Where we work',
@@ -255,7 +255,7 @@ export const ui: Record<Lang, Partial<Record<UIKey, string>>> = {
     'home.numbers.eyebrow': 'U brojkama',
     'home.num.founded': 'osnovani u Rostovu na Donu',
     'home.num.projects': 'objavljenih projekata',
-    'home.num.area': 'hektara javnog prostora projektiranog sa stanovnicima',
+    'home.num.area': 'hektara javnog prostora',
     'home.num.tram': 'km gradskog tramvajskog programa u koji je ušao naš koncept mreže',
 
     'home.geo.eyebrow': 'Gdje radimo',
@@ -427,7 +427,7 @@ export const ui: Record<Lang, Partial<Record<UIKey, string>>> = {
     'home.numbers.eyebrow': 'В цифрах',
     'home.num.founded': 'основаны в Ростове-на-Дону',
     'home.num.projects': 'опубликованных проектов',
-    'home.num.area': 'гектара общественных пространств, спроектированных вместе с жителями',
+    'home.num.area': 'гектаров общественных пространств',
     'home.num.tram': 'км городской трамвайной программы, в которую вошла наша концепция сети',
 
     'home.geo.eyebrow': 'Где мы работаем',
