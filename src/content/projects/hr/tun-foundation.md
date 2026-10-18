@@ -4,7 +4,7 @@ slug: tun-foundation
 lang: hr
 category: [strategy, design]
 year: "2023–present"
-city: Okolica Erevana (pokrajina Kotajk)
+city: Okolica Erevana
 country: Armenija
 client: Zaklada TUN
 role: "Model stambenog programa, kriteriji za odabir zemljišta i obitelji, planiranje naselja, partnerstva"
@@ -14,7 +14,7 @@ results:
   - "Model stambenog programa: najprije zemljište, a obitelj gradi uz svoj certifikat (2025.)"
   - "U pripremi je prvo novo naselje kraj Erevana s partnerskom zakladom: 7,3 ha, master plan za 37 kuća; prva faza za 10 obitelji (2026.)"
 cover: ../../../assets/projects/tun-foundation/cover.jpg
-coverAlt: "Otvoreni travnjak s grmljem i drvećem u podnožju planina u pokrajini Kotajk, Armenija"
+coverAlt: "Otvoreni travnjak s grmljem i drvećem u podnožju planina, Armenija"
 featured: false
 order: 13
 ---
@@ -33,13 +33,13 @@ Parcele su namijenjene i stanovanju i poljoprivredi: većina obitelji dolazi iz 
 
 ## Aktualni projekt: novo naselje kraj Erevana
 
-Zajedno s partnerskom zakladom TUN priprema lokaciju od 7,3 ha u pokrajini Kotajk. Master plan predviđa 37 kuća, dječji vrtić, društveni centar i staklenike kojima upravlja poljoprivredna zadruga. Prva faza obuhvaća 10 obitelji. Zemljište se trenutačno prenamjenjuje za stanovanje i dijeli na pojedinačne parcele.
+Zajedno s partnerskom zakladom TUN priprema lokaciju od 7,3 ha kraj Erevana. Master plan predviđa 37 kuća, dječji vrtić, društveni centar i staklenike kojima upravlja poljoprivredna zadruga. Prva faza obuhvaća 10 obitelji. Zemljište se trenutačno prenamjenjuje za stanovanje i dijeli na pojedinačne parcele.
 
 ## Kronologija
 
 - **2023.** — privatna inicijativa: popravak stanova i skloništa za raseljene obitelji, zajedno s arhitektima, pravnicima i ekonomistima.
 - **2024.** — zaklada je registrirana u Erevanu.
 - **2025.** — prikupljanje sredstava i osmišljavanje stambenog programa.
-- **2026.** — s partnerskom zakladom u pripremi je prvo novo naselje kraj Erevana (pokrajina Kotajk): 7,3 ha, 37 kuća prema master planu, prva faza za 10 obitelji s parcelama od oko 500 m².
+- **2026.** — s partnerskom zakladom u pripremi je prvo novo naselje kraj Erevana: 7,3 ha, 37 kuća prema master planu, prva faza za 10 obitelji s parcelama od oko 500 m².
 
 Više o zakladi: [tunfoundation.org](https://tunfoundation.org)

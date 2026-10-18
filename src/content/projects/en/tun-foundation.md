@@ -4,7 +4,7 @@ slug: tun-foundation
 lang: en
 category: [strategy, design]
 year: "2023–present"
-city: Yerevan region (Kotayk Province)
+city: Yerevan region
 country: Armenia
 client: TUN Foundation
 role: "Housing programme model, criteria for land and family selection, settlement planning, partnerships"
@@ -14,7 +14,7 @@ results:
   - "Housing programme model: land first, the family builds with its certificate (2025)"
   - "First new settlement near Yerevan in preparation with a partner foundation: 7.3 ha, master plan for 37 homes; first phase for 10 families (2026)"
 cover: ../../../assets/projects/tun-foundation/cover.jpg
-coverAlt: "Open grassland with shrubs and trees at the foot of the mountains in Kotayk Province, Armenia"
+coverAlt: "Open grassland with shrubs and trees at the foot of the mountains, Armenia"
 featured: false
 order: 13
 ---
@@ -33,13 +33,13 @@ Plots combine housing and farming: most families come from rural communities, an
 
 ## Current project: a new village near Yerevan
 
-Together with a partner foundation, TUN is preparing a 7.3 ha site in Kotayk Province. The master plan provides for 37 homes, a kindergarten, a community centre and greenhouses run as a farming cooperative. The first phase covers 10 families. The land is being rezoned for housing and divided into individual plots.
+Together with a partner foundation, TUN is preparing a 7.3 ha site near Yerevan. The master plan provides for 37 homes, a kindergarten, a community centre and greenhouses run as a farming cooperative. The first phase covers 10 families. The land is being rezoned for housing and divided into individual plots.
 
 ## Timeline
 
 - **2023** — a private initiative: repair of housing and shelters for displaced families, together with architects, lawyers and economists.
 - **2024** — the foundation is registered in Yerevan.
 - **2025** — fundraising and design of the housing programme.
-- **2026** — the first new settlement near Yerevan (Kotayk Province) is in preparation with a partner foundation: 7.3 ha, 37 homes in the master plan, a first phase for 10 families with plots of about 500 m².
+- **2026** — the first new settlement near Yerevan is in preparation with a partner foundation: 7.3 ha, 37 homes in the master plan, a first phase for 10 families with plots of about 500 m².
 
 More about the foundation: [tunfoundation.org](https://tunfoundation.org)
