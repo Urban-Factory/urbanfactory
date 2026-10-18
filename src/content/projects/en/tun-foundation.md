@@ -12,7 +12,7 @@ summary: "A housing programme that gives families displaced from Nagorno-Karabak
 results:
   - "TUN Foundation registered in Yerevan (2024)"
   - "Housing programme model: land first, the family builds with its certificate (2025)"
-  - "First new settlement in preparation near Yerevan: 10 families, plots of about 500 m² (2026)"
+  - "First new settlement near Yerevan in preparation with a partner foundation: 7.3 ha, master plan for 37 homes; first phase for 10 families (2026)"
 cover: ../../../assets/projects/tun-foundation/cover.jpg
 coverAlt: "Open grassland with shrubs and trees at the foot of the mountains in Kotayk Province, Armenia"
 featured: false
@@ -29,11 +29,17 @@ The family receives a plot in its own ownership and builds its home with the cer
 
 The land comes either from a partner foundation or is bought by TUN.
 
+Plots combine housing and farming: most families come from rural communities, and farming gives them a steady income.
+
+## Current project: a new village near Yerevan
+
+Together with a partner foundation, TUN is preparing a 7.3 ha site in Kotayk Province. The master plan provides for 37 homes, a kindergarten, a community centre and greenhouses run as a farming cooperative. The first phase covers 10 families. The land is being rezoned for housing and divided into individual plots.
+
 ## Timeline
 
 - **2023** — a private initiative: repair of housing and shelters for displaced families, together with architects, lawyers and economists.
 - **2024** — the foundation is registered in Yerevan.
 - **2025** — fundraising and design of the housing programme.
-- **2026** — the first new settlement near Yerevan (Kotayk Province) is in preparation: a first phase for 10 families, with plots of about 500 m².
+- **2026** — the first new settlement near Yerevan (Kotayk Province) is in preparation with a partner foundation: 7.3 ha, 37 homes in the master plan, a first phase for 10 families with plots of about 500 m².
 
 More about the foundation: [tunfoundation.org](https://tunfoundation.org)
