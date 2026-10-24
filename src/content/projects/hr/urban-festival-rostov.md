@@ -3,12 +3,12 @@ title: "Festival gradskog prostora Rostov"
 slug: urban-festival-rostov
 lang: hr
 category: [engagement]
-year: "2013–2014"
+year: "2013–2015"
 city: Rostov na Donu
 country: Rusija
 role: "Koncept, program i organizacija"
 sector: own
-summary: "Gradski festival o javnom prostoru održan 2013. i 2014. Prvi je put okupio gradske inicijative Rostova, ostavio za sobom novi javni trg i iznjedrio Urban Factory."
+summary: "Gradski festival o javnom prostoru održavan od 2013. do 2015. Prvi je put okupio gradske inicijative Rostova, ostavio za sobom novi javni trg i iznjedrio Urban Factory."
 results:
   - "2013.: 16 dana, 2.000 posjetitelja i online uspostavljen kontakt s još 8.000 ljudi"
   - "Više od 100 volontera"
@@ -42,7 +42,7 @@ Brend Urban Factory Mihail je osmislio upravo na ovom festivalu, a na njegovu je
 
 **2014.** Drugi festival zauzeo je praznu parcelu preostalu nakon rušenja i pretvorio je u Trg br. 1 — s klupama, cvjetnjacima, uličnom knjižnicom i igralištem za gorodki, tradicionalnu rusku igru. Festival je ugostio edukativni program Svjatoslava Murunova (Centar za primijenjeni urbanizam, Moskva). Program je uključivao i predavanja gostujućih stručnjaka, predstavljanje biciklističkog projekta I Bike RnD, maketu obnovljenog prednjeg dijela tramvaja Tatra T3 u prirodnoj veličini koju je dizajnirao tim agencije Urban Factory te okrugli stol o obrazovanju mladih stručnjaka za urbani razvoj.
 
-**2015.** Festival je održan dvaput, 2013. i 2014., a 2015. nije održan.
+**2015.** Treći festival održan je u rujnu 2015. Na njemu su predstavljeni rezultati istraživanja biciklističkog prometa [I Bike RnD](../cycling-rostov-on-don/) i strategija razvoja Rostova na Donu kao biciklističkog grada. U trećoj godini festivala u Parku Revolucije postavljen je modularni mikropark od 3×6 m iz projekta [Urbani otoci](../urban-islands/).
 
 ## Rezultat
 

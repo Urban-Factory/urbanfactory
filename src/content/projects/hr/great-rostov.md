@@ -40,7 +40,7 @@ Urban Factory započela je rad na vlastitu inicijativu 2016., a intenzivno ga je
 
 ## Rezultat
 
-Aglomeracija Rostov cjelovit je strateški koncept, a ne izgrađeni projekt. Koncept je pokazao kako željeznica može povezati aglomeraciju od nekoliko gradova, polazeći od infrastrukture koja već postoji. Prijedlog brze željeznice upućen je gradskom odjelu za promet 2019. Dijelovi tog razmišljanja — tramvaj kao okosnica i prijelazni čvorovi s gradskim vlakovima — preneseni su u rad agencije na [rostovskom tramvaju](../rostov-tram/).
+Aglomeracija Rostov cjelovit je strateški koncept, a ne izgrađeni projekt. Koncept je pokazao kako željeznica može povezati aglomeraciju od nekoliko gradova, polazeći od infrastrukture koja već postoji. Prijedlog brze željeznice upućen je gradskom odjelu za promet 2019. Dijelovi tog razmišljanja — tramvaj kao okosnica i prijelazni čvorovi s gradskim vlakovima — preneseni su u rad agencije na [rostovskom tramvaju](../rostov-tram/). Mihail je 2018. radio i na [prometnom poglavlju strategije Rostovske oblasti do 2030.](../rostov-region-strategy-2030/).
 
 ## Brojke
 

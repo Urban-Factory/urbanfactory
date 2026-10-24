@@ -120,7 +120,7 @@ const en = {
 
   'projects.meta.description':
     'Projects by Urban Factory: tram and cycling concepts, city strategies, parks, boulevards, festivals and international exchange.',
-  'projects.lead': 'Twelve projects since 2013 — from first festivals to city-wide programmes.',
+  'projects.lead': '{n} projects since 2013 — from first festivals to city-wide programmes.',
   'projects.filter.label': 'Filter by direction',
   'projects.filter.all': 'All',
   'projects.filter.sector': 'Filter by sector',
@@ -309,7 +309,7 @@ export const ui: Record<Lang, Partial<Record<UIKey, string>>> = {
 
     'projects.meta.description':
       'Projekti agencije Urban Factory: koncepti tramvajske i biciklističke mreže, strategije gradova, parkovi, šetališta, festivali i međunarodna razmjena.',
-    'projects.lead': 'Dvanaest projekata od 2013. — od prvih festivala do programa za cijeli grad.',
+    'projects.lead': '{n} projekata od 2013. — od prvih festivala do programa za cijeli grad.',
     'projects.filter.label': 'Filtriraj po smjeru',
     'projects.filter.all': 'Svi',
     'projects.filter.sector': 'Filtriraj po sektoru',
@@ -493,7 +493,7 @@ export const ui: Record<Lang, Partial<Record<UIKey, string>>> = {
 
     'projects.meta.description':
       'Проекты Urban Factory: трамвайная и велосипедная концепции, стратегии городов, парки, бульвары, фестивали и международный обмен.',
-    'projects.lead': 'Двенадцать проектов с 2013 года — от первых фестивалей до общегородских программ.',
+    'projects.lead': '{n} проектов с 2013 года — от первых фестивалей до общегородских программ.',
     'projects.filter.label': 'Фильтр по направлению',
     'projects.filter.all': 'Все',
     'projects.filter.sector': 'Фильтр по сектору',

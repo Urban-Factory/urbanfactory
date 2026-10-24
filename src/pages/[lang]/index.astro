@@ -1,6 +1,4 @@
 ---
-import fs from 'node:fs';
-import path from 'node:path';
 import { Image, Picture } from 'astro:assets';
 import Base from '../../layouts/Base.astro';
 import Logo from '../../components/Logo.astro';
@@ -12,6 +10,7 @@ import { published, useTranslations, type Lang } from '../../i18n/ui';
 import { getCopy } from '../../i18n/copy';
 import { localePath, url } from '../../lib/site';
 import { getProjects } from '../../lib/projects';
+import { docFile } from '../../lib/docs';
 import hero from '../../assets/home/hero-festival.jpg';
 import portrait from '../../assets/team/mihail-veklenko.png';
 
@@ -40,9 +39,8 @@ const copy = getCopy(lang);
 const a = copy.agency;
 const team = copy.team;
 const f = team.founder;
-// CV основателя (public/docs): кнопка только если файл есть; в RU — английский файл
-const cvFile = `cv-veklenko-${lang === 'hr' ? 'hr' : 'en'}.pdf`;
-const cv = fs.existsSync(path.join(process.cwd(), 'public', 'docs', cvFile)) ? cvFile : undefined;
+// CV основателя (public/docs): кнопка только если файл есть; в RU — русский файл, пока его нет — английский
+const cv = docFile('cv-veklenko', lang);
 
 // Города — от самой свежей активности к более ранней; под городом — страна
 const places = [

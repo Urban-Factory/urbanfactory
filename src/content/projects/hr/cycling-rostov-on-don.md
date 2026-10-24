@@ -51,9 +51,13 @@ Unutar programa djelovao je medijski projekt I Bike RnD, koji je vodio Dmitrij G
 
 Rezultati istraživanja postali su temelj projektnog zadatka za natječaj za projektiranje gradskog odjela za promet. Natječaj je dobila tvrtka Velovod (Dmitrij Gusev), koja je izradila shemu gradske biciklističke mreže. Mihail je savjetovao na projektu sve do njegove realizacije.
 
-- **2014.** — upit grada
+- **2014.** — upit grada: u srpnju 2014. grad je zatražio istraživanje biciklističke infrastrukture uoči Svjetskog nogometnog prvenstva 2018.
+- **1. kolovoza 2014.** — pokrenut projekt I Bike RnD; partneri: najmovi bicikala „Prokat v Rostove” i „City Bike”
+- **5. listopada 2014.** — predstavljanje na drugom Festivalu gradskog prostora Rostov i radni sastanak s odjelom za ceste i regulaciju prometa; osnovana radna skupina
 - **2014.–2015.** — istraživanje: GPS tragovi, ankete, intervjui, okrugli stol dionika
+- **Rujan 2015.** — rezultati istraživanja i strategija razvoja biciklističkog grada predstavljeni na trećem Festivalu gradskog prostora Rostov
 - **Natječaj za projektiranje** gradskog odjela za promet — pobjednica tvrtka Velovod (Dmitrij Gusev)
+- **Prosinac 2017.** — glavni plan biciklističkog prometa za 2021.–2024. predan Gradskoj dumi
 - **2018.–2019.** — shema gradske biciklističke mreže koju je izradila tvrtka Velovod
 - **Od 2021.** — biciklističke staze grade se u fazama: Puškinska ulica (oko 3,5 km); četvrt Levencovski (2023.)
 

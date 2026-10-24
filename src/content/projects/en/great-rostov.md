@@ -40,7 +40,7 @@ Urban Factory started the work on its own initiative in 2016 and developed it ac
 
 ## Result
 
-Great Rostov is a complete strategic concept, not a built project. It set out how rail can tie a conurbation of several cities together, starting from the infrastructure it already has. The high-speed rail proposal was sent to the city transport department in 2019. Parts of the thinking — the tram as the backbone and interchanges with city trains — carried into the agency’s work on the [Rostov tram](../rostov-tram/).
+Great Rostov is a complete strategic concept, not a built project. It set out how rail can tie a conurbation of several cities together, starting from the infrastructure it already has. The high-speed rail proposal was sent to the city transport department in 2019. Parts of the thinking — the tram as the backbone and interchanges with city trains — carried into the agency’s work on the [Rostov tram](../rostov-tram/). In 2018 Mihail also worked on the [transport section of the Rostov Region strategy to 2030](../rostov-region-strategy-2030/).
 
 ## Numbers
 

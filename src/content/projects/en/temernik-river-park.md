@@ -52,8 +52,16 @@ The collaboration with INCITI / UFPE began in 2016, when Mihail lived in Brazil 
 
 Recife in Brazil faced a similar problem with the Capibaribe river. There, in Recife, INCITI — a research institute of the Federal University of Pernambuco (UFPE) — worked with the city on the Capibaribe Park, a 15 km linear park along that river. The aim was for the Temernik initiative to learn directly from INCITI’s experience.
 
-- **Moscow Urban Forum, 2017.** Urban Factory was a co-organiser of the session “Aqua est vita: the role of the river in the modern megalopolis” (the forum itself is organised by the Moscow Urban Forum directorate). Mihail brought two speakers: Prof. Circe Monteiro, head of INCITI, who presented the Capibaribe Park project, and Swami Jyothirmayah (The Art of Living Foundation).
-- **Prof. Monteiro’s visit to Moscow, Rostov-on-Don and Zverevo, 2018.** Urban Factory organised the whole programme: a public lecture on the Capibaribe linear park in Moscow; a talk at the forum in Rostov-on-Don; an international round table in Zverevo; a walk and tree planting by the Temernik; a working meeting with ANO Park Temernik; meetings with Rostov universities on student exchange, joint research and training.
+- **Moscow Urban Forum, 2017.** Urban Factory was a co-organiser of the session “Aqua est vita: the role of the river in the modern megalopolis” (the forum itself is organised by the Moscow Urban Forum directorate). The session was moderated by Yuri Grigoryan (Project Meganom). Speakers: Alexei Shaposhnikov, Chairman of the Moscow City Duma; Konstantin Golubev, “Island of Dreams” project; Swami Jyothirmayah, The Art of Living Foundation; Prof. Circe Monteiro, INCITI / UFPE, who presented the Capibaribe Park project; Qiyu Tu and Ning Su, Shanghai Academy of Social Sciences. Mihail invited Prof. Monteiro and Swami Jyothirmayah.
+- **Prof. Monteiro’s visit to Moscow, Rostov-on-Don and Zverevo, October 2018.** Urban Factory organised the whole programme:
+  - 3 October, Moscow — a public lecture with the support of RANEPA: “A linear park along the Capibaribe River: management, architecture, society and ecology”;
+  - 5–6 October, Rostov-on-Don — the forum “Small Rivers in Big Cities”; a walk and the planting of two pine trees by the Temernik; a trip to the Azov museum-reserve;
+  - a working meeting with ANO Park Temernik, where a memorandum of cooperation between the ANO and INCITI was signed by Yuri Pogrebshchikov and Circe Monteiro;
+  - 9 October, Zverevo — a round table at the Sholokhov Central Library with the head of the town administration, Mikhail Solonitsyn, who proposed continuing the cooperation, including on the development of single-industry towns;
+  - 10 October, Don State Technical University — a meeting with the rector, Besarion Meskhi: the sides agreed to sign a letter of intent on student exchange, joint research and programmes, and the rector proposed a conference in October 2019 with the BRICS countries and the Black Sea and Caspian regions;
+  - Southern Federal University — a meeting with the botanical garden team and Prof. Boyarinov;
+  - Rostov State University of Economics (RINH) — a round table on sustainable development of large cities and agglomerations, with the support of GAU RO “RIATs”;
+  - a meeting with the South Russian University and the Research Institute of Land Reclamation Problems, with the support of the Chamber of Commerce and Industry of Rostov Region.
 - **Forum “Small Rivers in Big Cities”, 5–6 October 2018.** Prof. Monteiro shared how Recife built its park step by step — small public spaces, each finished on its own, joined into one green corridor.
 - **Memorandum, October 2018.** ANO Park Temernik and INCITI/UFPE signed a memorandum of cooperation.
 

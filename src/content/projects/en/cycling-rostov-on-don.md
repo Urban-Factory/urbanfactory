@@ -51,9 +51,13 @@ I Bike RnD, a media project led by Dmitry Gusev, ran inside the programme and ke
 
 The research results became the basis of the brief for the design tender of the city transport department. The tender was won by Velovod (Dmitry Gusev), which prepared the city cycle network scheme. Mihail consulted on the project until it was implemented.
 
-- **2014** — request from the city
+- **2014** — request from the city: in July 2014 the city asked for research on cycling infrastructure ahead of the 2018 FIFA World Cup
+- **1 August 2014** — I Bike RnD launched; partners: the bike rentals “Prokat v Rostove” and “City Bike”
+- **5 October 2014** — presentation at the second Urban Festival Rostov and a working meeting with the department of roads and traffic management; a working group formed
 - **2014–2015** — research: GPS tracks, surveys, interviews, a stakeholder round table
+- **September 2015** — research results and the cycling development strategy presented at the third Urban Festival Rostov
 - **Design tender** of the city transport department — won by Velovod (Dmitry Gusev)
+- **December 2017** — the cycling master plan for 2021–2024 handed to the City Duma
 - **2018–2019** — city cycle network scheme prepared by Velovod
 - **From 2021** — cycle lanes built in phases: Pushkinskaya Street (about 3.5 km); Levenetsovsky district (2023)
 

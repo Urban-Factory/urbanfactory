@@ -1,16 +1,19 @@
 ---
 import { useTranslations, type Lang } from '../i18n/ui';
+import { getProjects } from '../lib/projects';
 
 interface Props {
   lang: Lang;
 }
 const { lang } = Astro.props;
 const t = useTranslations(lang);
+// Число опубликованных проектов считается по коллекции, чтобы не расходиться с «Проектами»
+const projectCount = (await getProjects(lang)).length;
 
 // Только подтверждённые цифры (решения — PROGRESS.md)
 const numbers = [
   { value: '2013', key: 'home.num.founded' },
-  { value: '12', key: 'home.num.projects' },
+  { value: String(projectCount), key: 'home.num.projects' },
   { value: '12+', key: 'home.num.area' },
   { value: '119', key: 'home.num.tram' },
 ] as const;

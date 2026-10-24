@@ -52,8 +52,16 @@ Suradnja s INCITI / UFPE počela je 2016., kada je Mihail živio u Brazilu i pre
 
 Recife u Brazilu suočio se sa sličnim problemom s rijekom Capibaribe. Ondje, u Recifeu, INCITI — istraživački institut Saveznog sveučilišta Pernambuca (UFPE) — radio je s gradom na parku Capibaribe, linearnom parku dugom 15 km uz tu rijeku. Cilj je bio da inicijativa za Temernik izravno uči iz iskustva INCITI-ja.
 
-- **Moskovski urbanistički forum, 2017.** Urban Factory bila je suorganizator panel-rasprave „Aqua est vita: uloga rijeke u suvremenoj megalopoli” (sam forum organizira direkcija Moskovskog urbanističkog foruma). Mihail je doveo dvoje govornika: prof. Circe Monteiro, voditeljicu INCITI-ja, koja je predstavila projekt parka Capibaribe, i Swamija Jyothirmayaha (The Art of Living Foundation).
-- **Posjet prof. Monteiro Moskvi, Rostovu na Donu i Zverevu, 2018.** Urban Factory organizirala je cijeli program: javno predavanje o linearnom parku Capibaribe u Moskvi; izlaganje na forumu u Rostovu na Donu; međunarodni okrugli stol u Zverevu; šetnju i sadnju stabala uz Temernik; radni sastanak s ANO „Park Temernik”; sastanke s rostovskim sveučilištima o razmjeni studenata, zajedničkim istraživanjima i obrazovanju.
+- **Moskovski urbanistički forum, 2017.** Urban Factory bila je suorganizator panel-rasprave „Aqua est vita: uloga rijeke u suvremenoj megalopoli” (sam forum organizira direkcija Moskovskog urbanističkog foruma). Moderator je bio Jurij Grigorjan (Projekt Meganom). Govornici: Aleksej Šapošnikov, predsjednik Moskovske gradske dume; Konstantin Golubev, projekt „Otok snova”; Swami Jyothirmayah, The Art of Living Foundation; prof. Circe Monteiro, INCITI / UFPE, koja je predstavila projekt parka Capibaribe; Qiyu Tu i Ning Su, Šangajska akademija društvenih znanosti. Mihail je pozvao prof. Monteiro i Swamija Jyothirmayaha.
+- **Posjet prof. Monteiro Moskvi, Rostovu na Donu i Zverevu, listopad 2018.** Urban Factory organizirala je cijeli program:
+  - 3. listopada, Moskva — javno predavanje uz potporu RANEPA-e: „Linearni park uz rijeku Capibaribe: upravljanje, arhitektura, društvo i ekologija”;
+  - 5.–6. listopada, Rostov na Donu — forum „Male rijeke u velikim gradovima”; šetnja i sadnja dvaju borova uz Temernik; izlet u muzej-rezervat u Azovu;
+  - radni sastanak s ANO „Park Temernik”, na kojem su Jurij Pogrebščikov i Circe Monteiro potpisali memorandum o suradnji ANO-a i INCITI-ja;
+  - 9. listopada, Zverevo — okrugli stol u Središnjoj knjižnici „Šolohov” s pročelnikom gradske uprave Mihailom Solonicinom, koji je predložio nastavak suradnje, među ostalim i u razvoju monoindustrijskih gradova;
+  - 10. listopada, Donsko državno tehničko sveučilište — sastanak s rektorom Besarionom Meshijem: dogovoreno je potpisivanje pisma namjere o razmjeni studenata, zajedničkim istraživanjima i programima, a rektor je predložio konferenciju u listopadu 2019. sa zemljama BRICS-a te crnomorske i kaspijske regije;
+  - Južno savezno sveučilište — sastanak s timom botaničkog vrta i prof. Bojarinovim;
+  - Rostovsko državno ekonomsko sveučilište (RINH) — okrugli stol o održivom razvoju velikih gradova i aglomeracija, uz potporu GAU RO „RIAC”;
+  - sastanak s Južnoruskim sveučilištem i Istraživačkim institutom za probleme melioracije, uz potporu Gospodarske komore Rostovske oblasti.
 - **Forum „Male rijeke u velikim gradovima”, 5.–6. listopada 2018.** Prof. Monteiro podijelila je kako je Recife korak po korak gradio svoj park — mali javni prostori, svaki dovršen zasebno, povezani u jedan zeleni koridor.
 - **Memorandum, listopad 2018.** ANO „Park Temernik” i INCITI/UFPE potpisali su memorandum o suradnji.
 

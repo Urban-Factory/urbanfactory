@@ -1,6 +1,4 @@
 ---
-import fs from 'node:fs';
-import path from 'node:path';
 import Base from '../../../layouts/Base.astro';
 import PageHeader from '../../../components/PageHeader.astro';
 import ProjectCard from '../../../components/ProjectCard.astro';
@@ -8,6 +6,7 @@ import CtaBand from '../../../components/CtaBand.astro';
 import { published, useTranslations, type Lang } from '../../../i18n/ui';
 import { categories, getProjects, type Project } from '../../../lib/projects';
 import { url } from '../../../lib/site';
+import { docFile } from '../../../lib/docs';
 
 export function getStaticPaths() {
   return published.map((lang) => ({ params: { lang } }));
@@ -21,17 +20,16 @@ const dot = { engagement: 'bg-red', strategy: 'bg-blue', design: 'bg-green' } as
 const publicSector = 'public-sector';
 const isPublicSector = (p: Project) => p.data.sector === 'public' || p.data.sector === 'ngo';
 
-// PDF для тендеров (public/docs): кнопка только если файл есть; в RU — английские файлы
-const docLang = lang === 'hr' ? 'hr' : 'en';
+// PDF для тендеров (public/docs): кнопка только если файл есть; в RU — русские файлы, пока их нет — английские
 const docs = [
-  { key: 'projects.docs.references', file: `reference-list-${docLang}.pdf` },
-  { key: 'projects.docs.cv', file: `cv-veklenko-${docLang}.pdf` },
+  { key: 'projects.docs.references', file: docFile('reference-list', lang) },
+  { key: 'projects.docs.cv', file: docFile('cv-veklenko', lang) },
 ] as const;
-const availableDocs = docs.filter((d) => fs.existsSync(path.join(process.cwd(), 'public', 'docs', d.file)));
+const availableDocs = docs.filter((d) => d.file !== undefined);
 ---
 
 <Base lang={lang} title={`${t('nav.projects')} — Urban Factory`} description={t('projects.meta.description')}>
-  <PageHeader title={t('nav.projects')} lead={t('projects.lead')} />
+  <PageHeader title={t('nav.projects')} lead={t('projects.lead').replace('{n}', String(projects.length))} />
 
   <section class="wrap pb-section">
     <!-- Фильтр: без JS видны все проекты, кнопки скрыты -->
