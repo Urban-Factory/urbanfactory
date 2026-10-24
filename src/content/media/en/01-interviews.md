@@ -1,6 +1,7 @@
 ---
 title: "Interview with Enrique Peñalosa on Rostov’s transport"
 lang: en
+pin: 3
 section: interviews
 date: "2014-02-24"
 outlet: "Delovoy Kvartal (DK.ru)"

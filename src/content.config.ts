@@ -90,6 +90,7 @@ const media = defineCollection({
     role: z.string(),
     url: z.url().optional(), // внешняя ссылка
     archive: z.url().optional(), // архивная копия (web.archive.org), если оригинал недоступен
+    pin: z.number().int().positive().optional(), // закрепить вверху страницы Media: 1, 2, 3… (первая — крупно); дата не меняется
     urlLabel: z.string().optional(), // подпись ссылки вместо «Original»
     interview: z.string().optional(), // slug интервью с полным текстом на сайте
     video: z.string().optional(), // id ролика YouTube — становится основной ссылкой карточки

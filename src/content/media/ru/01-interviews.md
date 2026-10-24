@@ -1,6 +1,7 @@
 ---
 title: "Интервью с Энрике Пеньялосой о транспорте Ростова"
 lang: ru
+pin: 3
 section: interviews
 date: "2014-02-24"
 outlet: "Деловой квартал (DK.ru)"

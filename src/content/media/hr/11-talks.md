@@ -1,6 +1,7 @@
 ---
 title: "TEDxBolshayaSadovayaStreet, Rostov na Donu, 2018"
 lang: hr
+pin: 1
 section: talks
 date: "2018-10-19"
 outlet: "TED.com"

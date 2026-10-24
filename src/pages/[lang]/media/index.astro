@@ -1,11 +1,10 @@
 ---
-import { Image } from 'astro:assets';
 import { getCollection, type CollectionEntry } from 'astro:content';
 import Base from '../../../layouts/Base.astro';
 import PageHeader from '../../../components/PageHeader.astro';
 import CtaBand from '../../../components/CtaBand.astro';
-import Logo from '../../../components/Logo.astro';
 import LiteYouTube from '../../../components/LiteYouTube.astro';
+import MediaCard, { type CardData } from '../../../components/MediaCard.astro';
 import { languages, published, useTranslations, type Lang } from '../../../i18n/ui';
 import { localePath } from '../../../lib/site';
 import { getProjects } from '../../../lib/projects';
@@ -32,6 +31,21 @@ const seriesBySlug = new Map(
   (await getProjects(lang)).map((p) => [p.data.slug, p.data.youtubeAllLangs ? p.data.youtube : p.data.youtube.filter((v) => v.lang === lang)]),
 );
 const showVideo = (e: CollectionEntry<'media'>) => Boolean(e.data.video) && (e.data.allLangs || e.data.originalLang === lang);
+// Закреплённые записи (поле pin): сверху страницы по возрастанию pin, первая — во всю ширину; в своих разделах не повторяются
+const pinned = entries.filter((e) => e.data.pin !== undefined).sort((a, b) => a.data.pin! - b.data.pin!);
+// Записи раздела, которые видны в этой языковой версии (без закреплённых)
+const sectionList = (s: (typeof sections)[number]) =>
+  entries.filter(
+    (e) =>
+      e.data.section === s &&
+      e.data.pin === undefined &&
+      !(e.data.series && (seriesBySlug.get(e.data.series) ?? []).length === 0) &&
+      !(e.data.video && !e.data.url && !e.data.interview && !showVideo(e)),
+  );
+// Навигация: раздел со своими записями → #раздел; раздел, где видна только закреплённая запись → #pinned
+const sectionNav = sections
+  .map((s) => ({ s, href: sectionList(s).length > 0 ? `#${s}` : pinned.some((e) => e.data.section === s) ? '#pinned' : undefined }))
+  .filter((n) => n.href !== undefined);
 const interviews = new Map(
   (await getCollection('interviews', (m) => m.data.lang === lang)).map((i) => [i.data.slug, i]),
 );
@@ -45,7 +59,7 @@ function formatDate(d: string) {
 }
 
 /** Данные для крупной карточки интервью: из страницы интервью, если она есть, иначе из записи. */
-function card(e: CollectionEntry<'media'>) {
+function card(e: CollectionEntry<'media'>): CardData {
   const iv = e.data.interview ? interviews.get(e.data.interview) : undefined;
   return {
     title: iv?.data.title ?? e.data.title,
@@ -64,9 +78,9 @@ function card(e: CollectionEntry<'media'>) {
   <PageHeader title={t('media.title')} lead={t('media.lead')}>
     <ul class="mt-10 flex flex-wrap gap-x-8 gap-y-3">
       {
-        sections.map((s) => (
+        sectionNav.map((n) => (
           <li>
-            <a href={`#${s}`} class="link-arrow text-sm">{t(`media.section.${s}`)}</a>
+            <a href={n.href} class="link-arrow text-sm">{t(`media.section.${n.s}`)}</a>
           </li>
         ))
       }
@@ -75,13 +89,21 @@ function card(e: CollectionEntry<'media'>) {
 
   <div class="wrap space-y-20 pb-section md:space-y-28">
     {
+      pinned.length > 0 && (
+        <section id="pinned" class="scroll-mt-24" aria-label={t('media.pinned')}>
+          <ul class="grid gap-14 md:grid-cols-2 md:gap-x-8">
+            {pinned.map((e, i) => (
+              <li class:list={[i === 0 && 'md:col-span-2']}>
+                <MediaCard entry={e} card={card(e)} lang={lang} eager large={i === 0} />
+              </li>
+            ))}
+          </ul>
+        </section>
+      )
+    }
+    {
       sections.map((s) => {
-        const list = entries.filter(
-          (e) =>
-            e.data.section === s &&
-            !(e.data.series && (seriesBySlug.get(e.data.series) ?? []).length === 0) &&
-            !(e.data.video && !e.data.url && !e.data.interview && !showVideo(e)),
-        );
+        const list = sectionList(s);
         if (list.length === 0) return null;
         return (
           <section id={s} class="scroll-mt-24" aria-labelledby={`${s}-title`}>
@@ -116,75 +138,9 @@ function card(e: CollectionEntry<'media'>) {
                         )}
                       </li>
                     );
-                  const c = card(e);
                   return (
                     <li>
-                      <article class="group relative flex h-full flex-col">
-                        {c.video ? (
-                          <LiteYouTube id={c.video} title={c.title} lang={lang} videoLang={e.data.originalLang === 'pt' ? undefined : e.data.originalLang} class="relative z-10 [&_a]:aspect-[4/3] [&_figcaption]:hidden" />
-                        ) : (
-                        <div class="aspect-[4/3] overflow-hidden bg-surface">
-                          {c.cover ? (
-                            <Image
-                              src={c.cover}
-                              alt={c.coverAlt}
-                              widths={[480, 800, 1200]}
-                              sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
-                              loading={i < 3 ? 'eager' : 'lazy'}
-                              class="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03] motion-reduce:transition-none"
-                            />
-                          ) : (
-                            <div class="flex h-full items-center justify-center text-ink/10">
-                              <Logo variant="mark" class="h-1/2" />
-                            </div>
-                          )}
-                        </div>
-                        )}
-                        <p class="mt-5 eyebrow text-red-text">{c.meta}</p>
-                        <h3 class="mt-3 text-2xl leading-[1.05] md:text-3xl">
-                          {c.href ? (
-                            <a
-                              href={c.href}
-                              target={c.internal ? undefined : '_blank'}
-                              rel={c.internal ? undefined : 'noopener'}
-                              class="after:absolute after:inset-0 after:content-['']"
-                            >
-                              {c.title}
-                              {!c.internal && <span class="sr-only"> ({t('media.newWindow')})</span>}
-                            </a>
-                          ) : (
-                            c.title
-                          )}
-                        </h3>
-                        {c.summary && <p class="mt-3 max-w-prose text-ink/85">{c.summary}</p>}
-                        <p class="mt-4 text-sm text-ink/80">
-                          {e.data.outlet}
-                          <span class="mx-2 inline-block border border-ink/30 px-1.5 text-xs leading-5 font-semibold">{t(`media.lang.${e.data.originalLang}`)}</span>
-                          {e.data.role}
-                          {c.video && e.data.originalLang !== lang && e.data.originalLang !== 'pt' && (
-                            <span class="font-semibold"> · {t(`video.in.${e.data.originalLang}`)}</span>
-                          )}
-                        </p>
-                        <div class="relative z-10 mt-auto flex flex-wrap gap-x-6 gap-y-2 pt-5 text-sm">
-                          {c.internal && <span class="link-arrow" aria-hidden="true">{t('media.read')}</span>}
-                          {c.video && <span class="link-arrow" aria-hidden="true">{t('media.watch')}</span>}
-                          {e.data.url && (
-                            <a href={e.data.url} target="_blank" rel="noopener" class="underline underline-offset-4 hover:text-red-text">
-                              {e.data.urlLabel ?? t('media.original')} ↗<span class="sr-only"> ({t('media.newWindow')})</span>
-                            </a>
-                          )}
-                          {e.data.archive && (
-                            <a href={e.data.archive} target="_blank" rel="noopener" class="underline underline-offset-4 hover:text-red-text">
-                              {t('media.archive')} ↗<span class="sr-only"> ({t('media.newWindow')})</span>
-                            </a>
-                          )}
-                        </div>
-                        {e.data.seeAlso && (
-                          <a href={localePath(lang, `/projects/${e.data.seeAlso.project}/`)} class="link-arrow relative z-10 mt-3 text-sm font-bold text-red-text">
-                            {e.data.seeAlso.label}
-                          </a>
-                        )}
-                      </article>
+                      <MediaCard entry={e} card={card(e)} lang={lang} eager={i < 3} />
                     </li>
                   );
                 })}

@@ -1,6 +1,7 @@
 ---
 title: "Intervju s Enriqueom Peñalosom o prometu u Rostovu"
 lang: hr
+pin: 3
 section: interviews
 date: "2014-02-24"
 outlet: "Delovoy Kvartal (DK.ru)"
