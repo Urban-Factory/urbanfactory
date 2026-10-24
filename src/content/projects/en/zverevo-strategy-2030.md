@@ -8,6 +8,9 @@ city: Zverevo
 country: Russia
 client: Zverevo city administration
 role: "Development strategy, public engagement"
+sector: public
+partner: "Zverevo city administration"
+outcome: "Adopted by the town council, December 2018"
 summary: "A development strategy for a small mining town, written together with residents and adopted by the city council in December 2018."
 results:
   - "Socio-economic Development Strategy of the town of Zverevo to 2030 adopted by the city council (December 2018)"

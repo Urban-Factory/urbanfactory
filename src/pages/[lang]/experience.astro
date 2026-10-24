@@ -1,0 +1,121 @@
+---
+import fs from 'node:fs';
+import path from 'node:path';
+import Base from '../../layouts/Base.astro';
+import PageHeader from '../../components/PageHeader.astro';
+import CtaBand from '../../components/CtaBand.astro';
+import { published, useTranslations, type Lang } from '../../i18n/ui';
+import { formatYears, getProjects, projectYears, type Project } from '../../lib/projects';
+import { localePath, url } from '../../lib/site';
+
+export function getStaticPaths() {
+  return published.map((lang) => ({ params: { lang } }));
+}
+
+const lang = Astro.params.lang as Lang;
+const t = useTranslations(lang);
+const projects = await getProjects(lang);
+
+// Строки — от новых к старым по году начала, затем по году окончания
+const byStart = (a: Project, b: Project) => {
+  const [as, ae] = projectYears(a.data.year);
+  const [bs, be] = projectYears(b.data.year);
+  return bs - as || be - ae || a.data.order - b.data.order;
+};
+const groups = [
+  { key: 'experience.group.public', sector: 'public' },
+  { key: 'experience.group.ngo', sector: 'ngo' },
+] as const;
+const rows = (sector: string) => projects.filter((p) => p.data.sector === sector).sort(byStart);
+
+const cols = ['project', 'location', 'partner', 'year', 'scope', 'result'] as const;
+
+// PDF для скачивания (public/docs): кнопка только если файл есть; в RU — английские файлы
+const docLang = lang === 'hr' ? 'hr' : 'en';
+const docs = [
+  { key: 'experience.doc.references', file: `reference-list-${docLang}.pdf` },
+  { key: 'experience.doc.cv', file: `cv-veklenko-${docLang}.pdf` },
+] as const;
+const availableDocs = docs.filter((d) => fs.existsSync(path.join(process.cwd(), 'public', 'docs', d.file)));
+---
+
+<Base lang={lang} title={`${t('nav.experience')} — Urban Factory`} description={t('experience.lead')}>
+  <PageHeader title={t('nav.experience')} lead={t('experience.lead')} />
+
+  {
+    groups.map((g, gi) => (
+      <section class:list={['wrap', gi === 0 ? 'pb-16 md:pb-20' : 'pb-section']} aria-labelledby={`group-${g.sector}`}>
+        <h2 id={`group-${g.sector}`} class="eyebrow text-muted">{t(g.key)}</h2>
+        <table class="exp-table mt-6 block w-full border-t md:table border-line text-left">
+          <thead class="sr-only md:not-sr-only">
+            <tr>
+              {cols.map((c) => (
+                <th scope="col" class="border-b border-line py-3 pr-4 align-bottom text-xs font-semibold tracking-[0.08em] text-muted uppercase last:pr-0">
+                  {t(`experience.col.${c}`)}
+                </th>
+              ))}
+            </tr>
+          </thead>
+          <tbody class="block md:table-row-group">
+            {rows(g.sector).map((p) => (
+              <tr class="block border-b border-line py-5 md:table-row md:py-0">
+                <th scope="row" data-label={t('experience.col.project')} class="block pb-2 font-normal md:table-cell md:w-[18%] md:py-5 md:pr-4 md:align-top">
+                  <a href={localePath(lang, `/projects/${p.data.slug}/`)} class="font-display font-semibold uppercase underline-offset-4 hover:text-red-text hover:underline">
+                    {p.data.title}
+                  </a>
+                </th>
+                <td data-label={t('experience.col.location')} class="block py-1 md:table-cell md:w-[11%] md:py-5 md:pr-4 md:align-top">
+                  <span class="block">{p.data.city}</span>
+                  <span class="block text-sm text-muted">{p.data.country}</span>
+                </td>
+                <td data-label={t('experience.col.partner')} class="block py-1 md:table-cell md:w-[18%] md:py-5 md:pr-4 md:align-top">{p.data.partner}</td>
+                <td data-label={t('experience.col.year')} class="block py-1 whitespace-nowrap md:table-cell md:w-[9%] md:py-5 md:pr-4 md:align-top">
+                  {formatYears(p.data.year, t('project.present'))}
+                </td>
+                <td data-label={t('experience.col.scope')} class="block py-1 md:table-cell md:w-[20%] md:py-5 md:pr-4 md:align-top">{p.data.role}</td>
+                <td data-label={t('experience.col.result')} class="block py-1 md:table-cell md:py-5 md:align-top">{p.data.outcome}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </section>
+    ))
+  }
+
+  {
+    availableDocs.length > 0 && (
+      <section class="wrap -mt-8 pb-section" aria-label={t('experience.docs')}>
+        <ul class="flex flex-wrap gap-3">
+          {availableDocs.map((d) => (
+            <li>
+              <a
+                href={url(`/docs/${d.file}`)}
+                class="inline-flex min-h-12 items-center border-2 border-ink px-6 font-display font-semibold tracking-[0.08em] uppercase transition-colors hover:bg-ink hover:text-paper"
+                type="application/pdf"
+              >
+                {t(d.key)}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )
+  }
+
+  <CtaBand lang={lang} />
+</Base>
+
+<style>
+  /* Мобильная версия: строка таблицы — карточка, подпись колонки над значением */
+  @media (width < 48rem) {
+    .exp-table td::before {
+      content: attr(data-label);
+      display: block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--color-muted);
+    }
+  }
+</style>

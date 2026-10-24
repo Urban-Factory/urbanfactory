@@ -7,6 +7,7 @@ year: "2013–2014"
 city: Rostov na Donu
 country: Rusija
 role: "Koncept, program i organizacija"
+sector: own
 summary: "Gradski festival o javnom prostoru održan 2013. i 2014. Prvi je put okupio gradske inicijative Rostova, ostavio za sobom novi javni trg i iznjedrio Urban Factory."
 results:
   - "2013.: 16 dana, 2.000 posjetitelja i online uspostavljen kontakt s još 8.000 ljudi"

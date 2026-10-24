@@ -22,6 +22,11 @@ const projects = defineCollection({
       country: z.string(),
       client: z.string().optional(),
       role: z.string(), // «Scope» — объём работ агентства, без должностей (должности — в team.past)
+      // Страница «Опыт» и фильтр «Public sector»: public — городские администрации, ngo — университеты и НКО,
+      // own — собственные проекты (на странице не показываются)
+      sector: z.enum(['public', 'ngo', 'own']).optional(),
+      partner: z.string().optional(), // колонка «Партнёр» на странице «Опыт»
+      outcome: z.string().optional(), // колонка «Результат» на странице «Опыт»
       summary: z.string(),
       cover: image().optional(),
       coverAlt: z.string().optional(),

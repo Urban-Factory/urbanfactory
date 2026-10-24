@@ -24,7 +24,9 @@ export interface PageCopy {
   team: {
     title: string;
     lead: string;
-    founder: { name: string; role: string; bio: string[]; expertise: string[]; experience: string[]; education: string[]; projects: string[] };
+    // summary — строка над блоками «Образование / Опыт / Компетенции»
+    founder: { name: string; role: string; bio: string[]; summary: string; expertise: string[]; experience: string[]; education: string[]; projects: string[] };
+    partners: { title: string; text: string }; // абзац «Партнёрская сеть» под блоком основателя
     pastTitle: string;
     pastText: string;
     // teamPage: false — показывать только на странице проекта, не в «Project teams» на странице Team
@@ -49,6 +51,7 @@ export const en: PageCopy = {
           'Discussion series and video interviews',
           'Government relations: municipalities, regional and national authorities',
           'Partnerships with business, universities and NGOs',
+          'Preparation and management of EU projects',
         ],
       },
       strategy: {
@@ -62,6 +65,9 @@ export const en: PageCopy = {
           'Housing programmes',
           'Project economics and partnership models',
           'Briefs and documentation for design competitions and tenders',
+          'Sustainable urban mobility plans (SUMP)',
+          'Transport and parking studies',
+          'Feasibility studies and cost-benefit analysis (CBA)',
         ],
       },
       design: {
@@ -143,9 +149,10 @@ export const en: PageCopy = {
       bio: [
         'Mihail founded Urban Factory in Rostov-on-Don in 2013, after more than a decade in real estate and development.',
         'He initiated and led the agency’s key transport and planning projects — the Rostov tram network concept, the cycling programme for Rostov-on-Don, the Great Rostov agglomeration rail concept and the Socio-economic Development Strategy of the town of Zverevo to 2030 — and co-founded ANO Park Temernik and Urban Festival Rostov, where Urban Factory was born.',
-        'He holds a Postgraduate Diploma in Urban Studies from The University of Manchester (joint programme with MSSES) and is a postgraduate student in urban transport at the Faculty of Transport and Traffic Sciences in Zagreb.',
+        'He holds a Postgraduate Diploma in Urban Studies from The University of Manchester (joint programme with MSSES) and is enrolled in the postgraduate specialist study in Urban Transport (in progress) at the Faculty of Transport and Traffic Sciences in Zagreb.',
         'Since 2020 he has led the agency from Zagreb, Croatia.',
       ],
+      summary: '13+ years in urban and transport planning; before that 10+ years in real estate development',
       expertise: [
         'City and territorial strategy',
         'Public transport and cycling',
@@ -161,11 +168,15 @@ export const en: PageCopy = {
         'Koordinator voditelja projekata, Institut IGH, Zagreb, 2022',
       ],
       education: [
-        'Postgraduate study “Gradski promet” (urban transport), Faculty of Transport and Traffic Sciences, University of Zagreb — 2024–present',
+        'Faculty of Transport and Traffic Sciences, University of Zagreb — postgraduate specialist study in Urban Transport (in progress), from 2024',
         'The University of Manchester (programme delivered with the Moscow School of Social and Economic Sciences) — Postgraduate Diploma in Urban Studies, 2013–2015 (awarded Oct 2015)',
         'Don State Technical University, Rostov-on-Don — Specialist degree in International Economic Relations, 2002–2007',
       ],
       projects: ['tun-foundation', 'rostov-tram', 'cycling-rostov-on-don', 'zverevo-strategy-2030', 'temernik-river-park', 'urban-festival-rostov', 'great-rostov', 'urban-thinkers-campus-recife', 'rostov-300'],
+    },
+    partners: {
+      title: 'Partner network',
+      text: 'For projects that require it, Urban Factory works with a licensed transport engineer and with other specialists as the project needs.',
     },
     pastTitle: 'Project teams',
     pastText: 'Each project team is built around the task: Mihail Veklenko together with the experts, partners and colleagues who joined him.',

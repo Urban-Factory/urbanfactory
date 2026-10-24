@@ -7,6 +7,9 @@ year: "2014–2023"
 city: Rostov-on-Don
 country: Russia
 role: "Research (GPS tracks, surveys, interviews, stakeholder round table), cycling concept, consulting until implementation"
+sector: public
+partner: "City transport department, Rostov-on-Don"
+outcome: "Research became the basis of the city design tender; cycle lanes built from 2021"
 summary: "How cycling became part of the transport system of Rostov-on-Don — from a city request and Urban Factory’s research with cyclists to a design tender, a city cycle network scheme and cycle lanes built in phases from 2021."
 results:
   - "Research with cyclists and stakeholders: GPS tracks, surveys, interviews, a round table"

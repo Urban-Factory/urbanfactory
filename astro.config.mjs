@@ -11,8 +11,8 @@ export default defineConfig({
   base,
   trailingSlash: 'always',
   i18n: {
-    locales: ['en', 'hr', 'ru'],
-    defaultLocale: 'en',
+    locales: ['hr', 'en', 'ru'],
+    defaultLocale: 'hr', // основной язык; корень / ведёт на /hr/ (src/pages/index.astro)
     routing: { prefixDefaultLocale: true, redirectToDefaultLocale: false },
   },
   // Старые адреса прежнего сайта агентства → новые страницы (старый сайт был на русском)

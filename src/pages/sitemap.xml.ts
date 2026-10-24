@@ -1,6 +1,6 @@
 import type { APIRoute } from 'astro';
 import { getCollection } from 'astro:content';
-import { languages, published } from '../i18n/ui';
+import { defaultLang, languages, published } from '../i18n/ui';
 import { localePath } from '../lib/site';
 
 /** sitemap.xml: все страницы на всех языках + hreflang-альтернативы. Редиректы не включаем. */
@@ -14,6 +14,7 @@ export const GET: APIRoute = async ({ site }) => {
     '/agency/',
     '/projects/',
     ...projects.map((s) => `/projects/${s}/`),
+    '/experience/',
     '/team/',
     '/media/',
     ...interviews.map((s) => `/media/${s}/`),
@@ -25,7 +26,7 @@ export const GET: APIRoute = async ({ site }) => {
       (lang) => `  <url>
     <loc>${abs(lang, p)}</loc>
 ${published.map((l) => `    <xhtml:link rel="alternate" hreflang="${languages[l].htmlLang}" href="${abs(l, p)}"/>`).join('\n')}
-    <xhtml:link rel="alternate" hreflang="x-default" href="${abs('en', p)}"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="${abs(defaultLang, p)}"/>
   </url>`,
     ),
   );

@@ -7,6 +7,7 @@ year: "2013–2014"
 city: Rostov-on-Don
 country: Russia
 role: "Concept, programme and organisation"
+sector: own
 summary: "A city festival about public space, held in 2013 and 2014. It brought Rostov’s urban initiatives together for the first time, left behind a new public square and gave birth to Urban Factory."
 results:
   - "2013: 16 days, 2,000 visitors and 8,000 people reached online"

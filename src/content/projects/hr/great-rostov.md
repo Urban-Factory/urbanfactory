@@ -8,6 +8,7 @@ city: Rostovska aglomeracija
 country: Rusija
 client: Vlastita inicijativa
 role: "Koncept aglomeracijske željeznice i prijedlog brze željeznice"
+sector: own
 summary: "Koncept jedinstvenog tračničkog sustava za cijelu Rostovsku aglomeraciju — tramvaj, gradski vlakovi i novi kolodvor brze željeznice — javno predstavljen 2018."
 results:
   - "Koncept jedinstvenog tračničkog prometnog sustava za šest gradova i četiri općine"

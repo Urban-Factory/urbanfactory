@@ -4,7 +4,7 @@ import PageHeader from '../../../components/PageHeader.astro';
 import ProjectCard from '../../../components/ProjectCard.astro';
 import CtaBand from '../../../components/CtaBand.astro';
 import { published, useTranslations, type Lang } from '../../../i18n/ui';
-import { categories, getProjects } from '../../../lib/projects';
+import { categories, getProjects, type Project } from '../../../lib/projects';
 
 export function getStaticPaths() {
   return published.map((lang) => ({ params: { lang } }));
@@ -14,6 +14,9 @@ const lang = Astro.params.lang as Lang;
 const t = useTranslations(lang);
 const projects = await getProjects(lang);
 const dot = { engagement: 'bg-red', strategy: 'bg-blue', design: 'bg-green' } as const;
+// Фильтр «Public sector» работает как ещё одна категория в data-cats (адрес #public-sector)
+const publicSector = 'public-sector';
+const isPublicSector = (p: Project) => p.data.sector === 'public' || p.data.sector === 'ngo';
 ---
 
 <Base lang={lang} title={`${t('nav.projects')} — Urban Factory`} description={t('projects.meta.description')}>
@@ -21,22 +24,28 @@ const dot = { engagement: 'bg-red', strategy: 'bg-blue', design: 'bg-green' } as
 
   <section class="wrap pb-section">
     <!-- Фильтр: без JS видны все проекты, кнопки скрыты -->
-    <div class="mb-12 hidden flex-wrap gap-2 [.js_&]:flex" role="group" aria-label={t('projects.filter.label')} data-filter>
-      <button type="button" data-cat="all" aria-pressed="true" class="filter-btn">{t('projects.filter.all')}</button>
-      {
-        categories.map((c) => (
-          <button type="button" data-cat={c} aria-pressed="false" class="filter-btn">
-            <span class:list={['h-2.5 w-2.5', dot[c]]} aria-hidden="true" />
-            {t(`cat.${c}`)}
-          </button>
-        ))
-      }
+    <!-- Второй ряд — фильтр по сектору (те же проекты, что на странице «Опыт»: sector public и ngo) -->
+    <div class="mb-12 hidden flex-col gap-3 [.js_&]:flex" data-filter>
+      <div class="flex flex-wrap gap-2" role="group" aria-label={t('projects.filter.label')}>
+        <button type="button" data-cat="all" aria-pressed="true" class="filter-btn">{t('projects.filter.all')}</button>
+        {
+          categories.map((c) => (
+            <button type="button" data-cat={c} aria-pressed="false" class="filter-btn">
+              <span class:list={['h-2.5 w-2.5', dot[c]]} aria-hidden="true" />
+              {t(`cat.${c}`)}
+            </button>
+          ))
+        }
+      </div>
+      <div class="flex flex-wrap gap-2" role="group" aria-label={t('projects.filter.sector')}>
+        <button type="button" data-cat={publicSector} aria-pressed="false" class="filter-btn">{t('projects.filter.public')}</button>
+      </div>
     </div>
 
     <ul class="grid gap-x-8 gap-y-16 sm:grid-cols-2 lg:grid-cols-3" data-projects>
       {
         projects.map((p, i) => (
-          <li data-cats={p.data.category.join(' ')}>
+          <li data-cats={[...p.data.category, ...(isPublicSector(p) ? [publicSector] : [])].join(' ')}>
             <ProjectCard project={p} lang={lang} eager={i < 3} />
           </li>
         ))

@@ -8,6 +8,9 @@ city: Rostov-on-Don
 country: Russia
 client: Own initiative, later city transport department
 role: "Tram network and line reconstruction concept; Tatra T3 fleet renewal proposal (2014); public advocacy for the high-speed tram"
+sector: public
+partner: "City transport department, Rostov-on-Don"
+outcome: "Network concept handed to the city transport department; basis for the tender documents; 2023 concession: 119 km of track, 76 new trams"
 summary: "A tram network concept — new lines and reconstruction of existing track — that informed the city’s tender documents and the 2023 programme of 119 km."
 results:
   - "Network concept and supporting work handed over to the city transport department"

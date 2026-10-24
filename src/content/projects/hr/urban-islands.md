@@ -8,6 +8,9 @@ city: Rostov na Donu
 country: Rusija
 client: Vlastita inicijativa
 role: "Koncept, zajedničko projektiranje sa stanovnicima, put do postavljanja"
+sector: public
+partner: "Suradnja s gradom Rostovom na Donu"
+outcome: "Koncept mreže mikroparkova na praznim parcelama"
 summary: "„Otoci budućnosti”: mreža malih parkova za prazne parcele u središtu grada, isprobana kao modularni mikropark 3×6 m postavljen u Parku Revolucije 2015."
 results:
   - "Koncept mreže mikroparkova na praznim parcelama"

@@ -17,6 +17,7 @@ export const hr: PageCopy = {
           'Ciklusi rasprava i video intervjui',
           'Odnosi s javnom upravom: općine i gradovi, regionalna i državna tijela',
           'Partnerstva s poduzetnicima, sveučilištima i udrugama',
+          'Priprema i vođenje projekata EU',
         ],
       },
       strategy: {
@@ -30,6 +31,9 @@ export const hr: PageCopy = {
           'Stambeni programi',
           'Ekonomika projekata i modeli partnerstva',
           'Projektni zadaci i dokumentacija za projektne natječaje i javne nabave',
+          'Planovi održive urbane mobilnosti (SUMP)',
+          'Prometne studije i studije parkiranja',
+          'Studije izvodljivosti i analiza troškova i koristi (CBA)',
         ],
       },
       design: {
@@ -111,9 +115,10 @@ export const hr: PageCopy = {
       bio: [
         'Mihail je osnovao Urban Factory u Rostovu na Donu 2013. godine, nakon više od deset godina rada u području nekretnina i razvoja.',
         'Pokrenuo je i vodio ključne prometne i planerske projekte agencije — koncept rostovske tramvajske mreže, biciklistički program za Rostov na Donu, koncept jedinstvenog tračničkog sustava Aglomeracija Rostov i Strategiju društveno-gospodarskog razvoja grada Zvereva do 2030. — te je suosnivač ANO „Park Temernik” i Festivala gradskog prostora Rostov, na kojem je nastala Urban Factory.',
-        'Ima poslijediplomsku diplomu iz urbanih studija Sveučilišta u Manchesteru (zajednički program s Moskovskom visokom školom društvenih i ekonomskih znanosti) i polaznik je poslijediplomskog studija gradskog prometa na Fakultetu prometnih znanosti u Zagrebu.',
+        'Ima poslijediplomsku diplomu iz urbanih studija Sveučilišta u Manchesteru (zajednički program s Moskovskom visokom školom društvenih i ekonomskih znanosti) i polaznik je poslijediplomskog specijalističkog studija Gradski promet (u tijeku) na Fakultetu prometnih znanosti u Zagrebu.',
         'Od 2020. agenciju vodi iz Zagreba.',
       ],
+      summary: '13+ godina iskustva u urbanom i prometnom planiranju; prije toga 10+ godina u razvoju nekretnina',
       expertise: [
         'Strategije gradova i područja',
         'Javni prijevoz i biciklistički promet',
@@ -129,11 +134,15 @@ export const hr: PageCopy = {
         'Koordinator voditelja projekata, Institut IGH, Zagreb, 2022.',
       ],
       education: [
-        'Sveučilište u Zagrebu, Fakultet prometnih znanosti — poslijediplomski studij „Gradski promet”, od 2024.',
+        'Sveučilište u Zagrebu, Fakultet prometnih znanosti — poslijediplomski specijalistički studij Gradski promet (u tijeku), od 2024.',
         'Sveučilište u Manchesteru (program proveden s Moskovskom visokom školom društvenih i ekonomskih znanosti) — poslijediplomska diploma iz urbanih studija (Postgraduate Diploma in Urban Studies), 2013.–2015. (dodijeljena u listopadu 2015.)',
         'Donsko državno tehničko sveučilište, Rostov na Donu — diploma specijalista iz međunarodnih ekonomskih odnosa, 2002.–2007.',
       ],
       projects: ['tun-foundation', 'rostov-tram', 'cycling-rostov-on-don', 'zverevo-strategy-2030', 'temernik-river-park', 'urban-festival-rostov', 'great-rostov', 'urban-thinkers-campus-recife', 'rostov-300'],
+    },
+    partners: {
+      title: 'Partnerska mreža',
+      text: 'Za projekte koji to zahtijevaju Urban Factory surađuje s licenciranim inženjerom prometa te s drugim stručnjacima prema potrebama projekta.',
     },
     pastTitle: 'Projektni timovi',
     pastText: 'Tim svakog projekta okuplja se prema zadatku: Mihail Veklenko zajedno sa stručnjacima, partnerima i kolegama koji su mu se pridružili.',

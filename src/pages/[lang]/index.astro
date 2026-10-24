@@ -29,6 +29,8 @@ const directions = [
   { id: 'design', color: 'bg-green', text: 'text-green-text', n: '03' },
 ] as const;
 
+const publicItems = ['home.public.item1', 'home.public.item2', 'home.public.item3', 'home.public.item4', 'home.public.item5'] as const;
+
 const steps = ['home.approach.step1', 'home.approach.step2', 'home.approach.step3', 'home.approach.step4', 'home.approach.step5'] as const;
 
 // Города — от самой свежей активности к более ранней; под городом — страна
@@ -42,7 +44,7 @@ const places = [
 ] as const;
 ---
 
-<Base lang={lang}>
+<Base lang={lang} description={t('home.meta.description')}>
   <!-- Первый экран -->
   <section class="wrap pt-12 pb-10 md:pt-20 md:pb-16">
     <p class="eyebrow text-red-text">{t('home.hero.eyebrow')}</p>
@@ -104,6 +106,28 @@ const places = [
         ))
       }
     </ul>
+  </section>
+
+  <!-- Для городов и муниципалитетов -->
+  <section class="wrap pb-section" aria-labelledby="public-title">
+    <div class="grid gap-10 border-t border-line pt-12 md:pt-16 lg:grid-cols-12">
+      <div class="reveal lg:col-span-5">
+        <p class="eyebrow text-muted">{t('home.public.eyebrow')}</p>
+        <h2 id="public-title" class="mt-4 text-h2">{t('home.public.title')}</h2>
+        <p class="mt-6 max-w-prose text-lead text-ink/85">{t('home.public.lead')}</p>
+        <a href={localePath(lang, '/experience/')} class="link-arrow mt-8">{t('home.public.link')}</a>
+      </div>
+      <ul class="reveal space-y-3 self-end lg:col-span-6 lg:col-start-7">
+        {
+          publicItems.map((key) => (
+            <li class="flex gap-3 border-b border-line pb-3">
+              <span class="mt-2.5 h-2 w-2 shrink-0 bg-blue" aria-hidden="true" />
+              <span>{t(key)}</span>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
   </section>
 
   <!-- Избранные проекты -->

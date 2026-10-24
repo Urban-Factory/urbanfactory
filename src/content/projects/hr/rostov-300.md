@@ -7,6 +7,7 @@ year: "2020"
 city: Rostov na Donu
 country: Rusija
 role: "Koncept i program stručne platforme, rasprave, video intervjui"
+sector: own
 summary: "Stručna platforma za dugoročnu budućnost grada, posvećena 300. obljetnici Rostova na Donu 2049. — osam tematskih rasprava i javni serijal video intervjua."
 results:
   - "Stručna platforma pokrenuta u Donskoj državnoj javnoj knjižnici"

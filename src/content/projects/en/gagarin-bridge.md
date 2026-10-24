@@ -8,6 +8,7 @@ city: Rostov-on-Don
 country: Russia
 client: Own initiative
 role: "Concept proposal for a cycle and pedestrian bridge"
+sector: own
 summary: "A concept proposal for a cycle and pedestrian bridge over Gagarin Square, with gentle ramps, a wooden deck and the square’s greenery kept intact."
 results:
   - "Concept proposal with drawings on a survey base and presentation boards (2015)"

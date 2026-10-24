@@ -8,6 +8,9 @@ city: Zverevo
 country: Russia
 client: Zverevo city administration
 role: "Participatory design, concept, feasibility study"
+sector: public
+partner: "Zverevo city administration"
+outcome: "3.1 ha of central public space designed with residents; submitted to the federal Small Towns competition (2019)"
 summary: "A 3.1 ha boulevard designed together with residents: from first workshops to a complete design package handed over to the city."
 results:
   - "3.1 ha of public space designed with residents"

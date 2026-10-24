@@ -8,6 +8,9 @@ city: Zverevo
 country: Rusija
 client: Gradska uprava Zvereva
 role: "Participativno projektiranje, koncept, studija izvedivosti"
+sector: public
+partner: "Gradska uprava Zvereva"
+outcome: "3,1 ha središnjeg javnog prostora projektiranog sa stanovnicima; prijavljeno na savezni natječaj za male gradove (2019.)"
 summary: "Šetalište od 3,1 ha projektirano zajedno sa stanovnicima: od prvih radionica do cjelovite projektne dokumentacije predane gradu."
 results:
   - "3,1 ha javnog prostora projektiranog sa stanovnicima"

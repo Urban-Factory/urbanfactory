@@ -8,6 +8,9 @@ city: Recife
 country: Brazil
 client: "INCITI / Savezno sveučilište Pernambuca (UFPE), u okviru Svjetske urbane kampanje UN-Habitata"
 role: "Organizacija i moderiranje međunarodne sesije"
+sector: ngo
+partner: "INCITI / Savezno sveučilište Pernambuca (UFPE)"
+outcome: "Sesija o rješenjima zajednice za gradske vodene površine; izvještaj na portugalskom, engleskom i ruskom"
 summary: "Međunarodna sesija o vodi i gradu koju je Urban Factory organizirala i moderirala u sklopu UN-Habitatova Urban Thinkers Campusa u Recifeu."
 results:
   - "Međunarodna sesija održana u okviru UN-Habitatova Urban Thinkers Campusa"

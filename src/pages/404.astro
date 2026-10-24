@@ -5,7 +5,7 @@
  */
 import '../styles/global.css';
 import Logo from '../components/Logo.astro';
-import { languages, published, useTranslations } from '../i18n/ui';
+import { defaultLang, languages, published, useTranslations } from '../i18n/ui';
 import { localePath, url } from '../lib/site';
 ---
 
@@ -22,7 +22,7 @@ import { localePath, url } from '../lib/site';
   <body class="flex min-h-dvh flex-col bg-paper text-ink">
     <header class="border-b border-line">
       <div class="wrap flex h-16 items-center md:h-20">
-        <a href={localePath('en', '/')} aria-label="Urban Factory" class="h-9 md:h-11"><Logo class="h-full" /></a>
+        <a href={localePath(defaultLang, '/')} aria-label="Urban Factory" class="h-9 md:h-11"><Logo class="h-full" /></a>
       </div>
     </header>
     <main class="wrap flex-1 py-section">

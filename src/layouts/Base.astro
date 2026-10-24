@@ -2,7 +2,7 @@
 import '../styles/global.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import { languages, published, useTranslations, type Lang } from '../i18n/ui';
+import { defaultLang, languages, published, useTranslations, type Lang } from '../i18n/ui';
 import { localePath, pagePath, url } from '../lib/site';
 
 interface Props {
@@ -32,7 +32,7 @@ const canonical = new URL(localePath(lang, path), Astro.site).href;
         <link rel="alternate" hreflang={languages[l].htmlLang} href={new URL(localePath(l, path), Astro.site).href} />
       ))
     }
-    <link rel="alternate" hreflang="x-default" href={new URL(localePath('en', path), Astro.site).href} />
+    <link rel="alternate" hreflang="x-default" href={new URL(localePath(defaultLang, path), Astro.site).href} />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Urban Factory" />
     <meta property="og:title" content={pageTitle} />

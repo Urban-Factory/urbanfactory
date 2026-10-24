@@ -8,6 +8,9 @@ city: Yerevan region
 country: Armenia
 client: TUN Foundation
 role: "Housing programme model, criteria for land and family selection, settlement planning, partnerships"
+sector: ngo
+partner: "TUN Foundation"
+outcome: "Master plan of a 7.3 ha settlement: 37 homes; first phase for 10 families"
 summary: "A housing programme that gives families displaced from Nagorno-Karabakh (Artsakh) in 2023 a land plot of their own, where they build a house with a state housing certificate."
 results:
   - "TUN Foundation registered in Yerevan (2024)"

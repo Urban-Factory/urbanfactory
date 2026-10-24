@@ -7,6 +7,7 @@ year: "2020"
 city: Rostov-on-Don
 country: Russia
 role: "Concept and programme of the expert platform, discussions, video interviews"
+sector: own
 summary: "An expert platform for the city's long-term future, timed to Rostov-on-Don's 300th anniversary in 2049 — eight themed discussions and a public series of video interviews."
 results:
   - "Expert platform launched at the Don State Public Library"

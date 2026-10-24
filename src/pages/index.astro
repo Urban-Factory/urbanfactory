@@ -1,11 +1,12 @@
 ---
-// Корень сайта → /en/ (GitHub Pages не умеет серверных редиректов)
+// Корень сайта → основной язык /hr/ (GitHub Pages не умеет серверных редиректов)
+import { defaultLang } from '../i18n/ui';
 import { localePath } from '../lib/site';
-const target = localePath('en', '/');
+const target = localePath(defaultLang, '/');
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={defaultLang}>
   <head>
     <meta charset="utf-8" />
     <title>Urban Factory</title>

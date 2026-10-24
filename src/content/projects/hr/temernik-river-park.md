@@ -7,6 +7,9 @@ year: "2017–2019"
 city: Rostov na Donu
 country: Rusija
 role: "Strategija i ekonomika rijeke, međunarodna partnerstva, forumi, pokretanje Prve milje"
+sector: ngo
+partner: "ANO „Park Temernik” (suosnivač); INCITI / UFPE, Recife"
+outcome: "Otvorena Prva milja linearnog parka (2023.)"
 summary: "Vraćanje zapuštene gradske rijeke u javni život — neprofitna organizacija, međunarodno partnerstvo s Recifeom i Prva milja linearnog parka, otvorena 2023."
 results:
   - "Osnovana ANO „Park Temernik”"

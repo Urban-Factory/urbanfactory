@@ -8,6 +8,9 @@ city: Okolica Erevana
 country: Armenija
 client: Zaklada TUN
 role: "Model stambenog programa, kriteriji za odabir zemljišta i obitelji, planiranje naselja, partnerstva"
+sector: ngo
+partner: "Zaklada TUN"
+outcome: "Master plan naselja od 7,3 ha: 37 kuća; prva faza za 10 obitelji"
 summary: "Stambeni program koji obiteljima raseljenima iz Gorskog Karabaha (Arcaha) 2023. daje vlastitu parcelu na kojoj grade kuću uz državni stambeni certifikat."
 results:
   - "Zaklada TUN registrirana u Erevanu (2024.)"

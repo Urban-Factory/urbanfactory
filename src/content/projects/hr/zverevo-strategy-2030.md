@@ -8,6 +8,9 @@ city: Zverevo
 country: Rusija
 client: Gradska uprava Zvereva
 role: "Strategija razvoja, uključivanje javnosti"
+sector: public
+partner: "Gradska uprava Zvereva"
+outcome: "Usvojilo gradsko vijeće, prosinac 2018."
 summary: "Strategija razvoja za mali rudarski grad, izrađena zajedno sa stanovnicima i usvojena u gradskom vijeću u prosincu 2018."
 results:
   - "Strategiju društveno-gospodarskog razvoja grada Zvereva do 2030. usvojilo je gradsko vijeće (prosinac 2018.)"

@@ -2,15 +2,17 @@
  * Все строки интерфейса — здесь. Компоненты берут текст только через t().
  * Языки, которых ещё нет в `published`, не генерируются (HR/RU — этап 4).
  */
+// Порядок ключей = порядок в переключателе языков: HR · EN · RU (хорватский — основной язык сайта)
 export const languages = {
-  en: { label: 'EN', name: 'English', htmlLang: 'en', ogLocale: 'en_GB' },
   hr: { label: 'HR', name: 'Hrvatski', htmlLang: 'hr', ogLocale: 'hr_HR' },
+  en: { label: 'EN', name: 'English', htmlLang: 'en', ogLocale: 'en_GB' },
   ru: { label: 'RU', name: 'Русский', htmlLang: 'ru', ogLocale: 'ru_RU' },
 } as const;
 
 export type Lang = keyof typeof languages;
-export const defaultLang: Lang = 'en';
-export const published: Lang[] = ['en', 'hr', 'ru'];
+// Основной язык: корень сайта ведёт сюда, hreflang x-default указывает сюда
+export const defaultLang: Lang = 'hr';
+export const published: Lang[] = ['hr', 'en', 'ru'];
 
 const en = {
   'site.name': 'Urban Factory',
@@ -32,6 +34,7 @@ const en = {
   'nav.services': 'Services',
   'nav.agency': 'Agency',
   'nav.projects': 'Projects',
+  'nav.experience': 'Experience',
   'nav.team': 'Team',
   'nav.media': 'Media',
   'nav.contact': 'Contact',
@@ -44,6 +47,8 @@ const en = {
   'cat.design.short': 'Design',
 
   'home.meta.title': 'Urban Factory — urban development agency',
+  'home.meta.description':
+    'Urban Factory — urban development and transport planning agency, Zagreb. Sustainable urban mobility plans (SUMP), transport studies, parking studies, cost-benefit analysis, public participation, EU projects.',
   'home.hero.eyebrow': 'Urban development agency · Zagreb',
   'home.hero.title': 'The city is the people',
   'home.hero.lead':
@@ -60,6 +65,17 @@ const en = {
   'home.dir.design.text':
     'Streets, parks and public spaces designed together with the people who will use them — from concept to competition brief.',
   'home.dir.more': 'More about this direction',
+
+  'home.public.eyebrow': 'Public sector',
+  'home.public.title': 'For cities and municipalities',
+  'home.public.lead':
+    'Urban Factory prepares strategic and analytical groundwork for cities, municipalities and regions — from work with residents and stakeholders to a project brief and an application for EU funds.',
+  'home.public.item1': 'Sustainable urban mobility plans (SUMP): analysis, participation, vision and package of measures',
+  'home.public.item2': 'Transport and parking studies',
+  'home.public.item3': 'Feasibility studies and cost-benefit analysis (CBA)',
+  'home.public.item4': 'Public participation and stakeholder engagement',
+  'home.public.item5': 'Preparation of projects for EU funding',
+  'home.public.link': 'Public sector experience',
 
   'home.featured.eyebrow': 'Selected work',
   'home.featured.title': 'Projects',
@@ -113,6 +129,8 @@ const en = {
   'projects.lead': 'Twelve projects since 2013 — from first festivals to city-wide programmes.',
   'projects.filter.label': 'Filter by direction',
   'projects.filter.all': 'All',
+  'projects.filter.sector': 'Filter by sector',
+  'projects.filter.public': 'Public sector',
   'projects.empty': 'No projects in this direction yet.',
 
   'project.years': 'Years',
@@ -127,10 +145,26 @@ const en = {
   'project.next': 'Next project',
   'project.prev': 'Previous project',
 
+  'experience.lead':
+    'Urban Factory projects with city administrations, universities and non-profit partners — with partner, year, scope and result.',
+  'experience.group.public': 'City administrations',
+  'experience.group.ngo': 'Universities and non-profit partners',
+  'experience.col.project': 'Project',
+  'experience.col.location': 'Location',
+  'experience.col.partner': 'Partner',
+  'experience.col.year': 'Year',
+  'experience.col.scope': 'Scope',
+  'experience.col.result': 'Result',
+  'experience.docs': 'Documents',
+  'experience.doc.references': 'Reference list (PDF)',
+  'experience.doc.cv': 'Key expert CV (PDF)',
+
   'services.meta.description':
-    'Engagement & Events, Strategic Planning & Mobility, Urban Design & Architecture — what Urban Factory does and how.',
+    'Engagement & Events, Strategic Planning & Mobility, Urban Design & Architecture — what Urban Factory does and how: SUMP, transport and parking studies, CBA.',
   'services.formats': 'Formats',
   'services.projects': 'Projects',
+  'services.note':
+    'Documentation that requires a licensed engineer\'s signature (such as traffic management plans) is prepared with a licensed partner.',
 
   'agency.meta.description':
     'Urban Factory: founded in Rostov-on-Don in 2013, headquartered in Zagreb since 2020. History, approach and principles.',
@@ -209,6 +243,7 @@ export const ui: Record<Lang, Partial<Record<UIKey, string>>> = {
     'nav.services': 'Usluge',
     'nav.agency': 'Agencija',
     'nav.projects': 'Projekti',
+    'nav.experience': 'Iskustvo',
     'nav.team': 'Tim',
     'nav.media': 'Mediji',
     'nav.contact': 'Kontakt',
@@ -221,6 +256,8 @@ export const ui: Record<Lang, Partial<Record<UIKey, string>>> = {
     'cat.design.short': 'Dizajn',
 
     'home.meta.title': 'Urban Factory — agencija za urbani razvoj',
+    'home.meta.description':
+      'Urban Factory — agencija za urbani razvoj i prometno planiranje, Zagreb. Planovi održive urbane mobilnosti (SUMP), prometne studije, studije parkiranja, analiza troškova i koristi, participacija javnosti, EU projekti.',
     'home.hero.eyebrow': 'Agencija za urbani razvoj · Zagreb',
     'home.hero.title': 'Grad su ljudi',
     'home.hero.lead':
@@ -237,6 +274,17 @@ export const ui: Record<Lang, Partial<Record<UIKey, string>>> = {
     'home.dir.design.text':
       'Ulice, parkovi i javni prostori projektirani zajedno s ljudima koji će ih koristiti — od koncepta do projektnog zadatka za natječaj.',
     'home.dir.more': 'Više o ovom smjeru',
+
+    'home.public.eyebrow': 'Javni sektor',
+    'home.public.title': 'Za gradove i općine',
+    'home.public.lead':
+      'Urban Factory priprema strateške i analitičke podloge za gradove, općine i županije — od rada sa stanovnicima i dionicima do projektnog zadatka i prijave za EU fondove.',
+    'home.public.item1': 'Planovi održive urbane mobilnosti (SUMP): analiza, participacija, vizija i paket mjera',
+    'home.public.item2': 'Prometne studije i studije parkiranja',
+    'home.public.item3': 'Studije izvodljivosti i analiza troškova i koristi (CBA)',
+    'home.public.item4': 'Participacija javnosti i rad s dionicima',
+    'home.public.item5': 'Priprema projekata za EU fondove',
+    'home.public.link': 'Iskustvo s javnim sektorom',
 
     'home.featured.eyebrow': 'Odabrani radovi',
     'home.featured.title': 'Projekti',
@@ -290,6 +338,8 @@ export const ui: Record<Lang, Partial<Record<UIKey, string>>> = {
     'projects.lead': 'Dvanaest projekata od 2013. — od prvih festivala do programa za cijeli grad.',
     'projects.filter.label': 'Filtriraj po smjeru',
     'projects.filter.all': 'Svi',
+    'projects.filter.sector': 'Filtriraj po sektoru',
+    'projects.filter.public': 'Javni sektor',
     'projects.empty': 'U ovom smjeru još nema projekata.',
 
     'project.years': 'Godine',
@@ -304,10 +354,26 @@ export const ui: Record<Lang, Partial<Record<UIKey, string>>> = {
     'project.next': 'Sljedeći projekt',
     'project.prev': 'Prethodni projekt',
 
+    'experience.lead':
+      'Projekti Urban Factoryja s gradskim upravama, sveučilištima i neprofitnim partnerima — s partnerom, godinom, opsegom i rezultatom.',
+    'experience.group.public': 'Gradske uprave',
+    'experience.group.ngo': 'Sveučilišta i neprofitni partneri',
+    'experience.col.project': 'Projekt',
+    'experience.col.location': 'Mjesto',
+    'experience.col.partner': 'Partner',
+    'experience.col.year': 'Godina',
+    'experience.col.scope': 'Opseg',
+    'experience.col.result': 'Rezultat',
+    'experience.docs': 'Dokumenti',
+    'experience.doc.references': 'Popis referenci (PDF)',
+    'experience.doc.cv': 'Životopis ključnog stručnjaka (PDF)',
+
     'services.meta.description':
-      'Uključivanje i događanja, strateško planiranje i mobilnost, urbani dizajn i arhitektura — što Urban Factory radi i kako.',
+      'Uključivanje i događanja, strateško planiranje i mobilnost, urbani dizajn i arhitektura — što Urban Factory radi i kako: SUMP, prometne studije, studije parkiranja, CBA.',
     'services.formats': 'Formati',
     'services.projects': 'Projekti',
+    'services.note':
+      'Dokumentaciju koja zahtijeva potpis ovlaštenog inženjera (npr. prometne elaborate) Urban Factory izrađuje s licenciranim partnerom.',
 
     'agency.meta.description':
       'Urban Factory: osnovana u Rostovu na Donu 2013., sa sjedištem u Zagrebu od 2020. Povijest, pristup i načela.',
@@ -381,6 +447,7 @@ export const ui: Record<Lang, Partial<Record<UIKey, string>>> = {
     'nav.services': 'Услуги',
     'nav.agency': 'Агентство',
     'nav.projects': 'Проекты',
+    'nav.experience': 'Опыт',
     'nav.team': 'Команда',
     'nav.media': 'Медиа',
     'nav.contact': 'Контакты',
@@ -393,6 +460,8 @@ export const ui: Record<Lang, Partial<Record<UIKey, string>>> = {
     'cat.design.short': 'Дизайн',
 
     'home.meta.title': 'Urban Factory — агентство городского развития',
+    'home.meta.description':
+      'Urban Factory — агентство городского развития и транспортного планирования, Загреб. Планы устойчивой городской мобильности (SUMP), транспортные исследования, исследования парковки, анализ затрат и выгод, участие жителей, проекты ЕС.',
     'home.hero.eyebrow': 'Агентство городского развития · Загреб',
     'home.hero.title': 'Город — это люди',
     'home.hero.lead':
@@ -409,6 +478,17 @@ export const ui: Record<Lang, Partial<Record<UIKey, string>>> = {
     'home.dir.design.text':
       'Улицы, парки и общественные пространства, спроектированные вместе с теми, кто будет ими пользоваться, — от концепции до технического задания для конкурса.',
     'home.dir.more': 'Подробнее о направлении',
+
+    'home.public.eyebrow': 'Государственный и муниципальный сектор',
+    'home.public.title': 'Для городов и муниципалитетов',
+    'home.public.lead':
+      'Urban Factory готовит стратегические и аналитические основания для городов, муниципалитетов и регионов — от работы с жителями и заинтересованными сторонами до технического задания и заявки на фонды ЕС.',
+    'home.public.item1': 'Планы устойчивой городской мобильности (SUMP): анализ, участие жителей, видение и пакет мер',
+    'home.public.item2': 'Транспортные исследования и исследования парковки',
+    'home.public.item3': 'Технико-экономические обоснования и анализ затрат и выгод (CBA)',
+    'home.public.item4': 'Участие жителей и работа с заинтересованными сторонами',
+    'home.public.item5': 'Подготовка проектов для фондов ЕС',
+    'home.public.link': 'Опыт работы с государственным и муниципальным сектором',
 
     'home.featured.eyebrow': 'Избранные работы',
     'home.featured.title': 'Проекты',
@@ -462,6 +542,8 @@ export const ui: Record<Lang, Partial<Record<UIKey, string>>> = {
     'projects.lead': 'Двенадцать проектов с 2013 года — от первых фестивалей до общегородских программ.',
     'projects.filter.label': 'Фильтр по направлению',
     'projects.filter.all': 'Все',
+    'projects.filter.sector': 'Фильтр по сектору',
+    'projects.filter.public': 'Государственный и муниципальный сектор',
     'projects.empty': 'В этом направлении пока нет проектов.',
 
     'project.years': 'Годы',
@@ -476,10 +558,26 @@ export const ui: Record<Lang, Partial<Record<UIKey, string>>> = {
     'project.next': 'Следующий проект',
     'project.prev': 'Предыдущий проект',
 
+    'experience.lead':
+      'Проекты Urban Factory с городскими администрациями, университетами и некоммерческими партнёрами — с указанием партнёра, года, объёма работ и результата.',
+    'experience.group.public': 'Городские администрации',
+    'experience.group.ngo': 'Университеты и некоммерческие партнёры',
+    'experience.col.project': 'Проект',
+    'experience.col.location': 'Место',
+    'experience.col.partner': 'Партнёр',
+    'experience.col.year': 'Год',
+    'experience.col.scope': 'Объём работ',
+    'experience.col.result': 'Результат',
+    'experience.docs': 'Документы',
+    'experience.doc.references': 'Список референций (PDF)',
+    'experience.doc.cv': 'CV ключевого эксперта (PDF)',
+
     'services.meta.description':
-      'Вовлечение и события, стратегическое планирование и мобильность, городской дизайн и архитектура — что и как делает Urban Factory.',
+      'Вовлечение и события, стратегическое планирование и мобильность, городской дизайн и архитектура — что и как делает Urban Factory: SUMP, транспортные исследования, исследования парковки, CBA.',
     'services.formats': 'Форматы',
     'services.projects': 'Проекты',
+    'services.note':
+      'Документацию, которая требует подписи лицензированного инженера (например, проекты организации дорожного движения), Urban Factory готовит вместе с лицензированным партнёром.',
 
     'agency.meta.description':
       'Urban Factory: основано в Ростове-на-Дону в 2013 году, с 2020 года штаб-квартира в Загребе. История, подход и принципы.',

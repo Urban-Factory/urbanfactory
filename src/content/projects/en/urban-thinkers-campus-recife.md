@@ -8,6 +8,9 @@ city: Recife
 country: Brazil
 client: "INCITI / Federal University of Pernambuco (UFPE), within UN-Habitat's World Urban Campaign"
 role: "Organisation and moderation of an international session"
+sector: ngo
+partner: "INCITI / Federal University of Pernambuco (UFPE)"
+outcome: "Session on community solutions for urban water bodies; report in Portuguese, English and Russian"
 summary: "An international session on water and the city, organised and moderated by Urban Factory as part of a UN-Habitat Urban Thinkers Campus in Recife."
 results:
   - "International session held under the UN-Habitat Urban Thinkers Campus"

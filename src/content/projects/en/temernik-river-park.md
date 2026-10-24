@@ -7,6 +7,9 @@ year: "2017–2019"
 city: Rostov-on-Don
 country: Russia
 role: "River strategy and economics, international partnerships, forums, launch of the First Mile"
+sector: ngo
+partner: "ANO Park Temernik (co-founded); INCITI / UFPE, Recife"
+outcome: "First Mile linear park section opened (2023)"
 summary: "Bringing a neglected city river back into public life — a non-profit, an international partnership with Recife and the First Mile of a linear park, opened in 2023."
 results:
   - "ANO Park Temernik founded"

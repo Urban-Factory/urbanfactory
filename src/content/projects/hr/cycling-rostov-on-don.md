@@ -7,6 +7,9 @@ year: "2014–2023"
 city: Rostov na Donu
 country: Rusija
 role: "Istraživanje (GPS tragovi, ankete, intervjui, okrugli stol dionika), koncept biciklističkog prometa, savjetovanje do realizacije"
+sector: public
+partner: "Gradski odjel za promet, Rostov na Donu"
+outcome: "Istraživanje je postalo temelj gradskog natječaja za projektiranje; staze se grade od 2021."
 summary: "Kako je bicikl postao dio prometnog sustava Rostova na Donu — od upita grada i istraživanja koje je Urban Factory provela s biciklistima do natječaja za projektiranje, sheme gradske biciklističke mreže i biciklističkih staza koje se od 2021. grade u fazama."
 results:
   - "Istraživanje s biciklistima i dionicima: GPS tragovi, ankete, intervjui, okrugli stol"

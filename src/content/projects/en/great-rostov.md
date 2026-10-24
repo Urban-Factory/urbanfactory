@@ -8,6 +8,7 @@ city: Rostov agglomeration
 country: Russia
 client: Own initiative
 role: "Agglomeration rail concept and high-speed rail proposal"
+sector: own
 summary: "A concept for one rail system across the Rostov conurbation — tram, city trains and a new high-speed rail station — presented in public in 2018."
 results:
   - "Concept for a single rail-based transport system for six cities and four districts"

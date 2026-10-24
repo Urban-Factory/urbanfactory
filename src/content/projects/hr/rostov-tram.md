@@ -8,6 +8,9 @@ city: Rostov na Donu
 country: Rusija
 client: Vlastita inicijativa, kasnije gradski odjel za promet
 role: "Koncept tramvajske mreže i rekonstrukcije pruga; prijedlog obnove tramvaja Tatra T3 (2014.); javno zagovaranje brzog tramvaja"
+sector: public
+partner: "Gradski odjel za promet, Rostov na Donu"
+outcome: "Koncept mreže predan gradskom odjelu za promet; podloga za natječajnu dokumentaciju; koncesija 2023.: 119 km kolosijeka, 76 novih tramvaja"
 summary: "Koncept tramvajske mreže — nove pruge i rekonstrukcija postojećih kolosijeka — koji je poslužio kao podloga za gradsku natječajnu dokumentaciju i program iz 2023. od 119 km."
 results:
   - "Koncept mreže i prateći materijali predani gradskom odjelu za promet"
