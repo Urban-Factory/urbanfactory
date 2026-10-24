@@ -37,7 +37,7 @@ Urban Thinkers Campus is a UN-Habitat format: open meetings where cities, univer
 
 ## What was done
 
-Mihail Veklenko organised, coordinated and moderated one of the campus sessions — an international round table on how residents can help take care of their city's waters. It took place on 30 November 2017 at Casarão das Artes in Recife.
+Mihail Veklenko worked with Prof. Circe Monteiro and the INCITI team on organising the campus. Within it, he organised and moderated his own session, “Permaculture and Organic Enzymes: how to help take care of the waters of my city” — an international round table held on 30 November 2017 at Casarão das Artes in Recife.
 
 Urban Factory brought the speakers together and built the programme. The panel included an environmental NGO working on Recife's mangrove park, a presentation of the idea of a permaculture programme, a water-management researcher from INCITI, a governance think tank and a social-projects foundation. Topics ranged from household composting and the value of urban mangroves to water-sensitive urban design and simple biological methods for treating wastewater.
 
@@ -48,4 +48,4 @@ Mihail moderated the debate and gave one of the presentations. After the session
 - An international session held within the UN-Habitat Urban Thinkers Campus in Recife.
 - Practical proposals for an action plan in line with the New Urban Agenda, including a working group of session participants.
 - A report in Portuguese, English and Russian.
-- A lasting working relationship with INCITI / UFPE, which led to further exchange between Recife and Rostov-on-Don.
+- Part of a long-term collaboration with INCITI / UFPE (since 2016).

@@ -82,7 +82,7 @@ const en = {
   'home.approach.eyebrow': 'Approach',
   'home.approach.title': 'From research to built result',
   'home.approach.text':
-    'Urban Factory takes a project from research to a tender-ready brief and remains available as an adviser during implementation. In Rostov-on-Don, the cycling research became the basis of a design tender and cycle lanes have been built; the tram network concept was incorporated into the city’s tender documents.',
+    'Urban Factory takes a project from research to a tender-ready brief and remains available as an adviser during implementation. The tram and cycling concepts for Rostov-on-Don went from first sketches to tender documents, and both projects went on to construction: cycle lanes have been built, and new tram track has been partly built.',
   'home.founder.cv': 'CV (PDF)',
 
   'home.numbers.eyebrow': 'In numbers',
@@ -270,7 +270,7 @@ export const ui: Record<Lang, Partial<Record<UIKey, string>>> = {
     'home.approach.eyebrow': 'Pristup',
     'home.approach.title': 'Od istraživanja do izvedenog rezultata',
     'home.approach.text':
-      'Urban Factory vodi projekt od istraživanja do projektnog zadatka spremnog za natječaj i ostaje na raspolaganju kao savjetnik tijekom provedbe. U Rostovu na Donu istraživanje biciklističkog prometa postalo je temelj natječaja za projektiranje, a biciklističke staze su izgrađene; koncept tramvajske mreže ušao je u gradsku natječajnu dokumentaciju.',
+      'Urban Factory vodi projekt od istraživanja do projektnog zadatka spremnog za natječaj i ostaje na raspolaganju kao savjetnik tijekom provedbe. Koncepti tramvajske i biciklističke mreže za Rostov na Donu prošli su put od prvih skica do natječajne dokumentacije, a oba su projekta došla do gradnje: biciklističke staze su izgrađene, a nove tramvajske pruge djelomično.',
     'home.founder.cv': 'Životopis (PDF)',
 
     'home.numbers.eyebrow': 'U brojkama',
@@ -453,7 +453,7 @@ export const ui: Record<Lang, Partial<Record<UIKey, string>>> = {
     'home.approach.eyebrow': 'Подход',
     'home.approach.title': 'От исследования до результата',
     'home.approach.text':
-      'Urban Factory ведёт проект от исследования до технического задания, готового для тендера, и остаётся консультантом на этапе реализации. В Ростове-на-Дону велосипедное исследование легло в основу конкурса на проектирование, и велодорожки построены; концепция трамвайной сети легла в тендерную документацию города.',
+      'Urban Factory ведёт проект от исследования до технического задания, готового для тендера, и остаётся консультантом на этапе реализации. Трамвайная и велосипедная концепции для Ростова-на-Дону прошли путь от первых эскизов до тендерной документации, и оба проекта дошли до строительства: велодорожки построены, новые трамвайные пути построены частично.',
     'home.founder.cv': 'CV (PDF)',
 
     'home.numbers.eyebrow': 'В цифрах',

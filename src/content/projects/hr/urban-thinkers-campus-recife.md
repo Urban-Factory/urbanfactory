@@ -37,7 +37,7 @@ Urban Thinkers Campus format je UN-Habitata: otvoreni susreti na kojima gradovi,
 
 ## Što je napravljeno
 
-Mihail Veklenko organizirao je, koordinirao i moderirao jednu od sesija kampusa — međunarodni okrugli stol o tome kako stanovnici mogu pomoći u brizi za vode svojega grada. Održan je 30. studenoga 2017. u Casarão das Artes u Recifeu.
+Mihail Veklenko radio je s prof. Circe Monteiro i timom INCITI-ja na organizaciji kampusa. U njegovu okviru organizirao je i moderirao vlastitu sesiju „Permakultura i organski enzimi: kako pomoći u brizi za vode mog grada” — međunarodni okrugli stol održan 30. studenoga 2017. u Casarão das Artes u Recifeu.
 
 Tim je okupio govornike i osmislio program. Na panelu su bili ekološka nevladina organizacija koja se bavi šumom mangrova u Recifeu, predstavljanje ideje programa permakulture, istraživač upravljanja vodama iz INCITI-ja, think tank za pitanja upravljanja i zaklada za socijalne projekte. Teme su se kretale od kućnog kompostiranja i vrijednosti gradskih šuma mangrova do urbanog dizajna osjetljivog na vodu i jednostavnih bioloških metoda pročišćavanja otpadnih voda.
 
@@ -48,4 +48,4 @@ Mihail je moderirao raspravu i održao jedno od izlaganja. Nakon sesije Urban Fa
 - Međunarodna sesija održana u okviru UN-Habitatova Urban Thinkers Campusa u Recifeu.
 - Praktični prijedlozi za akcijski plan u skladu s Novom urbanom agendom, uključujući radnu skupinu sudionika sesije.
 - Izvještaj na portugalskom, engleskom i ruskom jeziku.
-- Trajan radni odnos s INCITI / UFPE, koji je doveo do daljnje razmjene između Recifea i Rostova na Donu.
+- Dio dugogodišnje suradnje s INCITI / UFPE (od 2016.).

@@ -10,13 +10,13 @@ client: Gradski odjel za promet, Rostov na Donu
 role: "Koncept tramvajske mreže i rekonstrukcije pruga; prijedlog obnove tramvaja Tatra T3 (2014.); javno zagovaranje brzog tramvaja"
 sector: public
 partner: "Gradski odjel za promet, Rostov na Donu"
-outcome: "Koncept mreže predan gradskom odjelu za promet; podloga za natječajnu dokumentaciju; koncesija 2023.: 119 km kolosijeka, 76 novih tramvaja"
+outcome: "Koncept mreže predan gradskom odjelu za promet; podloga za natječajnu dokumentaciju; koncesija iz 2023. predviđala je 119 km kolosijeka i 76 novih tramvaja"
 summary: "Koncept tramvajske mreže — nove pruge i rekonstrukcija postojećih kolosijeka — koji je poslužio kao podloga za gradsku natječajnu dokumentaciju i program iz 2023. od 119 km."
 results:
   - "Koncept mreže i prateći materijali predani gradskom odjelu za promet"
   - "Tramvajska pruga u Ulici Stanislavskog zadržana u prometu (2015.)"
   - "Koncept je poslužio kao podloga za natječajnu dokumentaciju gradskog tramvajskog programa (2019.)"
-  - "2023.: koncesija za 119 km novih i moderniziranih kolosijeka i 76 novih tramvaja; gradnja je počela"
+  - "Koncesija iz 2023. predviđala je 119 km kolosijeka i 76 novih tramvaja; izgrađeno je 6,3 km novog kolosijeka u četvrti Levencovka"
 cover: ../../../assets/projects/rostov-tram/cover-classic.jpg
 coverAlt: "Skica obnovljenog prednjeg dijela tramvaja Tatra T3 u narančastoj i svijetloplavoj boji — inačica predstavljena na Festivalu gradskog prostora Rostov 2014."
 gallery:
@@ -43,7 +43,7 @@ Mihail Veklenko predložio je drugi put. Postojeći tramvaj učiniti okosnicom s
 ## Što je napravljeno
 
 - **Koncept mreže (2013.).** Prvu inačicu proširene tramvajske mreže Urban Factory predstavila je na Festivalu gradskog prostora Rostov u rujnu 2013., uz jednostavnu usporedbu: oko 25 milijardi rubalja za razvijenu tramvajsku mrežu naspram 75–100 milijardi za jednu liniju metroa.
-- **Prijedlog obnove voznog parka (2014.).** Urban Factory predložila je plan oslonjen na stvarne resurse spremišta: vratiti u promet oko 40 neaktivnih tramvaja Tatra T3, ugraditi nove komponente, obnoviti interijere te preoblikovati prednji i stražnji dio kompozitnim elementima i tako produljiti vijek trajanja na 30 godina. Maketa obnovljenog prednjeg dijela u prirodnoj veličini prikazana je na Festivalu gradskog prostora Rostov 2014. Rad na prijedlogu zaustavljen je 2015.; koncesijom iz 2023. grad dobiva 76 novih tramvaja.
+- **Prijedlog obnove voznog parka (2014.).** Urban Factory predložila je plan oslonjen na stvarne resurse spremišta: vratiti u promet oko 40 neaktivnih tramvaja Tatra T3, ugraditi nove komponente, obnoviti interijere te preoblikovati prednji i stražnji dio kompozitnim elementima i tako produljiti vijek trajanja na 30 godina. Maketa obnovljenog prednjeg dijela u prirodnoj veličini prikazana je na Festivalu gradskog prostora Rostov 2014. Rad na prijedlogu zaustavljen je 2015.; koncesija iz 2023. predviđala je 76 novih tramvaja.
 - **Očuvanje pruge (2015.).** Projekt rekonstrukcije tramvajske pruge u Ulici Stanislavskog bio je spreman kada je umjesto njega predloženo uklanjanje tračnica. Urban Factory pripremila je argumente za očuvanje pruge i vodila javnu kampanju: okrugle stolove, medije i ulične akcije. Tračnice su zadržane. Pruga je bila dio mreže koju je Urban Factory predlagala kao alternativu metrou: obnova voznog parka i nove pruge.
 - **Strategija i natječaj (2018.–2019.).** Mihail je predložio trorazinski tračnički sustav zasnovan na tramvaju: brzi tramvaj (metrotram) na odvojenoj trasi, djelomično u tunelima i na vijaduktima; ekspresni tramvaj s izdvojenim dionicama i prednošću na raskrižjima; te obični tramvaj u mješovitom prometu — s dvadesetak linija po četvrtima. Presjedališta povezuju sustav s gradskim vlakovima i autobusima. Taj je rad ušao u natječajnu dokumentaciju tramvajskog programa.
 - **Stručno savjetovanje (2021.–2023.).** Stručnjaci pobjednika koncesije savjetovali su se s Mihailom o razvoju mreže.
@@ -52,11 +52,12 @@ Mihail Veklenko predložio je drugi put. Postojeći tramvaj učiniti okosnicom s
 
 Tračnice u Ulici Stanislavskog zadržane su i kasnije ponovno položene na betonsku podlogu. Tramvaj se vratio u središte gradske rasprave o prometu. Grad je 2015. ukinuo direkciju za metro, a 2016.–2017. kupio je oko 30 novih niskopodnih tramvaja.
 
-U ožujku 2023. potpisana je koncesija za tramvajski sustav. Koncept je poslužio kao podloga za ovaj program; grad i koncesionar ga grade. Gradnja novih linija počela je iste godine.
+U ožujku 2023. potpisana je koncesija za tramvajski sustav; koncept je poslužio kao podloga za ovaj program. Koncesija iz 2023. predviđala je 119 km kolosijeka i 76 novih tramvaja; izgrađeno je 6,3 km novog kolosijeka u četvrti Levencovka.
 
 ## Brojke
 
 - 79 vozila u spremištu, od toga oko 40 neaktivnih (2014.)
 - 75–100 milijardi rubalja: procijenjena cijena prve linije metroa
 - 61 milijarda rubalja: tramvajska koncesija iz 2023.
-- 119 km novih i moderniziranih kolosijeka, 76 novih trodijelnih tramvaja, 30 moderniziranih postojećih tramvaja, 2 spremišta
+- 119 km kolosijeka i 76 novih tramvaja: ono što je predviđala koncesija iz 2023.
+- 6,3 km novog kolosijeka izgrađeno u četvrti Levencovka
