@@ -46,7 +46,7 @@ Pitanje je bilo jednostavno: mogu li te praznine postati mali, korisni parkovi, 
 
 ## Rezultat
 
-Modularni mikropark postavljen je u Parku Revolucije u Rostovu na Donu 2015. Dvije godine festivalskog rada i zajedničkog projektiranja sa stanovnicima pretvorio je u stvaran objekt u javnom parku.
+Modularni mikropark postavljen je u Parku Revolucije u Rostovu na Donu 2015., u sklopu trećeg [Festivala gradskog prostora Rostov](../urban-festival-rostov/). Mikropark je dvije godine festivalskog rada i zajedničkog projektiranja sa stanovnicima pretvorio u stvaran objekt u javnom parku.
 
 Ideja je otišla i dalje. Godine 2017. Urban Factory pripremila je prilagodbu modula za Recife u Brazilu pod nazivom „Ilhas do Futuro”.
 

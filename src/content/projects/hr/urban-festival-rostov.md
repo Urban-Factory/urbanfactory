@@ -42,7 +42,7 @@ Brend Urban Factory Mihail je osmislio upravo na ovom festivalu, a na njegovu je
 
 **2014.** Drugi festival zauzeo je praznu parcelu preostalu nakon rušenja i pretvorio je u Trg br. 1 — s klupama, cvjetnjacima, uličnom knjižnicom i igralištem za gorodki, tradicionalnu rusku igru. Festival je ugostio edukativni program Svjatoslava Murunova (Centar za primijenjeni urbanizam, Moskva). Program je uključivao i predavanja gostujućih stručnjaka, predstavljanje biciklističkog projekta I Bike RnD, maketu obnovljenog prednjeg dijela tramvaja Tatra T3 u prirodnoj veličini koju je dizajnirao tim agencije Urban Factory te okrugli stol o obrazovanju mladih stručnjaka za urbani razvoj.
 
-**2015.** Treći festival održan je u rujnu 2015. Na njemu su predstavljeni rezultati istraživanja biciklističkog prometa [I Bike RnD](../cycling-rostov-on-don/) i strategija razvoja Rostova na Donu kao biciklističkog grada. U trećoj godini festivala u Parku Revolucije postavljen je modularni mikropark od 3×6 m iz projekta [Urbani otoci](../urban-islands/).
+**2015.** Treći festival održan je u rujnu 2015. Na njemu su predstavljeni rezultati istraživanja biciklističkog prometa [I Bike RnD](../cycling-rostov-on-don/) i strategija razvoja Rostova na Donu kao biciklističkog grada. U sklopu trećeg festivala u Parku Revolucije postavljen je modularni mikropark od 3×6 m iz projekta [Urbani otoci](../urban-islands/).
 
 ## Rezultat
 

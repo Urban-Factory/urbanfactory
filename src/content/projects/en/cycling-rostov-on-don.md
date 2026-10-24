@@ -57,7 +57,6 @@ The research results became the basis of the brief for the design tender of the 
 - **2014–2015** — research: GPS tracks, surveys, interviews, a stakeholder round table
 - **September 2015** — research results and the cycling development strategy presented at the third Urban Festival Rostov
 - **Design tender** of the city transport department — won by Velovod (Dmitry Gusev)
-- **December 2017** — the cycling master plan for 2021–2024 handed to the City Duma
 - **2018–2019** — city cycle network scheme prepared by Velovod
 - **From 2021** — cycle lanes built in phases: Pushkinskaya Street (about 3.5 km); Levenetsovsky district (2023)
 

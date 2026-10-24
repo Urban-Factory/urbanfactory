@@ -78,6 +78,7 @@ const facts = [
             fetchpriority="high"
             class={p.coverFit === 'contain' ? 'aspect-[2/1] w-full border border-line bg-paper object-contain p-[6%] md:aspect-[3/1]' : 'aspect-[3/2] w-full object-cover md:aspect-[21/9]'}
           />
+          {p.coverCredit && <p class="mt-2 text-right text-xs text-muted">{p.coverCredit}</p>}
         </div>
       )
     }

@@ -30,6 +30,7 @@ const projects = defineCollection({
       summary: z.string(),
       cover: image().optional(),
       coverAlt: z.string().optional(),
+      coverCredit: z.string().optional(), // подпись правообладателя под обложкой (чужое фото)
       coverFit: z.enum(['cover', 'contain']).default('cover'), // contain — логотип/схема целиком на белом
       gallery: z.array(z.object({ src: image(), alt: z.string() })).default([]),
       results: z.array(z.string()).default([]),

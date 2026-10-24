@@ -46,7 +46,7 @@ The question was simple: can these gaps become small, useful parks, made with th
 
 ## Result
 
-The modular micro-park was installed in Revolution Park in Rostov-on-Don in 2015. It turned two years of festival work and co-design with residents into a real object in a public park.
+The modular micro-park was installed in Revolution Park in Rostov-on-Don in 2015, as part of the third [Urban Festival Rostov](../urban-festival-rostov/). It turned two years of festival work and co-design with residents into a real object in a public park.
 
 The idea travelled further. In 2017 Urban Factory prepared an adaptation of the module for Recife, Brazil, under the name “Ilhas do Futuro”.
 

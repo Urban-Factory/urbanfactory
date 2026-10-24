@@ -57,7 +57,6 @@ Rezultati istraživanja postali su temelj projektnog zadatka za natječaj za pro
 - **2014.–2015.** — istraživanje: GPS tragovi, ankete, intervjui, okrugli stol dionika
 - **Rujan 2015.** — rezultati istraživanja i strategija razvoja biciklističkog grada predstavljeni na trećem Festivalu gradskog prostora Rostov
 - **Natječaj za projektiranje** gradskog odjela za promet — pobjednica tvrtka Velovod (Dmitrij Gusev)
-- **Prosinac 2017.** — glavni plan biciklističkog prometa za 2021.–2024. predan Gradskoj dumi
 - **2018.–2019.** — shema gradske biciklističke mreže koju je izradila tvrtka Velovod
 - **Od 2021.** — biciklističke staze grade se u fazama: Puškinska ulica (oko 3,5 km); četvrt Levencovski (2023.)
 

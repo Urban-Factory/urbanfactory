@@ -42,7 +42,7 @@ The Urban Factory brand was invented by Mihail at this festival and announced at
 
 **2014.** The second festival took over a vacant plot left after demolition and turned it into Square #1, with benches, flower beds, a street library and a pitch for gorodki, a traditional Russian game. The festival hosted an educational programme by Sviatoslav Murunov (Centre for Applied Urbanism, Moscow). The programme also included lectures by guest experts, the presentation of the I Bike RnD cycling project, a full-size mock-up of the updated Tatra T3 tram front designed by the Urban Factory team, and a round table on training young professionals in urban development.
 
-**2015.** The third festival took place in September 2015. The results of the [I Bike RnD](../cycling-rostov-on-don/) cycling research and the strategy for developing Rostov-on-Don as a cycling city were presented there. In the festival’s third year, the 3×6 m modular micro-park of the [Urban Islands](../urban-islands/) project was installed in Revolution Park.
+**2015.** The third festival took place in September 2015. The results of the [I Bike RnD](../cycling-rostov-on-don/) cycling research and the strategy for developing Rostov-on-Don as a cycling city were presented there. As part of the third festival, the 3×6 m modular micro-park of the [Urban Islands](../urban-islands/) project was installed in Revolution Park.
 
 ## Result
 
