@@ -44,11 +44,11 @@ To change this, a non-profit was created: ANO Park Temernik. It is a coalition o
 Mihail Veklenko was a co-founder of the non-profit and a member of its core team.
 
 - **Strategy and economics.** He was responsible for how real estate and the economy around the river would work, and what the riverside spaces would hold: parks, new buildings, cycling and walking routes, places to rest. He also worked on how to involve business and the city, so that the river is cleaned and opened to people.
-- **Events and partners.** Mihail organised the first forum “Small Rivers in Big Cities” on 5–6 October 2018 at Don State Technical University. It included sessions on river rehabilitation and on bringing riverside areas back into the city, and a festival, “Rostov-on-Temernik”. He then prepared the concept of a second conference with participants from the BRICS countries for 2019.
+- **Events and partners.** Urban Factory was one of the organisers of the first forum “Small Rivers in Big Cities” on 5–6 October 2018 at Don State Technical University. It included sessions on river rehabilitation and on bringing riverside areas back into the city, and a festival, “Rostov-on-Temernik”. Mihail then prepared the concept of a second conference with participants from the BRICS countries for 2019.
 
 ## International part: Recife ↔ Rostov-on-Don
 
-Recife in Brazil faced a similar problem with the Capibaribe river — and answered it with a 15 km linear park, developed by the city together with INCITI, a research institute of the Federal University of Pernambuco (UFPE). The aim was for the Temernik initiative to learn directly from that experience.
+Recife in Brazil faced a similar problem with the Capibaribe river. There, in Recife, INCITI — a research institute of the Federal University of Pernambuco (UFPE) — worked with the city on the Capibaribe Park, a 15 km linear park along that river. The aim was for the Temernik initiative to learn directly from INCITI’s experience.
 
 - **Moscow Urban Forum, 2017.** Urban Factory was a co-organiser of the session “Aqua est vita: the role of the river in the modern megalopolis” (the forum itself is organised by the Moscow Urban Forum directorate). Mihail brought two speakers: Prof. Circe Monteiro, head of INCITI, who presented the Capibaribe Park project, and Swami Jyothirmayah (The Art of Living Foundation).
 - **Prof. Monteiro’s visit to Rostov-on-Don, 2018.** Urban Factory organised the whole programme: a public lecture on the Capibaribe linear park in Moscow; a talk at the forum in Rostov-on-Don; a walk and tree planting by the Temernik; a working meeting with ANO Park Temernik; meetings with Rostov universities on student exchange, joint research and training.

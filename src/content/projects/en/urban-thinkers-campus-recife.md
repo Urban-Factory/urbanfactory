@@ -14,7 +14,7 @@ outcome: "Session on community solutions for urban water bodies; report in Portu
 summary: "An international session on water and the city, organised and moderated by Urban Factory as part of a UN-Habitat Urban Thinkers Campus in Recife."
 results:
   - "International session held under the UN-Habitat Urban Thinkers Campus"
-  - "Speakers from research, civil society and the city's permaculture programme"
+  - "Speakers from research and civil society, and a presentation of the idea of a permaculture programme"
   - "Session report prepared in Portuguese, English and Russian"
 cover: ../../../assets/projects/urban-thinkers-campus-recife/cover.jpg
 coverAlt: "Participants sitting in a circle in a brick hall with colourful murals in Recife"
@@ -39,7 +39,7 @@ Urban Thinkers Campus is a UN-Habitat format: open meetings where cities, univer
 
 Mihail Veklenko organised, coordinated and moderated one of the campus sessions — an international round table on how residents can help take care of their city's waters. It took place on 30 November 2017 at Casarão das Artes in Recife.
 
-Urban Factory brought the speakers together and built the programme. The panel included an environmental NGO working on Recife's mangrove park, the city's permaculture and composting programme, a water-management researcher from INCITI, a governance think tank and a social-projects foundation. Topics ranged from household composting and the value of urban mangroves to water-sensitive urban design and simple biological methods for treating wastewater.
+Urban Factory brought the speakers together and built the programme. The panel included an environmental NGO working on Recife's mangrove park, a presentation of the idea of a permaculture programme, a water-management researcher from INCITI, a governance think tank and a social-projects foundation. Topics ranged from household composting and the value of urban mangroves to water-sensitive urban design and simple biological methods for treating wastewater.
 
 Mihail moderated the debate and gave one of the presentations. After the session Urban Factory wrote the report for the campus: issues discussed, proposals for a local action plan, ideas for monitoring and for involving schools and universities.
 

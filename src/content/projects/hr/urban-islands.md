@@ -6,7 +6,7 @@ category: [design, engagement]
 year: "2013–2015"
 city: Rostov na Donu
 country: Rusija
-client: Vlastita inicijativa
+client: Suradnja s gradom Rostovom na Donu
 role: "Koncept, zajedničko projektiranje sa stanovnicima, put do postavljanja"
 sector: public
 partner: "Suradnja s gradom Rostovom na Donu"

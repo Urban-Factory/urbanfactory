@@ -93,7 +93,7 @@ Rostov na Donu navršit će 300 godina 2049. Grad je imao planove razvoja za nad
 
 ## Što je napravljeno
 
-Urban Factory osnovala je Rostov 300, stručnu platformu gradske urbanističke zajednice. Mihail Veklenko napisao je koncept i program, bio je sukustos projekta zajedno s Aleksandrom Černovom iz Donske državne javne knjižnice i vodio je projektni tim.
+Rostov 300 projekt je Urban Factoryja: stručna platforma gradske urbanističke zajednice. Partner projekta bila je Donska državna javna knjižnica. Mihail Veklenko napisao je koncept i program, bio je sukustos projekta zajedno s Aleksandrom Černovom iz knjižnice i vodio je projektni tim.
 
 Program je obuhvaćao osam tematskih rasprava: baština i povijest; kultura i sport; urbani okoliš; gospodarstvo, infrastruktura, trgovina i turizam; obrazovanje i tehnologija; urbana sociologija; ljudski kapital; i ekologija. Koncept je napisan u veljači 2020. Platforma je otvorena 5. ožujka 2020. u Donskoj državnoj javnoj knjižnici prvom raspravom o baštini — koje povijesne zgrade sačuvati i što Rostov riskira izgubiti.
 

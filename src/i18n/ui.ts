@@ -82,7 +82,7 @@ const en = {
   'home.approach.eyebrow': 'Approach',
   'home.approach.title': 'From research to built result',
   'home.approach.text':
-    'Urban Factory takes a project from research to a tender-ready brief and remains available as an adviser during implementation. The tram and cycling concepts for Rostov-on-Don went from first sketches to tender documents, and both projects went on to construction.',
+    'Urban Factory takes a project from research to a tender-ready brief and remains available as an adviser during implementation. In Rostov-on-Don, the cycling research became the basis of a design tender and cycle lanes have been built; the tram network concept was incorporated into the city’s tender documents.',
   'home.founder.cv': 'CV (PDF)',
 
   'home.numbers.eyebrow': 'In numbers',
@@ -184,6 +184,7 @@ const en = {
   'media.section.talks': 'Talks',
   'media.section.press': 'Press',
   'media.original': 'Original',
+  'media.archive': 'Archived copy',
   'media.newWindow': 'opens in a new window',
   'media.lang.ru': 'RU',
   'media.lang.en': 'EN',
@@ -269,7 +270,7 @@ export const ui: Record<Lang, Partial<Record<UIKey, string>>> = {
     'home.approach.eyebrow': 'Pristup',
     'home.approach.title': 'Od istraživanja do izvedenog rezultata',
     'home.approach.text':
-      'Urban Factory vodi projekt od istraživanja do projektnog zadatka spremnog za natječaj i ostaje na raspolaganju kao savjetnik tijekom provedbe. Koncepti tramvajske i biciklističke mreže za Rostov na Donu prošli su put od prvih skica do natječajne dokumentacije, a oba su projekta došla do gradnje.',
+      'Urban Factory vodi projekt od istraživanja do projektnog zadatka spremnog za natječaj i ostaje na raspolaganju kao savjetnik tijekom provedbe. U Rostovu na Donu istraživanje biciklističkog prometa postalo je temelj natječaja za projektiranje, a biciklističke staze su izgrađene; koncept tramvajske mreže ušao je u gradsku natječajnu dokumentaciju.',
     'home.founder.cv': 'Životopis (PDF)',
 
     'home.numbers.eyebrow': 'U brojkama',
@@ -371,6 +372,7 @@ export const ui: Record<Lang, Partial<Record<UIKey, string>>> = {
     'media.section.talks': 'Predavanja',
     'media.section.press': 'U medijima',
     'media.original': 'Izvornik',
+    'media.archive': 'Arhivska kopija',
     'media.newWindow': 'otvara se u novom prozoru',
     'media.lang.ru': 'RU',
     'media.lang.en': 'EN',
@@ -451,7 +453,7 @@ export const ui: Record<Lang, Partial<Record<UIKey, string>>> = {
     'home.approach.eyebrow': 'Подход',
     'home.approach.title': 'От исследования до результата',
     'home.approach.text':
-      'Urban Factory ведёт проект от исследования до технического задания, готового для тендера, и остаётся консультантом на этапе реализации. Трамвайная и велосипедная концепции для Ростова-на-Дону прошли путь от первых эскизов до тендерной документации, и оба проекта дошли до строительства.',
+      'Urban Factory ведёт проект от исследования до технического задания, готового для тендера, и остаётся консультантом на этапе реализации. В Ростове-на-Дону велосипедное исследование легло в основу конкурса на проектирование, и велодорожки построены; концепция трамвайной сети легла в тендерную документацию города.',
     'home.founder.cv': 'CV (PDF)',
 
     'home.numbers.eyebrow': 'В цифрах',
@@ -553,6 +555,7 @@ export const ui: Record<Lang, Partial<Record<UIKey, string>>> = {
     'media.section.talks': 'Выступления',
     'media.section.press': 'Пресса',
     'media.original': 'Оригинал',
+    'media.archive': 'Архивная копия',
     'media.newWindow': 'откроется в новом окне',
     'media.lang.ru': 'RU',
     'media.lang.en': 'EN',

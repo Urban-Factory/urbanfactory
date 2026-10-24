@@ -6,7 +6,7 @@ category: [design, engagement]
 year: "2013–2015"
 city: Rostov-on-Don
 country: Russia
-client: Own initiative
+client: Work with the City of Rostov-on-Don
 role: "Concept, co-design with residents, route to installation"
 sector: public
 partner: "Work with the City of Rostov-on-Don"

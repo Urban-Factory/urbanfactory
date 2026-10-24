@@ -7,5 +7,6 @@ outlet: "Expert South"
 originalLang: ru
 role: "Stručnjak"
 url: "https://expertsouth.ru/news/Rostovskoyaglomeratsiinuzheneffektmasshtaba/"
+archive: "https://web.archive.org/web/20190716004705/https://expertsouth.ru/news/Rostovskoyaglomeratsiinuzheneffektmasshtaba/"
 verify: true
 ---

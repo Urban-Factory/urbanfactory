@@ -6,6 +6,7 @@ category: [strategy, engagement]
 year: "2014–2023"
 city: Rostov na Donu
 country: Rusija
+client: Gradski odjel za promet, Rostov na Donu
 role: "Istraživanje (GPS tragovi, ankete, intervjui, okrugli stol dionika), koncept biciklističkog prometa, savjetovanje do realizacije"
 sector: public
 partner: "Gradski odjel za promet, Rostov na Donu"

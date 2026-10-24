@@ -7,4 +7,5 @@ outlet: "DON24"
 originalLang: ru
 role: "Expert"
 url: "https://don24.ru/rubric/chto-volnuet/vam-metrotram-vlasti-rostova-vydelyayut-dengi-na-novyy-skorostnoy-relsovyy-transport.html"
+archive: "https://web.archive.org/web/20180920115123/https://don24.ru/rubric/chto-volnuet/vam-metrotram-vlasti-rostova-vydelyayut-dengi-na-novyy-skorostnoy-relsovyy-transport.html"
 ---

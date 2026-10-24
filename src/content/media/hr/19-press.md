@@ -7,5 +7,6 @@ outlet: "Expert South"
 originalLang: ru
 role: "Stručnjak"
 url: "https://expertsouth.ru/news/moderniatsiya-tramvaynoy-seti-rostova-perezagruzit-trasportnuyu-sistemu-/"
+archive: "https://web.archive.org/web/20211018135418/https://expertsouth.ru/news/moderniatsiya-tramvaynoy-seti-rostova-perezagruzit-trasportnuyu-sistemu-/"
 verify: true
 ---

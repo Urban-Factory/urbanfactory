@@ -6,7 +6,7 @@ category: [strategy, design]
 year: "2013–2023"
 city: Rostov-on-Don
 country: Russia
-client: Own initiative, later city transport department
+client: City transport department, Rostov-on-Don
 role: "Tram network and line reconstruction concept; Tatra T3 fleet renewal proposal (2014); public advocacy for the high-speed tram"
 sector: public
 partner: "City transport department, Rostov-on-Don"

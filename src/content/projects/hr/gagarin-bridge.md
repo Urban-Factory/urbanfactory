@@ -6,7 +6,6 @@ category: [design, strategy]
 year: "2013–2015"
 city: Rostov na Donu
 country: Rusija
-client: Vlastita inicijativa
 role: "Idejni prijedlog biciklističko-pješačkog mosta"
 sector: own
 summary: "Idejni prijedlog biciklističko-pješačkog mosta preko Trga Gagarina, s blagim rampama, drvenom pješačkom površinom i očuvanim zelenilom trga."

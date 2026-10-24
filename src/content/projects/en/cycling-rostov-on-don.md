@@ -6,6 +6,7 @@ category: [strategy, engagement]
 year: "2014–2023"
 city: Rostov-on-Don
 country: Russia
+client: City transport department, Rostov-on-Don
 role: "Research (GPS tracks, surveys, interviews, stakeholder round table), cycling concept, consulting until implementation"
 sector: public
 partner: "City transport department, Rostov-on-Don"

@@ -18,9 +18,9 @@ export const contacts = {
  */
 export const protectedContacts = {
   email: ['eWNuZWdhLnly', 'b3RjYWZuYWJy', 'dUBvZm5p'],
-  phone: ['MDc0MDMwNjE5', 'NTgzKw=='],
-  phoneLabel: ['MDc0MCAzMDYg', 'MTkgNTgzKw=='],
-  whatsapp: ['MDc0MDMwNjE5', 'NTgz'],
+  phone: ['MDIwMjg4ODk5', 'NTgzKw=='],
+  phoneLabel: ['MDIwMiA4ODgg', 'OTkgNTgzKw=='],
+  whatsapp: ['MDIwMjg4ODk5', 'NTgz'],
 } as const;
 
 /** Ссылка с учётом base (BASE_PATH из workflow; на домене — корень). */

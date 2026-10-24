@@ -6,7 +6,7 @@ category: [strategy, design]
 year: "2013–2023"
 city: Rostov na Donu
 country: Rusija
-client: Vlastita inicijativa, kasnije gradski odjel za promet
+client: Gradski odjel za promet, Rostov na Donu
 role: "Koncept tramvajske mreže i rekonstrukcije pruga; prijedlog obnove tramvaja Tatra T3 (2014.); javno zagovaranje brzog tramvaja"
 sector: public
 partner: "Gradski odjel za promet, Rostov na Donu"

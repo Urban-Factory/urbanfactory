@@ -173,6 +173,11 @@ function card(e: CollectionEntry<'media'>) {
                               {e.data.urlLabel ?? t('media.original')} ↗<span class="sr-only"> ({t('media.newWindow')})</span>
                             </a>
                           )}
+                          {e.data.archive && (
+                            <a href={e.data.archive} target="_blank" rel="noopener" class="underline underline-offset-4 hover:text-red-text">
+                              {t('media.archive')} ↗<span class="sr-only"> ({t('media.newWindow')})</span>
+                            </a>
+                          )}
                         </div>
                         {e.data.seeAlso && (
                           <a href={localePath(lang, `/projects/${e.data.seeAlso.project}/`)} class="link-arrow relative z-10 mt-3 text-sm font-bold text-red-text">
@@ -206,6 +211,13 @@ function card(e: CollectionEntry<'media'>) {
                         <span class="mx-2 inline-block border border-ink/30 px-1.5 text-xs leading-5 font-semibold">{t(`media.lang.${e.data.originalLang}`)}</span>
                         {e.data.role}
                       </p>
+                      {e.data.archive && (
+                        <p class="mt-2 text-sm">
+                          <a href={e.data.archive} target="_blank" rel="noopener" class="underline underline-offset-4 hover:text-red-text">
+                            {t('media.archive')} ↗<span class="sr-only"> ({t('media.newWindow')})</span>
+                          </a>
+                        </p>
+                      )}
                     </div>
                     {e.data.url && (
                       <span class="text-sm md:col-span-2 md:pt-1 md:text-right" aria-hidden="true">{t('media.original')} ↗</span>

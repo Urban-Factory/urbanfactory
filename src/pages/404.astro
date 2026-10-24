@@ -5,12 +5,13 @@
  */
 import '../styles/global.css';
 import Logo from '../components/Logo.astro';
+import Footer from '../components/Footer.astro';
 import { defaultLang, languages, published, useTranslations } from '../i18n/ui';
 import { localePath, url } from '../lib/site';
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={languages[defaultLang].htmlLang}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -46,6 +47,8 @@ import { localePath, url } from '../lib/site';
         }
       </div>
     </main>
+    <!-- Подвал основного языка: юрлицо, контакты, меню -->
+    <Footer lang={defaultLang} />
     <script>
       // Показать на первом месте язык из адреса (/hr/…, /ru/…)
       const m = location.pathname.match(/\/(en|hr|ru)(\/|$)/);
