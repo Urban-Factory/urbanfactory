@@ -10,12 +10,9 @@ export const GET: APIRoute = async ({ site }) => {
   const interviews = [...new Set((await getCollection('interviews')).map((i) => i.data.slug))];
   const paths = [
     '/',
-    '/services/',
-    '/agency/',
     '/projects/',
     ...projects.map((s) => `/projects/${s}/`),
-    '/experience/',
-    '/team/',
+    '/services/',
     '/media/',
     ...interviews.map((s) => `/media/${s}/`),
     '/contact/',

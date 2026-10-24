@@ -2,7 +2,7 @@
 import Logo from './Logo.astro';
 import { languages, published, useTranslations, type Lang } from '../i18n/ui';
 import { localePath } from '../lib/site';
-import { mainNav } from '../lib/nav';
+import { isActiveNav, mainNav } from '../lib/nav';
 
 interface Props {
   lang: Lang;
@@ -11,7 +11,7 @@ interface Props {
 const { lang, path } = Astro.props;
 const t = useTranslations(lang);
 const langs = Object.keys(languages) as Lang[];
-const isActive = (href: string) => path.startsWith(href);
+const isActive = (href: string) => isActiveNav(href, path);
 ---
 
 <header class="sticky top-0 z-40 border-b border-line bg-paper/95 backdrop-blur">

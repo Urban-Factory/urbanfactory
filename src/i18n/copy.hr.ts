@@ -51,7 +51,6 @@ export const hr: PageCopy = {
     },
   },
   agency: {
-    title: 'Agencija',
     lead: 'Urban Factory međunarodna je agencija za urbani razvoj, osnovana u Rostovu na Donu 2013., a od 2020. sa sjedištem u Zagrebu.',
     history: [
       {
@@ -107,8 +106,6 @@ export const hr: PageCopy = {
     ],
   },
   team: {
-    title: 'Tim',
-    lead: 'Urban Factory vodi njezin osnivač Mihail Veklenko. Za svaki projekt angažiraju se potrebni stručnjaci.',
     founder: {
       name: 'Mihail Veklenko',
       role: 'Osnivač i direktor',
@@ -126,26 +123,11 @@ export const hr: PageCopy = {
         'Ekonomika projekata i partnerstva',
         'Međunarodna suradnja',
       ],
-      experience: [
-        'Producent panel-rasprava, Moskovski urbanistički forum (2013.)',
-        'Tutor, Fakultet medijskih komunikacija, Donsko državno tehničko sveučilište, 2014.–2015.',
-        'Konzultant na terenu, Innopolis, 2015.',
-        'Istraživač u području prometa, CRISALIDE (EU ERA.NET RUS Plus), 2018.–2019.',
-        'Koordinator voditelja projekata, Institut IGH, Zagreb, 2022.',
-      ],
-      education: [
-        'Sveučilište u Zagrebu, Fakultet prometnih znanosti — poslijediplomski specijalistički studij Gradski promet (u tijeku), od 2024.',
-        'Sveučilište u Manchesteru (program proveden s Moskovskom visokom školom društvenih i ekonomskih znanosti) — poslijediplomska diploma iz urbanih studija (Postgraduate Diploma in Urban Studies), 2013.–2015. (dodijeljena u listopadu 2015.)',
-        'Donsko državno tehničko sveučilište, Rostov na Donu — diploma specijalista iz međunarodnih ekonomskih odnosa, 2002.–2007.',
-      ],
-      projects: ['tun-foundation', 'rostov-tram', 'cycling-rostov-on-don', 'zverevo-strategy-2030', 'temernik-river-park', 'urban-festival-rostov', 'great-rostov', 'urban-thinkers-campus-recife', 'rostov-300'],
     },
     partners: {
       title: 'Partnerska mreža',
       text: 'Za projekte koji to zahtijevaju Urban Factory surađuje s licenciranim inženjerom prometa te s drugim stručnjacima prema potrebama projekta.',
     },
-    pastTitle: 'Projektni timovi',
-    pastText: 'Tim svakog projekta okuplja se prema zadatku: Mihail Veklenko zajedno sa stručnjacima, partnerima i kolegama koji su mu se pridružili.',
     past: [
       {
         project: 'rostov-tram',
@@ -243,7 +225,6 @@ export const hr: PageCopy = {
       },
       {
         project: 'tun-foundation',
-        teamPage: false,
         people: [
           { name: 'Mihail Veklenko', role: 'Inicijator i osnivač; urbanist stambenog programa' },
         ],

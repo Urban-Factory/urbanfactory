@@ -34,8 +34,6 @@ const en = {
   'nav.services': 'Services',
   'nav.agency': 'Agency',
   'nav.projects': 'Projects',
-  'nav.experience': 'Experience',
-  'nav.team': 'Team',
   'nav.media': 'Media',
   'nav.contact': 'Contact',
 
@@ -48,7 +46,7 @@ const en = {
 
   'home.meta.title': 'Urban Factory — urban development agency',
   'home.meta.description':
-    'Urban Factory — urban development and transport planning agency, Zagreb. Sustainable urban mobility plans (SUMP), transport studies, parking studies, cost-benefit analysis, public participation, EU projects.',
+    'Urban Factory — urban development and transport planning agency, founded in Rostov-on-Don in 2013, based in Zagreb since 2020. Sustainable urban mobility plans (SUMP), transport studies, parking studies, cost-benefit analysis, public participation, EU projects.',
   'home.hero.eyebrow': 'Urban development agency · Zagreb',
   'home.hero.title': 'The city is the people',
   'home.hero.lead':
@@ -83,13 +81,9 @@ const en = {
 
   'home.approach.eyebrow': 'Approach',
   'home.approach.title': 'From research to built result',
-  'home.approach.step1': 'Research',
-  'home.approach.step2': 'Concept',
-  'home.approach.step3': 'Public support',
-  'home.approach.step4': 'Development',
-  'home.approach.step5': 'Implementation support',
   'home.approach.text':
     'Urban Factory takes a project from research to a tender-ready brief and remains available as an adviser during implementation. The tram and cycling concepts for Rostov-on-Don went from first sketches to tender documents, and both projects went on to construction.',
+  'home.founder.cv': 'CV (PDF)',
 
   'home.numbers.eyebrow': 'In numbers',
   'home.num.founded': 'founded in Rostov-on-Don',
@@ -132,6 +126,11 @@ const en = {
   'projects.filter.sector': 'Filter by sector',
   'projects.filter.public': 'Public sector',
   'projects.empty': 'No projects in this direction yet.',
+  'projects.docs.title': 'For tenders',
+  'projects.docs.text':
+    'Reference list and key expert CV for tender documentation.',
+  'projects.docs.references': 'Reference list (PDF)',
+  'projects.docs.cv': 'CV (PDF)',
 
   'project.years': 'Years',
   'project.present': 'present',
@@ -145,20 +144,6 @@ const en = {
   'project.next': 'Next project',
   'project.prev': 'Previous project',
 
-  'experience.lead':
-    'Urban Factory projects with city administrations, universities and non-profit partners — with partner, year, scope and result.',
-  'experience.group.public': 'City administrations',
-  'experience.group.ngo': 'Universities and non-profit partners',
-  'experience.col.project': 'Project',
-  'experience.col.location': 'Location',
-  'experience.col.partner': 'Partner',
-  'experience.col.year': 'Year',
-  'experience.col.scope': 'Scope',
-  'experience.col.result': 'Result',
-  'experience.docs': 'Documents',
-  'experience.doc.references': 'Reference list (PDF)',
-  'experience.doc.cv': 'Key expert CV (PDF)',
-
   'services.meta.description':
     'Engagement & Events, Strategic Planning & Mobility, Urban Design & Architecture — what Urban Factory does and how: SUMP, transport and parking studies, CBA.',
   'services.formats': 'Formats',
@@ -166,18 +151,11 @@ const en = {
   'services.note':
     'Documentation that requires a licensed engineer\'s signature (such as traffic management plans) is prepared with a licensed partner.',
 
-  'agency.meta.description':
-    'Urban Factory: founded in Rostov-on-Don in 2013, headquartered in Zagreb since 2020. History, approach and principles.',
   'agency.history': 'History',
-  'agency.approach': 'Approach',
   'agency.principles': 'Principles',
 
-  'team.meta.description': 'Mihail Veklenko, founder and CEO of Urban Factory, and the people who worked with him on past projects.',
   'team.photo': 'Portrait of',
   'team.expertise': 'Expertise',
-  'team.projectsLed': 'Key projects',
-  'team.experience': 'Experience',
-  'team.education': 'Education',
   'project.people': 'Project team',
   'project.media': 'Interviews',
   'project.mediaInput': 'became an input to this project',
@@ -243,8 +221,6 @@ export const ui: Record<Lang, Partial<Record<UIKey, string>>> = {
     'nav.services': 'Usluge',
     'nav.agency': 'Agencija',
     'nav.projects': 'Projekti',
-    'nav.experience': 'Iskustvo',
-    'nav.team': 'Tim',
     'nav.media': 'Mediji',
     'nav.contact': 'Kontakt',
 
@@ -257,7 +233,7 @@ export const ui: Record<Lang, Partial<Record<UIKey, string>>> = {
 
     'home.meta.title': 'Urban Factory — agencija za urbani razvoj',
     'home.meta.description':
-      'Urban Factory — agencija za urbani razvoj i prometno planiranje, Zagreb. Planovi održive urbane mobilnosti (SUMP), prometne studije, studije parkiranja, analiza troškova i koristi, participacija javnosti, EU projekti.',
+      'Urban Factory — agencija za urbani razvoj i prometno planiranje, osnovana u Rostovu na Donu 2013., sa sjedištem u Zagrebu od 2020. Planovi održive urbane mobilnosti (SUMP), prometne studije, studije parkiranja, analiza troškova i koristi, participacija javnosti, EU projekti.',
     'home.hero.eyebrow': 'Agencija za urbani razvoj · Zagreb',
     'home.hero.title': 'Grad su ljudi',
     'home.hero.lead':
@@ -292,13 +268,9 @@ export const ui: Record<Lang, Partial<Record<UIKey, string>>> = {
 
     'home.approach.eyebrow': 'Pristup',
     'home.approach.title': 'Od istraživanja do izvedenog rezultata',
-    'home.approach.step1': 'Istraživanje',
-    'home.approach.step2': 'Koncept',
-    'home.approach.step3': 'Javna podrška',
-    'home.approach.step4': 'Razrada',
-    'home.approach.step5': 'Podrška provedbi',
     'home.approach.text':
       'Urban Factory vodi projekt od istraživanja do projektnog zadatka spremnog za natječaj i ostaje na raspolaganju kao savjetnik tijekom provedbe. Koncepti tramvajske i biciklističke mreže za Rostov na Donu prošli su put od prvih skica do natječajne dokumentacije, a oba su projekta došla do gradnje.',
+    'home.founder.cv': 'Životopis (PDF)',
 
     'home.numbers.eyebrow': 'U brojkama',
     'home.num.founded': 'osnovana u Rostovu na Donu',
@@ -341,6 +313,11 @@ export const ui: Record<Lang, Partial<Record<UIKey, string>>> = {
     'projects.filter.sector': 'Filtriraj po sektoru',
     'projects.filter.public': 'Javni sektor',
     'projects.empty': 'U ovom smjeru još nema projekata.',
+    'projects.docs.title': 'Za natječaje',
+    'projects.docs.text':
+      'Popis referenci i životopis ključnog stručnjaka za natječajnu dokumentaciju.',
+    'projects.docs.references': 'Popis referenci (PDF)',
+    'projects.docs.cv': 'Životopis (PDF)',
 
     'project.years': 'Godine',
     'project.present': 'danas',
@@ -354,20 +331,6 @@ export const ui: Record<Lang, Partial<Record<UIKey, string>>> = {
     'project.next': 'Sljedeći projekt',
     'project.prev': 'Prethodni projekt',
 
-    'experience.lead':
-      'Projekti Urban Factoryja s gradskim upravama, sveučilištima i neprofitnim partnerima — s partnerom, godinom, opsegom i rezultatom.',
-    'experience.group.public': 'Gradske uprave',
-    'experience.group.ngo': 'Sveučilišta i neprofitni partneri',
-    'experience.col.project': 'Projekt',
-    'experience.col.location': 'Mjesto',
-    'experience.col.partner': 'Partner',
-    'experience.col.year': 'Godina',
-    'experience.col.scope': 'Opseg',
-    'experience.col.result': 'Rezultat',
-    'experience.docs': 'Dokumenti',
-    'experience.doc.references': 'Popis referenci (PDF)',
-    'experience.doc.cv': 'Životopis ključnog stručnjaka (PDF)',
-
     'services.meta.description':
       'Uključivanje i događanja, strateško planiranje i mobilnost, urbani dizajn i arhitektura — što Urban Factory radi i kako: SUMP, prometne studije, studije parkiranja, CBA.',
     'services.formats': 'Formati',
@@ -375,18 +338,11 @@ export const ui: Record<Lang, Partial<Record<UIKey, string>>> = {
     'services.note':
       'Dokumentaciju koja zahtijeva potpis ovlaštenog inženjera (npr. prometne elaborate) Urban Factory izrađuje s licenciranim partnerom.',
 
-    'agency.meta.description':
-      'Urban Factory: osnovana u Rostovu na Donu 2013., sa sjedištem u Zagrebu od 2020. Povijest, pristup i načela.',
     'agency.history': 'Povijest',
-    'agency.approach': 'Pristup',
     'agency.principles': 'Načela',
 
-    'team.meta.description': 'Mihail Veklenko, osnivač i direktor agencije Urban Factory, i ljudi koji su s njim radili na dosadašnjim projektima.',
     'team.photo': 'Portret:',
     'team.expertise': 'Stručnost',
-    'team.projectsLed': 'Ključni projekti',
-    'team.experience': 'Iskustvo',
-    'team.education': 'Obrazovanje',
     'project.people': 'Projektni tim',
     'project.media': 'Intervjui',
     'project.mediaInput': '— postao je jedno od polazišta ovog projekta',
@@ -447,8 +403,6 @@ export const ui: Record<Lang, Partial<Record<UIKey, string>>> = {
     'nav.services': 'Услуги',
     'nav.agency': 'Агентство',
     'nav.projects': 'Проекты',
-    'nav.experience': 'Опыт',
-    'nav.team': 'Команда',
     'nav.media': 'Медиа',
     'nav.contact': 'Контакты',
 
@@ -461,7 +415,7 @@ export const ui: Record<Lang, Partial<Record<UIKey, string>>> = {
 
     'home.meta.title': 'Urban Factory — агентство городского развития',
     'home.meta.description':
-      'Urban Factory — агентство городского развития и транспортного планирования, Загреб. Планы устойчивой городской мобильности (SUMP), транспортные исследования, исследования парковки, анализ затрат и выгод, участие жителей, проекты ЕС.',
+      'Urban Factory — агентство городского развития и транспортного планирования, основано в Ростове-на-Дону в 2013 году, с 2020 года — в Загребе. Планы устойчивой городской мобильности (SUMP), транспортные исследования, исследования парковки, анализ затрат и выгод, участие жителей, проекты ЕС.',
     'home.hero.eyebrow': 'Агентство городского развития · Загреб',
     'home.hero.title': 'Город — это люди',
     'home.hero.lead':
@@ -496,13 +450,9 @@ export const ui: Record<Lang, Partial<Record<UIKey, string>>> = {
 
     'home.approach.eyebrow': 'Подход',
     'home.approach.title': 'От исследования до результата',
-    'home.approach.step1': 'Исследование',
-    'home.approach.step2': 'Концепция',
-    'home.approach.step3': 'Общественная поддержка',
-    'home.approach.step4': 'Разработка',
-    'home.approach.step5': 'Сопровождение реализации',
     'home.approach.text':
       'Urban Factory ведёт проект от исследования до технического задания, готового для тендера, и остаётся консультантом на этапе реализации. Трамвайная и велосипедная концепции для Ростова-на-Дону прошли путь от первых эскизов до тендерной документации, и оба проекта дошли до строительства.',
+    'home.founder.cv': 'CV (PDF)',
 
     'home.numbers.eyebrow': 'В цифрах',
     'home.num.founded': 'основано в Ростове-на-Дону',
@@ -545,6 +495,11 @@ export const ui: Record<Lang, Partial<Record<UIKey, string>>> = {
     'projects.filter.sector': 'Фильтр по сектору',
     'projects.filter.public': 'Государственный и муниципальный сектор',
     'projects.empty': 'В этом направлении пока нет проектов.',
+    'projects.docs.title': 'Для тендеров',
+    'projects.docs.text':
+      'Список референций и CV ключевого эксперта для тендерной документации.',
+    'projects.docs.references': 'Список референций (PDF)',
+    'projects.docs.cv': 'CV (PDF)',
 
     'project.years': 'Годы',
     'project.present': 'н. в.',
@@ -558,20 +513,6 @@ export const ui: Record<Lang, Partial<Record<UIKey, string>>> = {
     'project.next': 'Следующий проект',
     'project.prev': 'Предыдущий проект',
 
-    'experience.lead':
-      'Проекты Urban Factory с городскими администрациями, университетами и некоммерческими партнёрами — с указанием партнёра, года, объёма работ и результата.',
-    'experience.group.public': 'Городские администрации',
-    'experience.group.ngo': 'Университеты и некоммерческие партнёры',
-    'experience.col.project': 'Проект',
-    'experience.col.location': 'Место',
-    'experience.col.partner': 'Партнёр',
-    'experience.col.year': 'Год',
-    'experience.col.scope': 'Объём работ',
-    'experience.col.result': 'Результат',
-    'experience.docs': 'Документы',
-    'experience.doc.references': 'Список референций (PDF)',
-    'experience.doc.cv': 'CV ключевого эксперта (PDF)',
-
     'services.meta.description':
       'Вовлечение и события, стратегическое планирование и мобильность, городской дизайн и архитектура — что и как делает Urban Factory: SUMP, транспортные исследования, исследования парковки, CBA.',
     'services.formats': 'Форматы',
@@ -579,18 +520,11 @@ export const ui: Record<Lang, Partial<Record<UIKey, string>>> = {
     'services.note':
       'Документацию, которая требует подписи лицензированного инженера (например, проекты организации дорожного движения), Urban Factory готовит вместе с лицензированным партнёром.',
 
-    'agency.meta.description':
-      'Urban Factory: основано в Ростове-на-Дону в 2013 году, с 2020 года штаб-квартира в Загребе. История, подход и принципы.',
     'agency.history': 'История',
-    'agency.approach': 'Подход',
     'agency.principles': 'Принципы',
 
-    'team.meta.description': 'Михаил Векленко, основатель и генеральный директор Urban Factory, и люди, работавшие с ним над прошлыми проектами.',
     'team.photo': 'Портрет:',
     'team.expertise': 'Компетенции',
-    'team.projectsLed': 'Ключевые проекты',
-    'team.experience': 'Опыт',
-    'team.education': 'Образование',
     'project.people': 'Команда проекта',
     'project.media': 'Интервью',
     'project.mediaInput': '— стало одной из основ этого проекта',

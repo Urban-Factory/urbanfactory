@@ -14,23 +14,19 @@ export interface PageCopy {
     lead: string;
     blocks: Record<'engagement' | 'strategy' | 'design', { intro: string; formats: string[] }>;
   };
+  // Главная = страница агентства: lead — вводный абзац блока «Подход»
   agency: {
-    title: string;
     lead: string;
     history: { year: string; title: string; text: string }[];
     approach: Item[];
     principles: Item[];
   };
   team: {
-    title: string;
-    lead: string;
-    // summary — строка над блоками «Образование / Опыт / Компетенции»
-    founder: { name: string; role: string; bio: string[]; summary: string; expertise: string[]; experience: string[]; education: string[]; projects: string[] };
-    partners: { title: string; text: string }; // абзац «Партнёрская сеть» под блоком основателя
-    pastTitle: string;
-    pastText: string;
-    // teamPage: false — показывать только на странице проекта, не в «Project teams» на странице Team
-    past: { project: string; teamPage?: boolean; people: { name: string; role: string }[] }[];
+    // Блок «Основатель» на главной (#osnivac); summary — выделенная строка под биографией
+    founder: { name: string; role: string; bio: string[]; summary: string; expertise: string[] };
+    partners: { title: string; text: string }; // абзац «Партнёрская сеть» в блоке основателя
+    // Участники проектов — блок «Project team» на страницах кейсов
+    past: { project: string; people: { name: string; role: string }[] }[];
   };
   contact: { title: string; lead: string };
 }
@@ -85,7 +81,6 @@ export const en: PageCopy = {
     },
   },
   agency: {
-    title: 'Agency',
     lead: 'Urban Factory is an international urban development agency, founded in Rostov-on-Don in 2013 and based in Zagreb, Croatia, since 2020.',
     history: [
       {
@@ -141,8 +136,6 @@ export const en: PageCopy = {
     ],
   },
   team: {
-    title: 'Team',
-    lead: 'Urban Factory is led by its founder, Mihail Veklenko. For each project, the necessary specialists are brought in.',
     founder: {
       name: 'Mihail Veklenko',
       role: 'Founder & CEO',
@@ -160,26 +153,11 @@ export const en: PageCopy = {
         'Project economics and partnerships',
         'International cooperation',
       ],
-      experience: [
-        'Session producer, Moscow Urban Forum (2013)',
-        'Tutor, Faculty of Media Communications, Don State Technical University, 2014–2015',
-        'On-site consultant, Innopolis, 2015',
-        'Transport researcher, CRISALIDE (EU ERA.NET RUS Plus), 2018–2019',
-        'Project Manager Coordinator, Institut IGH, Zagreb, 2022',
-      ],
-      education: [
-        'Faculty of Transport and Traffic Sciences, University of Zagreb — postgraduate specialist study in Urban Transport (in progress), from 2024',
-        'The University of Manchester (programme delivered with the Moscow School of Social and Economic Sciences) — Postgraduate Diploma in Urban Studies, 2013–2015 (awarded Oct 2015)',
-        'Don State Technical University, Rostov-on-Don — Specialist degree in International Economic Relations, 2002–2007',
-      ],
-      projects: ['tun-foundation', 'rostov-tram', 'cycling-rostov-on-don', 'zverevo-strategy-2030', 'temernik-river-park', 'urban-festival-rostov', 'great-rostov', 'urban-thinkers-campus-recife', 'rostov-300'],
     },
     partners: {
       title: 'Partner network',
       text: 'For projects that require it, Urban Factory works with a licensed transport engineer and with other specialists as the project needs.',
     },
-    pastTitle: 'Project teams',
-    pastText: 'Each project team is built around the task: Mihail Veklenko together with the experts, partners and colleagues who joined him.',
     past: [
       {
         project: 'rostov-tram',
@@ -277,7 +255,6 @@ export const en: PageCopy = {
       },
       {
         project: 'tun-foundation',
-        teamPage: false,
         people: [
           { name: 'Mihail Veklenko', role: 'Initiator and founder; urban planner of the housing programme' },
         ],

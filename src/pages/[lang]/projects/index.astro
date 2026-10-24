@@ -1,10 +1,13 @@
 ---
+import fs from 'node:fs';
+import path from 'node:path';
 import Base from '../../../layouts/Base.astro';
 import PageHeader from '../../../components/PageHeader.astro';
 import ProjectCard from '../../../components/ProjectCard.astro';
 import CtaBand from '../../../components/CtaBand.astro';
 import { published, useTranslations, type Lang } from '../../../i18n/ui';
 import { categories, getProjects, type Project } from '../../../lib/projects';
+import { url } from '../../../lib/site';
 
 export function getStaticPaths() {
   return published.map((lang) => ({ params: { lang } }));
@@ -17,6 +20,14 @@ const dot = { engagement: 'bg-red', strategy: 'bg-blue', design: 'bg-green' } as
 // Фильтр «Public sector» работает как ещё одна категория в data-cats (адрес #public-sector)
 const publicSector = 'public-sector';
 const isPublicSector = (p: Project) => p.data.sector === 'public' || p.data.sector === 'ngo';
+
+// PDF для тендеров (public/docs): кнопка только если файл есть; в RU — английские файлы
+const docLang = lang === 'hr' ? 'hr' : 'en';
+const docs = [
+  { key: 'projects.docs.references', file: `reference-list-${docLang}.pdf` },
+  { key: 'projects.docs.cv', file: `cv-veklenko-${docLang}.pdf` },
+] as const;
+const availableDocs = docs.filter((d) => fs.existsSync(path.join(process.cwd(), 'public', 'docs', d.file)));
 ---
 
 <Base lang={lang} title={`${t('nav.projects')} — Urban Factory`} description={t('projects.meta.description')}>
@@ -24,7 +35,7 @@ const isPublicSector = (p: Project) => p.data.sector === 'public' || p.data.sect
 
   <section class="wrap pb-section">
     <!-- Фильтр: без JS видны все проекты, кнопки скрыты -->
-    <!-- Второй ряд — фильтр по сектору (те же проекты, что на странице «Опыт»: sector public и ngo) -->
+    <!-- Второй ряд — фильтр по сектору (sector public и ngo); на него ведёт ссылка с главной #public-sector -->
     <div class="mb-12 hidden flex-col gap-3 [.js_&]:flex" data-filter>
       <div class="flex flex-wrap gap-2" role="group" aria-label={t('projects.filter.label')}>
         <button type="button" data-cat="all" aria-pressed="true" class="filter-btn">{t('projects.filter.all')}</button>
@@ -54,6 +65,31 @@ const isPublicSector = (p: Project) => p.data.sector === 'public' || p.data.sect
     <p class="hidden text-muted" data-empty>{t('projects.empty')}</p>
     <p class="sr-only" aria-live="polite" data-status></p>
   </section>
+
+  <!-- Документы для тендеров -->
+  {
+    availableDocs.length > 0 && (
+      <section class="wrap pb-section" aria-labelledby="tenders-title">
+        <div class="border-t border-line pt-12 md:pt-16">
+          <h2 id="tenders-title" class="text-h2">{t('projects.docs.title')}</h2>
+          <p class="mt-4 max-w-3xl text-ink/85">{t('projects.docs.text')}</p>
+          <ul class="mt-8 flex flex-wrap gap-3">
+            {availableDocs.map((d) => (
+              <li>
+                <a
+                  href={url(`/docs/${d.file}`)}
+                  type="application/pdf"
+                  class="inline-flex min-h-12 items-center border-2 border-ink px-6 font-display font-semibold tracking-[0.08em] uppercase transition-colors hover:bg-ink hover:text-paper"
+                >
+                  {t(d.key)}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+    )
+  }
 
   <CtaBand lang={lang} />
 </Base>
