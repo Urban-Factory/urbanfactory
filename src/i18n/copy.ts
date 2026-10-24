@@ -165,7 +165,7 @@ export const en: PageCopy = {
         'Tutor, Faculty of Media Communications, Don State Technical University, 2014–2015',
         'On-site consultant, Innopolis, 2015',
         'Transport researcher, CRISALIDE (EU ERA.NET RUS Plus), 2018–2019',
-        'Koordinator voditelja projekata, Institut IGH, Zagreb, 2022',
+        'Project Manager Coordinator, Institut IGH, Zagreb, 2022',
       ],
       education: [
         'Faculty of Transport and Traffic Sciences, University of Zagreb — postgraduate specialist study in Urban Transport (in progress), from 2024',
