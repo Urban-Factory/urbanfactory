@@ -21,7 +21,8 @@ const widths = size === 'large' ? [480, 800, 1200, 1600] : [400, 640, 960];
 const sizes = size === 'large' ? '(min-width: 1024px) 58vw, 100vw' : '(min-width: 1024px) 40vw, (min-width: 640px) 50vw, 100vw';
 ---
 
-<article class="group relative flex flex-col">
+<!-- Ссылка растянута на всю карточку, поэтому обводку фокуса рисует карточка (как :focus-visible в global.css) -->
+<article class="group relative flex flex-col has-[a:focus-visible]:outline-3 has-[a:focus-visible]:outline-offset-3 has-[a:focus-visible]:outline-blue-text has-[a:focus-visible]:outline-solid">
   <div class:list={['relative overflow-hidden bg-surface', size === 'large' ? 'aspect-[4/3] lg:aspect-[16/11]' : 'aspect-[4/3]']}>
     {
       p.cover ? (

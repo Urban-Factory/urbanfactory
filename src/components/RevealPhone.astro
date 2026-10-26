@@ -3,10 +3,10 @@
  * Телефон по кнопке «Показать номер». В HTML и JS номера нет: он собирается
  * при клике из lib/site.ts → phoneParts, тогда же создаются ссылки tel: и WhatsApp.
  * Без JS — строка «Телефон по запросу» (почта рядом — через <Protected /> / <NoJsContact />).
- *   buttonClass — стиль кнопки; numberClass — стиль номера; chipClass — кнопки WhatsApp / Telegram
+ * Telegram — отдельно, в списке мессенджеров (подвал, «Kontakt»).
+ *   buttonClass — стиль кнопки; numberClass — стиль номера; chipClass — кнопка WhatsApp
  */
 import { useTranslations, type Lang } from '../i18n/ui';
-import { contacts } from '../lib/site';
 
 interface Props {
   lang: Lang;
@@ -24,10 +24,7 @@ const t = useTranslations(lang);
   <div aria-live="polite">
     <div hidden data-reveal-out class="flex flex-wrap items-center gap-x-4 gap-y-3">
       <a data-reveal-number class={numberClass}></a>
-      <span class="flex flex-wrap gap-2">
-        <a data-reveal-wa rel="noopener" class={chipClass}>WhatsApp</a>
-        <a href={contacts.telegram} rel="noopener" class={chipClass}>Telegram</a>
-      </span>
+      <a data-reveal-wa rel="noopener" class={chipClass}>WhatsApp</a>
     </div>
   </div>
   <noscript><span>{t('contact.phoneOnRequest')}</span></noscript>
