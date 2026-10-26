@@ -96,6 +96,7 @@
 ## Итоги работы 27.10.2026
 - ae5b14d — телефон по кнопке (RevealPhone), новые PDF без телефонов; направление design — wheat; новые услуги в strategy/design и SEO; обложка rostov-region-strategy-2030.
 - Решения Михаила по вопросам отчёта: номер из PROGRESS.md убран («основной номер (HR)»), история не переписывается, репозиторий остаётся публичным; запасной вариант без JS — как есть; Telegram убран из блока после раскрытия номера (остаётся в подвале и на «Kontakt»); у --color-green комментарий «до 27.10.2026, в палитре»; фокус на карточках проектов — обводка карточки, как у остальных элементов.
+- Главная, блок «Za gradove i općine»: после «Prometne studije i studije parkiranja» добавлена строка «Prometno modeliranje i mikrosimulacija raskrižja i mreža» (EN «Traffic modelling and microsimulation of intersections and networks», RU «Транспортное моделирование и микросимуляция перекрёстков и сетей»; ключ home.public.item6).
 - Создан CLAUDE.md — правила сайта (без номеров телефонов). Скриншоты до/после — `03_docs/site_review/shots_2026-10-27/`.
 
 ## Открытые вопросы (ждут Михаила)

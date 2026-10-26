@@ -73,6 +73,7 @@ const en = {
   'home.public.item3': 'Feasibility studies and cost-benefit analysis (CBA)',
   'home.public.item4': 'Public participation and stakeholder engagement',
   'home.public.item5': 'Preparation of projects for EU funding',
+  'home.public.item6': 'Traffic modelling and microsimulation of intersections and networks',
   'home.public.link': 'Public sector experience',
 
   'home.featured.eyebrow': 'Selected work',
@@ -264,6 +265,7 @@ export const ui: Record<Lang, Partial<Record<UIKey, string>>> = {
     'home.public.item3': 'Studije izvodljivosti i analiza troškova i koristi (CBA)',
     'home.public.item4': 'Participacija javnosti i rad s dionicima',
     'home.public.item5': 'Priprema projekata za EU fondove',
+    'home.public.item6': 'Prometno modeliranje i mikrosimulacija raskrižja i mreža',
     'home.public.link': 'Iskustvo s javnim sektorom',
 
     'home.featured.eyebrow': 'Odabrani radovi',
@@ -450,6 +452,7 @@ export const ui: Record<Lang, Partial<Record<UIKey, string>>> = {
     'home.public.item3': 'Технико-экономические обоснования и анализ затрат и выгод (CBA)',
     'home.public.item4': 'Участие жителей и работа с заинтересованными сторонами',
     'home.public.item5': 'Подготовка проектов для фондов ЕС',
+    'home.public.item6': 'Транспортное моделирование и микросимуляция перекрёстков и сетей',
     'home.public.link': 'Опыт работы с государственным и муниципальным сектором',
 
     'home.featured.eyebrow': 'Избранные работы',
