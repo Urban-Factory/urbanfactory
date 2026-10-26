@@ -52,7 +52,7 @@ export const en: PageCopy = {
       },
       strategy: {
         intro:
-          'Urban Factory prepares strategies that a city can afford: from development strategies for small towns to tram, rail and cycling networks for a metropolitan region and a housing programme for displaced families. The work is built around real budgets, real operators and real timelines. That is why projects are prepared from the start to be implementable.',
+          'Urban Factory prepares strategies that a city can afford: from development strategies for small towns to tram, rail and cycling networks for a metropolitan region and a housing programme for displaced families. The work is built around real budgets, real operators and real timelines. That is why projects are prepared from the start to be implementable. Traffic analyses are built with open-source software and AI, so the client receives a model it can check and rerun on its own, without buying licences.',
         formats: [
           'Urban research: surveys, mobility data, stakeholder interviews',
           'Development strategies at every scale: district, city, agglomeration, region',
@@ -63,6 +63,11 @@ export const en: PageCopy = {
           'Briefs and documentation for design competitions and tenders',
           'Sustainable urban mobility plans (SUMP)',
           'Transport and parking studies',
+          'Traffic modelling and microsimulation of intersections and networks',
+          'Traffic counts from video with automatic detection of vehicles and pedestrians',
+          'Traffic impact assessment of new developments and site evaluation',
+          'Accessibility analysis: public transport, walking and cycling (15-minute city)',
+          'Analytical groundwork for spatial plans: existing conditions, scenarios, indicators',
           'Feasibility studies and cost-benefit analysis (CBA)',
         ],
       },
@@ -76,6 +81,7 @@ export const en: PageCopy = {
           'Settlement planning',
           'Modular and temporary installations',
           'Participatory design',
+          '3D visualisation and video simulation of traffic and public spaces',
         ],
       },
     },

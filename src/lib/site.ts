@@ -11,16 +11,23 @@ export const contacts = {
 };
 
 /**
- * Email и телефон не лежат в HTML открытым текстом (защита от ботов):
+ * Email не лежит в HTML открытым текстом (защита от ботов):
  * строка перевёрнута, закодирована в base64 и разбита на части.
- * Собирает их скрипт в components/Protected.astro. Новое значение:
+ * Собирает её скрипт в components/Protected.astro. Новое значение:
  *   node -e "console.log(Buffer.from([...'текст'].reverse().join('')).toString('base64'))"
  */
 export const protectedContacts = {
   email: ['eWNuZWdhLnly', 'b3RjYWZuYWJy', 'dUBvZm5p'],
-  phone: ['MDIwMjg4ODk5', 'NTgzKw=='],
-  phoneLabel: ['MDIwMiA4ODgg', 'OTkgNTgzKw=='],
-  whatsapp: ['MDIwMjg4ODk5', 'NTgz'],
+} as const;
+
+/**
+ * Телефон — только по кнопке (components/RevealPhone.astro), собирается при клике.
+ * Группы цифр номера, каждая перевёрнута и в base64, лежат вперемешку;
+ * seq — порядок сборки (код страны, оператор, две группы абонента).
+ */
+export const phoneParts = {
+  bits: ['ODg4', 'NTgz', 'MDIwMg==', 'OTk='],
+  seq: [1, 3, 0, 2],
 } as const;
 
 /** Ссылка с учётом base (BASE_PATH из workflow; на домене — корень). */

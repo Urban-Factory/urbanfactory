@@ -22,7 +22,7 @@ export const hr: PageCopy = {
       },
       strategy: {
         intro:
-          'Urban Factory izrađuje strategije koje si grad može priuštiti: od razvojnih strategija za male gradove do tramvajskih, željezničkih i biciklističkih mreža za metropolitansku regiju i stambenog programa za raseljene obitelji. Rad se temelji na stvarnim proračunima, stvarnim operaterima i stvarnim rokovima. Zato se projekti od samog početka pripremaju tako da budu izvedivi.',
+          'Urban Factory izrađuje strategije koje si grad može priuštiti: od razvojnih strategija za male gradove do tramvajskih, željezničkih i biciklističkih mreža za metropolitansku regiju i stambenog programa za raseljene obitelji. Rad se temelji na stvarnim proračunima, stvarnim operaterima i stvarnim rokovima. Zato se projekti od samog početka pripremaju tako da budu izvedivi. Prometne analize izrađuju se otvorenim softverom uz pomoć umjetne inteligencije, pa naručitelj dobiva model koji može sam provjeriti i ponovno pokrenuti, bez kupnje licencija.',
         formats: [
           'Urbana istraživanja: ankete, podaci o mobilnosti, intervjui s dionicima',
           'Strategije razvoja na svim razinama: četvrt, grad, aglomeracija, regija',
@@ -33,6 +33,11 @@ export const hr: PageCopy = {
           'Projektni zadaci i dokumentacija za projektne natječaje i javne nabave',
           'Planovi održive urbane mobilnosti (SUMP)',
           'Prometne studije i studije parkiranja',
+          'Prometno modeliranje i mikrosimulacija raskrižja i prometnih mreža',
+          'Brojanje prometa videosnimanjem s automatskim prepoznavanjem vozila i pješaka',
+          'Analiza prometnog utjecaja novih zahvata i prometna valorizacija lokacija',
+          'Analize dostupnosti: javni prijevoz, pješačenje i biciklizam (grad 15 minuta)',
+          'Analitičke podloge za prostorne planove: postojeće stanje, scenariji, pokazatelji',
           'Studije izvodljivosti i analiza troškova i koristi (CBA)',
         ],
       },
@@ -46,6 +51,7 @@ export const hr: PageCopy = {
           'Planiranje naselja',
           'Modularne i privremene instalacije',
           'Participativno projektiranje',
+          '3D vizualizacija i videosimulacija prometa i javnih prostora',
         ],
       },
     },

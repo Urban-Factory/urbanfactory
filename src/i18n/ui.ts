@@ -46,7 +46,7 @@ const en = {
 
   'home.meta.title': 'Urban Factory — urban development agency',
   'home.meta.description':
-    'Urban Factory — urban development and transport planning agency, founded in Rostov-on-Don in 2013, based in Zagreb since 2020. Sustainable urban mobility plans (SUMP), transport studies, parking studies, cost-benefit analysis, public participation, EU projects.',
+    'Urban Factory — urban development and transport planning agency, founded in Rostov-on-Don in 2013, based in Zagreb since 2020. Sustainable urban mobility plans (SUMP), transport studies, parking studies, traffic modelling and microsimulation, cost-benefit analysis, public participation, EU projects.',
   'home.hero.eyebrow': 'Urban development agency · Zagreb',
   'home.hero.title': 'The city is the people',
   'home.hero.lead':
@@ -145,7 +145,7 @@ const en = {
   'project.prev': 'Previous project',
 
   'services.meta.description':
-    'Engagement & Events, Strategic Planning & Mobility, Urban Design & Architecture — what Urban Factory does and how: SUMP, transport and parking studies, CBA.',
+    'Engagement & Events, Strategic Planning & Mobility, Urban Design & Architecture — what Urban Factory does and how: SUMP, transport and parking studies, traffic modelling and microsimulation, CBA.',
   'services.formats': 'Formats',
   'services.projects': 'Projects',
   'services.note':
@@ -197,6 +197,8 @@ const en = {
   'contact.phone': 'Phone',
   'contact.messengers': 'Messengers and social media',
   'contact.address': 'Office',
+  'contact.showNumber': 'Show number',
+  'contact.phoneOnRequest': 'Phone on request',
 };
 
 export type UIKey = keyof typeof en;
@@ -235,7 +237,7 @@ export const ui: Record<Lang, Partial<Record<UIKey, string>>> = {
 
     'home.meta.title': 'Urban Factory — agencija za urbani razvoj',
     'home.meta.description':
-      'Urban Factory — agencija za urbani razvoj i prometno planiranje, osnovana u Rostovu na Donu 2013., sa sjedištem u Zagrebu od 2020. Planovi održive urbane mobilnosti (SUMP), prometne studije, studije parkiranja, analiza troškova i koristi, participacija javnosti, EU projekti.',
+      'Urban Factory — agencija za urbani razvoj i prometno planiranje, osnovana u Rostovu na Donu 2013., sa sjedištem u Zagrebu od 2020. Planovi održive urbane mobilnosti (SUMP), prometne studije, studije parkiranja, prometno modeliranje i mikrosimulacija, analiza troškova i koristi, participacija javnosti, EU projekti.',
     'home.hero.eyebrow': 'Agencija za urbani razvoj · Zagreb',
     'home.hero.title': 'Grad su ljudi',
     'home.hero.lead':
@@ -334,7 +336,7 @@ export const ui: Record<Lang, Partial<Record<UIKey, string>>> = {
     'project.prev': 'Prethodni projekt',
 
     'services.meta.description':
-      'Uključivanje i događanja, strateško planiranje i mobilnost, urbani dizajn i arhitektura — što Urban Factory radi i kako: SUMP, prometne studije, studije parkiranja, CBA.',
+      'Uključivanje i događanja, strateško planiranje i mobilnost, urbani dizajn i arhitektura — što Urban Factory radi i kako: SUMP, prometne studije, studije parkiranja, prometno modeliranje i mikrosimulacija, CBA.',
     'services.formats': 'Formati',
     'services.projects': 'Projekti',
     'services.note':
@@ -386,6 +388,8 @@ export const ui: Record<Lang, Partial<Record<UIKey, string>>> = {
     'contact.phone': 'Telefon',
     'contact.messengers': 'Aplikacije za poruke i društvene mreže',
     'contact.address': 'Ured',
+    'contact.showNumber': 'Prikaži broj',
+    'contact.phoneOnRequest': 'Telefon na upit',
   },
   ru: {
     'site.name': 'Urban Factory',
@@ -419,7 +423,7 @@ export const ui: Record<Lang, Partial<Record<UIKey, string>>> = {
 
     'home.meta.title': 'Urban Factory — агентство городского развития',
     'home.meta.description':
-      'Urban Factory — агентство городского развития и транспортного планирования, основано в Ростове-на-Дону в 2013 году, с 2020 года — в Загребе. Планы устойчивой городской мобильности (SUMP), транспортные исследования, исследования парковки, анализ затрат и выгод, участие жителей, проекты ЕС.',
+      'Urban Factory — агентство городского развития и транспортного планирования, основано в Ростове-на-Дону в 2013 году, с 2020 года — в Загребе. Планы устойчивой городской мобильности (SUMP), транспортные исследования, исследования парковки, транспортное моделирование и микросимуляция, анализ затрат и выгод, участие жителей, проекты ЕС.',
     'home.hero.eyebrow': 'Агентство городского развития · Загреб',
     'home.hero.title': 'Город — это люди',
     'home.hero.lead':
@@ -518,7 +522,7 @@ export const ui: Record<Lang, Partial<Record<UIKey, string>>> = {
     'project.prev': 'Предыдущий проект',
 
     'services.meta.description':
-      'Вовлечение и события, стратегическое планирование и мобильность, городской дизайн и архитектура — что и как делает Urban Factory: SUMP, транспортные исследования, исследования парковки, CBA.',
+      'Вовлечение и события, стратегическое планирование и мобильность, городской дизайн и архитектура — что и как делает Urban Factory: SUMP, транспортные исследования, исследования парковки, транспортное моделирование и микросимуляция, CBA.',
     'services.formats': 'Форматы',
     'services.projects': 'Проекты',
     'services.note':
@@ -570,6 +574,8 @@ export const ui: Record<Lang, Partial<Record<UIKey, string>>> = {
     'contact.phone': 'Телефон',
     'contact.messengers': 'Мессенджеры и соцсети',
     'contact.address': 'Офис',
+    'contact.showNumber': 'Показать номер',
+    'contact.phoneOnRequest': 'Телефон по запросу',
   },
 };
 

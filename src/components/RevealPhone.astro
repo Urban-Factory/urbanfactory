@@ -1,0 +1,57 @@
+---
+/**
+ * Телефон по кнопке «Показать номер». В HTML и JS номера нет: он собирается
+ * при клике из lib/site.ts → phoneParts, тогда же создаются ссылки tel: и WhatsApp.
+ * Без JS — строка «Телефон по запросу» (почта рядом — через <Protected /> / <NoJsContact />).
+ *   buttonClass — стиль кнопки; numberClass — стиль номера; chipClass — кнопки WhatsApp / Telegram
+ */
+import { useTranslations, type Lang } from '../i18n/ui';
+import { contacts } from '../lib/site';
+
+interface Props {
+  lang: Lang;
+  class?: string;
+  buttonClass?: string;
+  numberClass?: string;
+  chipClass?: string;
+}
+const { lang, class: cls, buttonClass, numberClass, chipClass } = Astro.props;
+const t = useTranslations(lang);
+---
+
+<div class={cls} data-reveal-phone>
+  <button type="button" hidden class={buttonClass}>{t('contact.showNumber')}</button>
+  <div aria-live="polite">
+    <div hidden data-reveal-out class="flex flex-wrap items-center gap-x-4 gap-y-3">
+      <a data-reveal-number class={numberClass}></a>
+      <span class="flex flex-wrap gap-2">
+        <a data-reveal-wa rel="noopener" class={chipClass}>WhatsApp</a>
+        <a href={contacts.telegram} rel="noopener" class={chipClass}>Telegram</a>
+      </span>
+    </div>
+  </div>
+  <noscript><span>{t('contact.phoneOnRequest')}</span></noscript>
+</div>
+
+<script>
+  import { phoneParts as p } from '../lib/site';
+
+  const group = (i: number) => [...atob(p.bits[i])].reverse().join('');
+
+  document.querySelectorAll<HTMLElement>('[data-reveal-phone]').forEach((box) => {
+    const button = box.querySelector('button')!;
+    const out = box.querySelector<HTMLElement>('[data-reveal-out]')!;
+    button.hidden = false;
+    button.addEventListener('click', () => {
+      const g = p.seq.map(group);
+      const digits = g.join('');
+      const number = box.querySelector<HTMLAnchorElement>('[data-reveal-number]')!;
+      number.href = ['te', 'l:+'].join('') + digits;
+      number.textContent = `+${g.join(' ')}`;
+      box.querySelector<HTMLAnchorElement>('[data-reveal-wa]')!.href = ['https://wa', 'me/'].join('.') + digits;
+      button.hidden = true;
+      out.hidden = false;
+      number.focus();
+    });
+  });
+</script>

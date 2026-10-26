@@ -16,6 +16,8 @@ results:
   - "Strategy adopted by Rostov Region Government resolution No 864 of 26 December 2018"
   - "Part of the materials prepared by Mihail Veklenko went into the transport section of the adopted strategy"
   - "The materials drew on the Great Rostov concept and the Rostov tram network concept"
+cover: ../../../assets/projects/rostov-region-strategy-2030/cover.jpg
+coverAlt: "Graphic: fields seen from above — a patchwork of rectangular plots in green, wheat and red tones"
 featured: false
 order: 15
 ---

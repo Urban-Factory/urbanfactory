@@ -1,12 +1,13 @@
 ---
 /**
- * Ссылка на email / телефон / WhatsApp, которую собирает JS на клиенте.
- * В HTML нет ни адреса, ни номера. Без JS элемент скрыт — рядом нужен <NoJsContact />.
- *   kind  — email | phone | whatsapp
- *   text  — видимая подпись; если не задана, показывается сам адрес/номер
+ * Ссылка на email, которую собирает JS на клиенте.
+ * В HTML адреса нет. Без JS элемент скрыт — рядом нужен <NoJsContact />.
+ * Телефон — отдельно, только по кнопке: <RevealPhone />.
+ *   kind  — email
+ *   text  — видимая подпись; если не задана, показывается сам адрес
  */
 interface Props {
-  kind: 'email' | 'phone' | 'whatsapp';
+  kind: 'email';
   text?: string;
   class?: string;
 }
@@ -27,13 +28,6 @@ const { kind, text, class: cls } = Astro.props;
     if (kind === 'email') {
       value = decode(c.email);
       href = `mailto:${value}`;
-    } else if (kind === 'phone') {
-      value = decode(c.phoneLabel);
-      href = `tel:${decode(c.phone)}`;
-    } else if (kind === 'whatsapp') {
-      value = decode(c.phoneLabel);
-      href = `https://wa.me/${decode(c.whatsapp)}`;
-      a.rel = 'noopener';
     }
     a.href = href;
     if (a.hasAttribute('data-show-value')) a.append(value);

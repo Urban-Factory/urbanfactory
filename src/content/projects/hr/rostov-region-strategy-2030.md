@@ -16,6 +16,8 @@ results:
   - "Strategija usvojena uredbom Vlade Rostovske oblasti br. 864 od 26. prosinca 2018."
   - "Dio materijala koje je pripremio Mihail Veklenko ušao je u prometno poglavlje usvojene strategije"
   - "Materijali su se oslanjali na koncept Aglomeracija Rostov i koncept rostovske tramvajske mreže"
+cover: ../../../assets/projects/rostov-region-strategy-2030/cover.jpg
+coverAlt: "Grafika: polja odozgo — mozaik pravokutnih parcela u zelenim, pšeničnim i crvenim tonovima"
 featured: false
 order: 15
 ---

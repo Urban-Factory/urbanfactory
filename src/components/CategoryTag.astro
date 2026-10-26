@@ -7,7 +7,7 @@ interface Props {
 }
 const { category, lang } = Astro.props;
 const t = useTranslations(lang);
-const dot = { engagement: 'bg-red', strategy: 'bg-blue', design: 'bg-green' }[category];
+const dot = { engagement: 'bg-red', strategy: 'bg-blue', design: 'bg-wheat' }[category];
 ---
 
 <span class="inline-flex items-center gap-2 text-xs font-semibold tracking-[0.1em] text-ink uppercase font-display">

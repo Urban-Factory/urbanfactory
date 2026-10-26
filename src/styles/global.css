@@ -17,6 +17,8 @@
   --color-blue-text: #4a4f7d;
   --color-green: #8ea360;      /* Urban Design & Architecture */
   --color-green-text: #5b6d32;
+  --color-wheat: #d9b979;      /* Urban Design & Architecture (с 27.10.2026, как на визитке) */
+  --color-wheat-text: #7d5f1c;
 
   --font-display: 'Roboto Condensed Variable', 'Arial Narrow', sans-serif;
   --font-sans: 'Inter Variable', system-ui, -apple-system, 'Segoe UI', sans-serif;
@@ -56,9 +58,10 @@
     outline: 3px solid var(--color-blue-text);
     outline-offset: 3px;
   }
-  /* На тёмном и коралловом фоне обводка *-text не видна (< 3:1) — берём контрастный цвет фона-соседа */
+  /* На тёмном, коралловом и пшеничном фоне обводка *-text не видна (< 3:1) — берём контрастный цвет фона-соседа */
   .bg-ink :focus-visible { outline-color: var(--color-paper); }
-  .bg-red :focus-visible { outline-color: var(--color-ink); }
+  .bg-red :focus-visible,
+  .bg-wheat :focus-visible { outline-color: var(--color-ink); }
   ::selection { background: var(--color-red); color: var(--color-ink); }
 }
 

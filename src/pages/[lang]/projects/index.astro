@@ -15,7 +15,7 @@ export function getStaticPaths() {
 const lang = Astro.params.lang as Lang;
 const t = useTranslations(lang);
 const projects = await getProjects(lang);
-const dot = { engagement: 'bg-red', strategy: 'bg-blue', design: 'bg-green' } as const;
+const dot = { engagement: 'bg-red', strategy: 'bg-blue', design: 'bg-wheat' } as const;
 // Фильтр «Public sector» работает как ещё одна категория в data-cats (адрес #public-sector)
 const publicSector = 'public-sector';
 const isPublicSector = (p: Project) => p.data.sector === 'public' || p.data.sector === 'ngo';
