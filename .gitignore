@@ -25,3 +25,7 @@ pnpm-debug.log*
 
 # рабочие документы для вычитки переводов (генерируются scripts/export-translations.mjs)
 translations-review/
+
+# локальные внутренние файлы (03.11.2026): история решений и внутренние правила
+PROGRESS.md
+CLAUDE.local.md
