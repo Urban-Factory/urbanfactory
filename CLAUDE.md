@@ -44,3 +44,14 @@
 
 ## Сортировка
 - Везде сначала самое свежее: проекты — по году окончания, затем по году начала (`lib/projects.ts → byRecency`, «present» = текущий год), `order` — только при равенстве. Media — по `date` внутри раздела; интервью — по `order`; закреплённый блок Media — поле `pin`.
+
+## Common rules (C:\projects\CLAUDE.md, 2026-11-04)
+Overview: C:\projects\PLANNER.md. Full text of the common rules: C:\projects\CLAUDE.md.
+Sync: the PC is the main memory, but Mihail's latest decision wins wherever it was made. On "sync": read _sync_inbox.md, STATUS/PROGRESS, DECISIONS, PLANNER.md; show a table of differences with dates; never overwrite silently; update only after "ok". A file date is a hint, not proof.
+Public vs. closed: everything is closed by default; public only what this project marks as public or Mihail allows in this session; in doubt = closed, ask. Channels: PUBLIC (sites, public repos, social, links for anyone) / ADDRESSED (mail, offers to a specific person) / INTERNAL. Never public: phones, personal e-mails, home addresses, citizenship, birth dates, document numbers; client/partner names without consent; prices, contracts, deals; files *-private*, .env, keys; folders with CLOSED.md. Before publishing: show changes and sources, check C:\projects\_private\closed_terms.txt, publish only after "ok".
+Finish line: every task ends in an external action (send, publish, call, submit, pay, meet, print). At the end of a session give: done / missing / ONE next action prepared for ~5 minutes. Open loops ("ready but not sent") go to STATUS.md (or PROGRESS.md if the project keeps status there) → section "Open loops", with date prepared; follow-up +7 days after sending. Close only with proof (date, link, Sent mail). Gentle: max 3 open loops shown per session; external actions only after Mihail's "ok". Full rule: C:\projects\CLAUDE.md.
+
+## Public vs. closed — this project
+- The repository is PUBLIC: everything committed is public, including history.
+- Nothing from internal or closed folders is copied here; a needed fact = show Mihail the wording and source, insert after "ok".
+- Before each commit: diff + sources of new facts + check against C:\projects\_private\closed_terms.txt. Push only after confirmation. Do not disable the hook. CLAUDE.local.md stays local.
